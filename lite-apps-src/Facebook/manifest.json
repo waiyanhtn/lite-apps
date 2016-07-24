@@ -1,5 +1,6 @@
 {
   "manifest_version": 1,
+  "default_locale": "en",
   "name": "__MSG_facebook__",
   "start_url": "https://m.facebook.com",
   "theme_color": "#39579a",
