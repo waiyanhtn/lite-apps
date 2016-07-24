@@ -1,0 +1,66 @@
+{
+  "manifest_version": 1,
+  "name": "__MSG_facebook__",
+  "start_url": "https://m.facebook.com",
+  "theme_color": "#39579a",
+  "secondary_color": "#3B5998",
+  "icons": [
+    {
+      "src": "facebook.png"
+    }
+  ],
+  "hermit_settings": {
+    "block_malware": true,
+    "open_links": "in_app"
+  },
+  "hermit_bookmarks": [
+    {
+      "url": "https://m.facebook.com/home.php?sk=h_chr",
+      "name": "__MSG_most_recent__"
+    },
+    {
+      "url": "https://m.facebook.com/?sk=h_nor",
+      "name": "__MSG_top_stories__"
+    },
+    {
+      "url": "https://m.facebook.com/birthdays/",
+      "name": "__MSG_birthdays__"
+    },
+    {
+      "url": "https://m.facebook.com/events/upcoming",
+      "name": "__MSG_events__"
+    },
+    {
+      "url": "https://m.facebook.com/search/trending-news/",
+      "name": "__MSG_trending_news__"
+    },
+    {
+      "url": "https://m.facebook.com/games",
+      "name": "__MSG_games__"
+    },
+    {
+      "url": "https://m.facebook.com/photos",
+      "name": "__MSG_photos__"
+    },
+    {
+      "url": "https://m.facebook.com/notifications",
+      "name": "__MSG_notifications__"
+    },
+    {
+      "url": "https://m.facebook.com/settings",
+      "name": "__MSG_settings__"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://m.facebook.com/search/top/?q=%s",
+      "name": "__MSG_search_facebook__"
+    }
+  ],
+  "hermit_share": [
+    {
+      "url": "http://www.facebook.com/sharer/sharer.php?u=%u",
+      "name": "__MSG_post_to_facebook__"
+    }
+  ]
+}

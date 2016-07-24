@@ -1,0 +1,38 @@
+{
+  "facebook": {
+    "message": "Facebook"
+  },
+  "most_recent": {
+    "message": "Most Recent"
+  },
+  "top_stories": {
+    "message": "Top Stories"
+  },
+  "birthdays": {
+    "message": "Birthdays"
+  },
+  "events": {
+    "message": "Events"
+  },
+  "trending_news": {
+    "message": "Trending"
+  },
+  "games": {
+    "message": "Games"
+  },
+  "photos": {
+    "message": "Photos"
+  },
+  "notifications": {
+    "message": "Notifications"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "search_facebook": {
+    "message": "Search Facebook"
+  },
+  "post_to_facebook": {
+    "message": "Post to Facebook"
+  }
+}
