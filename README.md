@@ -76,18 +76,22 @@ Hermit Lite Apps are zip files, with the extension `.hermit`, with the following
     {
       "lite_app_title": {
         "message": "Lite App",
+        "description": "Name of this Lite App, shown in the Launcher and everywhere else as a title. Keep it short."
       },
       "top_level": {
         "message": "Top Level Navigation",
+        "description": "Just what it says. Descriptions are for translators to understand the context in which a string is being used."
       },
       "another_top_level": {
         "message": "Another Top Level Navigation",
+        "description": "Just what it says. Descriptions are for translators to understand the context in which a string is being used."
       },
       "search_example": {
         "message": "Search Lite App",
+        "description": "Phrase shown as the text hint in the search box at the top of the Lite App"
       },
       "share_to_example": {
         "message": "Share to Lite App",
+        "description": "Phrase shown in the dialog where a user can share text from another app directly to this Lite App"
       }
     }
-
