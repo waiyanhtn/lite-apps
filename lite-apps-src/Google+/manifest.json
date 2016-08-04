@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "default_locale": "en",
+  "lang": "en",
   "name": "Google+",
   "start_url": "https://plus.google.com",
   "theme_color": "#dd4330",

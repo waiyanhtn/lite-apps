@@ -27,7 +27,7 @@ Hermit Lite Apps are zip files, with the extension `.hermit`, with the following
 
     {
       "manifest_version": 1,
-      "default_locale": "en",
+      "lang": "en",
       "name": "__MSG_lite_app_title__",
       "start_url": "https://example.com",
       "theme_color": "#ff0000",

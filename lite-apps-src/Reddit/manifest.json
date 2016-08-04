@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "default_locale": "en",
+  "lang": "en",
   "name": "Reddit",
   "start_url": "https://m.reddit.com",
   "theme_color": "#ff4501",

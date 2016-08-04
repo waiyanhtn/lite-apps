@@ -1,6 +1,6 @@
 {
   "manifest_version": 1,
-  "default_locale": "en",
+  "lang": "en",
   "name": "Twitter",
   "start_url": "https://m.twitter.com",
   "theme_color": "#4798d8",

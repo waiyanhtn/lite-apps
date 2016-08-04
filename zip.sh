@@ -20,7 +20,7 @@ function zip_manifests() {
     MANIFEST_JSON="${LITE_APP}/manifest.json"
 
     check_if_exists ".manifest_version"
-    check_if_exists ".default_locale"
+    check_if_exists ".lang"
     check_if_exists ".name"
     check_if_exists ".start_url"
     check_if_exists ".theme_color"
