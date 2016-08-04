@@ -1,0 +1,14 @@
+{
+  "collections": {
+    "message": "Collections"
+  },
+  "communities": {
+    "message": "Communities"
+  },
+  "people": {
+    "message": "People"
+  },
+  "search": {
+    "message": "Search"
+  }
+}
