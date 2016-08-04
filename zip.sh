@@ -26,6 +26,7 @@ function zip_manifests() {
     check_if_exists ".theme_color"
     check_if_exists ".secondary_color"
     check_if_exists ".icons[0].src"
+    check_languages "${LITE_APP}"
 
     cd "${LITE_APP}"  # So the path included in the zip file is just the base name of the zipped file.
     zip -r "${LITE_APP_NAME}.hermit" *
@@ -41,6 +42,17 @@ function check_if_exists() {
     exit 1
   fi
 }
+
+function check_languages() {
+  if [ -f "$1/_locales/en/messages.json" ]; then
+    jq "." "$1/_locales/en/messages.json" > /dev/null
+    if [ $? -ne 0 ]; then
+      echo "  Malformed localization."
+      exit 1
+    fi
+  fi
+}
+
 
 remove_ds_store
 zip_manifests
