@@ -1,0 +1,23 @@
+{
+  "manifest_version": 1,
+  "default_locale": "en",
+  "name": "Instapaper",
+  "start_url": "https://instapaper.com",
+  "theme_color": "#9a938d",
+  "secondary_color": "#414042",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_settings": {
+    "block_malware": true,
+    "open_links": "in_app"
+  },
+  "hermit_share": [
+    {
+      "url": "https://www.instapaper.com/hello2?url=%u&title=%t",
+      "name": "Instapaper"
+    }
+  ]
+}
