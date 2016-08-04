@@ -1,0 +1,14 @@
+{
+  "moments": {
+    "message": "Moments"
+  },
+  "notifications": {
+    "message": "Notifications"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "tweet": {
+    "message": "Tweet"
+  }
+}

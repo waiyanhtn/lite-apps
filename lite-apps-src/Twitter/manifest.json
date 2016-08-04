@@ -1,0 +1,39 @@
+{
+  "manifest_version": 1,
+  "default_locale": "en",
+  "name": "Twitter",
+  "start_url": "https://m.twitter.com",
+  "theme_color": "#4798d8",
+  "secondary_color": "#378ac8",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_settings": {
+    "block_malware": true,
+    "open_links": "in_app"
+  },
+  "hermit_bookmarks": [
+    {
+      "url": "https://twitter.com/i/moments",
+      "name": "__MSG_moments__"
+    },
+    {
+      "url": "https://twitter.com/i/notifications",
+      "name": "__MSG_notifications__"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://twitter.com/search?q=%s",
+      "name": "__MSG_search__"
+    }
+  ],
+  "hermit_share": [
+    {
+      "url": "https://twitter.com/intent/tweet?text=%s",
+      "name": "__MSG_tweet__"
+    }
+  ]
+}
