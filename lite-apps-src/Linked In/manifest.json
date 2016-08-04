@@ -1,0 +1,29 @@
+{
+  "manifest_version": 1,
+  "default_locale": "en",
+  "name": "Linked In",
+  "start_url": "https://www.linkedin.com",
+  "theme_color": "#0076b7",
+  "secondary_color": "#005d95",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_settings": {
+    "block_malware": true,
+    "open_links": "in_app"
+  },
+  "hermit_search": [
+    {
+      "url": "https://www.linkedin.com/vsearch/f?type=all&keywords=%s",
+      "name": "__MSG_search__"
+    }
+  ],
+  "hermit_share": [
+    {
+      "url": "https://www.linkedin.com/shareArticle?mini=true&url=%u&title=%t&source=Hermit",
+      "name": "Linked In"
+    }
+  ]
+}
