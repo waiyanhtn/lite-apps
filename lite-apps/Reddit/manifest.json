@@ -3,12 +3,20 @@
   "lang": "en",
   "name": "Reddit",
   "start_url": "https://m.reddit.com",
+  "manifest_url": "https://hermit.chimbori.com/library/lite-apps/Reddit.hermit",
   "theme_color": "#ff4501",
   "secondary_color": "#ff4300",
   "icons": [
     {
       "src": "icon.png"
     }
+  ],
+  "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=",
+        "id": ""
+      }
   ],
   "hermit_settings": {
     "block_malware": true,

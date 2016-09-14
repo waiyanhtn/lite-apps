@@ -3,8 +3,16 @@
   "lang": "en",
   "name": "Twitter",
   "start_url": "https://m.twitter.com",
+  "manifest_url": "https://hermit.chimbori.com/library/lite-apps/Twitter.hermit",
   "theme_color": "#4798d8",
   "secondary_color": "#378ac8",
+  "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=",
+        "id": ""
+      }
+  ],
   "icons": [
     {
       "src": "icon.png"

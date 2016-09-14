@@ -3,12 +3,20 @@
   "lang": "en",
   "name": "Linked In",
   "start_url": "https://www.linkedin.com",
+  "manifest_url": "https://hermit.chimbori.com/library/lite-apps/LinkedIn.hermit",
   "theme_color": "#0076b7",
   "secondary_color": "#005d95",
   "icons": [
     {
       "src": "icon.png"
     }
+  ],
+  "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=",
+        "id": ""
+      }
   ],
   "hermit_settings": {
     "block_malware": true,

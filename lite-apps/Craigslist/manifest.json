@@ -3,8 +3,16 @@
   "lang": "en",
   "name": "__MSG_craigslist__",
   "start_url": "https://craigslist.org",
+  "manifest_url": "https://hermit.chimbori.com/library/lite-apps/Craigslist.hermit",
   "theme_color": "#5c008e",
   "secondary_color": "#5c008e",
+  "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=",
+        "id": ""
+      }
+  ],
   "icons": [
     {
       "src": "icon.png"
