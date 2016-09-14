@@ -23,6 +23,7 @@ function zip_manifests() {
     check_if_exists ".lang"
     check_if_exists ".name"
     check_if_exists ".start_url"
+    check_if_exists ".manifest_url"
     check_if_exists ".theme_color"
     check_if_exists ".secondary_color"
     check_if_exists ".icons[0].src"
