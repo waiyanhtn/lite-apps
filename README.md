@@ -1,6 +1,8 @@
 # Lite App Manifests
 
-This is a directory of manifest files for [Hermit](https://hermit.chimbori.com).
+This is a directory of manifest files for [Hermit](https://hermit.chimbori.com). Manifests are zipped up into `.hermit` files, and can be used to set up a new Lite App in Hermit.
+
+[![Build Status](https://travis-ci.org/chimbori/lite-apps.svg?branch=master)](https://travis-ci.org/chimbori/lite-apps)
 
 # Syntax
 
