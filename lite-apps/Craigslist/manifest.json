@@ -7,11 +7,6 @@
   "theme_color": "#5c008e",
   "secondary_color": "#5c008e",
   "related_applications": [
-      {
-        "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=",
-        "id": ""
-      }
   ],
   "icons": [
     {
