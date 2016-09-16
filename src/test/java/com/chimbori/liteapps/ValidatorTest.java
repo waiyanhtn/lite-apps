@@ -21,7 +21,7 @@ import static org.junit.Assert.fail;
  * - Missing localizations (manifest.json references a string, but string is not found in manifest.json).
  * - Extra files that are not part of the expected structure.
  */
-public class ManifestValidatorTest {
+public class ValidatorTest {
   @Test
   public void testAllManifestsAreValid() {
     File[] liteApps = new File("lite-apps/").listFiles(new FileFilter() {

@@ -12,16 +12,16 @@ import static org.junit.Assert.fail;
 /**
  * Ensures that all Lite Apps can be packaged without error.
  */
-public class ManifestPackagerTest {
+public class PackagerTest {
   @Test
   public void testAllManifestsPackagedSuccessfully() {
-    ManifestPackager.packageAllManifests(new File("lite-apps/"));
+    Packager.packageAllManifests(new File("lite-apps/"));
   }
 
   @Test
   public void testLibraryDataIsGeneratedSuccessfully() {
     try {
-      assertTrue(ManifestPackager.generateLibraryData());
+      assertTrue(Packager.generateLibraryData());
     } catch (IOException | JSONException e) {
       fail(e.getMessage());
     }

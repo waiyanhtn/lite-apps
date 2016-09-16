@@ -15,7 +15,7 @@ import java.io.PrintWriter;
  * Does not validate each Lite App prior to packaging: it is assumed that this is run on a green
  * build which has already passed all validation tests.
  */
-public class ManifestPackager {
+public class Packager {
   public static void main(String[] arguments) {
     boolean allSuccessful = true;
     allSuccessful &= packageAllManifests(new File("lite-apps/"));
