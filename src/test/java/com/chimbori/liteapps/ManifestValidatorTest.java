@@ -68,6 +68,9 @@ public class ManifestValidatorTest {
     return new JSONObject(FileUtils.readFully(new FileInputStream(file)));
   }
 
+  /**
+   * Loads a JSON file and can perform multiple validations on it.
+   */
   private static class JsonValidator {
     private final String tag;
     private JSONObject json;

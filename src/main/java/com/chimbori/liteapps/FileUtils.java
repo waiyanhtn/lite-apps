@@ -52,7 +52,7 @@ public class FileUtils {
       }
     }
   }
-  
+
   public static String readFully(InputStream inputStream) throws IOException {
     ByteArrayOutputStream baos = new ByteArrayOutputStream();
     byte[] buffer = new byte[BUFFER_SIZE];
