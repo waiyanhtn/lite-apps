@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Reddit",
   "start_url": "https://m.reddit.com",
-  "manifest_url": "https://hermit.chimbori.com/library/lite-apps/Reddit.hermit",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Reddit.hermit",
   "theme_color": "#ff4501",
   "secondary_color": "#ff4300",
   "icons": [

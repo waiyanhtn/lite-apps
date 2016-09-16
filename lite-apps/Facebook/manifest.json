@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "__MSG_facebook__",
   "start_url": "https://m.facebook.com",
-  "manifest_url": "https://hermit.chimbori.com/library/lite-apps/Facebook.hermit",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook.hermit",
   "theme_color": "#39579a",
   "secondary_color": "#3B5998",
   "icons": [

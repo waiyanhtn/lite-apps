@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Twitter",
   "start_url": "https://m.twitter.com",
-  "manifest_url": "https://hermit.chimbori.com/library/lite-apps/Twitter.hermit",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Twitter.hermit",
   "theme_color": "#4798d8",
   "secondary_color": "#378ac8",
   "related_applications": [
