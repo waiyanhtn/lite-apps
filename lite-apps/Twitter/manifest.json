@@ -2,16 +2,16 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Twitter",
-  "start_url": "https://m.twitter.com",
+  "start_url": "https://m.twitter.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Twitter.hermit",
   "theme_color": "#4798d8",
   "secondary_color": "#378ac8",
   "related_applications": [
-      {
-        "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=",
-        "id": ""
-      }
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.twitter.android",
+      "id": "com.twitter.android"
+    }
   ],
   "icons": [
     {
@@ -24,12 +24,28 @@
   },
   "hermit_bookmarks": [
     {
-      "url": "https://twitter.com/i/moments",
-      "name": "__MSG_moments__"
+      "url": "https://mobile.twitter.com/home",
+      "name": "__MSG_home__"
     },
     {
-      "url": "https://twitter.com/i/notifications",
+      "url": "https://mobile.twitter.com/notifications",
       "name": "__MSG_notifications__"
+    },
+    {
+      "url": "https://mobile.twitter.com/messages",
+      "name": "__MSG_messages__"
+    },
+    {
+      "url": "https://mobile.twitter.com/account",
+      "name": "__MSG_account__"
+    },
+    {
+      "url": "https://mobile.twitter.com/settings",
+      "name": "__MSG_settings__"
+    },
+    {
+      "url": "https://support.twitter.com/",
+      "name": "__MSG_help__"
     }
   ],
   "hermit_search": [
@@ -41,6 +57,12 @@
   "hermit_share": [
     {
       "url": "https://twitter.com/intent/tweet?text=%s",
+      "name": "__MSG_tweet__"
+    }
+  ],
+  "hermit_create": [
+    {
+      "url": "https://mobile.twitter.com/compose/tweet",
       "name": "__MSG_tweet__"
     }
   ]

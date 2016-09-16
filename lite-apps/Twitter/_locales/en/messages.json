@@ -10,5 +10,20 @@
   },
   "tweet": {
     "message": "Tweet"
+  },
+  "home": {
+    "message": "Home"
+  },
+  "messages": {
+    "message": "Messages"
+  },
+  "account": {
+    "message": "Account"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "help": {
+    "message": "Twitter Help"
   }
 }
