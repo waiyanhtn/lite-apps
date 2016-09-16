@@ -1,0 +1,82 @@
+package com.chimbori.liteapps;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Map;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
+
+public class FileUtils {
+  private static final int BUFFER_SIZE = 8192;
+
+  public static boolean zip(File rootDir, File zipFile) {
+    zipFile.getParentFile().mkdirs();  // In case the target directory doesn’t exist.
+    try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
+      addFileToZip(out, rootDir, "" /* parentDirectoryName */);
+      return true;
+    } catch (IOException e) {
+      e.printStackTrace();
+      return false;
+    }
+  }
+
+  private static void addFileToZip(ZipOutputStream zipOutputStream, File file, String parentDirectoryName) throws IOException {
+    if (file == null || !file.exists()) {
+      return;
+    }
+
+    String zipEntryName = file.getName();
+    if (parentDirectoryName != null && !parentDirectoryName.isEmpty()) {
+      zipEntryName = parentDirectoryName + "/" + file.getName();
+    }
+
+    if (file.isDirectory()) {
+      for (File containedFile : file.listFiles()) {
+        addFileToZip(zipOutputStream, containedFile, zipEntryName);
+      }
+    } else {
+      System.out.println("- " + zipEntryName);
+      byte[] buffer = new byte[BUFFER_SIZE];
+      try (FileInputStream fis = new FileInputStream(file)) {
+        zipOutputStream.putNextEntry(new ZipEntry(zipEntryName));
+        int length;
+        while ((length = fis.read(buffer)) > 0) {
+          zipOutputStream.write(buffer, 0, length);
+        }
+      } finally {
+        zipOutputStream.closeEntry();
+      }
+    }
+  }
+
+  public static void zip(Map<String, InputStream> inputs, File zipFile) throws IOException {
+    try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
+      byte data[] = new byte[BUFFER_SIZE];
+      for (Map.Entry<String, InputStream> input : inputs.entrySet()) {
+        try (BufferedInputStream origin = new BufferedInputStream(input.getValue(), BUFFER_SIZE)) {
+          out.putNextEntry(new ZipEntry(input.getKey()));
+          int count;
+          while ((count = origin.read(data, 0, BUFFER_SIZE)) != -1) {
+            out.write(data, 0, count);
+          }
+        }
+      }
+    }
+  }
+
+  public static String readFully(InputStream inputStream) throws IOException {
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    byte[] buffer = new byte[BUFFER_SIZE];
+    int length;
+    while ((length = inputStream.read(buffer)) != -1) {
+      baos.write(buffer, 0, length);
+    }
+    return baos.toString("UTF-8");
+  }
+}
