@@ -40,16 +40,16 @@ public class ValidatorTest {
     for (File liteApp : liteApps) {
       System.out.println(liteApp.getName());
       new JsonValidator(liteApp.getName(), new File(liteApp, "manifest.json"))
-          .assertFieldExists("name")
-          .assertFieldExists("start_url")
-          .assertFieldExists("lang")
-          .assertFieldExists("manifest_url")
-          .assertFieldExists("theme_color")
-          .assertFieldExists("secondary_color")
-          .assertFieldExists("manifest_version")
-          .assertFieldExists("icons");
+          .assertFieldExists(JSONFields.NAME)
+          .assertFieldExists(JSONFields.START_URL)
+          .assertFieldExists(JSONFields.LANG)
+          .assertFieldExists(JSONFields.MANIFEST_URL)
+          .assertFieldExists(JSONFields.THEME_COLOR)
+          .assertFieldExists(JSONFields.SECONDARY_COLOR)
+          .assertFieldExists(JSONFields.MANIFEST_VERSION)
+          .assertFieldExists(JSONFields.ICONS);
 
-      File localesDirectory = new File(liteApp, "_locales");
+      File localesDirectory = new File(liteApp, FileUtils.LOCALES_DIR_NAME);
       if (localesDirectory != null && localesDirectory.exists()) {
         File[] localizations = localesDirectory.listFiles(new FileFilter() {
           @Override
@@ -58,9 +58,9 @@ public class ValidatorTest {
           }
         });
         for (File localization : localizations) {
-          File messagesFile = new File(localization, "messages.json");
+          File messagesFile = new File(localization, FileUtils.MESSAGES_FILE_NAME);
           // With no specific field checks, we at least validate that the file is well-formed JSON.
-          new JsonValidator(String.format("%s/%s", liteApp.getName(), localization.getName()), messagesFile);
+          new JsonValidator(String.format("%s [%s]", liteApp.getName(), localization.getName()), messagesFile);
         }
       }
       System.out.println();

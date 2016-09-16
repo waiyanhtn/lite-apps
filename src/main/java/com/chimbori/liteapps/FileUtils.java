@@ -15,6 +15,9 @@ public class FileUtils {
 
   private static final int BUFFER_SIZE = 8192;
 
+  public static final String LOCALES_DIR_NAME = "_locales";
+  public static final String MESSAGES_FILE_NAME = "messages.json";
+
   public static final File SRC_ROOT_DIR = new File("lite-apps/");
   public static final File SRC_LITE_APPS_JSON = new File(SRC_ROOT_DIR, "lite-apps.json");
 
