@@ -15,14 +15,17 @@ public class FileUtils {
 
   private static final int BUFFER_SIZE = 8192;
 
+  public static final String MANIFEST_JSON_FILE_NAME = "manifest.json";
   public static final String LOCALES_DIR_NAME = "_locales";
-  public static final String MESSAGES_FILE_NAME = "messages.json";
+  public static final String MESSAGES_JSON_FILE_NAME = "messages.json";
+  public static final String LITE_APPS_JSON_FILE_NAME = "lite-apps.json";
 
   public static final File SRC_ROOT_DIR = new File("lite-apps/");
-  public static final File SRC_LITE_APPS_JSON = new File(SRC_ROOT_DIR, "lite-apps.json");
+  public static final File SRC_LITE_APPS_JSON = new File(SRC_ROOT_DIR, LITE_APPS_JSON_FILE_NAME);
 
   public static final File OUT_ROOT_DIR = new File("bin/");
   public static final File OUT_DATA_DIR = new File(OUT_ROOT_DIR, "_data/");
+  public static final File OUT_LITE_APPS_JSON = new File(OUT_DATA_DIR, LITE_APPS_JSON_FILE_NAME);
   public static final File OUT_LITE_APPS_DIR = new File(OUT_ROOT_DIR, "lite-apps/");
 
   static {
