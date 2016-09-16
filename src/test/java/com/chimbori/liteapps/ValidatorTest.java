@@ -2,6 +2,7 @@ package com.chimbori.liteapps;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
@@ -22,9 +23,14 @@ import static org.junit.Assert.fail;
  * - Extra files that are not part of the expected structure.
  */
 public class ValidatorTest {
+  @Before
+  public void setUp() {
+    FileUtils.OUT_ROOT_DIR.delete();
+  }
+
   @Test
   public void testAllManifestsAreValid() {
-    File[] liteApps = new File("lite-apps/").listFiles(new FileFilter() {
+    File[] liteApps = FileUtils.SRC_ROOT_DIR.listFiles(new FileFilter() {
       @Override
       public boolean accept(File pathname) {
         return pathname.isDirectory();
@@ -76,6 +82,10 @@ public class ValidatorTest {
     private JSONObject json;
 
     public JsonValidator(String tag, File file) {
+      if (file == null || !file.exists()) {
+        fail("Not found: " + file.getAbsolutePath());
+      }
+
       this.tag = tag;
       try {
         this.json = fromFile(file);
@@ -86,8 +96,7 @@ public class ValidatorTest {
     }
 
     public JsonValidator assertFieldExists(String field) {
-      assertNotNull(String.format("File [%s] is missing the field [%s]", tag, field),
-          json.optString(field, null));
+      assertNotNull(String.format("File [%s] is missing the field [%s]", tag, field), json.optString(field, null));
       return this;
     }
   }

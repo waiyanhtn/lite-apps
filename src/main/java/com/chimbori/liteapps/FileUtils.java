@@ -12,10 +12,23 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class FileUtils {
+
   private static final int BUFFER_SIZE = 8192;
 
+  public static final File SRC_ROOT_DIR = new File("lite-apps/");
+  public static final File SRC_LITE_APPS_JSON = new File(SRC_ROOT_DIR, "lite-apps.json");
+
+  public static final File OUT_ROOT_DIR = new File("bin/");
+  public static final File OUT_DATA_DIR = new File(OUT_ROOT_DIR, "_data/");
+  public static final File OUT_LITE_APPS_DIR = new File(OUT_ROOT_DIR, "lite-apps/");
+
+  static {
+    OUT_ROOT_DIR.mkdirs();
+    OUT_DATA_DIR.mkdirs();
+    OUT_LITE_APPS_DIR.mkdirs();
+  }
+
   public static boolean zip(File rootDir, File zipFile) {
-    zipFile.getParentFile().mkdirs();  // In case the target directory doesn’t exist.
     try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
       for (File containedFile : rootDir.listFiles(new FileFilter() {
         @Override
@@ -71,5 +84,12 @@ public class FileUtils {
       baos.write(buffer, 0, length);
     }
     return baos.toString("UTF-8");
+  }
+
+  /**
+   * @return Whether a packaged Lite App (zipped file) exists for the given Lite App (by name).
+   */
+  static boolean packagedLiteAppExists(String liteAppName) {
+    return new File(OUT_LITE_APPS_DIR, String.format("%s.hermit", liteAppName)).exists();
   }
 }

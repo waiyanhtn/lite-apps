@@ -16,9 +16,10 @@ import java.io.PrintWriter;
  * build which has already passed all validation tests.
  */
 public class Packager {
+
   public static void main(String[] arguments) {
     boolean allSuccessful = true;
-    allSuccessful &= packageAllManifests(new File("lite-apps/"));
+    allSuccessful &= packageAllManifests(FileUtils.SRC_ROOT_DIR);
     try {
       allSuccessful &= generateLibraryData();
     } catch (IOException | JSONException e) {
@@ -45,7 +46,7 @@ public class Packager {
    * continue to be used to build the Hermit Library Web UI.
    */
   public static boolean generateLibraryData() throws IOException, JSONException {
-    JSONArray library = new JSONArray(FileUtils.readFully(new FileInputStream(new File("lite-apps/lite-apps.json"))));
+    JSONArray library = new JSONArray(FileUtils.readFully(new FileInputStream(FileUtils.SRC_LITE_APPS_JSON)));
     for (int i = 0; i < library.length(); i++) {
       JSONObject category = library.getJSONObject(i);
       String categoryName = category.getString("category");
@@ -59,26 +60,17 @@ public class Packager {
         JSONObject app = apps.getJSONObject(j);
         System.out.println(String.format("- %s", app.getString("name")));
         String appName = app.getString("name");
-        if (packagedLiteAppExists(appName)) {
+        if (FileUtils.packagedLiteAppExists(appName)) {
           app.put("app", String.format("%s.hermit", appName));
         }
       }
       System.out.println();
     }
 
-    File libraryDataDirectory = new File("bin/_data/");
-    libraryDataDirectory.mkdirs();
-    try (PrintWriter writer = new PrintWriter(new File(libraryDataDirectory, "lite-apps.json"))) {
+    try (PrintWriter writer = new PrintWriter(new File(FileUtils.OUT_DATA_DIR, "lite-apps.json"))) {
       writer.print(library.toString(2));
     }
     return true;
-  }
-
-  /**
-   * @return Whether a packaged Lite App (zipped file) exists for the given Lite App (by name).
-   */
-  private static boolean packagedLiteAppExists(String liteAppName) {
-    return new File(String.format("bin/lite-apps/%s.hermit", liteAppName)).exists();
   }
 
   /**
@@ -102,10 +94,10 @@ public class Packager {
    * Packages a single manifest from a source directory & individual files into a zipped file and
    * places it in the correct location.
    */
-  private static boolean packageManifest(File liteAppRoot) {
-    File liteAppZipped = new File("bin/lite-apps/", liteAppRoot.getName() + ".hermit");
+  private static boolean packageManifest(File liteAppDirectory) {
+    File liteAppZipped = new File(FileUtils.OUT_LITE_APPS_DIR, String.format("%s.hermit", liteAppDirectory.getName()));
     System.out.println(liteAppZipped.getName());
-    FileUtils.zip(liteAppRoot, liteAppZipped);
+    FileUtils.zip(liteAppDirectory, liteAppZipped);
     System.out.println();
     return true;
   }
