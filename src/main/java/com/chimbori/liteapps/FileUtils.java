@@ -1,6 +1,5 @@
 package com.chimbori.liteapps;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -8,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -54,22 +52,7 @@ public class FileUtils {
       }
     }
   }
-
-  public static void zip(Map<String, InputStream> inputs, File zipFile) throws IOException {
-    try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
-      byte data[] = new byte[BUFFER_SIZE];
-      for (Map.Entry<String, InputStream> input : inputs.entrySet()) {
-        try (BufferedInputStream origin = new BufferedInputStream(input.getValue(), BUFFER_SIZE)) {
-          out.putNextEntry(new ZipEntry(input.getKey()));
-          int count;
-          while ((count = origin.read(data, 0, BUFFER_SIZE)) != -1) {
-            out.write(data, 0, count);
-          }
-        }
-      }
-    }
-  }
-
+  
   public static String readFully(InputStream inputStream) throws IOException {
     ByteArrayOutputStream baos = new ByteArrayOutputStream();
     byte[] buffer = new byte[BUFFER_SIZE];
