@@ -14,8 +14,8 @@
   "related_applications": [
       {
         "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=",
-        "id": ""
+        "url": "https://play.google.com/store/apps/details?id=com.linkedin.android",
+        "id": "com.linkedin.android"
       }
   ],
   "hermit_settings": {

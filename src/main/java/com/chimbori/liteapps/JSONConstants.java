@@ -18,6 +18,9 @@ public class JSONConstants {
     public static final String SECONDARY_COLOR = "secondary_color";
     public static final String MANIFEST_VERSION = "manifest_version";
     public static final String ICONS = "icons";
+    public static final String RELATED_APPLICATIONS = "related_applications";
+    public static final String PLATFORM = "platform";
+    public static final String ID = "id";
 
     /**
      * A special designated field that is automatically inserted when a manifest is generated via
@@ -30,5 +33,6 @@ public class JSONConstants {
 
   public class Values {
     public static final String EN = "en";
+    public static final String PLAY = "play";
   }
 }
