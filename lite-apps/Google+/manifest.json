@@ -1,9 +1,9 @@
 {
   "manifest_version": 1,
   "lang": "en",
-  "name": "Google+",
+  "name": "__MSG_google_plus__",
   "start_url": "https://plus.google.com",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/GooglePlus.hermit",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google+.hermit",
   "theme_color": "#dd4330",
   "secondary_color": "#e25f51",
   "icons": [
@@ -45,7 +45,7 @@
   "hermit_share": [
     {
       "url": "https://plus.google.com/share?url=%u",
-      "name": "Google+"
+      "name": "__MSG_google_plus__"
     }
   ]
 }
