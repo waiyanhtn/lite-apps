@@ -126,10 +126,14 @@ A string (e.g. `app_name`) can be used in `manifest.json` by referencing it as `
 
 We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations).
 
-This repository contains not only the manifests for the individual Lite App definitions, but also a set of Java unit tests that validates & packages each Lite App. Once you clone this project to your local disk, open it in Android Studio as a Gradle project. After making changes to existing Lite Apps or creating your new Lite App, run all the unit tests with `./gradlew check` before submitting a pull request.
+This repository contains not only the manifests for the individual Lite App definitions, but also a set of Java unit tests that validates & packages each Lite App. Once you clone this project to your local disk, open it in Android Studio as a Gradle project. After making changes to existing Lite Apps or creating your new Lite App, re-run all the unit tests with `./gradlew check` before submitting a pull request.
 
 ### The `under_development` JSON field
 
-To exclude any Lite Apps that are not yet ready from being published automatically, add a new boolean field to `manifest.json`. It should be named `under_development` with the value set of true. This will include it in internal processing, but will exclude it from being published.
+To exclude any Lite Apps that are not yet ready from being published automatically, add a new boolean field to `manifest.json`. It should be named `under_development` with the value set to `true`. This will include it in internal processing, but will exclude it from being published.
 
-When ready to publish, simply remove this field, and re-run the tools.
+When ready to publish, simply remove this field, and re-run the tests and tools.
+
+## Questions?
+
+Email us at [hello@chimbori.com](mailto:hello@chimbori.com) with your questions; we’ll be happy to answer. Be sure to include a link to your work-in-progress source code.
