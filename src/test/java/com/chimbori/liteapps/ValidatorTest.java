@@ -51,21 +51,23 @@ public class ValidatorTest {
           .assertFieldExists(JSONConstants.Fields.THEME_COLOR)
           .assertFieldExists(JSONConstants.Fields.SECONDARY_COLOR)
           .assertFieldExists(JSONConstants.Fields.MANIFEST_VERSION)
-          .assertFieldExists(JSONConstants.Fields.ICONS)
-          .assertFieldExists(JSONConstants.Fields.RELATED_APPLICATIONS);
+          .assertFieldExists(JSONConstants.Fields.ICONS);
+
       JSONObject manifestJson = manifestJsonValidator.getJSON();
       try {
-        JSONArray relatedApps = manifestJson.getJSONArray(JSONConstants.Fields.RELATED_APPLICATIONS);
-        for (int i = 0; i < relatedApps.length(); i++) {
-          JSONObject relatedApp = relatedApps.getJSONObject(i);
-          assertEquals(JSONConstants.Values.PLAY, relatedApp.getString(JSONConstants.Fields.PLATFORM));
+        JSONArray relatedApps = manifestJson.optJSONArray(JSONConstants.Fields.RELATED_APPLICATIONS);
+        if (relatedApps != null) {
+          for (int i = 0; i < relatedApps.length(); i++) {
+            JSONObject relatedApp = relatedApps.getJSONObject(i);
+            assertEquals(JSONConstants.Values.PLAY, relatedApp.getString(JSONConstants.Fields.PLATFORM));
 
-          String appId = relatedApp.getString(JSONConstants.Fields.ID);
-          assertFalse(appId.isEmpty());
+            String appId = relatedApp.getString(JSONConstants.Fields.ID);
+            assertFalse(appId.isEmpty());
 
-          String appUrl = relatedApp.getString(JSONConstants.Fields.URL);
-          assertTrue(appUrl.endsWith(appId));
-          assertTrue(appUrl.startsWith("https://play.google.com/store/apps/details?id="));
+            String appUrl = relatedApp.getString(JSONConstants.Fields.URL);
+            assertTrue(appUrl.endsWith(appId));
+            assertTrue(appUrl.startsWith("https://play.google.com/store/apps/details?id="));
+          }
         }
 
       } catch (JSONException e) {
