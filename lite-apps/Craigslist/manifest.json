@@ -6,8 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Craigslist.hermit",
   "theme_color": "#5c008e",
   "secondary_color": "#5c008e",
-  "related_applications": [
-  ],
   "icons": [
     {
       "src": "icon.png"
@@ -25,14 +23,14 @@
   ],
   "hermit_search": [
     {
-      "url": "https://craigslist.org/search/sss?sort=rel&query=%s",
-      "name": "__MSG_craigslist__"
+      "name": "__MSG_craigslist__",
+      "url": "https://craigslist.org/search/sss?sort=rel&query=%s"
     }
   ],
   "hermit_create": [
     {
-      "url": "https://post.craigslist.org",
-      "name": "__MSG_post_to_craigslist__"
+      "name": "__MSG_post_to_craigslist__",
+      "url": "https://post.craigslist.org"
     }
   ]
 }
