@@ -4,8 +4,8 @@
   "name": "BBC",
   "start_url": "https://bbc.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/BBC.hermit",
-  "theme_color": "#fe7a4d",
-  "secondary_color": "#fe7a4d",
+  "theme_color": "#bd160d",
+  "secondary_color": "#ab140d",
   "icons": [{"src": "icon.png"}],
   "hermit_bookmarks": [
     {
