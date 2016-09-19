@@ -1,0 +1,60 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "BBC",
+  "start_url": "https://bbc.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/BBC.hermit",
+  "theme_color": "#fe7a4d",
+  "secondary_color": "#fe7a4d",
+  "icons": [{"src": "icon.png"}],
+  "hermit_bookmarks": [
+    {
+      "name": "News",
+      "url": "http://www.bbc.com/news/"
+    },
+    {
+      "name": "Sport",
+      "url": "http://www.bbc.com/sport/"
+    },
+    {
+      "name": "Weather",
+      "url": "http://www.bbc.com/weather/"
+    },
+    {
+      "name": "Earth",
+      "url": "http://www.bbc.com/earth/"
+    },
+    {
+      "name": "Travel",
+      "url": "http://www.bbc.com/travel/"
+    },
+    {
+      "name": "Arts",
+      "url": "http://www.bbc.com/arts/"
+    },
+    {
+      "name": "Shop",
+      "url": "http://shop.bbc.com/"
+    },
+    {
+      "name": "Music",
+      "url": "http://www.bbc.com/music/"
+    },
+    {
+      "name": "Culture",
+      "url": "http://www.bbc.com/culture/"
+    },
+    {
+      "name": "Nature",
+      "url": "http://www.bbc.com/nature/"
+    },
+    {
+      "name": "Future",
+      "url": "http://www.bbc.com/future/"
+    },
+    {
+      "name": "Food",
+      "url": "http://www.bbc.com/food/"
+    }
+  ]
+}
