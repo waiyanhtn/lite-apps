@@ -11,6 +11,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Scrapes a web site using JSoup to identify elements such as the name of a site, a dominant theme
@@ -31,6 +33,7 @@ public class Scraper {
     public String iconUrl = "";
     public Collection<Endpoint> bookmarks;
     public Collection<Endpoint> feeds;
+    public Collection<String> relatedApps;
 
     @Override
     public String toString() {
@@ -40,6 +43,7 @@ public class Scraper {
           ", iconUrl='" + iconUrl + '\'' +
           ", bookmarks=" + bookmarks +
           ", feeds=" + feeds +
+          ", relatedApps=" + relatedApps +
           '}';
     }
   }
@@ -112,6 +116,8 @@ public class Scraper {
     SiteMetadata metadata = new SiteMetadata();
     if (doc == null) {  // Fetch failed or never fetched.
       metadata.bookmarks = new ArrayList<>();  // So callers need not check for null-ness.
+      metadata.feeds = new ArrayList<>();  // So callers need not check for null-ness.
+      metadata.relatedApps = new ArrayList<>();  // So callers need not check for null-ness.
       return metadata;  // NonNull {@code SiteMetadata}, but empty fields.
     }
 
@@ -127,8 +133,23 @@ public class Scraper {
 
     metadata.bookmarks = findBookmarkableLinks();
     metadata.feeds = findAtomAndRssFeeds();
+    metadata.relatedApps = findRelatedApps();
 
     return metadata;
+  }
+
+  private Collection<String> findRelatedApps() {
+    List<String> relatedApps = new ArrayList<>();
+    Elements playStoreLinks = doc.select("a[href*=play.google.com]");
+    for (Element playStoreLink : playStoreLinks) {
+      String playStoreUrl = playStoreLink.attr("href");
+      System.out.println(playStoreUrl);
+      Matcher matcher = Pattern.compile("id=([^&]+)").matcher(playStoreUrl);
+      while (matcher.find()) {
+        relatedApps.add(matcher.group(1));
+      }
+    }
+    return relatedApps;
   }
 
   private Collection<Endpoint> findAtomAndRssFeeds() {

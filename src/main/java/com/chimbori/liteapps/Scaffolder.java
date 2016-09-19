@@ -88,6 +88,18 @@ public class Scaffolder {
           root.put("hermit_feeds", feeds);
         }
 
+        // If this site has a related Android app, we can grab the ID automatically too.
+        JSONArray relatedApps = new JSONArray();
+        for (String appId : metadata.relatedApps) {
+          relatedApps.put(new JSONObject()
+              .put(JSONConstants.Fields.PLATFORM, JSONConstants.Values.PLAY)
+              .put(JSONConstants.Fields.URL, "https://play.google.com/store/apps/details?id=" + appId)
+              .put(JSONConstants.Fields.ID, appId));
+        }
+        if (relatedApps.length() > 0) {
+          root.put("related_applications", relatedApps);
+        }
+
         // Write the output manifest.
         try (PrintWriter writer = new PrintWriter(manifestJson)) {
           writer.print(root.toString(2));
