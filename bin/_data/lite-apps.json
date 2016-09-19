@@ -1,0 +1,522 @@
+[
+  {
+    "apps": [
+      {
+        "app": "Facebook.hermit",
+        "name": "Facebook",
+        "url": "https://m.facebook.com"
+      },
+      {
+        "name": "Facebook Lite",
+        "url": "https://mbasic.facebook.com"
+      },
+      {
+        "name": "Messenger",
+        "url": "https://messenger.com",
+        "user_agent": "desktop"
+      },
+      {
+        "name": "WhatsApp",
+        "url": "https://web.whatsapp.com",
+        "user_agent": "desktop"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com"
+      },
+      {
+        "app": "Google+.hermit",
+        "name": "Google+",
+        "url": "https://plus.google.com"
+      },
+      {
+        "app": "Reddit.hermit",
+        "name": "Reddit",
+        "url": "https://m.reddit.com"
+      },
+      {
+        "name": "Slack",
+        "url": "https://slack.com"
+      },
+      {
+        "name": "Skype",
+        "url": "https://web.skype.com",
+        "user_agent": "desktop"
+      },
+      {
+        "app": "Twitter.hermit",
+        "name": "Twitter",
+        "url": "https://m.twitter.com"
+      },
+      {
+        "app": "Linked In.hermit",
+        "name": "Linked In",
+        "url": "https://touch.www.linkedin.com"
+      },
+      {
+        "name": "Tumblr",
+        "url": "https://tumblr.com"
+      },
+      {
+        "name": "Yik Yak",
+        "url": "https://yikyakapp.com"
+      },
+      {
+        "name": "Ask.fm",
+        "url": "https://ask.fm"
+      },
+      {
+        "name": "OkCupid",
+        "url": "https://m.okcupid.com"
+      }
+    ],
+    "category": "Social"
+  },
+  {
+    "apps": [
+      {
+        "name": "Medium",
+        "url": "https://medium.com"
+      },
+      {
+        "app": "BBC.hermit",
+        "name": "BBC",
+        "url": "https://bbc.com"
+      },
+      {
+        "name": "CNN",
+        "url": "http://cnn.com"
+      },
+      {
+        "name": "The Guardian",
+        "url": "https://theguardian.com"
+      },
+      {
+        "app": "New York Times.hermit",
+        "name": "New York Times",
+        "url": "http://mobile.nytimes.com"
+      },
+      {
+        "name": "Time",
+        "url": "https://time.com"
+      },
+      {
+        "name": "NPR",
+        "url": "http://npr.org"
+      },
+      {
+        "name": "AccuWeather",
+        "url": "https://m.accuweather.com"
+      },
+      {
+        "name": "Forecast.io",
+        "url": "https://forecast.io"
+      },
+      {
+        "name": "Bloomberg",
+        "url": "https://bloomberg.com"
+      },
+      {
+        "name": "Financial Times",
+        "url": "https://m.ft.com"
+      },
+      {
+        "name": "Washington Post",
+        "url": "https://m.washingtonpost.com"
+      },
+      {
+        "name": "Wall St. Journal",
+        "url": "https://mobile.wsj.com"
+      },
+      {
+        "name": "Yahoo! Finance",
+        "url": "https://finance.yahoo.com"
+      },
+      {
+        "name": "Google News",
+        "url": "https://news.google.com"
+      },
+      {
+        "name": "Ha'aretz",
+        "url": "https://haaretz.co.il"
+      },
+      {
+        "name": "Jerusalem Post",
+        "url": "http://m.jpost.com"
+      },
+      {
+        "name": "Al Jazeera",
+        "url": "http://aljazeera.com"
+      },
+      {
+        "name": "Breaking News",
+        "url": "http://breakingnews.com"
+      }
+    ],
+    "category": "News"
+  },
+  {
+    "apps": [
+      {
+        "name": "Product Hunt",
+        "url": "https://producthunt.com"
+      },
+      {
+        "name": "Hacker News",
+        "url": "https://news.ycombinator.com"
+      },
+      {
+        "name": "Android Police",
+        "url": "https://androidpolice.com"
+      },
+      {
+        "name": "Android Central",
+        "url": "https://m.androidcentral.com"
+      },
+      {
+        "name": "Android PIT",
+        "url": "https://www.androidpit.com"
+      },
+      {
+        "name": "Droid Life",
+        "url": "https://droid-life.com"
+      },
+      {
+        "name": "Gizmodo",
+        "url": "https://gizmodo.com"
+      },
+      {
+        "name": "ReCode",
+        "url": "https://recode.net"
+      },
+      {
+        "name": "CNet",
+        "url": "http://cnet.com"
+      },
+      {
+        "name": "Designer News",
+        "url": "http://designernews.co"
+      },
+      {
+        "name": "Engadget",
+        "url": "http://engadget.com"
+      },
+      {
+        "name": "Slashdot",
+        "url": "https://slashdot.org"
+      },
+      {
+        "name": "Stack Overflow",
+        "url": "https://stackoverflow.com"
+      },
+      {
+        "name": "TechCrunch",
+        "url": "http://techcrunch.com"
+      },
+      {
+        "name": "TechMeme",
+        "url": "https://techmeme.com/m"
+      },
+      {
+        "name": "The Verge",
+        "url": "http://theverge.com"
+      },
+      {
+        "name": "Wired",
+        "url": "http://wired.com"
+      },
+      {
+        "name": "XDA Developers",
+        "url": "https://xda-developers.com"
+      }
+    ],
+    "category": "Technology"
+  },
+  {
+    "apps": [
+      {
+        "name": "Bank of America",
+        "url": "https://bankofamerica.com"
+      },
+      {
+        "name": "Wells Fargo",
+        "url": "https://m.wellsfargo.com"
+      },
+      {
+        "name": "Capital One 360",
+        "url": "https://home.capitalone360.com"
+      },
+      {
+        "name": "PayPal",
+        "url": "https://paypal.com"
+      },
+      {
+        "name": "American Express",
+        "url": "https://www.americanexpress.com"
+      },
+      {
+        "name": "Citibank",
+        "url": "https://online.citi.com"
+      },
+      {
+        "name": "RBC Canada",
+        "url": "https://www.rbcroyalbank.com"
+      }
+    ],
+    "category": "Banking &amp; Financial"
+  },
+  {
+    "apps": [
+      {
+        "name": "Wolfram Alpha",
+        "url": "https://m.wolframalpha.com"
+      },
+      {
+        "name": "Khan Academy",
+        "url": "https://khanacademy.org"
+      },
+      {
+        "name": "Instructables",
+        "url": "https://m.instructables.com"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://wikipedia.org"
+      },
+      {
+        "name": "Quora",
+        "url": "https://www.quora.com"
+      },
+      {
+        "name": "Wiktionary",
+        "url": "https://www.wiktionary.org"
+      }
+    ],
+    "category": "Education"
+  },
+  {
+    "apps": [
+      {
+        "name": "GoodReads",
+        "url": "https://www.goodreads.com"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://m.youtube.com"
+      },
+      {
+        "app": "XKCD.hermit",
+        "name": "XKCD",
+        "url": "http://m.xkcd.com"
+      },
+      {
+        "name": "IMDb",
+        "url": "https://m.imdb.com"
+      },
+      {
+        "name": "AlloCiné",
+        "url": "http://allocine.fr"
+      },
+      {
+        "name": "E! Online",
+        "url": "https://m.eonline.com"
+      },
+      {
+        "name": "Plex",
+        "url": "https://plex.tv"
+      },
+      {
+        "name": "Imgur",
+        "url": "https://imgur.com"
+      },
+      {
+        "name": "Last.fm",
+        "url": "https://last.fm"
+      },
+      {
+        "name": "Rotten Tomatoes",
+        "url": "https://rottentomatoes.com"
+      },
+      {
+        "name": "TV Guide",
+        "url": "https://tvguide.com/listings"
+      },
+      {
+        "name": "Twit.tv",
+        "url": "https://twit.tv"
+      },
+      {
+        "name": "Voat",
+        "url": "https://voat.co"
+      },
+      {
+        "name": "SoundCloud",
+        "url": "https://m.soundcloud.com"
+      },
+      {
+        "name": "MixCloud",
+        "url": "https://m.mixcloud.com"
+      }
+    ],
+    "category": "Entertainment"
+  },
+  {
+    "apps": [
+      {
+        "name": "Pocket",
+        "url": "https://getpocket.com"
+      },
+      {
+        "name": "Todoist",
+        "url": "https://todoist.com"
+      },
+      {
+        "name": "EverNote",
+        "url": "https://evernote.com"
+      },
+      {
+        "name": "Life Hacker",
+        "url": "https://lifehacker.com"
+      },
+      {
+        "name": "Sleepy Time",
+        "url": "http://sleepyti.me"
+      },
+      {
+        "name": "Flipboard",
+        "url": "https://flipboard.com"
+      }
+    ],
+    "category": "Productivity"
+  },
+  {
+    "apps": [
+      {
+        "name": "Yelp",
+        "url": "https://m.yelp.com"
+      },
+      {
+        "name": "Opentable",
+        "url": "https://m.opentable.com"
+      },
+      {
+        "name": "All Recipes",
+        "url": "https://allrecipes.com"
+      },
+      {
+        "name": "TripAdvisor",
+        "url": "https://tripadvisor.com"
+      },
+      {
+        "name": "Kayak",
+        "url": "https://kayak.com"
+      },
+      {
+        "name": "Yummly",
+        "url": "https://yummly.com"
+      },
+      {
+        "name": "Flickr",
+        "url": "https://flickr.com"
+      },
+      {
+        "name": "Deviant Art",
+        "url": "https://deviantart.com"
+      },
+      {
+        "name": "Delta Airlines",
+        "url": "https://m.delta.com"
+      },
+      {
+        "name": "United Airlines",
+        "url": "https://mobile.united.com"
+      },
+      {
+        "name": "Booking.com",
+        "url": "https://www.booking.com"
+      },
+      {
+        "name": "Orbitz",
+        "url": "https://www.orbitz.com"
+      }
+    ],
+    "category": "Food, Travel, Photography"
+  },
+  {
+    "apps": [
+      {
+        "name": "Amazon",
+        "url": "https://amazon.com"
+      },
+      {
+        "app": "Craigslist.hermit",
+        "name": "Craigslist",
+        "url": "https://craigslist.org"
+      },
+      {
+        "name": "Groupon",
+        "url": "https://groupon.com"
+      },
+      {
+        "name": "eBay",
+        "url": "https://m.ebay.com"
+      },
+      {
+        "name": "Woot",
+        "url": "https://woot.com"
+      },
+      {
+        "name": "FlipKart",
+        "url": "https://flipkart.com"
+      },
+      {
+        "name": "Retail Me Not",
+        "url": "http://retailmenot.com"
+      },
+      {
+        "name": "SlickDeals",
+        "url": "http://slickdeals.net"
+      }
+    ],
+    "category": "Shopping"
+  },
+  {
+    "apps": [
+      {
+        "name": "Yahoo! Mail",
+        "url": "https://mail.yahoo.com"
+      },
+      {
+        "name": "Gmail",
+        "url": "https://mail.google.com"
+      },
+      {
+        "name": "Outlook",
+        "url": "https://outlook.com"
+      },
+      {
+        "name": "FastMail",
+        "url": "https://www.fastmail.com"
+      }
+    ],
+    "category": "Email"
+  },
+  {
+    "apps": [
+      {
+        "name": "Dropbox",
+        "url": "https://dropbox.com"
+      },
+      {
+        "name": "OneDrive",
+        "url": "https://onedrive.live.com"
+      },
+      {
+        "name": "Mega",
+        "url": "https://mega.nz",
+        "user_agent": "desktop"
+      }
+    ],
+    "category": "Storage"
+  }
+]
