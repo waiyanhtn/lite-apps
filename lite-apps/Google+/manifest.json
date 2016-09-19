@@ -6,46 +6,36 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google+.hermit",
   "theme_color": "#dd4330",
   "secondary_color": "#e25f51",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
-  "related_applications": [
-      {
-        "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.plus",
-        "id": "com.google.android.apps.plus"
-      }
-  ],
   "hermit_settings": {
     "block_malware": true,
     "open_links": "in_app"
   },
   "hermit_bookmarks": [
     {
-      "url": "https://plus.google.com/collections/featured",
-      "name": "__MSG_collections__"
+      "name": "__MSG_collections__",
+      "url": "https://plus.google.com/collections/featured"
     },
     {
-      "url": "https://plus.google.com/communities/member",
-      "name": "__MSG_communities__"
+      "name": "__MSG_communities__",
+      "url": "https://plus.google.com/communities/member"
     },
     {
-      "url": "https://plus.google.com/people",
-      "name": "__MSG_people__"
+      "name": "__MSG_people__",
+      "url": "https://plus.google.com/people"
     }
   ],
-  "hermit_search": [
-    {
-      "url": "https://plus.google.com/s/%s/top",
-      "name": "__MSG_search__"
-    }
-  ],
-  "hermit_share": [
-    {
-      "url": "https://plus.google.com/share?url=%u",
-      "name": "__MSG_google_plus__"
-    }
-  ]
+  "hermit_search": [{
+    "name": "__MSG_search__",
+    "url": "https://plus.google.com/s/%s/top"
+  }],
+  "hermit_share": [{
+    "name": "__MSG_google_plus__",
+    "url": "https://plus.google.com/share?url=%u"
+  }],
+  "icons": [{"src": "icon.png"}],
+  "related_applications": [{
+    "id": "com.google.android.apps.plus",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.plus"
+  }],
 }

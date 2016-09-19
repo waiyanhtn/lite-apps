@@ -2,36 +2,26 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Linked In",
-  "start_url": "https://www.linkedin.com",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/LinkedIn.hermit",
+  "start_url": "https://touch.www.linkedin.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Linked In.hermit",
   "theme_color": "#0076b7",
   "secondary_color": "#005d95",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
-  "related_applications": [
-      {
-        "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=com.linkedin.android",
-        "id": "com.linkedin.android"
-      }
-  ],
   "hermit_settings": {
     "block_malware": true,
     "open_links": "in_app"
   },
-  "hermit_search": [
-    {
-      "url": "https://www.linkedin.com/vsearch/f?type=all&keywords=%s",
-      "name": "__MSG_search__"
-    }
-  ],
-  "hermit_share": [
-    {
-      "url": "https://www.linkedin.com/shareArticle?mini=true&url=%u&title=%t&source=Hermit",
-      "name": "Linked In"
-    }
-  ]
+  "hermit_search": [{
+    "name": "__MSG_search__",
+    "url": "https://www.linkedin.com/vsearch/f?type=all&keywords=%s"
+  }],
+  "hermit_share": [{
+    "name": "Linked In",
+    "url": "https://www.linkedin.com/shareArticle?mini=true&url=%u&title=%t&source=Hermit"
+  }],
+  "icons": [{"src": "icon.png"}],
+  "related_applications": [{
+    "id": "com.linkedin.android",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.linkedin.android"
+  }],
 }
