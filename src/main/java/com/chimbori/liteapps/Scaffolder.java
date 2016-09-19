@@ -45,6 +45,8 @@ public class Scaffolder {
           root = new JSONObject();
         }
 
+        String startUrl = app.getString(JSONConstants.Fields.URL);
+
         // Constant fields, same for all apps.
         root.put(JSONConstants.Fields.MANIFEST_VERSION, 1);
         root.put(JSONConstants.Fields.LANG, JSONConstants.Values.EN);
@@ -53,12 +55,26 @@ public class Scaffolder {
 
         // Fields that are correctly populated using the data available in the original JSON file.
         root.put(JSONConstants.Fields.NAME, appName);
-        root.put(JSONConstants.Fields.START_URL, app.getString(JSONConstants.Fields.URL));
+        root.put(JSONConstants.Fields.START_URL, startUrl);
         root.put(JSONConstants.Fields.MANIFEST_URL, String.format("https://hermit.chimbori.com/lite-apps/%s.hermit", appName));
 
+        // Scrape the web site, and see if we can get some elements automatically from there.
+        Scraper.SiteMetadata metadata = Scraper.scrape(startUrl);
+
         // Fields that are reasonable defaults, but need to be modified by hand before final release.
-        root.put(JSONConstants.Fields.THEME_COLOR, "#fe7a4d");
-        root.put(JSONConstants.Fields.SECONDARY_COLOR, "#fe7a4d");
+        String themeColor = metadata.themeColor.isEmpty() ? "#fe7a4d" : metadata.themeColor;
+        root.put(JSONConstants.Fields.THEME_COLOR, themeColor);
+        root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor);
+
+        JSONArray bookmarks = new JSONArray();
+        for (Scraper.Bookmark bookmark : metadata.bookmarks) {
+          bookmarks.put(new JSONObject()
+              .put(JSONConstants.Fields.URL, bookmark.url)
+              .put(JSONConstants.Fields.NAME, bookmark.title));
+        }
+        if (bookmarks.length() > 0) {
+          root.put("hermit_bookmarks", bookmarks);
+        }
 
         try (PrintWriter writer = new PrintWriter(manifestJson)) {
           writer.print(root.toString(2));
