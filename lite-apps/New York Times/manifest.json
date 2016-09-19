@@ -152,5 +152,11 @@
       "name": "Magazine",
       "url": "http://mobile.nytimes.com/magazine/"
     }
+  ],
+  "hermit_search": [
+    {
+      "name": "Search",
+      "url": "http://mobile.nytimes.com/search?query=%s&sort=rel"
+    }
   ]
 }
