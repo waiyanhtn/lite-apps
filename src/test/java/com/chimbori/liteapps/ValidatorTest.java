@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -54,6 +56,13 @@ public class ValidatorTest {
           .assertFieldExists(JSONConstants.Fields.ICONS);
 
       JSONObject manifestJson = manifestJsonValidator.getJSON();
+      try {
+        String manifestUrl = manifestJson.getString(JSONConstants.Fields.MANIFEST_URL);
+        URL manifest = new URL(manifestUrl);
+      } catch (JSONException | MalformedURLException e) {
+        fail(e.getMessage());
+      }
+
       try {
         JSONArray relatedApps = manifestJson.optJSONArray(JSONConstants.Fields.RELATED_APPLICATIONS);
         if (relatedApps != null) {
