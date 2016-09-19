@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.attribute.FileTime;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -36,6 +37,7 @@ public class FileUtils {
 
   public static boolean zip(File rootDir, File zipFile) {
     try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
+      out.setLevel(9);
       for (File containedFile : rootDir.listFiles(new FileFilter() {
         @Override
         public boolean accept(File pathname) {
@@ -71,7 +73,15 @@ public class FileUtils {
       System.out.println("- " + zipEntryName);
       byte[] buffer = new byte[BUFFER_SIZE];
       try (FileInputStream fis = new FileInputStream(file)) {
-        zipOutputStream.putNextEntry(new ZipEntry(zipEntryName));
+        ZipEntry zipEntry = new ZipEntry(zipEntryName);
+        // Intentionally set the last-modified date to the epoch, so running the zip command
+        // multiple times on the same (unchanged) source does not result in a different (binary)
+        // zip file everytime.
+        FileTime epochTime = FileTime.fromMillis(0);
+        zipEntry.setCreationTime(epochTime);
+        zipEntry.setLastModifiedTime(epochTime);
+        zipEntry.setLastAccessTime(epochTime);
+        zipOutputStream.putNextEntry(zipEntry);
         int length;
         while ((length = fis.read(buffer)) > 0) {
           zipOutputStream.write(buffer, 0, length);
