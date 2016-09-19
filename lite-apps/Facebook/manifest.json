@@ -4,72 +4,62 @@
   "name": "__MSG_facebook__",
   "start_url": "https://m.facebook.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook.hermit",
-  "theme_color": "#39579a",
-  "secondary_color": "#3B5998",
-  "icons": [
-    {
-      "src": "facebook.png"
-    }
-  ],
-  "related_applications": [
-      {
-        "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=com.facebook.katana",
-        "id": "com.facebook.katana"
-      }
-  ],
+  "theme_color": "#3b5998",
+  "secondary_color": "#3b5998",
+  "icons": [{"src": "icon.png"}],
   "hermit_settings": {
     "block_malware": true,
     "open_links": "in_app"
   },
   "hermit_bookmarks": [
     {
-      "url": "https://m.facebook.com/home.php?sk=h_chr",
-      "name": "__MSG_most_recent__"
+      "name": "__MSG_most_recent__",
+      "url": "https://m.facebook.com/home.php?sk=h_chr"
     },
     {
-      "url": "https://m.facebook.com/?sk=h_nor",
-      "name": "__MSG_top_stories__"
+      "name": "__MSG_top_stories__",
+      "url": "https://m.facebook.com/?sk=h_nor"
     },
     {
-      "url": "https://m.facebook.com/birthdays/",
-      "name": "__MSG_birthdays__"
+      "name": "__MSG_birthdays__",
+      "url": "https://m.facebook.com/birthdays/"
     },
     {
-      "url": "https://m.facebook.com/events/upcoming",
-      "name": "__MSG_events__"
+      "name": "__MSG_events__",
+      "url": "https://m.facebook.com/events/upcoming"
     },
     {
-      "url": "https://m.facebook.com/search/trending-news/",
-      "name": "__MSG_trending_news__"
+      "name": "__MSG_trending_news__",
+      "url": "https://m.facebook.com/search/trending-news/"
     },
     {
-      "url": "https://m.facebook.com/games",
-      "name": "__MSG_games__"
+      "name": "__MSG_games__",
+      "url": "https://m.facebook.com/games"
     },
     {
-      "url": "https://m.facebook.com/photos",
-      "name": "__MSG_photos__"
+      "name": "__MSG_photos__",
+      "url": "https://m.facebook.com/photos"
     },
     {
-      "url": "https://m.facebook.com/notifications",
-      "name": "__MSG_notifications__"
+      "name": "__MSG_notifications__",
+      "url": "https://m.facebook.com/notifications"
     },
     {
-      "url": "https://m.facebook.com/settings",
-      "name": "__MSG_settings__"
+      "name": "__MSG_settings__",
+      "url": "https://m.facebook.com/settings"
     }
   ],
-  "hermit_search": [
-    {
-      "url": "https://m.facebook.com/search/top/?q=%s",
-      "name": "__MSG_search_facebook__"
-    }
-  ],
-  "hermit_share": [
-    {
-      "url": "http://www.facebook.com/sharer/sharer.php?u=%u",
-      "name": "__MSG_post_to_facebook__"
-    }
-  ]
+  "hermit_search": [{
+    "name": "__MSG_search_facebook__",
+    "url": "https://m.facebook.com/search/top/?q=%s"
+  }],
+  "hermit_share": [{
+    "name": "__MSG_post_to_facebook__",
+    "url": "http://www.facebook.com/sharer/sharer.php?u=%u"
+  }],
+  "related_applications": [{
+    "id": "com.facebook.katana",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.facebook.katana"
+  }]
 }
