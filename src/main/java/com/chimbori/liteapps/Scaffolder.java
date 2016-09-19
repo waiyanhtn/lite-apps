@@ -66,8 +66,9 @@ public class Scaffolder {
         root.put(JSONConstants.Fields.THEME_COLOR, themeColor);
         root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor);
 
+        // Collect bookmarkable links from likely navigation links on the page.
         JSONArray bookmarks = new JSONArray();
-        for (Scraper.Bookmark bookmark : metadata.bookmarks) {
+        for (Scraper.Endpoint bookmark : metadata.bookmarks) {
           bookmarks.put(new JSONObject()
               .put(JSONConstants.Fields.URL, bookmark.url)
               .put(JSONConstants.Fields.NAME, bookmark.title));
@@ -76,6 +77,18 @@ public class Scaffolder {
           root.put("hermit_bookmarks", bookmarks);
         }
 
+        // Collect feed URLs.
+        JSONArray feeds = new JSONArray();
+        for (Scraper.Endpoint feed : metadata.feeds) {
+          feeds.put(new JSONObject()
+              .put(JSONConstants.Fields.URL, feed.url)
+              .put(JSONConstants.Fields.NAME, feed.title));
+        }
+        if (feeds.length() > 0) {
+          root.put("hermit_feeds", feeds);
+        }
+
+        // Write the output manifest.
         try (PrintWriter writer = new PrintWriter(manifestJson)) {
           writer.print(root.toString(2));
         }

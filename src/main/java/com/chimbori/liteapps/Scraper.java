@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -28,7 +29,8 @@ public class Scraper {
     public String title = "";
     public String themeColor = "";
     public String iconUrl = "";
-    public Collection<Bookmark> bookmarks;
+    public Collection<Endpoint> bookmarks;
+    public Collection<Endpoint> feeds;
 
     @Override
     public String toString() {
@@ -37,11 +39,12 @@ public class Scraper {
           ", themeColor='" + themeColor + '\'' +
           ", iconUrl='" + iconUrl + '\'' +
           ", bookmarks=" + bookmarks +
+          ", feeds=" + feeds +
           '}';
     }
   }
 
-  public static class Bookmark {
+  public static class Endpoint {
     public String url = "";
     public String title = "";
 
@@ -53,8 +56,8 @@ public class Scraper {
       if (o == null || getClass() != o.getClass()) {
         return false;
       }
-      Bookmark bookmark = (Bookmark) o;
-      return url.equals(bookmark.url);
+      Endpoint endpoint = (Endpoint) o;
+      return url.equals(endpoint.url);
     }
 
     @Override
@@ -62,19 +65,19 @@ public class Scraper {
       return url.hashCode();
     }
 
-    public Bookmark url(String url) {
+    public Endpoint url(String url) {
       this.url = url;
       return this;
     }
 
-    public Bookmark title(String title) {
+    public Endpoint title(String title) {
       this.title = title;
       return this;
     }
 
     @Override
     public String toString() {
-      return "Bookmark{" +
+      return "Endpoint{" +
           "url='" + url + '\'' +
           ", title='" + title + '\'' +
           '}';
@@ -123,26 +126,36 @@ public class Scraper {
     metadata.iconUrl = doc.select("link[rel=icon]").attr("abs:href");
 
     metadata.bookmarks = findBookmarkableLinks();
+    metadata.feeds = findAtomAndRssFeeds();
 
     return metadata;
   }
 
-  private Collection<Bookmark> findBookmarkableLinks() {
-    // Use a Map so we can ensure that we only keep one Bookmark per URL if the same URL appears
+  private Collection<Endpoint> findAtomAndRssFeeds() {
+    List<Endpoint> feeds = new ArrayList<>();
+    Elements atomOrRssFeeds = doc.select("link[type=application/rss+xml], link[type=application/atom+xml]");
+    for (Element feed : atomOrRssFeeds) {
+      feeds.add(new Endpoint().url(feed.attr("abs:href")).title(feed.attr("title")));
+    }
+    return feeds;
+  }
+
+  private Collection<Endpoint> findBookmarkableLinks() {
+    // Use a Map so we can ensure that we only keep one Endpoint per URL if the same URL appears
     // more than once in the navigation links.
-    Map<String, Bookmark> bookmarkableLinks = new HashMap<>();
+    Map<String, Endpoint> bookmarkableLinks = new HashMap<>();
 
     Elements ariaRoleNavigation = doc.select("*[role=navigation]").select("a[href]");
     for (Element navLink : ariaRoleNavigation) {
       String linkUrl = navLink.attr("abs:href");
-      bookmarkableLinks.put(linkUrl, new Bookmark().url(linkUrl).title(navLink.text()));
+      bookmarkableLinks.put(linkUrl, new Endpoint().url(linkUrl).title(navLink.text()));
     }
 
     if (bookmarkableLinks.isEmpty()) {
       Elements likelyNavigationLinks = doc.select("nav, .nav, #nav, .navbar, #navbar, .navigation, #navigation").select("a[href]");
       for (Element navLink : likelyNavigationLinks) {
         String linkUrl = navLink.attr("abs:href");
-        bookmarkableLinks.put(linkUrl, new Bookmark().url(linkUrl).title(navLink.text()));
+        bookmarkableLinks.put(linkUrl, new Endpoint().url(linkUrl).title(navLink.text()));
       }
     }
 
