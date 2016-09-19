@@ -1,0 +1,156 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "New York Times",
+  "start_url": "http://mobile.nytimes.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/New York Times.hermit",
+  "theme_color": "#000000",
+  "secondary_color": "#333333",
+  "icons": [{"src": "icon.png"}],
+  "hermit_bookmarks": [
+    {
+      "name": "Home",
+      "url": "http://mobile.nytimes.com/"
+    },
+    {
+      "name": "World",
+      "url": "http://mobile.nytimes.com/world/"
+    },
+    {
+      "name": "Trending",
+      "url": "http://www.nytimes.com/trending/?module=mobilewebnav"
+    },
+    {
+      "name": "Photos",
+      "url": "http://mobile.nytimes.com/blogs/lens/"
+    },
+    {
+      "name": "Travel",
+      "url": "http://mobile.nytimes.com/travel/"
+    },
+    {
+      "name": "Education",
+      "url": "http://mobile.nytimes.com/education/"
+    },
+    {
+      "name": "Health",
+      "url": "http://mobile.nytimes.com/health/"
+    },
+    {
+      "name": "Business",
+      "url": "http://mobile.nytimes.com/international/business/"
+    },
+    {
+      "name": "Science",
+      "url": "http://mobile.nytimes.com/science/"
+    },
+    {
+      "name": "Recommendations",
+      "url": "http://mobile.nytimes.com/recommendations/"
+    },
+    {
+      "name": "Most Emailed",
+      "url": "http://mobile.nytimes.com/most-emailed/"
+    },
+    {
+      "name": "Arts",
+      "url": "http://mobile.nytimes.com/international/arts/"
+    },
+    {
+      "name": "Style",
+      "url": "http://mobile.nytimes.com/style/"
+    },
+    {
+      "name": "Music",
+      "url": "http://mobile.nytimes.com/music/"
+    },
+    {
+      "name": "Video",
+      "url": "http://www.nytimes.com/video/"
+    },
+    {
+      "name": "Women in the World",
+      "url": "http://nytlive.nytimes.com/womenintheworld"
+    },
+    {
+      "name": "Business Day",
+      "url": "http://mobile.nytimes.com/business/"
+    },
+    {
+      "name": "U.S. Politics",
+      "url": "http://mobile.nytimes.com/politics/"
+    },
+    {
+      "name": "Crossword",
+      "url": "http://www.nytimes.com/crosswords"
+    },
+    {
+      "name": "Sports",
+      "url": "http://mobile.nytimes.com/sports/"
+    },
+    {
+      "name": "Movies",
+      "url": "http://mobile.nytimes.com/movies/"
+    },
+    {
+      "name": "Media & Advertising",
+      "url": "http://mobile.nytimes.com/business/media/"
+    },
+    {
+      "name": "Blogs",
+      "url": "http://mobile.nytimes.com/blogs/"
+    },
+    {
+      "name": "Public Editor",
+      "url": "http://mobile.nytimes.com/publiceditor/"
+    },
+    {
+      "name": "Food",
+      "url": "http://mobile.nytimes.com/dining/"
+    },
+    {
+      "name": "Saved",
+      "url": "http://mobile.nytimes.com/saved/"
+    },
+    {
+      "name": "Books",
+      "url": "http://mobile.nytimes.com/books/"
+    },
+    {
+      "name": "Real Estate",
+      "url": "http://mobile.nytimes.com/realestate/"
+    },
+    {
+      "name": "Opinion",
+      "url": "http://mobile.nytimes.com/opinion/"
+    },
+    {
+      "name": "Theater",
+      "url": "http://mobile.nytimes.com/theater/"
+    },
+    {
+      "name": "Technology",
+      "url": "http://mobile.nytimes.com/technology/"
+    },
+    {
+      "name": "Automobiles",
+      "url": "http://mobile.nytimes.com/automobiles/"
+    },
+    {
+      "name": "Weddings",
+      "url": "http://mobile.nytimes.com/weddings/"
+    },
+    {
+      "name": "Style",
+      "url": "http://mobile.nytimes.com/international/style/"
+    },
+    {
+      "name": "Home",
+      "url": "http://mobile.nytimes.com/international/"
+    },
+    {
+      "name": "Magazine",
+      "url": "http://mobile.nytimes.com/magazine/"
+    }
+  ]
+}
