@@ -8,11 +8,15 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 
 /**
  * Generates a skeleton Lite App with as many fields pre-filled as possible.
  */
 public class Scaffolder {
+  private static final boolean SCRAPING_ENABLED = false;
+  private static final String DEFAULT_THEME_COLOR = "#fe7a4d";
+
   /**
    * The lite-apps.json file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
@@ -56,48 +60,54 @@ public class Scaffolder {
         // Fields that are correctly populated using the data available in the original JSON file.
         root.put(JSONConstants.Fields.NAME, appName);
         root.put(JSONConstants.Fields.START_URL, startUrl);
-        root.put(JSONConstants.Fields.MANIFEST_URL, String.format("https://hermit.chimbori.com/lite-apps/%s.hermit", appName));
+        root.put(JSONConstants.Fields.MANIFEST_URL, String.format("https://hermit.chimbori.com/lite-apps/%s.hermit",
+            URLEncoder.encode(appName, "UTF-8").replace("+", "%20")));
 
-        // Scrape the web site, and see if we can get some elements automatically from there.
-        Scraper.SiteMetadata metadata = Scraper.scrape(startUrl);
+        if (SCRAPING_ENABLED) {
+          // Scrape the web site, and see if we can get some elements automatically from there.
+          Scraper.SiteMetadata metadata = Scraper.scrape(startUrl);
 
-        // Fields that are reasonable defaults, but need to be modified by hand before final release.
-        String themeColor = metadata.themeColor.isEmpty() ? "#fe7a4d" : metadata.themeColor;
-        root.put(JSONConstants.Fields.THEME_COLOR, themeColor);
-        root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor);
+          // Fields that are reasonable defaults, but need to be modified by hand before final release.
+          String themeColor = metadata.themeColor.isEmpty() ? DEFAULT_THEME_COLOR : metadata.themeColor;
+          root.put(JSONConstants.Fields.THEME_COLOR, themeColor);
+          root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor);
 
-        // Collect bookmarkable links from likely navigation links on the page.
-        JSONArray bookmarks = new JSONArray();
-        for (Scraper.Endpoint bookmark : metadata.bookmarks) {
-          bookmarks.put(new JSONObject()
-              .put(JSONConstants.Fields.URL, bookmark.url)
-              .put(JSONConstants.Fields.NAME, bookmark.title));
-        }
-        if (bookmarks.length() > 0) {
-          root.put("hermit_bookmarks", bookmarks);
-        }
+          // Collect bookmarkable links from likely navigation links on the page.
+          JSONArray bookmarks = new JSONArray();
+          for (Scraper.Endpoint bookmark : metadata.bookmarks) {
+            bookmarks.put(new JSONObject()
+                .put(JSONConstants.Fields.URL, bookmark.url)
+                .put(JSONConstants.Fields.NAME, bookmark.title));
+          }
+          if (bookmarks.length() > 0) {
+            root.put("hermit_bookmarks", bookmarks);
+          }
 
-        // Collect feed URLs.
-        JSONArray feeds = new JSONArray();
-        for (Scraper.Endpoint feed : metadata.feeds) {
-          feeds.put(new JSONObject()
-              .put(JSONConstants.Fields.URL, feed.url)
-              .put(JSONConstants.Fields.NAME, feed.title));
-        }
-        if (feeds.length() > 0) {
-          root.put("hermit_feeds", feeds);
-        }
+          // Collect feed URLs.
+          JSONArray feeds = new JSONArray();
+          for (Scraper.Endpoint feed : metadata.feeds) {
+            feeds.put(new JSONObject()
+                .put(JSONConstants.Fields.URL, feed.url)
+                .put(JSONConstants.Fields.NAME, feed.title));
+          }
+          if (feeds.length() > 0) {
+            root.put("hermit_feeds", feeds);
+          }
 
-        // If this site has a related Android app, we can grab the ID automatically too.
-        JSONArray relatedApps = new JSONArray();
-        for (String appId : metadata.relatedApps) {
-          relatedApps.put(new JSONObject()
-              .put(JSONConstants.Fields.PLATFORM, JSONConstants.Values.PLAY)
-              .put(JSONConstants.Fields.URL, "https://play.google.com/store/apps/details?id=" + appId)
-              .put(JSONConstants.Fields.ID, appId));
-        }
-        if (relatedApps.length() > 0) {
-          root.put("related_applications", relatedApps);
+          // If this site has a related Android app, we can grab the ID automatically too.
+          JSONArray relatedApps = new JSONArray();
+          for (String appId : metadata.relatedApps) {
+            relatedApps.put(new JSONObject()
+                .put(JSONConstants.Fields.PLATFORM, JSONConstants.Values.PLAY)
+                .put(JSONConstants.Fields.URL, "https://play.google.com/store/apps/details?id=" + appId)
+                .put(JSONConstants.Fields.ID, appId));
+          }
+          if (relatedApps.length() > 0) {
+            root.put("related_applications", relatedApps);
+          }
+        } else {
+          root.put(JSONConstants.Fields.THEME_COLOR, DEFAULT_THEME_COLOR);
+          root.put(JSONConstants.Fields.SECONDARY_COLOR, DEFAULT_THEME_COLOR);
         }
 
         // Write the output manifest.
