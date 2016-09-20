@@ -1,5 +1,6 @@
 *.iml
 .gradle/
 .idea/
+_site
 build/
 local.properties

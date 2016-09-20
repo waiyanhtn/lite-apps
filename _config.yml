@@ -1,0 +1,16 @@
+title:    "Lite App Manifests"
+tagline:  "Lite Apps for use with Hermit: http://hermit.chimbori.com/"
+url:      "https://chimbori.github.io/lite-apps/"
+exclude:  [
+            "*.bat",
+            "*.gradle",
+            "*.properties",
+            "*.sh",
+            "build/",
+            "Gemfile",
+            "Gemfile.lock",
+            "gradle/",
+            "gradlew",
+            "README.md",
+            "src/",
+          ]
