@@ -1,5 +1,8 @@
 package com.chimbori.liteapps;
 
+import com.eclipsesource.json.Json;
+import com.eclipsesource.json.ParseException;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,6 +15,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -32,6 +40,29 @@ public class ValidatorTest {
   @Before
   public void setUp() {
     FileUtils.OUT_ROOT_DIR.delete();
+  }
+
+  @Test
+  public void testParseJSONStrictlyAndCheckWellFormed() throws IOException {
+    Files.walkFileTree(FileUtils.SRC_ROOT_DIR.toPath(), new SimpleFileVisitor<Path>() {
+      @Override
+      public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+        if (attrs.isRegularFile() && file.toFile().getName().endsWith(".json")) {
+          try {
+            Json.parse(FileUtils.readFully(new FileInputStream(file.toFile())));
+          } catch (ParseException e) {
+            fail(String.format("%s: %s", file.toFile().getPath(), e.getMessage()));
+          }
+        }
+        return FileVisitResult.CONTINUE;
+      }
+
+      @Override
+      public FileVisitResult visitFileFailed(Path file, IOException e) throws IOException {
+        fail(e.getMessage());
+        return FileVisitResult.CONTINUE;
+      }
+    });
   }
 
   @Test
@@ -101,13 +132,6 @@ public class ValidatorTest {
     }
   }
 
-  private static JSONObject fromFile(File file) throws IOException, JSONException {
-    if (!file.exists()) {
-      return null;
-    }
-    return new JSONObject(FileUtils.readFully(new FileInputStream(file)));
-  }
-
   /**
    * Loads a JSON file and can perform multiple validations on it.
    */
@@ -122,7 +146,7 @@ public class ValidatorTest {
 
       this.tag = tag;
       try {
-        this.json = fromFile(file);
+        this.json = file.exists() ? new JSONObject(FileUtils.readFully(new FileInputStream(file))) : null;
         System.out.println(String.format("- %s", this.tag));
       } catch (IOException | JSONException e) {
         fail(String.format("Invalid JSON: %s", tag));
