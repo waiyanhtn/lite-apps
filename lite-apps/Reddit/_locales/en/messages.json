@@ -1,8 +1,20 @@
 {
+  "reddit": {
+    "message": "Reddit"
+  },
   "popular": {
     "message": "Popular"
   },
   "search": {
     "message": "Search"
-  }
+  },
+  "front_page": {
+    "message": "Front Page"
+  },
+  "inbox": {
+    "message": "Inbox"
+  },
+  "submit": {
+    "message": "Submit"
+  },
 }

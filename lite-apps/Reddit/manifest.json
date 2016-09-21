@@ -1,31 +1,37 @@
 {
   "manifest_version": 1,
   "lang": "en",
-  "name": "Reddit",
+  "name": "__MSG_reddit__",
   "start_url": "https://m.reddit.com",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Reddit.hermit",
-  "theme_color": "#336699",
-  "secondary_color": "#336699",
+  "manifest_url": "https://chimbori.github.io/lite-apps/bin/lite-apps/Reddit.hermit",
+  "theme_color": "#ff4300",
+  "secondary_color": "#eb4106",
+  "icons": [{"src": "icon.png"}],
+  "related_applications": [{
+    "id": "com.reddit.frontpage",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.reddit.frontpage"
+  }],
   "hermit_settings": {
     "block_malware": true,
     "open_links": "in_app"
   },
   "hermit_bookmarks": [
     {
-      "name": "Popular",
+      "name": "__MSG_popular__",
       "url": "https://m.reddit.com/r/all"
     },
     {
-      "name": "Front Page",
+      "name": "__MSG_front_page__",
       "url": "https://m.reddit.com/"
     },
     {
-      "name": "Inbox",
+      "name": "__MSG_inbox__",
       "url": "https://m.reddit.com/message/inbox"
     }
   ],
   "hermit_create": [{
-    "name": "Submit",
+    "name": "__MSG_submit__",
     "url": "https://m.reddit.com/submit"
   }],
   "hermit_search": [{
@@ -33,13 +39,7 @@
     "url": "https://m.reddit.com/search?q=%s"
   }],
   "hermit_share": [{
-    "name": "Reddit",
+    "name": "__MSG_reddit__",
     "url": "https://www.reddit.com/submit?url=%u&title=%t"
-  }],
-  "icons": [{"src": "icon.png"}],
-  "related_applications": [{
-    "id": "com.reddit.frontpage",
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.reddit.frontpage"
   }]
 }
