@@ -1,5 +1,6 @@
 [
   {
+    "category": "Social",
     "apps": [
       {
         "app": "Facebook.hermit",
@@ -69,10 +70,10 @@
         "name": "OkCupid",
         "url": "https://m.okcupid.com"
       }
-    ],
-    "category": "Social"
+    ]
   },
   {
+    "category": "News",
     "apps": [
       {
         "name": "Medium",
@@ -152,10 +153,10 @@
         "name": "Breaking News",
         "url": "http://breakingnews.com"
       }
-    ],
-    "category": "News"
+    ]
   },
   {
+    "category": "Technology",
     "apps": [
       {
         "name": "Product Hunt",
@@ -229,10 +230,10 @@
         "name": "XDA Developers",
         "url": "https://xda-developers.com"
       }
-    ],
-    "category": "Technology"
+    ]
   },
   {
+    "category": "Banking &amp; Financial",
     "apps": [
       {
         "name": "Bank of America",
@@ -262,10 +263,10 @@
         "name": "RBC Canada",
         "url": "https://www.rbcroyalbank.com"
       }
-    ],
-    "category": "Banking &amp; Financial"
+    ]
   },
   {
+    "category": "Education",
     "apps": [
       {
         "name": "Wolfram Alpha",
@@ -291,10 +292,10 @@
         "name": "Wiktionary",
         "url": "https://www.wiktionary.org"
       }
-    ],
-    "category": "Education"
+    ]
   },
   {
+    "category": "Entertainment",
     "apps": [
       {
         "name": "GoodReads",
@@ -357,10 +358,10 @@
         "name": "MixCloud",
         "url": "https://m.mixcloud.com"
       }
-    ],
-    "category": "Entertainment"
+    ]
   },
   {
+    "category": "Productivity",
     "apps": [
       {
         "name": "Pocket",
@@ -386,10 +387,10 @@
         "name": "Flipboard",
         "url": "https://flipboard.com"
       }
-    ],
-    "category": "Productivity"
+    ]
   },
   {
+    "category": "Food, Travel, Photography",
     "apps": [
       {
         "name": "Yelp",
@@ -439,10 +440,10 @@
         "name": "Orbitz",
         "url": "https://www.orbitz.com"
       }
-    ],
-    "category": "Food, Travel, Photography"
+    ]
   },
   {
+    "category": "Shopping",
     "apps": [
       {
         "name": "Amazon",
@@ -477,10 +478,10 @@
         "name": "SlickDeals",
         "url": "http://slickdeals.net"
       }
-    ],
-    "category": "Shopping"
+    ]
   },
   {
+    "category": "Email",
     "apps": [
       {
         "name": "Yahoo! Mail",
@@ -498,10 +499,10 @@
         "name": "FastMail",
         "url": "https://www.fastmail.com"
       }
-    ],
-    "category": "Email"
+    ]
   },
   {
+    "category": "Storage",
     "apps": [
       {
         "name": "Dropbox",
@@ -516,7 +517,6 @@
         "url": "https://mega.nz",
         "user_agent": "desktop"
       }
-    ],
-    "category": "Storage"
+    ]
   }
 ]
