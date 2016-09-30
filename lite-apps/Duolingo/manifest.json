@@ -1,0 +1,36 @@
+{
+  "manifest_version": 1,
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Duolingo.hermit",
+  "name": "Duolingo",
+  "start_url": "https://www.duolingo.com/",
+  "theme_color": "#75ca00",
+  "secondary_color": "#6fb400",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Home",
+      "url": "https://www.duolingo.com/"
+    },
+    {
+      "name": "Courses",
+      "url": "https://www.duolingo.com/courses"
+    },
+    {
+      "name": "Discussion",
+      "url": "https://www.duolingo.com/discussion"
+    },
+    {
+      "name": "Settings",
+      "url": "https://www.duolingo.com/settings"
+    },
+    {
+      "name": "Practice",
+      "url": "https://www.duolingo.com/practice"
+    },
+    {
+      "name": "Store",
+      "url": "https://www.duolingo.com/show_store"
+    }
+  ]
+}
