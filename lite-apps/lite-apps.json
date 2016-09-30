@@ -262,6 +262,10 @@
     "category": "Education",
     "apps": [
       {
+        "name": "Duolingo",
+        "url": "https://www.duolingo.com"
+      },
+      {
         "name": "Wolfram Alpha",
         "url": "https://m.wolframalpha.com"
       },

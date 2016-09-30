@@ -269,6 +269,11 @@
     "category": "Education",
     "apps": [
       {
+        "app": "Duolingo.hermit",
+        "name": "Duolingo",
+        "url": "https://www.duolingo.com"
+      },
+      {
         "name": "Wolfram Alpha",
         "url": "https://m.wolframalpha.com"
       },
