@@ -14,7 +14,7 @@ import java.util.Map;
  * to extract color from flat-color icons, it works well in practice for our dataset.
  */
 class ColorExtractor {
-  static class Color {
+  public static class Color {
     private static int TOLERANCE_FOR_GREY = 16;
 
     private final int r;
@@ -33,6 +33,13 @@ class ColorExtractor {
 
     boolean isGrey() {
       return (Math.abs(r - b) <= TOLERANCE_FOR_GREY && Math.abs(r - g) <= TOLERANCE_FOR_GREY);
+    }
+
+    Color darken(float ratio) {
+      if (ratio < 0 || ratio >= 1) {
+        throw new IllegalArgumentException();
+      }
+      return new Color((int) (r * ratio), (int) (g * ratio), (int) (b * ratio));
     }
 
     @Override
