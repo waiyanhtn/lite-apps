@@ -1,0 +1,10 @@
+{
+  "theme_color": "#000000",
+  "manifest_version": 1,
+  "name": "Wall St. Journal",
+  "start_url": "https://mobile.wsj.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wall%20St.%20Journal.hermit",
+  "secondary_color": "#000000",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

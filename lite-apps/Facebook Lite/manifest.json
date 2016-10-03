@@ -1,0 +1,10 @@
+{
+  "theme_color": "#3f5ea1",
+  "manifest_version": 1,
+  "name": "Facebook Lite",
+  "start_url": "https://mbasic.facebook.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook%20Lite.hermit",
+  "secondary_color": "#385490",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

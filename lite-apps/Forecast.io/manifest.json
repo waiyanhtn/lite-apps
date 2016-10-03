@@ -1,0 +1,15 @@
+{
+  "theme_color": "#3b438f",
+  "manifest_version": 1,
+  "name": "Forecast.io",
+  "start_url": "https://forecast.io",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Forecast.io.hermit",
+  "secondary_color": "#353c80",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "related_applications": [{
+    "id": "net.darksky.darksky",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=net.darksky.darksky"
+  }]
+}

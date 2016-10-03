@@ -1,0 +1,15 @@
+{
+  "theme_color": "#000099",
+  "manifest_version": 1,
+  "name": "United Airlines",
+  "start_url": "https://mobile.united.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/United%20Airlines.hermit",
+  "secondary_color": "#000089",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "related_applications": [{
+    "id": "com.united.mobile.android",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.united.mobile.android"
+  }]
+}

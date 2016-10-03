@@ -1,0 +1,10 @@
+{
+  "theme_color": "#dd5043",
+  "manifest_version": 1,
+  "name": "Gmail",
+  "start_url": "https://mail.google.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Gmail.hermit",
+  "secondary_color": "#c6483c",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

@@ -1,0 +1,15 @@
+{
+  "theme_color": "#9f150a",
+  "manifest_version": 1,
+  "name": "TV Guide",
+  "start_url": "https://tvguide.com/listings",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/TV%20Guide.hermit",
+  "secondary_color": "#8f1209",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "related_applications": [{
+    "id": "com.tvguidemobile",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.tvguidemobile"
+  }]
+}

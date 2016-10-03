@@ -1,0 +1,10 @@
+{
+  "theme_color": "#000000",
+  "manifest_version": 1,
+  "name": "Sleepy Time",
+  "start_url": "http://sleepyti.me",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Sleepy%20Time.hermit",
+  "secondary_color": "#000000",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

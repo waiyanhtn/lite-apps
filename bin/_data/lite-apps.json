@@ -8,6 +8,7 @@
         "url": "https://m.facebook.com"
       },
       {
+        "app": "Facebook Lite.hermit",
         "name": "Facebook Lite",
         "url": "https://mbasic.facebook.com"
       },
@@ -22,6 +23,7 @@
         "user_agent": "desktop"
       },
       {
+        "app": "Instagram.hermit",
         "name": "Instagram",
         "url": "https://instagram.com"
       },
@@ -40,6 +42,7 @@
         "url": "https://slack.com"
       },
       {
+        "app": "Skype.hermit",
         "name": "Skype",
         "url": "https://web.skype.com",
         "user_agent": "desktop"
@@ -55,10 +58,12 @@
         "url": "https://touch.www.linkedin.com"
       },
       {
+        "app": "Tumblr.hermit",
         "name": "Tumblr",
         "url": "https://tumblr.com"
       },
       {
+        "app": "Yik Yak.hermit",
         "name": "Yik Yak",
         "url": "https://yikyakapp.com"
       },
@@ -67,6 +72,7 @@
         "url": "https://ask.fm"
       },
       {
+        "app": "OkCupid.hermit",
         "name": "OkCupid",
         "url": "https://m.okcupid.com"
       }
@@ -76,6 +82,7 @@
     "category": "News",
     "apps": [
       {
+        "app": "Medium.hermit",
         "name": "Medium",
         "url": "https://medium.com"
       },
@@ -106,10 +113,12 @@
         "url": "http://npr.org"
       },
       {
+        "app": "AccuWeather.hermit",
         "name": "AccuWeather",
         "url": "https://m.accuweather.com"
       },
       {
+        "app": "Forecast.io.hermit",
         "name": "Forecast.io",
         "url": "https://forecast.io"
       },
@@ -126,6 +135,7 @@
         "url": "https://m.washingtonpost.com"
       },
       {
+        "app": "Wall St. Journal.hermit",
         "name": "Wall St. Journal",
         "url": "https://mobile.wsj.com"
       },
@@ -142,6 +152,7 @@
         "url": "https://haaretz.co.il"
       },
       {
+        "app": "Jerusalem Post.hermit",
         "name": "Jerusalem Post",
         "url": "http://m.jpost.com"
       },
@@ -150,6 +161,7 @@
         "url": "http://aljazeera.com"
       },
       {
+        "app": "Breaking News.hermit",
         "name": "Breaking News",
         "url": "http://breakingnews.com"
       }
@@ -163,6 +175,7 @@
         "url": "https://producthunt.com"
       },
       {
+        "app": "Hacker News.hermit",
         "name": "Hacker News",
         "url": "https://news.ycombinator.com"
       },
@@ -179,6 +192,7 @@
         "url": "https://www.androidpit.com"
       },
       {
+        "app": "Droid Life.hermit",
         "name": "Droid Life",
         "url": "https://droid-life.com"
       },
@@ -203,6 +217,7 @@
         "url": "http://engadget.com"
       },
       {
+        "app": "Slashdot.hermit",
         "name": "Slashdot",
         "url": "https://slashdot.org"
       },
@@ -215,6 +230,7 @@
         "url": "http://techcrunch.com"
       },
       {
+        "app": "TechMeme.hermit",
         "name": "TechMeme",
         "url": "https://techmeme.com/m"
       },
@@ -252,14 +268,17 @@
         "url": "https://paypal.com"
       },
       {
+        "app": "American Express.hermit",
         "name": "American Express",
         "url": "https://www.americanexpress.com"
       },
       {
+        "app": "Citibank.hermit",
         "name": "Citibank",
         "url": "https://online.citi.com"
       },
       {
+        "app": "RBC Canada.hermit",
         "name": "RBC Canada",
         "url": "https://www.rbcroyalbank.com"
       }
@@ -274,6 +293,7 @@
         "url": "https://www.duolingo.com"
       },
       {
+        "app": "Wolfram Alpha.hermit",
         "name": "Wolfram Alpha",
         "url": "https://m.wolframalpha.com"
       },
@@ -282,18 +302,22 @@
         "url": "https://khanacademy.org"
       },
       {
+        "app": "Instructables.hermit",
         "name": "Instructables",
         "url": "https://m.instructables.com"
       },
       {
+        "app": "Wikipedia.hermit",
         "name": "Wikipedia",
         "url": "https://wikipedia.org"
       },
       {
+        "app": "Quora.hermit",
         "name": "Quora",
         "url": "https://www.quora.com"
       },
       {
+        "app": "Wiktionary.hermit",
         "name": "Wiktionary",
         "url": "https://www.wiktionary.org"
       }
@@ -303,6 +327,7 @@
     "category": "Entertainment",
     "apps": [
       {
+        "app": "GoodReads.hermit",
         "name": "GoodReads",
         "url": "https://www.goodreads.com"
       },
@@ -324,18 +349,22 @@
         "url": "http://allocine.fr"
       },
       {
+        "app": "E! Online.hermit",
         "name": "E! Online",
         "url": "https://m.eonline.com"
       },
       {
+        "app": "Plex.hermit",
         "name": "Plex",
         "url": "https://plex.tv"
       },
       {
+        "app": "Imgur.hermit",
         "name": "Imgur",
         "url": "https://imgur.com"
       },
       {
+        "app": "Last.fm.hermit",
         "name": "Last.fm",
         "url": "https://last.fm"
       },
@@ -344,6 +373,7 @@
         "url": "https://rottentomatoes.com"
       },
       {
+        "app": "TV Guide.hermit",
         "name": "TV Guide",
         "url": "https://tvguide.com/listings"
       },
@@ -352,10 +382,12 @@
         "url": "https://twit.tv"
       },
       {
+        "app": "Voat.hermit",
         "name": "Voat",
         "url": "https://voat.co"
       },
       {
+        "app": "SoundCloud.hermit",
         "name": "SoundCloud",
         "url": "https://m.soundcloud.com"
       },
@@ -385,10 +417,12 @@
         "url": "https://lifehacker.com"
       },
       {
+        "app": "Sleepy Time.hermit",
         "name": "Sleepy Time",
         "url": "http://sleepyti.me"
       },
       {
+        "app": "Flipboard.hermit",
         "name": "Flipboard",
         "url": "https://flipboard.com"
       }
@@ -402,14 +436,17 @@
         "url": "https://m.yelp.com"
       },
       {
+        "app": "Opentable.hermit",
         "name": "Opentable",
         "url": "https://m.opentable.com"
       },
       {
+        "app": "All Recipes.hermit",
         "name": "All Recipes",
         "url": "https://allrecipes.com"
       },
       {
+        "app": "TripAdvisor.hermit",
         "name": "TripAdvisor",
         "url": "https://tripadvisor.com"
       },
@@ -426,14 +463,17 @@
         "url": "https://flickr.com"
       },
       {
+        "app": "Deviant Art.hermit",
         "name": "Deviant Art",
         "url": "https://deviantart.com"
       },
       {
+        "app": "Delta Airlines.hermit",
         "name": "Delta Airlines",
         "url": "https://m.delta.com"
       },
       {
+        "app": "United Airlines.hermit",
         "name": "United Airlines",
         "url": "https://mobile.united.com"
       },
@@ -472,10 +512,12 @@
         "url": "https://woot.com"
       },
       {
+        "app": "FlipKart.hermit",
         "name": "FlipKart",
         "url": "https://flipkart.com"
       },
       {
+        "app": "Retail Me Not.hermit",
         "name": "Retail Me Not",
         "url": "http://retailmenot.com"
       },
@@ -489,18 +531,22 @@
     "category": "Email",
     "apps": [
       {
+        "app": "Yahoo! Mail.hermit",
         "name": "Yahoo! Mail",
         "url": "https://mail.yahoo.com"
       },
       {
+        "app": "Gmail.hermit",
         "name": "Gmail",
         "url": "https://mail.google.com"
       },
       {
+        "app": "Outlook.hermit",
         "name": "Outlook",
         "url": "https://outlook.com"
       },
       {
+        "app": "FastMail.hermit",
         "name": "FastMail",
         "url": "https://www.fastmail.com"
       }
@@ -514,10 +560,12 @@
         "url": "https://dropbox.com"
       },
       {
+        "app": "OneDrive.hermit",
         "name": "OneDrive",
         "url": "https://onedrive.live.com"
       },
       {
+        "app": "Mega.hermit",
         "name": "Mega",
         "url": "https://mega.nz",
         "user_agent": "desktop"

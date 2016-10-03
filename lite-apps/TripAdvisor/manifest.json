@@ -1,0 +1,10 @@
+{
+  "theme_color": "#1e892f",
+  "manifest_version": 1,
+  "name": "TripAdvisor",
+  "start_url": "https://tripadvisor.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/TripAdvisor.hermit",
+  "secondary_color": "#1b7b2a",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

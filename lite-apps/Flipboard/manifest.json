@@ -1,0 +1,10 @@
+{
+  "theme_color": "#e12828",
+  "manifest_version": 1,
+  "name": "Flipboard",
+  "start_url": "https://flipboard.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Flipboard.hermit",
+  "secondary_color": "#ca2424",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

@@ -1,0 +1,10 @@
+{
+  "theme_color": "#5e91bd",
+  "manifest_version": 1,
+  "name": "Voat",
+  "start_url": "https://voat.co",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Voat.hermit",
+  "secondary_color": "#5482aa",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

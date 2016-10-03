@@ -1,0 +1,14 @@
+{
+  "theme_color": "#ff6600",
+  "manifest_version": 1,
+  "name": "Hacker News",
+  "start_url": "https://news.ycombinator.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Hacker%20News.hermit",
+  "secondary_color": "#e55b00",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_feeds": [{
+    "name": "Hacker News",
+    "url": "https://news.ycombinator.com/rss"
+  }]
+}

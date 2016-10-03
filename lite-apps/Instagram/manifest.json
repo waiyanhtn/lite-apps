@@ -1,0 +1,10 @@
+{
+  "theme_color": "#253938",
+  "manifest_version": 1,
+  "name": "Instagram",
+  "start_url": "https://instagram.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Instagram.hermit",
+  "secondary_color": "#213332",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

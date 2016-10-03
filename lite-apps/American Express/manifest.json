@@ -1,0 +1,10 @@
+{
+  "theme_color": "#103a79",
+  "manifest_version": 1,
+  "name": "American Express",
+  "start_url": "https://www.americanexpress.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/American%20Express.hermit",
+  "secondary_color": "#0e346c",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

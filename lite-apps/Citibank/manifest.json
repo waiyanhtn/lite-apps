@@ -1,0 +1,10 @@
+{
+  "theme_color": "#004278",
+  "manifest_version": 1,
+  "name": "Citibank",
+  "start_url": "https://online.citi.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Citibank.hermit",
+  "secondary_color": "#003b6c",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

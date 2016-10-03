@@ -1,0 +1,10 @@
+{
+  "theme_color": "#3bd443",
+  "manifest_version": 1,
+  "name": "Imgur",
+  "start_url": "https://imgur.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Imgur.hermit",
+  "secondary_color": "#35be3c",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

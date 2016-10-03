@@ -1,0 +1,10 @@
+{
+  "theme_color": "#3e4f53",
+  "manifest_version": 1,
+  "name": "E! Online",
+  "start_url": "https://m.eonline.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/E%21%20Online.hermit",
+  "secondary_color": "#37474a",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

@@ -1,0 +1,15 @@
+{
+  "theme_color": "#e7e0c3",
+  "manifest_version": 1,
+  "name": "GoodReads",
+  "start_url": "https://www.goodreads.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/GoodReads.hermit",
+  "secondary_color": "#cfc9af",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "related_applications": [{
+    "id": "com.goodreads",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.goodreads"
+  }]
+}

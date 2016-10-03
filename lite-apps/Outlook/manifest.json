@@ -1,0 +1,10 @@
+{
+  "theme_color": "#0069b6",
+  "manifest_version": 1,
+  "name": "Outlook",
+  "start_url": "https://outlook.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Outlook.hermit",
+  "secondary_color": "#005ea3",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

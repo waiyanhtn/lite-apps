@@ -1,0 +1,14 @@
+{
+  "theme_color": "#d82500",
+  "manifest_version": 1,
+  "name": "Breaking News",
+  "start_url": "http://breakingnews.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Breaking%20News.hermit",
+  "secondary_color": "#c22100",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_feeds": [{
+    "name": "Breaking News Feed",
+    "url": "http://www.breakingnews.com/feeds/rss"
+  }]
+}

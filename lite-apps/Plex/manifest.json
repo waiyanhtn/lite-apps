@@ -1,0 +1,10 @@
+{
+  "theme_color": "#ce7d00",
+  "manifest_version": 1,
+  "name": "Plex",
+  "start_url": "https://plex.tv",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Plex.hermit",
+  "secondary_color": "#b97000",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

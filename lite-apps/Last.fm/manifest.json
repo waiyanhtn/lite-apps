@@ -1,0 +1,10 @@
+{
+  "theme_color": "#cc0000",
+  "manifest_version": 1,
+  "name": "Last.fm",
+  "start_url": "https://last.fm",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Last.fm.hermit",
+  "secondary_color": "#b70000",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}
