@@ -4,17 +4,21 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URLEncoder;
 
+import javax.imageio.ImageIO;
+
 /**
  * Generates a skeleton Lite App with as many fields pre-filled as possible.
  */
 public class Scaffolder {
   private static final boolean SCRAPING_ENABLED = false;
+
   private static final String DEFAULT_THEME_COLOR = "#fe7a4d";
 
   /**
@@ -63,14 +67,22 @@ public class Scaffolder {
         root.put(JSONConstants.Fields.MANIFEST_URL, String.format("https://hermit.chimbori.com/lite-apps/%s.hermit",
             URLEncoder.encode(appName, "UTF-8").replace("+", "%20")));
 
+        // Extract the color from the icon.
+        File iconFile = new File(liteAppDirectoryRoot, "icon.png");
+        if (iconFile.exists()) {
+          BufferedImage image = ImageIO.read(iconFile);
+          String themeColor = ColorExtractor.getDominantColor(image).toString();
+          if (themeColor == null || themeColor.isEmpty()) {
+            themeColor = DEFAULT_THEME_COLOR;
+          }
+          root.put(JSONConstants.Fields.THEME_COLOR, themeColor);
+          root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor);
+        }
+
+        // Scrape the Web looking for RSS & Atom feeds, theme colors, and site metadata.
         if (SCRAPING_ENABLED) {
           // Scrape the web site, and see if we can get some elements automatically from there.
           Scraper.SiteMetadata metadata = Scraper.scrape(startUrl);
-
-          // Fields that are reasonable defaults, but need to be modified by hand before final release.
-          String themeColor = metadata.themeColor.isEmpty() ? DEFAULT_THEME_COLOR : metadata.themeColor;
-          root.put(JSONConstants.Fields.THEME_COLOR, themeColor);
-          root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor);
 
           // Collect bookmarkable links from likely navigation links on the page.
           JSONArray bookmarks = new JSONArray();
@@ -105,9 +117,6 @@ public class Scaffolder {
           if (relatedApps.length() > 0) {
             root.put("related_applications", relatedApps);
           }
-        } else {
-          root.put(JSONConstants.Fields.THEME_COLOR, DEFAULT_THEME_COLOR);
-          root.put(JSONConstants.Fields.SECONDARY_COLOR, DEFAULT_THEME_COLOR);
         }
 
         // Write the output manifest.
