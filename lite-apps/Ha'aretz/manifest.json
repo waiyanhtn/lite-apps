@@ -1,0 +1,15 @@
+{
+  "theme_color": "#008cd4",
+  "manifest_version": 1,
+  "name": "Ha'aretz",
+  "start_url": "https://haaretz.co.il",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Ha%27aretz.hermit",
+  "secondary_color": "#007ebe",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "related_applications": [{
+    "id": "com.haaretz",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.haaretz"
+  }]
+}

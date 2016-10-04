@@ -1,0 +1,40 @@
+{
+  "theme_color": "#fc903b",
+  "manifest_version": 1,
+  "name": "Kayak",
+  "start_url": "https://kayak.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Kayak.hermit",
+  "secondary_color": "#e28135",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Flights",
+      "url": "https://www.kayak.com/flights"
+    },
+    {
+      "name": "Packages",
+      "url": "https://www.kayak.com/packages"
+    },
+    {
+      "name": "Hotels",
+      "url": "https://www.kayak.com/hotels"
+    },
+    {
+      "name": "Explore",
+      "url": "https://www.kayak.com/explore"
+    },
+    {
+      "name": "Trains",
+      "url": "https://www.kayak.com/trains"
+    },
+    {
+      "name": "Cars",
+      "url": "https://www.kayak.com/cars"
+    },
+    {
+      "name": "Flight Tracker",
+      "url": "https://www.kayak.com/tracker"
+    }
+  ]
+}

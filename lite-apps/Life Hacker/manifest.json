@@ -1,0 +1,14 @@
+{
+  "theme_color": "#319b56",
+  "manifest_version": 1,
+  "name": "Life Hacker",
+  "start_url": "https://lifehacker.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Life%20Hacker.hermit",
+  "secondary_color": "#2c8b4d",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_feeds": [{
+    "name": "Lifehacker",
+    "url": "http://feeds.gawker.com/lifehacker/full"
+  }]
+}

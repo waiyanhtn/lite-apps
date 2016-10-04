@@ -1,0 +1,36 @@
+{
+  "theme_color": "#88bb45",
+  "manifest_version": 1,
+  "name": "Groupon",
+  "start_url": "https://groupon.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Groupon.hermit",
+  "secondary_color": "#7aa83e",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Featured",
+      "url": "https://www.groupon.com/"
+    },
+    {
+      "name": "Coupons",
+      "url": "https://www.groupon.com/coupons"
+    },
+    {
+      "name": "Goods",
+      "url": "https://www.groupon.com/goods"
+    },
+    {
+      "name": "Top Sellers",
+      "url": "https://www.groupon.com/occasion/national-top-sellers"
+    },
+    {
+      "name": "Nearby",
+      "url": "https://www.groupon.com/nearby"
+    },
+    {
+      "name": "Getaways",
+      "url": "https://www.groupon.com/getaways"
+    }
+  ]
+}

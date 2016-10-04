@@ -13,6 +13,7 @@
         "url": "https://mbasic.facebook.com"
       },
       {
+        "app": "Messenger.hermit",
         "name": "Messenger",
         "url": "https://messenger.com",
         "user_agent": "desktop"
@@ -111,6 +112,7 @@
         "url": "https://time.com"
       },
       {
+        "app": "NPR.hermit",
         "name": "NPR",
         "url": "http://npr.org"
       },
@@ -130,6 +132,7 @@
         "url": "https://bloomberg.com"
       },
       {
+        "app": "Financial Times.hermit",
         "name": "Financial Times",
         "url": "https://m.ft.com"
       },
@@ -147,10 +150,12 @@
         "url": "https://finance.yahoo.com"
       },
       {
+        "app": "Google News.hermit",
         "name": "Google News",
         "url": "https://news.google.com"
       },
       {
+        "app": "Ha'aretz.hermit",
         "name": "Ha'aretz",
         "url": "https://haaretz.co.il"
       },
@@ -175,6 +180,7 @@
     "category": "Technology",
     "apps": [
       {
+        "app": "Product Hunt.hermit",
         "name": "Product Hunt",
         "url": "https://producthunt.com"
       },
@@ -204,6 +210,7 @@
         "url": "https://droid-life.com"
       },
       {
+        "app": "Gizmodo.hermit",
         "name": "Gizmodo",
         "url": "https://gizmodo.com"
       },
@@ -217,10 +224,12 @@
         "url": "http://cnet.com"
       },
       {
+        "app": "Designer News.hermit",
         "name": "Designer News",
         "url": "http://designernews.co"
       },
       {
+        "app": "Engadget.hermit",
         "name": "Engadget",
         "url": "http://engadget.com"
       },
@@ -274,6 +283,7 @@
         "url": "https://home.capitalone360.com"
       },
       {
+        "app": "PayPal.hermit",
         "name": "PayPal",
         "url": "https://paypal.com"
       },
@@ -308,6 +318,7 @@
         "url": "https://m.wolframalpha.com"
       },
       {
+        "app": "Khan Academy.hermit",
         "name": "Khan Academy",
         "url": "https://khanacademy.org"
       },
@@ -351,6 +362,7 @@
         "url": "http://m.xkcd.com"
       },
       {
+        "app": "IMDb.hermit",
         "name": "IMDb",
         "url": "https://m.imdb.com"
       },
@@ -403,6 +415,7 @@
         "url": "https://m.soundcloud.com"
       },
       {
+        "app": "MixCloud.hermit",
         "name": "MixCloud",
         "url": "https://m.mixcloud.com"
       }
@@ -412,6 +425,7 @@
     "category": "Productivity",
     "apps": [
       {
+        "app": "Pocket.hermit",
         "name": "Pocket",
         "url": "https://getpocket.com"
       },
@@ -420,10 +434,12 @@
         "url": "https://todoist.com"
       },
       {
+        "app": "EverNote.hermit",
         "name": "EverNote",
         "url": "https://evernote.com"
       },
       {
+        "app": "Life Hacker.hermit",
         "name": "Life Hacker",
         "url": "https://lifehacker.com"
       },
@@ -462,6 +478,7 @@
         "url": "https://tripadvisor.com"
       },
       {
+        "app": "Kayak.hermit",
         "name": "Kayak",
         "url": "https://kayak.com"
       },
@@ -470,6 +487,7 @@
         "url": "https://yummly.com"
       },
       {
+        "app": "Flickr.hermit",
         "name": "Flickr",
         "url": "https://flickr.com"
       },
@@ -494,6 +512,7 @@
         "url": "https://www.booking.com"
       },
       {
+        "app": "Orbitz.hermit",
         "name": "Orbitz",
         "url": "https://www.orbitz.com"
       }
@@ -513,10 +532,12 @@
         "url": "https://craigslist.org"
       },
       {
+        "app": "Groupon.hermit",
         "name": "Groupon",
         "url": "https://groupon.com"
       },
       {
+        "app": "eBay.hermit",
         "name": "eBay",
         "url": "https://m.ebay.com"
       },
@@ -569,6 +590,7 @@
     "category": "Storage",
     "apps": [
       {
+        "app": "Dropbox.hermit",
         "name": "Dropbox",
         "url": "https://dropbox.com"
       },

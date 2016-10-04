@@ -1,0 +1,15 @@
+{
+  "theme_color": "#395369",
+  "manifest_version": 1,
+  "name": "MixCloud",
+  "start_url": "https://m.mixcloud.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/MixCloud.hermit",
+  "secondary_color": "#334a5e",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "related_applications": [{
+    "id": "com.mixcloud.player",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.mixcloud.player"
+  }]
+}

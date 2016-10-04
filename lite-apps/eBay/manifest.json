@@ -1,0 +1,10 @@
+{
+  "theme_color": "#e43138",
+  "manifest_version": 1,
+  "name": "eBay",
+  "start_url": "https://m.ebay.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/eBay.hermit",
+  "secondary_color": "#cd2c32",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

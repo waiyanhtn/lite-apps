@@ -1,0 +1,10 @@
+{
+  "theme_color": "#f6e397",
+  "manifest_version": 1,
+  "name": "IMDb",
+  "start_url": "https://m.imdb.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/IMDb.hermit",
+  "secondary_color": "#ddcc87",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

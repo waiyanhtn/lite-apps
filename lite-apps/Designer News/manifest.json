@@ -1,0 +1,54 @@
+{
+  "theme_color": "#2b71d7",
+  "manifest_version": 1,
+  "name": "Designer News",
+  "start_url": "http://designernews.co",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Designer%20News.hermit",
+  "secondary_color": "#2665c1",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Typography",
+      "url": "https://www.designernews.co/badges/type"
+    },
+    {
+      "name": "CSS",
+      "url": "https://www.designernews.co/badges/css"
+    },
+    {
+      "name": "Videos",
+      "url": "https://www.designernews.co/badges/video"
+    },
+    {
+      "name": "Discussions",
+      "url": "https://www.designernews.co/badges/discussion"
+    },
+    {
+      "name": "Site Design",
+      "url": "https://www.designernews.co/badges/design"
+    },
+    {
+      "name": "Things",
+      "url": "https://www.designernews.co/things"
+    },
+    {
+      "name": "Gallery",
+      "url": "https://www.designernews.co/gallery"
+    },
+    {
+      "name": "Hall of Fame",
+      "url": "https://www.designernews.co/hall_of_fame"
+    },
+    {
+      "name": "Projects",
+      "url": "http://projects.designernews.co/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "Designer News",
+      "url": "https://www.designernews.co/?format=atom"
+    }
+  ]
+}

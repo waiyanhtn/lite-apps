@@ -1,0 +1,61 @@
+{
+  "theme_color": "#09a2f2",
+  "manifest_version": 1,
+  "name": "Engadget",
+  "start_url": "http://engadget.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Engadget.hermit",
+  "secondary_color": "#0891d9",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Home",
+      "url": "https://www.engadget.com/"
+    },
+    {
+      "name": "Reviews",
+      "url": "https://www.engadget.com/reviews/"
+    },
+    {
+      "name": "Podcasts",
+      "url": "https://www.engadget.com/podcasts/"
+    },
+    {
+      "name": "Science",
+      "url": "https://www.engadget.com/science/"
+    },
+    {
+      "name": "Culture",
+      "url": "https://www.engadget.com/culture/"
+    },
+    {
+      "name": "Deals",
+      "url": "http://deals.gdgt.com/"
+    },
+    {
+      "name": "Entertainment",
+      "url": "https://www.engadget.com/entertainment/"
+    },
+    {
+      "name": "Gear",
+      "url": "https://www.engadget.com/gear/"
+    },
+    {
+      "name": "Gaming",
+      "url": "https://www.engadget.com/gaming/"
+    },
+    {
+      "name": "Video",
+      "url": "https://www.engadget.com/videos/"
+    }
+  ],
+  "hermit_feeds": [{
+    "name": "Engadget",
+    "url": "https://www.engadget.com/rss.xml"
+  }],
+  "related_applications": [{
+    "id": "com.aol.mobile.engadget",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.aol.mobile.engadget"
+  }]
+}

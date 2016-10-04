@@ -1,0 +1,78 @@
+{
+  "theme_color": "#2851a0",
+  "manifest_version": 1,
+  "name": "NPR",
+  "start_url": "http://npr.org",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/NPR.hermit",
+  "secondary_color": "#244890",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "World",
+      "url": "http://www.npr.org/sections/world/"
+    },
+    {
+      "name": "Fresh Air",
+      "url": "http://www.npr.org/programs/fresh-air/"
+    },
+    {
+      "name": "Politics",
+      "url": "http://www.npr.org/sections/politics/"
+    },
+    {
+      "name": "U.S.",
+      "url": "http://www.npr.org/sections/us/"
+    },
+    {
+      "name": "Food",
+      "url": "http://www.npr.org/sections/food/"
+    },
+    {
+      "name": "Technology",
+      "url": "http://www.npr.org/sections/technology/"
+    },
+    {
+      "name": "Music",
+      "url": "http://www.npr.org/music/"
+    },
+    {
+      "name": "Science",
+      "url": "http://www.npr.org/sections/science/"
+    },
+    {
+      "name": "Arts & Life",
+      "url": "http://www.npr.org/sections/arts/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "NPR Top Stories",
+      "url": "http://www.npr.org/rss/rss.php?id=1002"
+    },
+    {
+      "name": "NPR News",
+      "url": "http://www.npr.org/rss/rss.php?id=1001"
+    },
+    {
+      "name": "NPR Music",
+      "url": "http://www.npr.org/rss/rss.php?id=1039"
+    },
+    {
+      "name": "NPR Books",
+      "url": "http://www.npr.org/rss/rss.php?id=1032"
+    },
+    {
+      "name": "NPR Morning Edition",
+      "url": "http://www.npr.org/rss/rss.php?id=3"
+    },
+    {
+      "name": "NPR All Things Considered",
+      "url": "http://www.npr.org/rss/rss.php?id=2"
+    },
+    {
+      "name": "NPR Wait Wait... Don't Tell Me!",
+      "url": "http://www.npr.org/rss/rss.php?id=35"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "theme_color": "#0d64d2",
+  "manifest_version": 1,
+  "name": "Flickr",
+  "start_url": "https://flickr.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Flickr.hermit",
+  "secondary_color": "#0b5abd",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "World Map",
+      "url": "https://www.flickr.com/map"
+    },
+    {
+      "name": "Recent Photos",
+      "url": "https://www.flickr.com/explore"
+    },
+    {
+      "name": "Galleries",
+      "url": "https://www.flickr.com/galleries"
+    },
+    {
+      "name": "Trending",
+      "url": "https://www.flickr.com/photos/tags"
+    },
+    {
+      "name": "The Commons",
+      "url": "https://www.flickr.com/commons"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.yahoo.mobile.client.android.flickr",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.flickr"
+    }
+  ]
+}

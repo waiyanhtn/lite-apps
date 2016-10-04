@@ -1,0 +1,44 @@
+{
+  "theme_color": "#00b1ff",
+  "manifest_version": 1,
+  "name": "Orbitz",
+  "start_url": "https://www.orbitz.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Orbitz.hermit",
+  "secondary_color": "#009fe5",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Cars",
+      "url": "https://www.orbitz.com/car-rental/"
+    },
+    {
+      "name": "Hotels",
+      "url": "https://www.orbitz.com/hotels/"
+    },
+    {
+      "name": "Packages",
+      "url": "https://www.orbitz.com/vacations/"
+    },
+    {
+      "name": "Flights",
+      "url": "https://www.orbitz.com/flights/"
+    },
+    {
+      "name": "Activities",
+      "url": "https://www.orbitz.com/things-to-do/"
+    },
+    {
+      "name": "Cruises",
+      "url": "http://cruises.orbitz.com"
+    },
+    {
+      "name": "Deals",
+      "url": "https://www.orbitz.com/travel-deals/"
+    },
+    {
+      "name": "Rewards",
+      "url": "https://www.orbitz.com/rewards"
+    }
+  ]
+}

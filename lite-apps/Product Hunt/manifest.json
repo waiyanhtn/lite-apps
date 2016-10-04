@@ -1,0 +1,48 @@
+{
+  "theme_color": "#da552f",
+  "manifest_version": 1,
+  "name": "Product Hunt",
+  "start_url": "https://producthunt.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Product%20Hunt.hermit",
+  "secondary_color": "#c44c2a",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Home",
+      "url": "https://www.producthunt.com/"
+    },
+    {
+      "name": "All",
+      "url": "https://www.producthunt.com/topics"
+    },
+    {
+      "name": "Tech",
+      "url": "https://www.producthunt.com/tech"
+    },
+    {
+      "name": "Games",
+      "url": "https://www.producthunt.com/games"
+    },
+    {
+      "name": "Photography Tools",
+      "url": "https://www.producthunt.com/topics/photography-tools"
+    },
+    {
+      "name": "Developer Tools",
+      "url": "https://www.producthunt.com/topics/developer-tools"
+    },
+    {
+      "name": "Books",
+      "url": "https://www.producthunt.com/books"
+    },
+    {
+      "name": "Wearables",
+      "url": "https://www.producthunt.com/topics/wearables"
+    }
+  ],
+  "hermit_feeds": [{
+    "name": "Product Hunt",
+    "url": "https://www.producthunt.com/feed"
+  }]
+}
