@@ -1,0 +1,48 @@
+{
+  "theme_color": "#0c89c9",
+  "manifest_version": 1,
+  "name": "Rotten Tomatoes",
+  "start_url": "https://rottentomatoes.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Rotten%20Tomatoes.hermit",
+  "secondary_color": "#0a7bb4",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Browse All",
+      "url": "https://www.rottentomatoes.com/browse/dvd-all/"
+    },
+    {
+      "name": "Top Box Office",
+      "url": "https://www.rottentomatoes.com/browse/in-theaters/"
+    },
+    {
+      "name": "Opening This Week",
+      "url": "https://www.rottentomatoes.com/browse/opening/"
+    },
+    {
+      "name": "Trailers",
+      "url": "https://www.rottentomatoes.com/trailers/"
+    },
+    {
+      "name": "New Releases",
+      "url": "https://www.rottentomatoes.com/browse/dvd-new-releases/"
+    },
+    {
+      "name": "Top TV Shows",
+      "url": "https://www.rottentomatoes.com/top-tv/"
+    },
+    {
+      "name": "Certified Fresh Movies",
+      "url": "https://www.rottentomatoes.com/browse/cf-in-theaters/"
+    },
+    {
+      "name": "Now Streaming",
+      "url": "https://editorial.rottentomatoes.com/now-streaming/"
+    },
+    {
+      "name": "Coming Soon to Theaters",
+      "url": "https://www.rottentomatoes.com/browse/upcoming/"
+    }
+  ]
+}

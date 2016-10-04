@@ -1,0 +1,15 @@
+{
+  "theme_color": "#e3652c",
+  "manifest_version": 1,
+  "name": "Stack Overflow",
+  "start_url": "https://stackoverflow.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Stack%20Overflow.hermit",
+  "secondary_color": "#cc5a27",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "related_applications": [{
+    "id": "com.stackexchange.marvin",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.stackexchange.marvin"
+  }]
+}

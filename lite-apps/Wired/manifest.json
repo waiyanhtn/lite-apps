@@ -1,0 +1,58 @@
+{
+  "theme_color": "#000000",
+  "manifest_version": 1,
+  "name": "Wired",
+  "start_url": "http://wired.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wired.hermit",
+  "secondary_color": "#000000",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Culture",
+      "url": "https://www.wired.com/category/culture/"
+    },
+    {
+      "name": "Science",
+      "url": "https://www.wired.com/category/science/"
+    },
+    {
+      "name": "Business",
+      "url": "https://www.wired.com/category/business/"
+    },
+    {
+      "name": "transportation",
+      "url": "https://www.wired.com/category/transportation/"
+    },
+    {
+      "name": "Security",
+      "url": "https://www.wired.com/category/security/"
+    },
+    {
+      "name": "Gear",
+      "url": "https://www.wired.com/category/gear/"
+    },
+    {
+      "name": "Video",
+      "url": "https://www.wired.com/video/"
+    },
+    {
+      "name": "Magazine",
+      "url": "https://www.wired.com/category/magazine/"
+    },
+    {
+      "name": "Design",
+      "url": "https://www.wired.com/category/design/"
+    },
+    {
+      "name": "Photo",
+      "url": "https://www.wired.com/category/photo/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "Wired",
+      "url": "https://www.wired.com/feed/"
+    }
+  ]
+}

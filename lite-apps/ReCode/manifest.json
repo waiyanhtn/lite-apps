@@ -1,0 +1,16 @@
+{
+  "theme_color": "#c60018",
+  "manifest_version": 1,
+  "name": "ReCode",
+  "start_url": "https://recode.net",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/ReCode.hermit",
+  "secondary_color": "#b20015",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_feeds": [
+    {
+      "name": "Recode",
+      "url": "http://www.recode.net/rss/group/front-page/index.xml"
+    }
+  ]
+}

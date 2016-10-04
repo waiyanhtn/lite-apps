@@ -1,0 +1,104 @@
+{
+  "theme_color": "#005689",
+  "manifest_version": 1,
+  "name": "The Guardian",
+  "start_url": "https://theguardian.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Guardian.hermit",
+  "secondary_color": "#004d7b",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "World",
+      "url": "https://www.theguardian.com/world"
+    },
+    {
+      "name": "Tech",
+      "url": "https://www.theguardian.com/us/technology"
+    },
+    {
+      "name": "Cities",
+      "url": "https://www.theguardian.com/cities"
+    },
+    {
+      "name": "Business",
+      "url": "https://www.theguardian.com/us/business"
+    },
+    {
+      "name": "Media",
+      "url": "https://www.theguardian.com/us/media"
+    },
+    {
+      "name": "Games",
+      "url": "https://www.theguardian.com/technology/games"
+    },
+    {
+      "name": "Food",
+      "url": "https://www.theguardian.com/lifeandstyle/food-and-drink"
+    },
+    {
+      "name": "Environment",
+      "url": "https://www.theguardian.com/us/environment"
+    },
+    {
+      "name": "Energy",
+      "url": "https://www.theguardian.com/environment/energy"
+    },
+    {
+      "name": "Health & Fitness",
+      "url": "https://www.theguardian.com/lifeandstyle/health-and-wellbeing"
+    },
+    {
+      "name": "Climate Change",
+      "url": "https://www.theguardian.com/environment/climate-change"
+    },
+    {
+      "name": "Art & Design",
+      "url": "https://www.theguardian.com/artanddesign"
+    },
+    {
+      "name": "Music",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "Economics",
+      "url": "https://www.theguardian.com/business/economics"
+    },
+    {
+      "name": "Science",
+      "url": "https://www.theguardian.com/science"
+    },
+    {
+      "name": "Family",
+      "url": "https://www.theguardian.com/lifeandstyle/family"
+    },
+    {
+      "name": "Love & Sex",
+      "url": "https://www.theguardian.com/lifeandstyle/love-and-sex"
+    },
+    {
+      "name": "Wildlife",
+      "url": "https://www.theguardian.com/environment/wildlife"
+    },
+    {
+      "name": "Books",
+      "url": "https://www.theguardian.com/books"
+    },
+    {
+      "name": "Travel",
+      "url": "https://www.theguardian.com/us/travel"
+    },
+    {
+      "name": "TV & Radio",
+      "url": "https://www.theguardian.com/tv-and-radio"
+    },
+    {
+      "name": "Video",
+      "url": "https://www.theguardian.com/video"
+    }
+  ],
+  "hermit_feeds": [{
+    "name": "RSS",
+    "url": "https://www.theguardian.com/us/rss"
+  }]
+}

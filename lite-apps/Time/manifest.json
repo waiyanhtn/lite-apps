@@ -1,0 +1,88 @@
+{
+  "theme_color": "#d60002",
+  "manifest_version": 1,
+  "name": "Time",
+  "start_url": "https://time.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Time.hermit",
+  "secondary_color": "#c00001",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Home",
+      "url": "http://time.com/"
+    },
+    {
+      "name": "U.S.",
+      "url": "http://time.com/us/"
+    },
+    {
+      "name": "Science",
+      "url": "http://time.com/science/"
+    },
+    {
+      "name": "Tech",
+      "url": "http://time.com/tech/"
+    },
+    {
+      "name": "Newsfeed",
+      "url": "http://time.com/newsfeed/"
+    },
+    {
+      "name": "Money",
+      "url": "http://time.com/money"
+    },
+    {
+      "name": "Parents",
+      "url": "http://time.com/parents/"
+    },
+    {
+      "name": "Life",
+      "url": "http://time.com/photography/life/"
+    },
+    {
+      "name": "Sports",
+      "url": "http://time.com/sports/"
+    },
+    {
+      "name": "Entertainment",
+      "url": "http://time.com/entertainment/"
+    },
+    {
+      "name": "Business",
+      "url": "http://time.com/business/"
+    },
+    {
+      "name": "Politics",
+      "url": "http://time.com/politics/"
+    },
+    {
+      "name": "Living",
+      "url": "http://time.com/living/"
+    },
+    {
+      "name": "Photography",
+      "url": "http://time.com/photography/"
+    },
+    {
+      "name": "World",
+      "url": "http://time.com/world/"
+    },
+    {
+      "name": "Magazine",
+      "url": "http://time.com/magazine/"
+    },
+    {
+      "name": "Ideas",
+      "url": "http://time.com/ideas/"
+    },
+    {
+      "name": "Videos",
+      "url": "http://time.com/videos/"
+    },
+    {
+      "name": "Health",
+      "url": "http://time.com/health/"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "theme_color": "#001212",
+  "manifest_version": 1,
+  "name": "Washington Post",
+  "start_url": "https://m.washingtonpost.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Washington%20Post.hermit",
+  "secondary_color": "#001010",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Tech",
+      "url": "http://www.washingtonpost.com/business/technology/"
+    },
+    {
+      "name": "Video",
+      "url": "http://www.washingtonpost.com/posttv/"
+    },
+    {
+      "name": "Local",
+      "url": "http://www.washingtonpost.com/local/"
+    },
+    {
+      "name": "Lifestyle",
+      "url": "http://www.washingtonpost.com/lifestyle/"
+    },
+    {
+      "name": "Classifieds",
+      "url": "http://www.washingtonpost.com/classifieds/"
+    },
+    {
+      "name": "Sports",
+      "url": "http://www.washingtonpost.com/sports/"
+    },
+    {
+      "name": "National",
+      "url": "http://www.washingtonpost.com/national/"
+    },
+    {
+      "name": "World",
+      "url": "http://www.washingtonpost.com/world/"
+    },
+    {
+      "name": "Entertainment",
+      "url": "http://www.washingtonpost.com/entertainment/"
+    },
+    {
+      "name": "Politics",
+      "url": "http://www.washingtonpost.com/politics/"
+    },
+    {
+      "name": "Opinions",
+      "url": "https://www.washingtonpost.com/opinions/"
+    },
+    {
+      "name": "Business",
+      "url": "http://www.washingtonpost.com/business/"
+    }
+  ]
+}

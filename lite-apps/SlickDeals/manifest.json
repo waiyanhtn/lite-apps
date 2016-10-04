@@ -1,0 +1,36 @@
+{
+  "theme_color": "#0094d1",
+  "manifest_version": 1,
+  "name": "SlickDeals",
+  "start_url": "http://slickdeals.net",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/SlickDeals.hermit",
+  "secondary_color": "#0085bc",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Frontpage",
+      "url": "http://slickdeals.net/"
+    },
+    {
+      "name": "Coupons",
+      "url": "http://slickdeals.net/coupons/"
+    },
+    {
+      "name": "Forums",
+      "url": "http://slickdeals.net/forums/"
+    },
+    {
+      "name": "Popular Deals",
+      "url": "http://slickdeals.net/deals/"
+    },
+    {
+      "name": "Categories",
+      "url": "http://slickdeals.net/deal-categories/"
+    }
+  ],
+  "hermit_feeds": [{
+    "name": "Slickdeals",
+    "url": "http://slickdeals.net/newsearch.php?mode=frontpage&searcharea=deals&searchin=first&rss=1"
+  }]
+}

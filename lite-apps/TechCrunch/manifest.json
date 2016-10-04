@@ -1,0 +1,51 @@
+{
+  "theme_color": "#00880d",
+  "manifest_version": 1,
+  "name": "TechCrunch",
+  "start_url": "http://techcrunch.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/TechCrunch.hermit",
+  "secondary_color": "#007a0b",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Mobile",
+      "url": "https://techcrunch.com/mobile/"
+    },
+    {
+      "name": "Reviews",
+      "url": "https://techcrunch.com/video/reviews/"
+    },
+    {
+      "name": "Events",
+      "url": "https://techcrunch.com/events/"
+    },
+    {
+      "name": "Startups",
+      "url": "https://techcrunch.com/startups/"
+    },
+    {
+      "name": "Gadgets",
+      "url": "https://techcrunch.com/gadgets/"
+    },
+    {
+      "name": "TC Features",
+      "url": "https://techcrunch.com/video/features/"
+    },
+    {
+      "name": "Crunchies",
+      "url": "https://techcrunch.com/event-type/crunchies/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/"
+    }
+  ],
+  "related_applications": [{
+    "id": "com.aol.mobile.techcrunch",
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=com.aol.mobile.techcrunch"
+  }]
+}

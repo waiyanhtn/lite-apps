@@ -1,0 +1,28 @@
+{
+  "theme_color": "#bf171d",
+  "manifest_version": 1,
+  "name": "YouTube",
+  "start_url": "https://m.youtube.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/YouTube.hermit",
+  "secondary_color": "#ab141a",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Home",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "name": "Browse Channels",
+      "url": "https://www.youtube.com/channels"
+    },
+    {
+      "name": "Trending",
+      "url": "https://www.youtube.com/feed/trending"
+    },
+    {
+      "name": "History",
+      "url": "https://www.youtube.com/feed/history"
+    }
+  ]
+}
