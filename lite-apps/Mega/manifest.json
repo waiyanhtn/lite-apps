@@ -6,5 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Mega.hermit",
   "secondary_color": "#d60c12",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "user_agent": "desktop"
 }

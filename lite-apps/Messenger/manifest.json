@@ -6,5 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Messenger.hermit",
   "secondary_color": "#0078e5",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "user_agent": "desktop"
 }

@@ -6,5 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/WhatsApp.hermit",
   "secondary_color": "#2da73f",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "user_agent": "desktop"
 }
