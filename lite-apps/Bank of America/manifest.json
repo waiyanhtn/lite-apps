@@ -1,0 +1,20 @@
+{
+  "theme_color": "#dc1431",
+  "manifest_version": 1,
+  "name": "Bank of America",
+  "start_url": "https://bankofamerica.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Bank%20of%20America.hermit",
+  "secondary_color": "#c6122c",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Locations",
+      "url": "https://locators.bankofamerica.com"
+    },
+    {
+      "name": "Full Site",
+      "url": "https://www.bankofamerica.com/homepage/overview.go?MobileRedirect=false"
+    }
+  ]
+}

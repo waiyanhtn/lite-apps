@@ -68,6 +68,7 @@
         "url": "https://yikyakapp.com"
       },
       {
+        "app": "Ask.fm.hermit",
         "name": "Ask.fm",
         "url": "https://ask.fm"
       },
@@ -92,6 +93,7 @@
         "url": "https://bbc.com"
       },
       {
+        "app": "CNN.hermit",
         "name": "CNN",
         "url": "http://cnn.com"
       },
@@ -123,6 +125,7 @@
         "url": "https://forecast.io"
       },
       {
+        "app": "Bloomberg.hermit",
         "name": "Bloomberg",
         "url": "https://bloomberg.com"
       },
@@ -157,6 +160,7 @@
         "url": "http://m.jpost.com"
       },
       {
+        "app": "Al Jazeera.hermit",
         "name": "Al Jazeera",
         "url": "http://aljazeera.com"
       },
@@ -180,14 +184,17 @@
         "url": "https://news.ycombinator.com"
       },
       {
+        "app": "Android Police.hermit",
         "name": "Android Police",
         "url": "https://androidpolice.com"
       },
       {
+        "app": "Android Central.hermit",
         "name": "Android Central",
         "url": "https://m.androidcentral.com"
       },
       {
+        "app": "Android PIT.hermit",
         "name": "Android PIT",
         "url": "https://www.androidpit.com"
       },
@@ -205,6 +212,7 @@
         "url": "https://recode.net"
       },
       {
+        "app": "CNet.hermit",
         "name": "CNet",
         "url": "http://cnet.com"
       },
@@ -252,6 +260,7 @@
     "category": "Banking &amp; Financial",
     "apps": [
       {
+        "app": "Bank of America.hermit",
         "name": "Bank of America",
         "url": "https://bankofamerica.com"
       },
@@ -260,6 +269,7 @@
         "url": "https://m.wellsfargo.com"
       },
       {
+        "app": "Capital One 360.hermit",
         "name": "Capital One 360",
         "url": "https://home.capitalone360.com"
       },
@@ -345,6 +355,7 @@
         "url": "https://m.imdb.com"
       },
       {
+        "app": "AlloCiné.hermit",
         "name": "AlloCiné",
         "url": "http://allocine.fr"
       },
@@ -478,6 +489,7 @@
         "url": "https://mobile.united.com"
       },
       {
+        "app": "Booking.com.hermit",
         "name": "Booking.com",
         "url": "https://www.booking.com"
       },
@@ -491,6 +503,7 @@
     "category": "Shopping",
     "apps": [
       {
+        "app": "Amazon.hermit",
         "name": "Amazon",
         "url": "https://amazon.com"
       },

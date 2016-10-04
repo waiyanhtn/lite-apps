@@ -1,0 +1,48 @@
+{
+  "theme_color": "#fe8000",
+  "manifest_version": 1,
+  "name": "Al Jazeera",
+  "start_url": "http://aljazeera.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Al%20Jazeera.hermit",
+  "secondary_color": "#e47300",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "The Last 24",
+      "url": "http://www.aljazeera.com/recent.html"
+    },
+    {
+      "name": "Europe",
+      "url": "http://www.aljazeera.com/topics/regions/europe.html"
+    },
+    {
+      "name": "US & Canada",
+      "url": "http://www.aljazeera.com/topics/regions/us-canada.html"
+    },
+    {
+      "name": "Middle East",
+      "url": "http://www.aljazeera.com/topics/regions/middleeast.html"
+    },
+    {
+      "name": "Africa",
+      "url": "http://www.aljazeera.com/topics/regions/africa.html"
+    },
+    {
+      "name": "Asia",
+      "url": "http://www.aljazeera.com/topics/regions/asia.html"
+    },
+    {
+      "name": "Asia Pacific",
+      "url": "http://www.aljazeera.com/topics/regions/asia-pacific.html"
+    },
+    {
+      "name": "Latin America",
+      "url": "http://www.aljazeera.com/topics/regions/latin-america.html"
+    }
+  ],
+  "hermit_feeds": [{
+    "name": "Al Jazeera English",
+    "url": "http://www.aljazeera.com/xml/rss/all.xml"
+  }]
+}

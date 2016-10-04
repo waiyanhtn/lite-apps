@@ -1,0 +1,72 @@
+{
+  "theme_color": "#43aee0",
+  "manifest_version": 1,
+  "name": "Android PIT",
+  "start_url": "https://www.androidpit.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20PIT.hermit",
+  "secondary_color": "#3c9cc9",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Home",
+      "url": "https://www.androidpit.com/"
+    },
+    {
+      "name": "Apps",
+      "url": "https://www.androidpit.com/news/apps"
+    },
+    {
+      "name": "Community Guide",
+      "url": "https://www.androidpit.com/community/guide"
+    },
+    {
+      "name": "Deals",
+      "url": "https://deals.androidpit.com"
+    },
+    {
+      "name": "Videos",
+      "url": "https://www.androidpit.com/news/videos"
+    },
+    {
+      "name": "Galleries",
+      "url": "https://www.androidpit.com/galleries"
+    },
+    {
+      "name": "Forum",
+      "url": "https://www.androidpit.com/forum"
+    },
+    {
+      "name": "Hardware News",
+      "url": "https://www.androidpit.com/news/hardware"
+    },
+    {
+      "name": "Hardware Reviews",
+      "url": "https://www.androidpit.com/hardware-reviews"
+    },
+    {
+      "name": "Tips and Tricks",
+      "url": "https://www.androidpit.com/news/tips-and-tricks"
+    },
+    {
+      "name": "Magazine",
+      "url": "https://www.androidpit.com/news"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "AndroidPIT",
+      "url": "https://www.androidpit.com/feed/main.xml"
+    }
+  ],
+  "hermit_search": [
+    {
+      "name": "Search",
+      "url": "https://www.androidpit.com/search?st=%s"
+    }
+  ]
+}

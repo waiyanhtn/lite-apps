@@ -1,0 +1,10 @@
+{
+  "theme_color": "#99d7ee",
+  "manifest_version": 1,
+  "name": "Capital One 360",
+  "start_url": "https://home.capitalone360.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Capital%20One%20360.hermit",
+  "secondary_color": "#89c1d6",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en"
+}

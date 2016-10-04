@@ -1,0 +1,70 @@
+{
+  "theme_color": "#ed1b2b",
+  "manifest_version": 1,
+  "name": "Android Police",
+  "start_url": "https://androidpolice.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Police.hermit",
+  "secondary_color": "#d51826",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Exclusives",
+      "url": "http://www.androidpolice.com/topics/news/exclusive/"
+    },
+    {
+      "name": "Wearables",
+      "url": "http://www.androidpolice.com/topics/wearables/"
+    },
+    {
+      "name": "Downloads",
+      "url": "http://www.androidpolice.com/topics/downloads/"
+    },
+    {
+      "name": "Applications",
+      "url": "http://www.androidpolice.com/topics/applications-games/applications/"
+    },
+    {
+      "name": "Deals",
+      "url": "http://www.androidpolice.com/topics/deals/"
+    },
+    {
+      "name": "Wearable Reviews",
+      "url": "http://www.androidpolice.com/topics/reviews/wearable-reviews/"
+    },
+    {
+      "name": "Podcast",
+      "url": "http://www.androidpolice.com/topics/podcast/"
+    },
+    {
+      "name": "Features",
+      "url": "http://www.androidpolice.com/topics/features/"
+    },
+    {
+      "name": "Game Reviews",
+      "url": "http://www.androidpolice.com/topics/reviews/game-reviews/"
+    },
+    {
+      "name": "App Reviews",
+      "url": "http://www.androidpolice.com/topics/reviews/app-reviews/"
+    },
+    {
+      "name": "Android OS",
+      "url": "http://www.androidpolice.com/topics/android-os/"
+    },
+    {
+      "name": "Editorials",
+      "url": "http://www.androidpolice.com/topics/editorials/"
+    },
+    {
+      "name": "Phone Reviews",
+      "url": "http://www.androidpolice.com/topics/reviews/phone-reviews/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "Android Police",
+      "url": "http://www.androidpolice.com/feed/"
+    }
+  ]
+}

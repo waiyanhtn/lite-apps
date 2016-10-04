@@ -1,0 +1,92 @@
+{
+  "theme_color": "#b80000",
+  "manifest_version": 1,
+  "name": "CNet",
+  "start_url": "http://cnet.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/CNet.hermit",
+  "secondary_color": "#a50000",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "Hardware",
+      "url": "https://www.cnet.com/forums/hardware/"
+    },
+    {
+      "name": "Phones",
+      "url": "http://www.cnet.com/topics/phones/products/"
+    },
+    {
+      "name": "Desktops",
+      "url": "http://www.cnet.com/topics/desktops/products/"
+    },
+    {
+      "name": "Appliances",
+      "url": "http://www.cnet.com/topics/appliances/"
+    },
+    {
+      "name": "Laptops",
+      "url": "http://www.cnet.com/topics/laptops/products/"
+    },
+    {
+      "name": "Sci-Tech",
+      "url": "http://www.cnet.com/topics/sci-tech/"
+    },
+    {
+      "name": "Gaming",
+      "url": "http://www.cnet.com/games/"
+    },
+    {
+      "name": "TVs",
+      "url": "http://www.cnet.com/topics/tvs/best-tvs/"
+    },
+    {
+      "name": "Carfection",
+      "url": "http://www.cnet.com/carfection/"
+    },
+    {
+      "name": "Tablets & Mobile Devices",
+      "url": "https://www.cnet.com/forums/tablets-mobile-devices/"
+    },
+    {
+      "name": "Next Big Thing",
+      "url": "http://www.cnet.com/next-big-thing/"
+    },
+    {
+      "name": "More Deals",
+      "url": "http://www.cnet.com/deals/"
+    },
+    {
+      "name": "Appliances",
+      "url": "http://www.cnet.com/topics/appliances/how-to/"
+    },
+    {
+      "name": "CNET en Español",
+      "url": "https://www.cnet.com/es/"
+    },
+    {
+      "name": "Tablets",
+      "url": "http://www.cnet.com/topics/tablets/how-to/"
+    },
+    {
+      "name": "Home Audio",
+      "url": "http://www.cnet.com/topics/audio/best-home-audio-devices/"
+    },
+    {
+      "name": "Cameras",
+      "url": "http://www.cnet.com/topics/cameras/best-digital-cameras/"
+    },
+    {
+      "name": "Internet",
+      "url": "http://www.cnet.com/topics/internet/how-to/"
+    },
+    {
+      "name": "Tech Culture",
+      "url": "http://www.cnet.com/topics/tech-culture/"
+    }
+  ],
+  "hermit_feeds": [{
+    "name": "CNET",
+    "url": "http://www.cnet.com/rss/all/"
+  }]
+}

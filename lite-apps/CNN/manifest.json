@@ -1,0 +1,64 @@
+{
+  "theme_color": "#cc0000",
+  "manifest_version": 1,
+  "name": "CNN",
+  "start_url": "http://cnn.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/CNN.hermit",
+  "secondary_color": "#b70000",
+  "icons": [{"src": "icon.png"}],
+  "lang": "en",
+  "hermit_bookmarks": [
+    {
+      "name": "World",
+      "url": "http://www.cnn.com/world"
+    },
+    {
+      "name": "Politics",
+      "url": "http://www.cnn.com/politics"
+    },
+    {
+      "name": "Sports",
+      "url": "http://bleacherreport.com"
+    },
+    {
+      "name": "Health",
+      "url": "http://www.cnn.com/health"
+    },
+    {
+      "name": "Money",
+      "url": "http://money.cnn.com"
+    },
+    {
+      "name": "Travel",
+      "url": "http://www.cnn.com/travel"
+    },
+    {
+      "name": "Opinion",
+      "url": "http://www.cnn.com/opinions"
+    },
+    {
+      "name": "Style",
+      "url": "http://www.cnn.com/style"
+    },
+    {
+      "name": "Video",
+      "url": "http://www.cnn.com/videos"
+    },
+    {
+      "name": "U.S.",
+      "url": "http://www.cnn.com/us"
+    },
+    {
+      "name": "Entertainment",
+      "url": "http://www.cnn.com/entertainment"
+    },
+    {
+      "name": "Live TV",
+      "url": "http://cnn.it/go2"
+    },
+    {
+      "name": "Home",
+      "url": "http://www.cnn.com/"
+    }
+  ]
+}
