@@ -7,5 +7,7 @@
   "secondary_color": "#2da73f",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
-  "user_agent": "desktop"
+  "hermit_settings": {
+    "user_agent": "desktop"
+  }
 }
