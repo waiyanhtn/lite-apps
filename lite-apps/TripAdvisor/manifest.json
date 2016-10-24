@@ -6,5 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TripAdvisor.hermit",
   "secondary_color": "#1b7b2a",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "preferred_view": "accelerated"
 }

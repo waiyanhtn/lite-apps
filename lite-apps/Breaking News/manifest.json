@@ -7,6 +7,7 @@
   "secondary_color": "#c22100",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
+  "preferred_view": "accelerated",
   "hermit_feeds": [{
     "name": "Breaking News Feed",
     "url": "http://www.breakingnews.com/feeds/rss"

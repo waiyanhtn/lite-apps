@@ -7,6 +7,7 @@
   "secondary_color": "#75a914",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
+  "preferred_view": "accelerated",
   "hermit_feeds": [{
     "name": "Woot Blog",
     "url": "https://www.woot.com/blog/feed.rss"

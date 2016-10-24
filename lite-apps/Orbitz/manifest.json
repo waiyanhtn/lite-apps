@@ -7,6 +7,7 @@
   "secondary_color": "#009fe5",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
+  "preferred_view": "accelerated",
   "hermit_bookmarks": [
     {
       "name": "Cars",

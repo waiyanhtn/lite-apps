@@ -7,5 +7,6 @@
   "secondary_color": "#0078e5",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
+  "preferred_view": "accelerated",
   "user_agent": "desktop"
 }

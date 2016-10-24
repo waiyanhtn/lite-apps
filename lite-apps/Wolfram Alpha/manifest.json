@@ -6,5 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wolfram%20Alpha.hermit",
   "secondary_color": "#da9185",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "preferred_view": "accelerated"
 }

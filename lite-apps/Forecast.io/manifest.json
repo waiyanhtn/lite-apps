@@ -7,6 +7,7 @@
   "secondary_color": "#353c80",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
+  "preferred_view": "accelerated",
   "related_applications": [{
     "id": "net.darksky.darksky",
     "platform": "play",

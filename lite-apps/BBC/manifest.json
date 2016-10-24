@@ -1,6 +1,7 @@
 {
   "manifest_version": 1,
   "lang": "en",
+  "preferred_view": "accelerated",
   "name": "BBC",
   "start_url": "https://bbc.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/BBC.hermit",

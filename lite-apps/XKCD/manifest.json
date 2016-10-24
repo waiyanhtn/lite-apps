@@ -1,5 +1,6 @@
 {
   "lang": "en",
+  "preferred_view": "accelerated",
   "manifest_version": 1,
   "name": "XKCD",
   "start_url": "http://m.xkcd.com",

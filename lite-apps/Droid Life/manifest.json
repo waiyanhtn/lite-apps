@@ -6,5 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Droid%20Life.hermit",
   "secondary_color": "#e08cac",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "preferred_view": "accelerated"
 }

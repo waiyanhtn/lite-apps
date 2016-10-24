@@ -1,6 +1,7 @@
 {
   "manifest_version": 1,
   "lang": "en",
+  "preferred_view": "accelerated",
   "name": "Twitter",
   "start_url": "https://m.twitter.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Twitter.hermit",

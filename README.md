@@ -38,6 +38,7 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
       "start_url": "https://example.com",
       "theme_color": "#ff0000",
       "secondary_color": "#00ff00",
+      "preferred_view": "accelerated",
       "icons": [
         {
           "src": "icon.png"
