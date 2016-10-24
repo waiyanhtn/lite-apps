@@ -19,6 +19,7 @@ public class JSONConstants {
     public static final String MANIFEST_VERSION = "manifest_version";
     public static final String ICONS = "icons";
     public static final String RELATED_APPLICATIONS = "related_applications";
+    public static final String PREFERRED_VIEW = "preferred_view";
     public static final String PLATFORM = "platform";
     public static final String ID = "id";
 
@@ -34,5 +35,6 @@ public class JSONConstants {
   public class Values {
     public static final String EN = "en";
     public static final String PLAY = "play";
+    public static final String PREFERRED_VIEW_ACCELERATED = "accelerated";
   }
 }
