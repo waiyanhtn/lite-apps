@@ -7,7 +7,6 @@
   "secondary_color": "#e55b00",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
-  "preferred_view": "accelerated",
   "hermit_feeds": [{
     "name": "Hacker News",
     "url": "https://news.ycombinator.com/rss"

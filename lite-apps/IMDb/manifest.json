@@ -6,6 +6,5 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/IMDb.hermit",
   "secondary_color": "#ddcc87",
   "icons": [{"src": "icon.png"}],
-  "lang": "en",
-  "preferred_view": "accelerated"
+  "lang": "en"
 }

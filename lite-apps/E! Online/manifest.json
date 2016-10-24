@@ -6,6 +6,5 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/E%21%20Online.hermit",
   "secondary_color": "#37474a",
   "icons": [{"src": "icon.png"}],
-  "lang": "en",
-  "preferred_view": "accelerated"
+  "lang": "en"
 }

@@ -7,7 +7,6 @@
   "secondary_color": "#004d7b",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
-  "preferred_view": "accelerated",
   "hermit_bookmarks": [
     {
       "name": "World",

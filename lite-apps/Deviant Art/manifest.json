@@ -6,6 +6,5 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Deviant%20Art.hermit",
   "secondary_color": "#05b73f",
   "icons": [{"src": "icon.png"}],
-  "lang": "en",
-  "preferred_view": "accelerated"
+  "lang": "en"
 }

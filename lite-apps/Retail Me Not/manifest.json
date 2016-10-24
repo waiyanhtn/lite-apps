@@ -6,6 +6,5 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Retail%20Me%20Not.hermit",
   "secondary_color": "#6c347f",
   "icons": [{"src": "icon.png"}],
-  "lang": "en",
-  "preferred_view": "accelerated"
+  "lang": "en"
 }

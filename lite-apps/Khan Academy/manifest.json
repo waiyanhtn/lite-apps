@@ -6,6 +6,5 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Khan%20Academy.hermit",
   "secondary_color": "#8ca333",
   "icons": [{"src": "icon.png"}],
-  "lang": "en",
-  "preferred_view": "accelerated"
+  "lang": "en"
 }

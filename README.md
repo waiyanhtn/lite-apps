@@ -38,7 +38,6 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
       "start_url": "https://example.com",
       "theme_color": "#ff0000",
       "secondary_color": "#00ff00",
-      "preferred_view": "accelerated",
       "icons": [
         {
           "src": "icon.png"
@@ -49,6 +48,7 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
         "do_not_track":  true | false,
         "load_images":  true | false,
         "open_links": "in_app" | "browser",
+        "preferred_view": "accelerated",
         "save_data":  true | false,
         "scroll_to_top":  true | false,
         "text_zoom":  true | false,

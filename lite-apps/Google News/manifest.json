@@ -7,7 +7,6 @@
   "secondary_color": "#0a9adb",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
-  "preferred_view": "accelerated",
   "hermit_feeds": [{
     "name": "",
     "url": "http://news.google.com/news?cf=all&hl=en&pz=1&ned=us&topic=h&num=3&output=rss"

@@ -1,7 +1,6 @@
 {
   "manifest_version": 1,
   "lang": "en",
-  "preferred_view": "accelerated",
   "name": "__MSG_craigslist__",
   "start_url": "https://craigslist.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Craigslist.hermit",

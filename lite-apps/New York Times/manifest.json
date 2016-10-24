@@ -1,7 +1,6 @@
 {
   "manifest_version": 1,
   "lang": "en",
-  "preferred_view": "accelerated",
   "name": "New York Times",
   "start_url": "http://mobile.nytimes.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/New%20York%20Times.hermit",

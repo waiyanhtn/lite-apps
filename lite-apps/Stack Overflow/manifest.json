@@ -7,7 +7,6 @@
   "secondary_color": "#cc5a27",
   "icons": [{"src": "icon.png"}],
   "lang": "en",
-  "preferred_view": "accelerated",
   "related_applications": [{
     "id": "com.stackexchange.marvin",
     "platform": "play",

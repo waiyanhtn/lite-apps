@@ -1,7 +1,6 @@
 {
   "manifest_version": 1,
   "lang": "en",
-  "preferred_view": "accelerated",
   "name": "Linked In",
   "start_url": "https://touch.www.linkedin.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Linked%20In.hermit",

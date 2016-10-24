@@ -58,7 +58,6 @@ public class Scaffolder {
         root.put(JSONConstants.Fields.MANIFEST_VERSION, 1);
         root.put(JSONConstants.Fields.LANG, JSONConstants.Values.EN);
         root.put(JSONConstants.Fields.ICONS, new JSONArray().put(new JSONObject().put("src", "icon.png")));
-        root.put(JSONConstants.Fields.PREFERRED_VIEW, JSONConstants.Values.PREFERRED_VIEW_ACCELERATED);
 
         // Fields that are correctly populated using the data available in the original JSON file.
         root.put(JSONConstants.Fields.NAME, appName);
