@@ -1,3 +1,8 @@
+---
+title: README for Hermit Lite App Manifests
+description: Native apps eating up battery and slowing down your phone? Switch to Lite Apps — with Hermit.
+---
+
 # Lite App Manifests
 
 This is a directory of manifest files for [Hermit](https://hermit.chimbori.com). Manifests are zipped up into `.hermit` files, and can be used to set up a new Lite App in Hermit.
@@ -67,28 +72,64 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
       "hermit_search": [
         {
           "url": "https://example.com/search?q=%s",
-          "name": "__MSG_search_example__"
+          "name": "Integrated Search, use %s as a search query placeholder."
         }
       ],
       "hermit_share": [
         {
           "url": "https://example.com/share?u=%u&t=%t",
-          "name": "__MSG_share_to_example__"
+          "name": "Share from the native Android dialog to any Lite App"
+        }
+      ],
+      "hermit_create": [
+        {
+          "url": "https://example.com/create",
+          "name": "Create New Content"
+        }
+      ],
+      "hermit_feeds": [
+        {
+          "url": "https://example.com/rss.xml",
+          "name": "RSS feed of all new content"
+        },
+        {
+          "url": "https://example.com/atom.xml",
+          "name": "Atom feeds are supported too."
         }
       ]
     }
 
-### Fields
 
-- `manifest_version`: Must be `1`.
-- `lang`: The default language to use, in case there is no localized version of strings available. Ensure that strings for this language are available under the `_locales` directory.
+### Required Fields
+
+- `manifest_version`: Integer, must be `1`. Only one manifest version is currently supported; this field is reserved for future use.
+- `lang`: The default language to use, in case there are no localized strings available. Ensure that strings for this language are available under the `_locales` directory.
 - `name`: The name of the Lite App, shown on the home screen & at the top of the app.
 - `start_url`: The URL for the home page of the Lite App.
 - `theme_color`: A hex-formatted color used as the theme color for the app.
 - `secondary_color`: A hex-formatted color used for the navigation bar and in other places in the app.
 - `icons`: Hermit currently only uses the first icon specified in this array.
-- `hermit_settings`: A vendor-specific addition to the W3C Web Manifest format, where Hermit settings are saved. See the documentation inline in the source above.
-- `hermit_bookmarks`, `hermit_search`, `hermit_share`: 3 separate arrays of Hermit Integrations, as described in the [Hermit Online Help](https://hermit.chimbori.com/help/integrations).
+
+### Optional Fields
+
+- `hermit_settings`: A vendor-specific addition to the W3C Web Manifest format, where Hermit settings are saved. See details below.
+- `hermit_bookmarks`: A list of bookmarks shown in the left sidebar in every Hermit Lite App.
+- `hermit_search`: Search can be integrated into any Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
+- `hermit_share`: Share text from any Android app directly (natively) into a Hermit Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
+- `hermit_create`: A floating action button can be a quick shortcut to load a common action in any Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
+- `hermit_feeds`: RSS or Atom feed URLs that Hermit will check regularly and notify the user about.
+
+### Settings
+
+- `block_malware`: Whether or not to block ads and malware. Boolean, `true` \| `false`
+- `do_not_track`: Whether to send the [Do Not Track HTTP header](http://donottrack.us/). Boolean, `true` \| `false`
+- `load_images`: Image loading can be disabled, e.g. on slow networks. Boolean, `true` \| `false`
+- `open_links`: Choose where external links should be opened: `"in_app"` opens them inside the Lite App. `"browser"` uses the system default browser.
+- `preferred_view`: `"accelerated"` will load fast Accelerated Mobile Pages instead of slow regular ones. `"original`" loads the original pages.
+- `save_data`: Whether to send the [Save Data client hint](http://httpwg.org/http-extensions/client-hints.html#the-save-data-hint) on every request. Boolean, `true` \| `false`
+- `scroll_to_top`: Whether to show the Scroll to Top button in the Hermit UI. Boolean, `true` \| `false`,
+- `text_zoom`: A percentage number between `0` to `200`, in steps of `20`. The default is `100`. 
+- `user_agent`: `"desktop"` reports the user agent of this browser as a desktop user agent, `""` to use the default mobile user agent.
 
 ## Localization
 
@@ -125,7 +166,7 @@ A string (e.g. `app_name`) can be used in `manifest.json` by referencing it as `
 
 ## Submitting New Lite Apps 
 
-We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations).
+We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations). Clone this repo, make your changes, run the tests, and send us a pull request.
 
 This repository contains not only the manifests for the individual Lite App definitions, but also a set of Java unit tests that validates & packages each Lite App. Once you clone this project to your local disk, open it in Android Studio as a Gradle project. After making changes to existing Lite Apps or creating your new Lite App, re-run all the unit tests with `./gradlew check` before submitting a pull request.
 
