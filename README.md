@@ -105,6 +105,7 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
 - `manifest_version`: Integer, must be `1`. Only one manifest version is currently supported; this field is reserved for future use.
 - `lang`: The default language to use, in case there are no localized strings available. Ensure that strings for this language are available under the `_locales` directory.
 - `name`: The name of the Lite App, shown on the home screen & at the top of the app.
+- `manifest_url`: The URL where this Lite App Manifest will be hosted. Typically, this should be `https://hermit.chimbori.com/lite-apps/YOUR_APP_NAME.hermit`. This must be explicitly specified for every Lite App, although it is not present when you create your own Lite App in Hermit and export it.
 - `start_url`: The URL for the home page of the Lite App.
 - `theme_color`: A hex-formatted color used as the theme color for the app.
 - `secondary_color`: A hex-formatted color used for the navigation bar and in other places in the app.
