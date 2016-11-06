@@ -18,10 +18,9 @@ import java.io.PrintWriter;
 public class Packager {
 
   public static void main(String[] arguments) {
-    boolean allSuccessful = true;
-    allSuccessful &= packageAllManifests(FileUtils.SRC_ROOT_DIR);
+    boolean allSuccessful = packageAllManifests(FileUtils.SRC_ROOT_DIR);
     try {
-      allSuccessful &= generateLibraryData();
+      allSuccessful = allSuccessful && generateLibraryData();
     } catch (IOException | JSONException e) {
       allSuccessful = false;
       e.printStackTrace();
@@ -106,11 +105,6 @@ public class Packager {
           new File(liteAppDirectory, FileUtils.MANIFEST_JSON_FILE_NAME))));
     } catch (JSONException | IOException e) {
       return false;
-    }
-
-    if (manifestJson != null && manifestJson.has(JSONConstants.Fields.UNDER_DEVELOPMENT)) {
-      // Skip generating the zip file for Lite Apps not yet manually vetted, but this isn’t an error, so return true.
-      return true;
     }
 
     System.out.println(liteAppZipped.getName());

@@ -21,14 +21,6 @@ public class JSONConstants {
     public static final String RELATED_APPLICATIONS = "related_applications";
     public static final String PLATFORM = "platform";
     public static final String ID = "id";
-
-    /**
-     * A special designated field that is automatically inserted when a manifest is generated via
-     * scaffolding. Once the manifest has been vetted by hand, this field should be removed.
-     * When this field is absent, the Lite App is considered ready for release, and scaffolding
-     * tools will avoid modifying the manifest after that point.
-     */
-    public static final String UNDER_DEVELOPMENT = "UNDER_DEVELOPMENT";
   }
 
   public class Values {

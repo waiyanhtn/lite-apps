@@ -20,6 +20,7 @@ public class FileUtils {
   public static final String LOCALES_DIR_NAME = "_locales";
   public static final String MESSAGES_JSON_FILE_NAME = "messages.json";
   public static final String LITE_APPS_JSON_FILE_NAME = "lite-apps.json";
+  public static final String ICON_FILENAME = "icon.png";
 
   public static final File SRC_ROOT_DIR = new File("lite-apps/");
   public static final File SRC_LITE_APPS_JSON = new File(SRC_ROOT_DIR, LITE_APPS_JSON_FILE_NAME);

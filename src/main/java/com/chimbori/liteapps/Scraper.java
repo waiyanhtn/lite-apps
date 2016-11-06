@@ -98,7 +98,6 @@ public class Scraper {
 
   private Scraper fetch() {
     try {
-      System.out.println(String.format("Fetching %s…", url));
       doc = Jsoup.connect(url)
           .ignoreContentType(true)
           .userAgent(CHROME_MOBILE_USER_AGENT)
@@ -129,7 +128,10 @@ public class Scraper {
     }
     metadata.themeColor = doc.select("meta[name=theme-color]").attr("content");
     // The "abs:" prefix is a JSoup shortcut that converts this into an absolute URL.
-    metadata.iconUrl = doc.select("link[rel=icon]").attr("abs:href");
+    metadata.iconUrl = doc.select("link[rel=apple-touch-icon]").attr("abs:href");
+    if (metadata.iconUrl == null || metadata.iconUrl.isEmpty()) {
+      metadata.iconUrl = doc.select("link[rel=apple-touch-icon-precomposed]").attr("abs:href");
+    }
 
     metadata.bookmarks = findBookmarkableLinks();
     metadata.feeds = findAtomAndRssFeeds();
