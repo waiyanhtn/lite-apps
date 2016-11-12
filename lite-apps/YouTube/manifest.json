@@ -24,5 +24,11 @@
       "name": "History",
       "url": "https://www.youtube.com/feed/history"
     }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://m.youtube.com/results?q=%s",
+      "name": "Search"
+    }
   ]
 }

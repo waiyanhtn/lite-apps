@@ -6,5 +6,11 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/IMDb.hermit",
   "secondary_color": "#ddcc87",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "hermit_search": [
+    {
+      "name": "Search IMDb",
+      "url": "http://m.imdb.com/find?q=%s"
+    }
+  ]
 }

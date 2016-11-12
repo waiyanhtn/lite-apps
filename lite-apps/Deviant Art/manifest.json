@@ -6,5 +6,11 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Deviant%20Art.hermit",
   "secondary_color": "#05b73f",
   "icons": [{"src": "icon.png"}],
-  "lang": "en"
+  "lang": "en",
+  "hermit_search": [
+    {
+      "url": "http://www.deviantart.com/browse/all/?global=1&q=%s",
+      "name": "Search"
+    }
+  ]
 }
