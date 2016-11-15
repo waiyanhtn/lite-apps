@@ -1,49 +1,59 @@
 {
-"manifest_version": 1,
-"lang": "en",
-"name": "__MSG_google_plus__",
-"start_url": "https://plus.google.com",
-"manifest_url": "https://hermit.chimbori.com/lite-apps/Google+.hermit",
-"theme_color": "#dd4330",
-"secondary_color": "#e25f51",
-"hermit_settings": {
-"block_malware": true,
-"open_links": "in_app"
-},
-"hermit_bookmarks": [
-{
-  "name": "__MSG_collections__",
-  "url": "https://plus.google.com/collections/featured"
-},
-{
-  "name": "__MSG_communities__",
-  "url": "https://plus.google.com/communities/member"
-},
-{
-  "name": "__MSG_profile__",
-  "url": "https://plus.google.com/me"
-},
-{
-  "name": "__MSG_people__",
-  "url": "https://plus.google.com/people"
-},
-{
-  "name": "__MSG_notifications__",
-  "url": "https://plus.google.com/notifications/all"
-}
-],
-"hermit_search": [{
-"name": "__MSG_search__",
-"url": "https://plus.google.com/s/%s/top"
-}],
-"hermit_share": [{
-"name": "__MSG_google_plus__",
-"url": "https://plus.google.com/share?url=%u"
-}],
-"icons": [{"src": "icon.png"}],
-"related_applications": [{
-"id": "com.google.android.apps.plus",
-"platform": "play",
-"url": "https://play.google.com/store/apps/details?id=com.google.android.apps.plus"
-}]
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "__MSG_google_plus__",
+  "start_url": "https://plus.google.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google+.hermit",
+  "theme_color": "#dd4330",
+  "secondary_color": "#e25f51",
+  "hermit_settings": {
+    "block_malware": true,
+    "open_links": "in_app"
+  },
+  "hermit_bookmarks": [
+    {
+      "name": "__MSG_collections__",
+      "url": "https://plus.google.com/collections/featured"
+    },
+    {
+      "name": "__MSG_communities__",
+      "url": "https://plus.google.com/communities/member"
+    },
+    {
+      "name": "__MSG_profile__",
+      "url": "https://plus.google.com/me"
+    },
+    {
+      "name": "__MSG_people__",
+      "url": "https://plus.google.com/people"
+    },
+    {
+      "name": "__MSG_notifications__",
+      "url": "https://plus.google.com/notifications/all"
+    }
+  ],
+  "hermit_search": [
+    {
+      "name": "__MSG_search__",
+      "url": "https://plus.google.com/s/%s/top"
+    }
+  ],
+  "hermit_share": [
+    {
+      "name": "__MSG_google_plus__",
+      "url": "https://plus.google.com/share?url=%u"
+    }
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.google.android.apps.plus",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.plus"
+    }
+  ]
 }
