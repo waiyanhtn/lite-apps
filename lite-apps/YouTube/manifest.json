@@ -8,27 +8,55 @@
   "icons": [{"src": "icon.png"}],
   "lang": "en",
   "hermit_bookmarks": [
-    {
-      "name": "Home",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "name": "Browse Channels",
-      "url": "https://www.youtube.com/channels"
-    },
-    {
-      "name": "Trending",
-      "url": "https://www.youtube.com/feed/trending"
-    },
-    {
-      "name": "History",
-      "url": "https://www.youtube.com/feed/history"
-    }
-  ],
-  "hermit_search": [
-    {
-      "url": "https://m.youtube.com/results?q=%s",
-      "name": "Search"
-    }
-  ]
+{
+  "name": "Home",
+  "url": "https://www.youtube.com/"
+},
+{
+  "name": "Browse Channels",
+  "url": "https://www.youtube.com/channels"
+},
+{
+  "name": "Trending",
+  "url": "https://www.youtube.com/feed/trending"
+},
+{
+  "name": "Subscriptions",
+  "url": "http://www.youtube.com/feed/subscriptions"
+},
+{
+  "name": "History",
+  "url": "https://www.youtube.com/feed/history"
+},
+{
+  "name": "My videos",
+  "url": "https://www.youtube.com/my_videos"
+},
+{
+  "name": "Purchases",
+  "url": "https://www.youtube.com/feed/purchases"
+},
+{
+  "name": "Watch later",
+  "url": "https://www.youtube.com/playlist?list=WL"
+}
+],
+"hermit_search": [
+{
+  "url": "https://m.youtube.com/results?q=%s",
+  "name": "Search"
+}
+],
+"hermit_create": [
+{
+  "url": "https://www.youtube.com/upload",
+  "name": "Upload video"
+}
+],
+"hermit_feeds": [
+{
+  "url": "https://www.youtube.com/subscription_manager?action_takeout=1",
+  "name": "All subscriptions"
+}
+]
 }

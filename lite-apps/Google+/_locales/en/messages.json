@@ -8,8 +8,14 @@
   "communities": {
     "message": "Communities"
   },
+  "profile": {
+    "message": "Profile"
+  },
   "people": {
     "message": "People"
+  },
+  "notifications": {
+    "message": "Notifications"
   },
   "search": {
     "message": "Search"
