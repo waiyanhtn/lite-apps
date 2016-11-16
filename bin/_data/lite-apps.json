@@ -213,6 +213,11 @@
         "url": "https://www.androidpit.com"
       },
       {
+        "app": "APK Mirror.hermit",
+        "name": "APK Mirror",
+        "url": "http://www.apkmirror.com/"
+      },
+      {
         "app": "Droid Life.hermit",
         "name": "Droid Life",
         "url": "https://droid-life.com"
