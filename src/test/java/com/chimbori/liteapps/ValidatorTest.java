@@ -9,7 +9,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -105,12 +104,7 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
     // Test that if any localization files are present, then they are well-formed.
     File localesDirectory = new File(liteApp, FileUtils.LOCALES_DIR_NAME);
     if (localesDirectory.exists()) {
-      File[] localizations = localesDirectory.listFiles(new FileFilter() {
-        @Override
-        public boolean accept(File pathname) {
-          return pathname.isDirectory();
-        }
-      });
+      File[] localizations = localesDirectory.listFiles(File::isDirectory);
       for (File localization : localizations) {
         File messagesFile = new File(localization, FileUtils.MESSAGES_JSON_FILE_NAME);
         // With no specific field checks, we at least validate that the file is well-formed JSON.

@@ -3,7 +3,6 @@ package com.chimbori.liteapps;
 import org.junit.runners.Parameterized;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -20,11 +19,6 @@ public class ParameterizedLiteAppTest {
 
   @Parameterized.Parameters
   public static Collection listOfLiteApps() {
-    return Arrays.asList(FileUtils.SRC_ROOT_DIR.listFiles(new FileFilter() {
-      @Override
-      public boolean accept(File pathname) {
-        return pathname.isDirectory();
-      }
-    }));
+    return Arrays.asList(FileUtils.SRC_ROOT_DIR.listFiles(File::isDirectory));
   }
 }

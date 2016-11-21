@@ -35,12 +35,7 @@ public class FileUtils {
   public static boolean zip(File rootDir, File zipFile) {
     try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
       out.setLevel(9);
-      for (File containedFile : rootDir.listFiles(new FileFilter() {
-        @Override
-        public boolean accept(File pathname) {
-          return !pathname.getName().equals(".DS_Store");
-        }
-      })) {
+      for (File containedFile : rootDir.listFiles(pathname -> !pathname.getName().equals(".DS_Store"))) {
         // Add files contained under the root directory, instead of the root directory itself,
         // so that the individual files appear at the root of the zip file instead of one directory down.
         addFileToZip(out, containedFile, "" /* parentDirectoryName */);
