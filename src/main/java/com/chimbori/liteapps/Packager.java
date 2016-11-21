@@ -60,8 +60,6 @@ public class Packager {
         System.out.println(String.format("- %s", app.getString(JSONConstants.Fields.NAME)));
         String appName = app.getString(JSONConstants.Fields.NAME);
         // Check if the corresponding *.hermit file exists before adding the "app" field.
-        // If the source Lite App still has the UNDER_DEVELOPMENT field present, then a *.hermit
-        // file will not be produced for it, and thus, no additional checks are needed here.
         if (FileUtils.packagedLiteAppExists(appName)) {
           app.put(JSONConstants.Fields.APP, String.format("%s.hermit", appName));
         }

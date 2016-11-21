@@ -128,8 +128,8 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
 - `open_links`: Choose where external links should be opened: `"in_app"` opens them inside the Lite App. `"browser"` uses the system default browser.
 - `preferred_view`: `"accelerated"` will load fast Accelerated Mobile Pages instead of slow regular ones. `"original`" loads the original pages.
 - `save_data`: Whether to send the [Save Data client hint](http://httpwg.org/http-extensions/client-hints.html#the-save-data-hint) on every request. Boolean, `true` \| `false`
-- `scroll_to_top`: Whether to show the Scroll to Top button in the Hermit UI. Boolean, `true` \| `false`,
-- `text_zoom`: A percentage number between `0` to `200`, in steps of `20`. The default is `100`. 
+- `scroll_to_top`: Whether to show the Scroll to Top button in the Hermit UI. Boolean, `true` \| `false`
+- `text_zoom`: A percentage number between `0` to `200`, in steps of `20`. The default is `100`.
 - `user_agent`: `"desktop"` reports the user agent of this browser as a desktop user agent, `""` to use the default mobile user agent.
 
 ## Localization
@@ -170,12 +170,6 @@ A string (e.g. `app_name`) can be used in `manifest.json` by referencing it as `
 We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations). Clone this repo, make your changes, run the tests, and send us a pull request.
 
 This repository contains not only the manifests for the individual Lite App definitions, but also a set of Java unit tests that validates & packages each Lite App. Once you clone this project to your local disk, open it in Android Studio as a Gradle project. After making changes to existing Lite Apps or creating your new Lite App, re-run all the unit tests with `./gradlew check` before submitting a pull request.
-
-### The `UNDER_DEVELOPMENT` JSON field
-
-To exclude any Lite Apps that are not yet ready from being published automatically, add a new boolean field to `manifest.json`. It should be named `UNDER_DEVELOPMENT` with the value set to `true`. This will include it in internal processing, but will exclude it from being published.
-
-When ready to publish, simply remove this field, and re-run the tests and tools.
 
 ## Questions?
 
