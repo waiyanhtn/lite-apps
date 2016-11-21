@@ -386,6 +386,14 @@
       {
         "name": "Flipboard",
         "url": "https://flipboard.com"
+      },
+      {
+        "name": "Google Tasks",
+        "url": "https://mail.google.com/tasks/ig"
+      },
+      {
+        "name": "TeamViewer Chat",
+        "url": "https://integratedchat.teamviewer.com/"
       }
     ]
   },
