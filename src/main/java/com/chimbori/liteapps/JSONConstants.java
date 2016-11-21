@@ -3,14 +3,9 @@ package com.chimbori.liteapps;
 public class JSONConstants {
 
   public class Fields {
-    // Used in lite-apps.json.
-    public static final String CATEGORY = "category";
-    public static final String APPS = "apps";
-    public static final String URL = "url";
-    public static final String APP = "app";
-
     // Used in manifest.json.
     public static final String NAME = "name";
+    public static final String URL = "url";
     public static final String START_URL = "start_url";
     public static final String LANG = "lang";
     public static final String MANIFEST_URL = "manifest_url";

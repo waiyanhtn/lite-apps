@@ -1,5 +1,50 @@
 [
   {
+    "category": "Most Popular",
+    "apps": [
+      {
+        "app": "Facebook.hermit",
+        "name": "Facebook",
+        "url": "https://m.facebook.com"
+      },
+      {
+        "app": "Twitter.hermit",
+        "name": "Twitter",
+        "url": "https://m.twitter.com"
+      },
+      {
+        "app": "Reddit.hermit",
+        "name": "Reddit",
+        "url": "https://m.reddit.com"
+      },
+      {
+        "app": "YouTube.hermit",
+        "name": "YouTube",
+        "url": "https://m.youtube.com"
+      },
+      {
+        "app": "BBC.hermit",
+        "name": "BBC",
+        "url": "https://bbc.com"
+      },
+      {
+        "app": "New York Times.hermit",
+        "name": "New York Times",
+        "url": "http://mobile.nytimes.com"
+      },
+      {
+        "app": "Washington Post.hermit",
+        "name": "Washington Post",
+        "url": "https://m.washingtonpost.com"
+      },
+      {
+        "app": "Wikipedia.hermit",
+        "name": "Wikipedia",
+        "url": "https://wikipedia.org"
+      }
+    ]
+  },
+  {
     "category": "Social",
     "apps": [
       {
@@ -498,8 +543,8 @@
         "url": "https://m.yelp.com"
       },
       {
-        "app": "Opentable.hermit",
-        "name": "Opentable",
+        "app": "OpenTable.hermit",
+        "name": "OpenTable",
         "url": "https://m.opentable.com"
       },
       {

@@ -26,7 +26,6 @@ import javax.imageio.ImageIO;
  * Generates a skeleton Lite App with as many fields pre-filled as possible.
  */
 public class Scaffolder {
-
   /**
    * The lite-apps.json file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.

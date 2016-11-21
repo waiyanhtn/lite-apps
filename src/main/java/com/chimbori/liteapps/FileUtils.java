@@ -3,7 +3,6 @@ package com.chimbori.liteapps;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -19,15 +18,12 @@ public class FileUtils {
   public static final String MANIFEST_JSON_FILE_NAME = "manifest.json";
   public static final String LOCALES_DIR_NAME = "_locales";
   public static final String MESSAGES_JSON_FILE_NAME = "messages.json";
-  public static final String LITE_APPS_JSON_FILE_NAME = "lite-apps.json";
   public static final String ICON_FILENAME = "icon.png";
 
   public static final File SRC_ROOT_DIR = new File("lite-apps/");
-  public static final File SRC_LITE_APPS_JSON = new File(SRC_ROOT_DIR, LITE_APPS_JSON_FILE_NAME);
 
   public static final File OUT_ROOT_DIR = new File("bin/");
   public static final File OUT_DATA_DIR = new File(OUT_ROOT_DIR, "_data/");
-  public static final File OUT_LITE_APPS_JSON = new File(OUT_DATA_DIR, LITE_APPS_JSON_FILE_NAME);
   public static final File OUT_LITE_APPS_DIR = new File(OUT_ROOT_DIR, "lite-apps/");
 
   static {
@@ -106,12 +102,5 @@ public class FileUtils {
     try (FileOutputStream fout = new FileOutputStream(file)) {
       fout.write(content.getBytes());
     }
-  }
-
-  /**
-   * @return Whether a packaged Lite App (zipped file) exists for the given Lite App (by name).
-   */
-  static boolean packagedLiteAppExists(String liteAppName) {
-    return new File(OUT_LITE_APPS_DIR, String.format("%s.hermit", liteAppName)).exists();
   }
 }
