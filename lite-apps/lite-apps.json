@@ -13,12 +13,14 @@
       {
         "name": "Messenger",
         "url": "https://messenger.com",
-        "user_agent": "desktop"
+        "user_agent": "desktop",
+        "display": false
       },
       {
         "name": "WhatsApp",
         "url": "https://web.whatsapp.com",
-        "user_agent": "desktop"
+        "user_agent": "desktop",
+        "display": false
       },
       {
         "name": "Instagram",

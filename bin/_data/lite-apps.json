@@ -476,6 +476,16 @@
         "app": "Flipboard.hermit",
         "name": "Flipboard",
         "url": "https://flipboard.com"
+      },
+      {
+        "app": "Google Tasks.hermit",
+        "name": "Google Tasks",
+        "url": "https://mail.google.com/tasks/ig"
+      },
+      {
+        "app": "TeamViewer Chat.hermit",
+        "name": "TeamViewer Chat",
+        "url": "https://integratedchat.teamviewer.com/"
       }
     ]
   },
