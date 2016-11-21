@@ -5,6 +5,10 @@
   "start_url": "https://www.wiktionary.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wiktionary.hermit",
   "secondary_color": "#2d885a",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

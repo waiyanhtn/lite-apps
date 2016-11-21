@@ -5,6 +5,10 @@
   "start_url": "https://yummly.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yummly.hermit",
   "secondary_color": "#c9561b",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

@@ -6,7 +6,11 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook.hermit",
   "theme_color": "#3b5998",
   "secondary_color": "#3b5998",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "hermit_settings": {
     "block_malware": true,
     "open_links": "in_app"
@@ -49,17 +53,23 @@
       "url": "https://m.facebook.com/settings"
     }
   ],
-  "hermit_search": [{
-    "name": "__MSG_search_facebook__",
-    "url": "https://m.facebook.com/search/top/?q=%s"
-  }],
-  "hermit_share": [{
-    "name": "__MSG_post_to_facebook__",
-    "url": "http://www.facebook.com/sharer/sharer.php?u=%u"
-  }],
-  "related_applications": [{
-    "id": "com.facebook.katana",
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.facebook.katana"
-  }]
+  "hermit_search": [
+    {
+      "name": "__MSG_search_facebook__",
+      "url": "https://m.facebook.com/search/top/?q=%s"
+    }
+  ],
+  "hermit_share": [
+    {
+      "name": "__MSG_post_to_facebook__",
+      "url": "http://www.facebook.com/sharer/sharer.php?u=%u"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.facebook.katana",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.katana"
+    }
+  ]
 }

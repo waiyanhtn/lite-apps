@@ -5,11 +5,17 @@
   "start_url": "https://ask.fm",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Ask.fm.hermit",
   "secondary_color": "#e55b40",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
-  "related_applications": [{
-    "id": "com.askfm",
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.askfm"
-  }]
+  "related_applications": [
+    {
+      "id": "com.askfm",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.askfm"
+    }
+  ]
 }

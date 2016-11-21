@@ -5,7 +5,11 @@
   "start_url": "https://theguardian.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Guardian.hermit",
   "secondary_color": "#004d7b",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -97,8 +101,10 @@
       "url": "https://www.theguardian.com/video"
     }
   ],
-  "hermit_feeds": [{
-    "name": "RSS",
-    "url": "https://www.theguardian.com/us/rss"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "RSS",
+      "url": "https://www.theguardian.com/us/rss"
+    }
+  ]
 }

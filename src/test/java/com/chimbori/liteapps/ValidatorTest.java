@@ -1,7 +1,9 @@
 package com.chimbori.liteapps;
 
 import com.eclipsesource.json.Json;
+import com.eclipsesource.json.JsonValue;
 import com.eclipsesource.json.ParseException;
+import com.eclipsesource.json.WriterConfig;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -49,7 +51,9 @@ public class ValidatorTest {
       public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
         if (attrs.isRegularFile() && file.toFile().getName().endsWith(".json")) {
           try {
-            Json.parse(FileUtils.readFully(new FileInputStream(file.toFile())));
+            JsonValue manifest = Json.parse(FileUtils.readFully(new FileInputStream(file.toFile())));
+            // Re-indent the source file by saving the JSON back to the same file.
+            FileUtils.writeFile(file.toFile(), manifest.toString(WriterConfig.PRETTY_PRINT));
           } catch (ParseException e) {
             fail(String.format("%s: %s", file.toFile().getPath(), e.getMessage()));
           }
@@ -115,7 +119,7 @@ public class ValidatorTest {
       }
 
       File localesDirectory = new File(liteApp, FileUtils.LOCALES_DIR_NAME);
-      if (localesDirectory != null && localesDirectory.exists()) {
+      if (localesDirectory.exists()) {
         File[] localizations = localesDirectory.listFiles(new FileFilter() {
           @Override
           public boolean accept(File pathname) {

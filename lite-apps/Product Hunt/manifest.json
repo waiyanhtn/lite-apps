@@ -5,7 +5,11 @@
   "start_url": "https://producthunt.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Product%20Hunt.hermit",
   "secondary_color": "#c44c2a",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -41,8 +45,10 @@
       "url": "https://www.producthunt.com/topics/wearables"
     }
   ],
-  "hermit_feeds": [{
-    "name": "Product Hunt",
-    "url": "https://www.producthunt.com/feed"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed"
+    }
+  ]
 }

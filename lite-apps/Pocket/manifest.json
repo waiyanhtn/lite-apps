@@ -5,6 +5,10 @@
   "start_url": "https://getpocket.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Pocket.hermit",
   "secondary_color": "#d6394c",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

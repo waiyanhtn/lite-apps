@@ -12,11 +12,11 @@
     }
   ],
   "related_applications": [
-      {
-        "platform": "play",
-        "url": "https://play.google.com/store/apps/details?id=com.instapaper.android",
-        "id": "com.instapaper.android"
-      }
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.instapaper.android",
+      "id": "com.instapaper.android"
+    }
   ],
   "hermit_settings": {
     "block_malware": true,

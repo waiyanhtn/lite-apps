@@ -5,6 +5,10 @@
   "start_url": "https://m.ebay.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/eBay.hermit",
   "secondary_color": "#cd2c32",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

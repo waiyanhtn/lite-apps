@@ -5,11 +5,17 @@
   "start_url": "https://tvguide.com/listings",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TV%20Guide.hermit",
   "secondary_color": "#8f1209",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
-  "related_applications": [{
-    "id": "com.tvguidemobile",
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.tvguidemobile"
-  }]
+  "related_applications": [
+    {
+      "id": "com.tvguidemobile",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.tvguidemobile"
+    }
+  ]
 }

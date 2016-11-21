@@ -5,6 +5,10 @@
   "start_url": "https://dropbox.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Dropbox.hermit",
   "secondary_color": "#0994e1",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

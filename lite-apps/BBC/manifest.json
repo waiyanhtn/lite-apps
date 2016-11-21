@@ -6,7 +6,11 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/BBC.hermit",
   "theme_color": "#bd160d",
   "secondary_color": "#ab140d",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "hermit_bookmarks": [
     {
       "name": "News",

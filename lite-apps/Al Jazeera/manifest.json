@@ -5,7 +5,11 @@
   "start_url": "http://aljazeera.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Al%20Jazeera.hermit",
   "secondary_color": "#e47300",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -41,8 +45,10 @@
       "url": "http://www.aljazeera.com/topics/regions/latin-america.html"
     }
   ],
-  "hermit_feeds": [{
-    "name": "Al Jazeera English",
-    "url": "http://www.aljazeera.com/xml/rss/all.xml"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "Al Jazeera English",
+      "url": "http://www.aljazeera.com/xml/rss/all.xml"
+    }
+  ]
 }

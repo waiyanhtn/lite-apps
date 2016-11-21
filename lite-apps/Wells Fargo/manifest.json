@@ -5,7 +5,11 @@
   "start_url": "https://m.wellsfargo.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wells%20Fargo.hermit",
   "secondary_color": "#d8a3a9",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "related_applications": [
     {

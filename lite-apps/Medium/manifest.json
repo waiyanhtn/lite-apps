@@ -5,6 +5,10 @@
   "start_url": "https://medium.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Medium.hermit",
   "secondary_color": "#09cc64",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

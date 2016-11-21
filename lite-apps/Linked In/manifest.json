@@ -10,18 +10,28 @@
     "block_malware": true,
     "open_links": "in_app"
   },
-  "hermit_search": [{
-    "name": "__MSG_search__",
-    "url": "https://www.linkedin.com/vsearch/f?type=all&keywords=%s"
-  }],
-  "hermit_share": [{
-    "name": "Linked In",
-    "url": "https://www.linkedin.com/shareArticle?mini=true&url=%u&title=%t&source=Hermit"
-  }],
-  "icons": [{"src": "icon.png"}],
-  "related_applications": [{
-    "id": "com.linkedin.android",
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.linkedin.android"
-  }]
+  "hermit_search": [
+    {
+      "name": "__MSG_search__",
+      "url": "https://www.linkedin.com/vsearch/f?type=all&keywords=%s"
+    }
+  ],
+  "hermit_share": [
+    {
+      "name": "Linked In",
+      "url": "https://www.linkedin.com/shareArticle?mini=true&url=%u&title=%t&source=Hermit"
+    }
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.linkedin.android",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.linkedin.android"
+    }
+  ]
 }

@@ -5,6 +5,10 @@
   "start_url": "https://techmeme.com/m",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TechMeme.hermit",
   "secondary_color": "#1b4459",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

@@ -5,6 +5,10 @@
   "start_url": "https://paypal.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/PayPal.hermit",
   "secondary_color": "#008cc7",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

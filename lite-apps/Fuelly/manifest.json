@@ -1,20 +1,20 @@
 {
-   "icons" : [
-      {
-         "src" : "http_m_fuelly_com_.png"
-      }
-   ],
-   "manifest_version" : 1,
-   "secondary_color" : "#289890",
-   "hermit_settings" : {
-      "open_links" : "in_app",
-      "preferred_view" : "original",
-      "block_popups" : true,
-      "block_malware" : true
-   },
-   "start_url" : "http://m.fuelly.com/",
-   "name" : "Fuelly",
-   "theme_color" : "#3eb9ae",
-   "lang" : "en",
-   "manifest_url" : "https://hermit.chimbori.com/lite-apps/Fuelly.hermit"
+  "icons": [
+    {
+      "src": "http_m_fuelly_com_.png"
+    }
+  ],
+  "manifest_version": 1,
+  "secondary_color": "#289890",
+  "hermit_settings": {
+    "open_links": "in_app",
+    "preferred_view": "original",
+    "block_popups": true,
+    "block_malware": true
+  },
+  "start_url": "http://m.fuelly.com/",
+  "name": "Fuelly",
+  "theme_color": "#3eb9ae",
+  "lang": "en",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Fuelly.hermit"
 }

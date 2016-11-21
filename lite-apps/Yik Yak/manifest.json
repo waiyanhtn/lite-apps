@@ -5,6 +5,10 @@
   "start_url": "https://yikyakapp.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yik%20Yak.hermit",
   "secondary_color": "#0bbfa0",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

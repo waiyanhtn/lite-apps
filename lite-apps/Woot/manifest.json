@@ -5,10 +5,16 @@
   "start_url": "https://woot.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Woot.hermit",
   "secondary_color": "#75a914",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
-  "hermit_feeds": [{
-    "name": "Woot Blog",
-    "url": "https://www.woot.com/blog/feed.rss"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "Woot Blog",
+      "url": "https://www.woot.com/blog/feed.rss"
+    }
+  ]
 }

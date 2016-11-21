@@ -5,7 +5,11 @@
   "start_url": "https://messenger.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Messenger.hermit",
   "secondary_color": "#0078e5",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_settings": {
     "user_agent": "desktop"

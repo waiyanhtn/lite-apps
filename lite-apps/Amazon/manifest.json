@@ -5,7 +5,11 @@
   "start_url": "https://amazon.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Amazon.hermit",
   "secondary_color": "#3073a7",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_search": [
     {

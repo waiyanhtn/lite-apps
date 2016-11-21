@@ -5,6 +5,10 @@
   "start_url": "https://bloomberg.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bloomberg.hermit",
   "secondary_color": "#2400c1",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

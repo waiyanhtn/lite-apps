@@ -5,7 +5,11 @@
   "start_url": "https://mega.nz",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Mega.hermit",
   "secondary_color": "#d60c12",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_settings": {
     "user_agent": "desktop"

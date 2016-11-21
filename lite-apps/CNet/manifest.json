@@ -5,7 +5,11 @@
   "start_url": "http://cnet.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/CNet.hermit",
   "secondary_color": "#a50000",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -85,8 +89,10 @@
       "url": "http://www.cnet.com/topics/tech-culture/"
     }
   ],
-  "hermit_feeds": [{
-    "name": "CNET",
-    "url": "http://www.cnet.com/rss/all/"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "CNET",
+      "url": "http://www.cnet.com/rss/all/"
+    }
+  ]
 }

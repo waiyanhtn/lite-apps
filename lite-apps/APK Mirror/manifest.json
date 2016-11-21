@@ -1,49 +1,49 @@
 {
-  "manifest_version":1,
-  "lang":"en",
-  "name":"APKMirror",
-  "start_url":"http://www.apkmirror.com/",
-  "manifest_url":"https://hermit.chimbori.com/lite-apps/APKMirror.hermit",
-  "theme_color":"#ff9800",
-  "secondary_color":"#f57c00",
-  "icons":[
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "APKMirror",
+  "start_url": "http://www.apkmirror.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/APKMirror.hermit",
+  "theme_color": "#ff9800",
+  "secondary_color": "#f57c00",
+  "icons": [
     {
-      "src":"icon.png"
+      "src": "icon.png"
     }
   ],
-  "hermit_settings":{
-    "open_links":"in_app"
+  "hermit_settings": {
+    "open_links": "in_app"
   },
-  "hermit_bookmarks":[
+  "hermit_bookmarks": [
     {
-      "url":"http://www.apkmirror.com/developers/",
-      "name":"All Developers"
+      "url": "http://www.apkmirror.com/developers/",
+      "name": "All Developers"
     },
     {
-      "url":"http://www.apkmirror.com/uploads/",
-      "name":"Latest Uploads"
+      "url": "http://www.apkmirror.com/uploads/",
+      "name": "Latest Uploads"
     },
     {
-      "url":"http://www.apkmirror.com/faq/",
-      "name":"FAQ"
+      "url": "http://www.apkmirror.com/faq/",
+      "name": "FAQ"
     }
   ],
-  "hermit_search":[
+  "hermit_search": [
     {
-      "url":"http://www.apkmirror.com/?s=%s",
-      "name":"Search"
+      "url": "http://www.apkmirror.com/?s=%s",
+      "name": "Search"
     }
   ],
-  "hermit_create":[
+  "hermit_create": [
     {
-      "url":"http://www.apkmirror.com/apk-upload/",
-      "name":"Submit APK"
+      "url": "http://www.apkmirror.com/apk-upload/",
+      "name": "Submit APK"
     }
   ],
-  "hermit_feeds":[
+  "hermit_feeds": [
     {
-      "url":"http://www.apkmirror.com/feed/",
-      "name":"Latest Uploads"
+      "url": "http://www.apkmirror.com/feed/",
+      "name": "Latest Uploads"
     }
   ]
 }

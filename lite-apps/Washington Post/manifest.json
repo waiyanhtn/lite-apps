@@ -5,7 +5,11 @@
   "start_url": "https://m.washingtonpost.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Washington%20Post.hermit",
   "secondary_color": "#001010",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {

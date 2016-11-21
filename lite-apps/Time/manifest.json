@@ -5,7 +5,11 @@
   "start_url": "https://time.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Time.hermit",
   "secondary_color": "#c00001",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {

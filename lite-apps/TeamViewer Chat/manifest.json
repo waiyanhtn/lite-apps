@@ -1,17 +1,17 @@
 {
-  "manifest_version":1,
-  "lang":"en",
-  "name":"TeamViewer Chat",
-  "start_url":"https://integratedchat.teamviewer.com/",
-  "manifest_url":"https://hermit.chimbori.com/lite-apps/TeamViewer%20Chat.hermit",
-  "theme_color":"#2196f3",
-  "secondary_color":"#1976d2",
-  "icons":[
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "TeamViewer Chat",
+  "start_url": "https://integratedchat.teamviewer.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/TeamViewer%20Chat.hermit",
+  "theme_color": "#2196f3",
+  "secondary_color": "#1976d2",
+  "icons": [
     {
-      "src":"icon.png"
+      "src": "icon.png"
     }
   ],
-  "hermit_settings":{
-    "open_links":"browser"
+  "hermit_settings": {
+    "open_links": "browser"
   }
 }

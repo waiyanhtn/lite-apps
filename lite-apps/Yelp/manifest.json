@@ -5,6 +5,10 @@
   "start_url": "https://m.yelp.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yelp.hermit",
   "secondary_color": "#bb1b0a",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

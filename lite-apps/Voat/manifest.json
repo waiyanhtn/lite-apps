@@ -5,6 +5,10 @@
   "start_url": "https://voat.co",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Voat.hermit",
   "secondary_color": "#5482aa",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

@@ -6,7 +6,11 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/New%20York%20Times.hermit",
   "theme_color": "#000000",
   "secondary_color": "#333333",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "hermit_bookmarks": [
     {
       "name": "Home",

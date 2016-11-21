@@ -5,6 +5,10 @@
   "start_url": "https://slashdot.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Slashdot.hermit",
   "secondary_color": "#005f59",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

@@ -5,7 +5,11 @@
   "start_url": "http://techcrunch.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TechCrunch.hermit",
   "secondary_color": "#007a0b",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -43,9 +47,11 @@
       "url": "https://techcrunch.com/feed/"
     }
   ],
-  "related_applications": [{
-    "id": "com.aol.mobile.techcrunch",
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.aol.mobile.techcrunch"
-  }]
+  "related_applications": [
+    {
+      "id": "com.aol.mobile.techcrunch",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.aol.mobile.techcrunch"
+    }
+  ]
 }

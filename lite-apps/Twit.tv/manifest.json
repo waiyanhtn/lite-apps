@@ -5,6 +5,10 @@
   "start_url": "https://twit.tv",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Twit.tv.hermit",
   "secondary_color": "#2e99bd",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

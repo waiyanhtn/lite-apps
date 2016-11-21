@@ -5,7 +5,11 @@
   "start_url": "https://recode.net",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/ReCode.hermit",
   "secondary_color": "#b20015",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_feeds": [
     {

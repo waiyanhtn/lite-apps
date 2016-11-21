@@ -5,6 +5,10 @@
   "start_url": "https://flipkart.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/FlipKart.hermit",
   "secondary_color": "#016ebe",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

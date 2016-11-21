@@ -5,6 +5,10 @@
   "start_url": "https://droid-life.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Droid%20Life.hermit",
   "secondary_color": "#e08cac",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

@@ -5,7 +5,11 @@
   "start_url": "https://kayak.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Kayak.hermit",
   "secondary_color": "#e28135",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {

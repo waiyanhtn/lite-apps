@@ -5,6 +5,10 @@
   "start_url": "https://flipboard.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Flipboard.hermit",
   "secondary_color": "#ca2424",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

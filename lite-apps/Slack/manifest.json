@@ -5,7 +5,11 @@
   "start_url": "https://slack.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Slack.hermit",
   "secondary_color": "#67b8c6",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "related_applications": [
     {

@@ -5,6 +5,10 @@
   "start_url": "https://m.accuweather.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/AccuWeather.hermit",
   "secondary_color": "#d84e12",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

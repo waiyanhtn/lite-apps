@@ -5,6 +5,10 @@
   "start_url": "https://mail.google.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Gmail.hermit",
   "secondary_color": "#c6483c",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

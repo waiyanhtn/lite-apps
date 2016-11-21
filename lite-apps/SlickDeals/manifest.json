@@ -5,7 +5,11 @@
   "start_url": "http://slickdeals.net",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/SlickDeals.hermit",
   "secondary_color": "#0085bc",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -29,8 +33,10 @@
       "url": "http://slickdeals.net/deal-categories/"
     }
   ],
-  "hermit_feeds": [{
-    "name": "Slickdeals",
-    "url": "http://slickdeals.net/newsearch.php?mode=frontpage&searcharea=deals&searchin=first&rss=1"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "Slickdeals",
+      "url": "http://slickdeals.net/newsearch.php?mode=frontpage&searcharea=deals&searchin=first&rss=1"
+    }
+  ]
 }

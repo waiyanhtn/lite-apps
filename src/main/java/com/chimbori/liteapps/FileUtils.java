@@ -103,6 +103,12 @@ public class FileUtils {
     return baos.toString("UTF-8");
   }
 
+  public static void writeFile(File file, String content) throws IOException {
+    try (FileOutputStream fout = new FileOutputStream(file)) {
+      fout.write(content.getBytes());
+    }
+  }
+
   /**
    * @return Whether a packaged Lite App (zipped file) exists for the given Lite App (by name).
    */

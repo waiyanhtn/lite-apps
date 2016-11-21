@@ -5,7 +5,11 @@
   "start_url": "https://m.ft.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Financial%20Times.hermit",
   "secondary_color": "#e2c4a8",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -53,8 +57,10 @@
       "url": "https://www.ft.com/markets/trading"
     }
   ],
-  "hermit_feeds": [{
-    "name": "Financial Times",
-    "url": "http://www.ft.com/rss/home"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "Financial Times",
+      "url": "http://www.ft.com/rss/home"
+    }
+  ]
 }

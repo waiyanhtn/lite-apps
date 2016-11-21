@@ -5,7 +5,11 @@
   "start_url": "http://engadget.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Engadget.hermit",
   "secondary_color": "#0891d9",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {
@@ -49,13 +53,17 @@
       "url": "https://www.engadget.com/videos/"
     }
   ],
-  "hermit_feeds": [{
-    "name": "Engadget",
-    "url": "https://www.engadget.com/rss.xml"
-  }],
-  "related_applications": [{
-    "id": "com.aol.mobile.engadget",
-    "platform": "play",
-    "url": "https://play.google.com/store/apps/details?id=com.aol.mobile.engadget"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "Engadget",
+      "url": "https://www.engadget.com/rss.xml"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.aol.mobile.engadget",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.aol.mobile.engadget"
+    }
+  ]
 }

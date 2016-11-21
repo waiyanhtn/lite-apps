@@ -5,7 +5,11 @@
   "start_url": "http://retailmenot.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Retail%20Me%20Not.hermit",
   "secondary_color": "#6c347f",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_search": [
     {

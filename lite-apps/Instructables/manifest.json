@@ -5,6 +5,10 @@
   "start_url": "https://m.instructables.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Instructables.hermit",
   "secondary_color": "#e0a94f",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

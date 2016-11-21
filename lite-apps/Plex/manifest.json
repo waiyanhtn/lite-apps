@@ -5,6 +5,10 @@
   "start_url": "https://plex.tv",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Plex.hermit",
   "secondary_color": "#b97000",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en"
 }

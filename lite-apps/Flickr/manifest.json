@@ -5,7 +5,11 @@
   "start_url": "https://flickr.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Flickr.hermit",
   "secondary_color": "#0b5abd",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
   "hermit_bookmarks": [
     {

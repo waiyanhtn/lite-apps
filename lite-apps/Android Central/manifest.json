@@ -5,10 +5,16 @@
   "start_url": "https://m.androidcentral.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Central.hermit",
   "secondary_color": "#c1ce73",
-  "icons": [{"src": "icon.png"}],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
   "lang": "en",
-  "hermit_feeds": [{
-    "name": "Android Central",
-    "url": "https://m.androidcentral.com/rss.xml"
-  }]
+  "hermit_feeds": [
+    {
+      "name": "Android Central",
+      "url": "https://m.androidcentral.com/rss.xml"
+    }
+  ]
 }
