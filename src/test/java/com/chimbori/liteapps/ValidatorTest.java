@@ -104,10 +104,15 @@ public class ValidatorTest {
         assertTrue(manifest.getPath().startsWith("/lite-apps/"));
         assertTrue(manifest.getPath().endsWith(".hermit"));
         assertEquals(liteApp.getName() + ".hermit", new File(URLDecoder.decode(manifest.getFile())).getName());
-
       } catch (JSONException | MalformedURLException e) {
         fail(e.getMessage());
       }
+
+      // Test that the name of the icon file is "icon.png" & that the file exists.
+      // Although any filename should work, having it be consistent in the library can let us
+      // avoid a filename lookup in automated tests and refactors.
+      assertEquals(FileUtils.ICON_FILENAME, manifestJson.getJSONArray(JSONConstants.Fields.ICONS).getJSONObject(0).getString(JSONConstants.Fields.SRC));
+      assertTrue(new File(liteApp, FileUtils.ICON_FILENAME).exists());
 
       try {
         JSONArray relatedApps = manifestJson.optJSONArray(JSONConstants.Fields.RELATED_APPLICATIONS);

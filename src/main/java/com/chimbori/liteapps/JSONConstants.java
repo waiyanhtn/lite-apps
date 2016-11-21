@@ -21,6 +21,7 @@ public class JSONConstants {
     public static final String RELATED_APPLICATIONS = "related_applications";
     public static final String PLATFORM = "platform";
     public static final String ID = "id";
+    public static final String SRC = "src";
   }
 
   public class Values {
