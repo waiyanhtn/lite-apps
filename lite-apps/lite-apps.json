@@ -215,7 +215,7 @@
       {
         "app": "APK Mirror.hermit",
         "name": "APK Mirror",
-        "url": "http://www.apkmirror.com/"
+        "url": "http://www.apkmirror.com"
       },
       {
         "app": "Droid Life.hermit",
@@ -485,7 +485,7 @@
       {
         "app": "TeamViewer Chat.hermit",
         "name": "TeamViewer Chat",
-        "url": "https://integratedchat.teamviewer.com/"
+        "url": "https://integratedchat.teamviewer.com"
       }
     ]
   },
