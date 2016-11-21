@@ -4,3 +4,5 @@ jdk:
 notifications:
   email:
     - hello@chimbori.com
+script:
+- ./gradlew check --info
