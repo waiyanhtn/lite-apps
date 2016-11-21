@@ -9,6 +9,14 @@ This is a directory of manifest files for [Hermit](https://hermit.chimbori.com).
 
 [![Build Status](https://travis-ci.org/chimbori/lite-apps.svg?branch=master)](https://travis-ci.org/chimbori/lite-apps)
 
+# Quickly Create a New Lite App
+
+Try the `Scaffolder` tool to quickly generate a new Lite App from scratch, using just the URL of a site. It will create the manifest, locate and import an icon, attempt to locate feeds, navigation, bookmarks, and theme colors from the downloaded icon. You can then manually customize the almost-ready Lite App, confirm that all the tests work fine, and submit a pull request.
+
+1. `java com.chimbori.lite-apps.Scaffolder --u "http://example.com" --title "Example"`
+1. `./gradlew check --info` to run all tests
+1. `git commit`, `git push`, and send a pull request.
+
 # Syntax
 
 Hermit Lite Apps are zip files, with the extension `.hermit`. Each zip file contains multiple files that define the Lite App, how it should be installed, and default settings to be used. Only two files are required, all others are optional.

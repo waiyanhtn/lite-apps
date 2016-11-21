@@ -136,7 +136,10 @@ public class Scaffolder {
             .build());
     try {
       CommandLine command = parser.parse(options, arguments);
-      Scaffolder.createScaffolding(command.getOptionValue("url"), command.getOptionValue("title"));
+      boolean success = Scaffolder.createScaffolding(command.getOptionValue("url"), command.getOptionValue("title"));
+      if (!success) {
+        System.exit(1);
+      }
 
     } catch (ParseException e) {
       final PrintWriter writer = new PrintWriter(System.out);
