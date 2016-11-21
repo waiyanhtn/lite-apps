@@ -23,6 +23,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.regex.Pattern;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -33,13 +34,15 @@ import static org.junit.Assert.fail;
 /**
  * A test that validates that each Lite App contains all the required fields in manifest.json.
  * Invalid behavior that should be added to this test:
- * - Missing icons
- * - Colors are properly-formatted hex values.
  * - Invalid localizations (Text not correctly found in any messages.json).
  * - Missing localizations (manifest.json references a string, but string is not found in manifest.json).
  * - Extra files that are not part of the expected structure.
  */
 public class ValidatorTest {
+
+  private static final String HEX_COLOR_REGEXP = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
+  private static final Pattern HEX_COLOR_PATTERN = Pattern.compile(HEX_COLOR_REGEXP);
+
   @Before
   public void setUp() {
     FileUtils.OUT_ROOT_DIR.delete();
@@ -108,12 +111,17 @@ public class ValidatorTest {
         fail(e.getMessage());
       }
 
+      // Test that colors are valid hex colors.
+      assertTrue(HEX_COLOR_PATTERN.matcher(manifestJson.getString(JSONConstants.Fields.THEME_COLOR)).matches());
+      assertTrue(HEX_COLOR_PATTERN.matcher(manifestJson.getString(JSONConstants.Fields.SECONDARY_COLOR)).matches());
+
       // Test that the name of the icon file is "icon.png" & that the file exists.
       // Although any filename should work, having it be consistent in the library can let us
       // avoid a filename lookup in automated tests and refactors.
       assertEquals(FileUtils.ICON_FILENAME, manifestJson.getJSONArray(JSONConstants.Fields.ICONS).getJSONObject(0).getString(JSONConstants.Fields.SRC));
       assertTrue(new File(liteApp, FileUtils.ICON_FILENAME).exists());
 
+      // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
       try {
         JSONArray relatedApps = manifestJson.optJSONArray(JSONConstants.Fields.RELATED_APPLICATIONS);
         if (relatedApps != null) {
@@ -134,6 +142,7 @@ public class ValidatorTest {
         fail(e.getMessage());
       }
 
+      // Test that if any localization files are present, then they are well-formed.
       File localesDirectory = new File(liteApp, FileUtils.LOCALES_DIR_NAME);
       if (localesDirectory.exists()) {
         File[] localizations = localesDirectory.listFiles(new FileFilter() {
