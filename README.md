@@ -28,6 +28,8 @@ and create a skeleton manifest ready for manual customization. You must review e
     ./gradlew run -Pargs="--url https://example.com --title Example"
    ```
 
+1. Manually inspect the generated `manifest.json`, check if all icons are appropriate (size should be 300×300).
+
 1. Run all tests, re-indent all JSON files, and generate the zipped `*.hermit` files.
 
     ```
