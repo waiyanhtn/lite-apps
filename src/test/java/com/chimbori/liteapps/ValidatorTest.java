@@ -17,6 +17,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -51,8 +52,10 @@ public class ValidatorTest {
       public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
         if (attrs.isRegularFile() && file.toFile().getName().endsWith(".json")) {
           try {
+            // Use a stricter parser than {@code JSONObject}, so we can catch issues such as
+            // extra commas after the last element.
             JsonValue manifest = Json.parse(FileUtils.readFully(new FileInputStream(file.toFile())));
-            // Re-indent the source file by saving the JSON back to the same file.
+            // Re-indent the <b>source file</b> by saving the JSON back to the same file.
             FileUtils.writeFile(file.toFile(), manifest.toString(WriterConfig.PRETTY_PRINT));
           } catch (ParseException e) {
             fail(String.format("%s: %s", file.toFile().getPath(), e.getMessage()));
@@ -91,9 +94,17 @@ public class ValidatorTest {
           .assertFieldExists(JSONConstants.Fields.ICONS);
 
       JSONObject manifestJson = manifestJsonValidator.getJSON();
+
+      // Test that the "manifest_url" field contains a valid URL.
       try {
         String manifestUrl = manifestJson.getString(JSONConstants.Fields.MANIFEST_URL);
         URL manifest = new URL(manifestUrl);
+        assertEquals("https", manifest.getProtocol());
+        assertEquals("hermit.chimbori.com", manifest.getHost());
+        assertTrue(manifest.getPath().startsWith("/lite-apps/"));
+        assertTrue(manifest.getPath().endsWith(".hermit"));
+        assertEquals(liteApp.getName() + ".hermit", new File(URLDecoder.decode(manifest.getFile())).getName());
+
       } catch (JSONException | MalformedURLException e) {
         fail(e.getMessage());
       }

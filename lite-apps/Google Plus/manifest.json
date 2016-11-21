@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "__MSG_google_plus__",
   "start_url": "https://plus.google.com",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google+.hermit",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Plus.hermit",
   "theme_color": "#dd4330",
   "secondary_color": "#e25f51",
   "hermit_bookmarks": [

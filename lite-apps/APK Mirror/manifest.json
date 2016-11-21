@@ -1,9 +1,9 @@
 {
   "manifest_version": 1,
   "lang": "en",
-  "name": "APKMirror",
+  "name": "APK Mirror",
   "start_url": "http://www.apkmirror.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/APKMirror.hermit",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/APK%20Mirror.hermit",
   "theme_color": "#ff9800",
   "secondary_color": "#f57c00",
   "icons": [
