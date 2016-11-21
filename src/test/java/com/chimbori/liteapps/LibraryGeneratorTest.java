@@ -8,6 +8,9 @@ import java.io.IOException;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+/**
+ * Generates the library JSON file.
+ */
 public class LibraryGeneratorTest {
   @Test
   public void testLibraryDataIsGeneratedSuccessfully() {
