@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'application'
 
 group = 'com.chimbori.lite-apps'
 
@@ -10,6 +11,15 @@ targetCompatibility = 1.8
 
 repositories {
   mavenCentral()
+}
+
+// Support running the Scaffolder from the command line, with arguments.
+// ./gradlew run -Pargs="--url http://example.com --title Example"
+mainClassName = "com.chimbori.liteapps.Scaffolder"
+run {
+  if (project.hasProperty('args')) {
+    args project.args.split('\\s+')
+  }
 }
 
 dependencies {
