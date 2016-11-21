@@ -1,34 +1,45 @@
 package com.chimbori.liteapps;
 
-import org.json.JSONException;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
-import java.io.IOException;
+import java.io.File;
+import java.io.FileFilter;
+import java.util.Arrays;
+import java.util.Collection;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 /**
  * Ensures that all Lite Apps can be packaged without error.
  */
+@RunWith(Parameterized.class)
 public class PackagerTest {
+  private final File liteApp;
+
   @Before
   public void setUp() {
     FileUtils.OUT_ROOT_DIR.delete();
   }
 
-  @Test
-  public void testAllManifestsPackagedSuccessfully() {
-    Packager.packageAllManifests(FileUtils.SRC_ROOT_DIR);
+  public PackagerTest(File liteApp) {
+    this.liteApp = liteApp;
+  }
+
+  @Parameterized.Parameters
+  public static Collection listOfLiteApps() {
+    return Arrays.asList(FileUtils.SRC_ROOT_DIR.listFiles(new FileFilter() {
+      @Override
+      public boolean accept(File pathname) {
+        return pathname.isDirectory();
+      }
+    }));
   }
 
   @Test
-  public void testLibraryDataIsGeneratedSuccessfully() {
-    try {
-      assertTrue(Packager.generateLibraryData());
-    } catch (IOException | JSONException e) {
-      fail(e.getMessage());
-    }
+  public void testParameterizedChecker() {
+    assertTrue(Packager.packageManifest(liteApp));
   }
 }

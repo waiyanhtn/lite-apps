@@ -71,7 +71,6 @@ public class FileUtils {
         addFileToZip(zipOutputStream, containedFile, zipEntryName);
       }
     } else {
-      System.out.println("- " + zipEntryName);
       byte[] buffer = new byte[BUFFER_SIZE];
       try (FileInputStream fis = new FileInputStream(file)) {
         ZipEntry zipEntry = new ZipEntry(zipEntryName);
