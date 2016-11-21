@@ -3,7 +3,7 @@
   "manifest_version": 1,
   "name": "Ha'aretz",
   "start_url": "https://haaretz.co.il",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Ha%27aretz.hermit",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Haaretz.hermit",
   "secondary_color": "#007ebe",
   "icons": [
     {
