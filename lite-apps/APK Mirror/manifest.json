@@ -11,9 +11,6 @@
       "src": "icon.png"
     }
   ],
-  "hermit_settings": {
-    "open_links": "in_app"
-  },
   "hermit_bookmarks": [
     {
       "url": "http://www.apkmirror.com/developers/",

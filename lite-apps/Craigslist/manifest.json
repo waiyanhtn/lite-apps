@@ -11,10 +11,6 @@
       "src": "icon.png"
     }
   ],
-  "hermit_settings": {
-    "block_malware": true,
-    "open_links": "in_app"
-  },
   "hermit_bookmarks": [
     {
       "url": "https://accounts.craigslist.org",

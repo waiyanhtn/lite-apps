@@ -18,10 +18,6 @@
       "url": "https://play.google.com/store/apps/details?id=com.reddit.frontpage"
     }
   ],
-  "hermit_settings": {
-    "block_malware": true,
-    "open_links": "in_app"
-  },
   "hermit_bookmarks": [
     {
       "name": "__MSG_popular__",

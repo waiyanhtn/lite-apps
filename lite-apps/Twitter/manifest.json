@@ -44,10 +44,6 @@
       "url": "https://twitter.com/search?q=%s"
     }
   ],
-  "hermit_settings": {
-    "block_malware": true,
-    "open_links": "in_app"
-  },
   "hermit_share": [
     {
       "name": "__MSG_tweet__",

@@ -6,10 +6,6 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google+.hermit",
   "theme_color": "#dd4330",
   "secondary_color": "#e25f51",
-  "hermit_settings": {
-    "block_malware": true,
-    "open_links": "in_app"
-  },
   "hermit_bookmarks": [
     {
       "name": "__MSG_collections__",
