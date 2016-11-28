@@ -16,6 +16,8 @@ import java.net.URL;
 import java.net.URLDecoder;
 import java.util.regex.Pattern;
 
+import static com.chimbori.liteapps.TestHelpers.assertIsNotEmpty;
+import static com.chimbori.liteapps.TestHelpers.assertIsURL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -80,6 +82,13 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
     assertEquals(FileUtils.ICON_FILENAME, manifestJson.getJSONArray(JSONConstants.Fields.ICONS).getJSONObject(0).getString(JSONConstants.Fields.SRC));
     assertTrue(new File(liteApp, FileUtils.ICON_FILENAME).exists());
 
+    // Test Endpoints for basic parseability.
+    validateEndpoints(manifestJson, JSONConstants.Roles.FEEDS);
+    validateEndpoints(manifestJson, JSONConstants.Roles.BOOKMARKS);
+    validateEndpoints(manifestJson, JSONConstants.Roles.CREATE);
+    validateEndpoints(manifestJson, JSONConstants.Roles.SHARE);
+    validateEndpoints(manifestJson, JSONConstants.Roles.SEARCH);
+
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
     try {
       JSONArray relatedApps = manifestJson.optJSONArray(JSONConstants.Fields.RELATED_APPLICATIONS);
@@ -109,6 +118,27 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
         File messagesFile = new File(localization, FileUtils.MESSAGES_JSON_FILE_NAME);
         // With no specific field checks, we at least validate that the file is well-formed JSON.
         new JsonValidatorHelper(String.format("%s [%s]", liteApp.getName(), localization.getName()), messagesFile);
+      }
+    }
+  }
+
+  private void validateEndpoints(JSONObject manifestJson, String role) {
+    JSONArray feeds = manifestJson.optJSONArray(role);
+    if (feeds != null) {
+      for (int i = 0; i < feeds.length(); i++) {
+        JSONObject feed = feeds.getJSONObject(i);
+        String name = feed.optString(JSONConstants.Fields.NAME);
+        assertIsNotEmpty(name);
+        String url = feed.optString(JSONConstants.Fields.URL);
+        assertIsURL(url);
+
+        if (JSONConstants.Roles.SEARCH.equals(role)) {
+          assertTrue(url, url.contains("%s"));
+        } else if (JSONConstants.Roles.SHARE.equals(role)) {
+          assertTrue(url, url.contains("%s")
+              || url.contains("%t")
+              || url.contains("%u"));
+        }
       }
     }
   }

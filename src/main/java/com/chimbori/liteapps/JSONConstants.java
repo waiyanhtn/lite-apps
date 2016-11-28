@@ -23,4 +23,12 @@ public class JSONConstants {
     public static final String EN = "en";
     public static final String PLAY = "play";
   }
+
+  public class Roles {
+    public static final String FEEDS = "hermit_feeds";
+    public static final String BOOKMARKS = "hermit_bookmarks";
+    public static final String CREATE = "hermit_create";
+    public static final String SHARE = "hermit_share";
+    public static final String SEARCH = "hermit_search";
+  }
 }
