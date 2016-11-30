@@ -1,0 +1,20 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "DuckDuckGo",
+  "start_url": "https://duckduckgo.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/DuckDuckGo.hermit",
+  "theme_color": "#e0572a",
+  "secondary_color": "#fed400",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://duckduckgo.com/?t=hs&ia=web&q=%s",
+      "name": "Search DuckDuckGo"
+    }
+  ]
+}
