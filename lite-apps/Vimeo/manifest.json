@@ -1,0 +1,20 @@
+{
+  "manifest_version": 1,
+  "name": "Vimeo",
+  "start_url": "https://www.vimeo.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Vimeo.hermit",
+  "theme_color": "#00acf2",
+  "secondary_color": "#009bd7",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://vimeo.com/search?q=%s",
+      "name": "Search Vimeo"
+    }
+  ]
+}
