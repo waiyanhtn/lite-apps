@@ -154,11 +154,11 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
 ### Settings
 
 - `block_malware`: Whether or not to block ads and malware. Boolean, `true` \| `false`
-- `do_not_track`: Whether to send the [Do Not Track HTTP header](http://donottrack.us/). Boolean, `true` \| `false`
+- `do_not_track`: Whether to send the [Do Not Track HTTP header](https://donottrack.us/). Boolean, `true` \| `false`
 - `load_images`: Image loading can be disabled, e.g. on slow networks. Boolean, `true` \| `false`
 - `open_links`: Choose where external links should be opened: `"in_app"` opens them inside the Lite App. `"browser"` uses the system default browser.
 - `preferred_view`: `"accelerated"` will load fast Accelerated Mobile Pages instead of slow regular ones. `"original`" loads the original pages.
-- `save_data`: Whether to send the [Save Data client hint](http://httpwg.org/http-extensions/client-hints.html#the-save-data-hint) on every request. Boolean, `true` \| `false`
+- `save_data`: Whether to send the [Save Data client hint](https://httpwg.org/http-extensions/client-hints.html#the-save-data-hint) on every request. Boolean, `true` \| `false`
 - `scroll_to_top`: Whether to show the Scroll to Top button in the Hermit UI. Boolean, `true` \| `false`
 - `text_zoom`: A percentage number between `0` to `200`, in steps of `20`. The default is `100`.
 - `user_agent`: `"desktop"` reports the user agent of this browser as a desktop user agent, `""` to use the default mobile user agent.

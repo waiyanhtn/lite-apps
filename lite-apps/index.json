@@ -1,0 +1,466 @@
+[
+  {
+    "category": "Most Popular",
+    "apps": [
+      {
+        "name": "Facebook"
+      },
+      {
+        "name": "Twitter"
+      },
+      {
+        "name": "Reddit"
+      },
+      {
+        "name": "YouTube"
+      },
+      {
+        "name": "BBC"
+      },
+      {
+        "name": "New York Times"
+      },
+      {
+        "name": "Washington Post"
+      },
+      {
+        "name": "Wikipedia"
+      }
+    ]
+  },
+  {
+    "category": "Social",
+    "apps": [
+      {
+        "name": "Facebook"
+      },
+      {
+        "name": "Facebook Lite"
+      },
+      {
+        "display": false,
+        "name": "Messenger"
+      },
+      {
+        "display": false,
+        "name": "WhatsApp"
+      },
+      {
+        "name": "Instagram"
+      },
+      {
+        "name": "Google Plus"
+      },
+      {
+        "name": "Reddit"
+      },
+      {
+        "name": "Slack"
+      },
+      {
+        "name": "Skype"
+      },
+      {
+        "name": "Twitter"
+      },
+      {
+        "name": "Linked In"
+      },
+      {
+        "name": "Tumblr"
+      },
+      {
+        "name": "Yik Yak"
+      },
+      {
+        "name": "Ask.fm"
+      },
+      {
+        "name": "OkCupid"
+      }
+    ]
+  },
+  {
+    "category": "Search",
+    "apps": [
+      {
+        "name": "Google"
+      },
+      {
+        "name": "DuckDuckGo"
+      },
+      {
+        "name": "Bing"
+      }
+    ]
+  },
+  {
+    "category": "News",
+    "apps": [
+      {
+        "name": "Medium"
+      },
+      {
+        "name": "BBC"
+      },
+      {
+        "name": "CNN"
+      },
+      {
+        "name": "The Guardian"
+      },
+      {
+        "name": "New York Times"
+      },
+      {
+        "name": "Time"
+      },
+      {
+        "name": "NPR"
+      },
+      {
+        "name": "AccuWeather"
+      },
+      {
+        "name": "Forecast.io"
+      },
+      {
+        "name": "Bloomberg"
+      },
+      {
+        "name": "Financial Times"
+      },
+      {
+        "name": "Washington Post"
+      },
+      {
+        "name": "Wall St. Journal"
+      },
+      {
+        "name": "Yahoo! Finance"
+      },
+      {
+        "name": "Google News"
+      },
+      {
+        "name": "Haaretz"
+      },
+      {
+        "name": "Jerusalem Post"
+      },
+      {
+        "name": "Al Jazeera"
+      },
+      {
+        "name": "Breaking News"
+      }
+    ]
+  },
+  {
+    "category": "Technology",
+    "apps": [
+      {
+        "name": "Product Hunt"
+      },
+      {
+        "name": "Hacker News"
+      },
+      {
+        "name": "Android Police"
+      },
+      {
+        "name": "Android Central"
+      },
+      {
+        "name": "Android PIT"
+      },
+      {
+        "name": "APK Mirror"
+      },
+      {
+        "name": "Droid Life"
+      },
+      {
+        "name": "Gizmodo"
+      },
+      {
+        "name": "ReCode"
+      },
+      {
+        "name": "CNet"
+      },
+      {
+        "name": "Designer News"
+      },
+      {
+        "name": "Engadget"
+      },
+      {
+        "name": "Slashdot"
+      },
+      {
+        "name": "Stack Overflow"
+      },
+      {
+        "name": "TechCrunch"
+      },
+      {
+        "name": "TechMeme"
+      },
+      {
+        "name": "The Verge"
+      },
+      {
+        "name": "Wired"
+      },
+      {
+        "name": "XDA Developers"
+      }
+    ]
+  },
+  {
+    "category": "Banking &amp; Financial",
+    "apps": [
+      {
+        "name": "Bank of America"
+      },
+      {
+        "name": "Wells Fargo"
+      },
+      {
+        "name": "Capital One 360"
+      },
+      {
+        "name": "PayPal"
+      },
+      {
+        "name": "American Express"
+      },
+      {
+        "name": "Citibank"
+      },
+      {
+        "name": "RBC Canada"
+      }
+    ]
+  },
+  {
+    "category": "Education",
+    "apps": [
+      {
+        "name": "Duolingo"
+      },
+      {
+        "name": "Wolfram Alpha"
+      },
+      {
+        "name": "Khan Academy"
+      },
+      {
+        "name": "Instructables"
+      },
+      {
+        "name": "Wikipedia"
+      },
+      {
+        "name": "Quora"
+      },
+      {
+        "name": "Wiktionary"
+      }
+    ]
+  },
+  {
+    "category": "Entertainment",
+    "apps": [
+      {
+        "name": "GoodReads"
+      },
+      {
+        "name": "YouTube"
+      },
+      {
+        "name": "Vimeo"
+      },
+      {
+        "name": "XKCD"
+      },
+      {
+        "name": "IMDb"
+      },
+      {
+        "name": "AlloCine"
+      },
+      {
+        "name": "E! Online"
+      },
+      {
+        "name": "Plex"
+      },
+      {
+        "name": "Imgur"
+      },
+      {
+        "name": "Giphy"
+      },
+      {
+        "name": "Last.fm"
+      },
+      {
+        "name": "Rotten Tomatoes"
+      },
+      {
+        "name": "TV Guide"
+      },
+      {
+        "name": "Twit.tv"
+      },
+      {
+        "name": "Voat"
+      },
+      {
+        "name": "SoundCloud"
+      },
+      {
+        "name": "MixCloud"
+      }
+    ]
+  },
+  {
+    "category": "Productivity",
+    "apps": [
+      {
+        "name": "Pocket"
+      },
+      {
+        "name": "Todoist"
+      },
+      {
+        "name": "EverNote"
+      },
+      {
+        "name": "Life Hacker"
+      },
+      {
+        "name": "Sleepy Time"
+      },
+      {
+        "name": "Flipboard"
+      },
+      {
+        "name": "Google Tasks"
+      },
+      {
+        "name": "TeamViewer Chat"
+      },
+      {
+        "name": "Instapaper"
+      }
+    ]
+  },
+  {
+    "category": "Food, Travel, Photography",
+    "apps": [
+      {
+        "name": "Yelp"
+      },
+      {
+        "name": "OpenTable"
+      },
+      {
+        "name": "All Recipes"
+      },
+      {
+        "name": "TripAdvisor"
+      },
+      {
+        "name": "Kayak"
+      },
+      {
+        "name": "Yummly"
+      },
+      {
+        "name": "Flickr"
+      },
+      {
+        "name": "Deviant Art"
+      },
+      {
+        "name": "Delta Airlines"
+      },
+      {
+        "name": "United Airlines"
+      },
+      {
+        "name": "Booking.com"
+      },
+      {
+        "name": "Orbitz"
+      },
+      {
+        "name": "Fuelly"
+      }
+    ]
+  },
+  {
+    "category": "Shopping",
+    "apps": [
+      {
+        "name": "Amazon"
+      },
+      {
+        "name": "Craigslist"
+      },
+      {
+        "name": "Groupon"
+      },
+      {
+        "name": "eBay"
+      },
+      {
+        "name": "Woot"
+      },
+      {
+        "name": "FlipKart"
+      },
+      {
+        "name": "Retail Me Not"
+      },
+      {
+        "name": "SlickDeals"
+      }
+    ]
+  },
+  {
+    "category": "Email",
+    "apps": [
+      {
+        "name": "Yahoo! Mail"
+      },
+      {
+        "name": "Gmail"
+      },
+      {
+        "name": "Outlook"
+      },
+      {
+        "name": "FastMail"
+      }
+    ]
+  },
+  {
+    "category": "Storage",
+    "apps": [
+      {
+        "name": "Dropbox"
+      },
+      {
+        "name": "OneDrive"
+      },
+      {
+        "name": "Mega",
+        "user_agent": "desktop"
+      }
+    ]
+  }
+]

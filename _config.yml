@@ -1,5 +1,5 @@
 title:    "Lite App Manifests"
-tagline:  "Lite Apps for use with Hermit: http://hermit.chimbori.com/"
+tagline:  "Lite Apps for use with Hermit: https://hermit.chimbori.com/"
 url:      "https://chimbori.github.io/lite-apps/"
 exclude:  [
             "*.bat",

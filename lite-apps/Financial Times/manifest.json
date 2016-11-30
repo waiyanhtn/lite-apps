@@ -18,7 +18,7 @@
     },
     {
       "name": "Ebooks",
-      "url": "http://www.ft.com/ebooks"
+      "url": "https://www.ft.com/ebooks"
     },
     {
       "name": "Pensions",
@@ -60,7 +60,7 @@
   "hermit_feeds": [
     {
       "name": "Financial Times",
-      "url": "http://www.ft.com/rss/home"
+      "url": "https://www.ft.com/rss/home"
     }
   ]
 }

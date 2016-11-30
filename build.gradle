@@ -14,7 +14,7 @@ repositories {
 }
 
 // Support running the Scaffolder from the command line, with arguments.
-// ./gradlew run -Pargs="--url http://example.com --title Example"
+// ./gradlew run -Pargs="--url https://example.com --title Example"
 mainClassName = "com.chimbori.liteapps.Scaffolder"
 run {
   if (project.hasProperty('args')) {

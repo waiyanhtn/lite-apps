@@ -2,7 +2,7 @@
   "theme_color": "#783a8e",
   "manifest_version": 1,
   "name": "Retail Me Not",
-  "start_url": "http://retailmenot.com",
+  "start_url": "https://m.retailmenot.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Retail%20Me%20Not.hermit",
   "secondary_color": "#6c347f",
   "icons": [

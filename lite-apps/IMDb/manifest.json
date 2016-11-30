@@ -14,7 +14,7 @@
   "hermit_search": [
     {
       "name": "Search IMDb",
-      "url": "http://m.imdb.com/find?q=%s"
+      "url": "https://m.imdb.com/find?q=%s"
     }
   ]
 }

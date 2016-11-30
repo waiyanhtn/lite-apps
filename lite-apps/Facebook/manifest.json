@@ -58,7 +58,7 @@
   "hermit_share": [
     {
       "name": "__MSG_post_to_facebook__",
-      "url": "http://www.facebook.com/sharer/sharer.php?u=%u"
+      "url": "https://www.facebook.com/sharer/sharer.php?u=%u"
     }
   ],
   "related_applications": [

@@ -14,7 +14,7 @@
   "hermit_feeds": [
     {
       "name": "Recode",
-      "url": "http://www.recode.net/rss/group/front-page/index.xml"
+      "url": "https://www.recode.net/rss/group/front-page/index.xml"
     }
   ]
 }

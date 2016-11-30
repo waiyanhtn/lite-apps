@@ -13,7 +13,7 @@
   "lang": "en",
   "hermit_search": [
     {
-      "url": "http://www.deviantart.com/browse/all/?global=1&q=%s",
+      "url": "https://www.deviantart.com/browse/all/?global=1&q=%s",
       "name": "Search"
     }
   ]

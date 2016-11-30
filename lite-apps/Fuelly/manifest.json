@@ -2,7 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Fuelly",
-  "start_url": "http://m.fuelly.com/",
+  "start_url": "https://www.fuelly.com/",
   "theme_color": "#3eb9ae",
   "secondary_color": "#289890",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Fuelly.hermit",

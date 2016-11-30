@@ -2,7 +2,7 @@
   "theme_color": "#00880d",
   "manifest_version": 1,
   "name": "TechCrunch",
-  "start_url": "http://techcrunch.com",
+  "start_url": "https://techcrunch.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TechCrunch.hermit",
   "secondary_color": "#007a0b",
   "icons": [
