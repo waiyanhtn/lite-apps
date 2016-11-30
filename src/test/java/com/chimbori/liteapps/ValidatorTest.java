@@ -73,8 +73,10 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
     }
 
     // Test that colors are valid hex colors.
-    assertTrue(HEX_COLOR_PATTERN.matcher(manifestJson.getString(JSONConstants.Fields.THEME_COLOR)).matches());
-    assertTrue(HEX_COLOR_PATTERN.matcher(manifestJson.getString(JSONConstants.Fields.SECONDARY_COLOR)).matches());
+    assertTrue(String.format("[%s] theme_color should be a valid hex color", liteApp.getName()),
+        HEX_COLOR_PATTERN.matcher(manifestJson.getString(JSONConstants.Fields.THEME_COLOR)).matches());
+    assertTrue(String.format("[%s] secondary_color should be a valid hex color", liteApp.getName()),
+        HEX_COLOR_PATTERN.matcher(manifestJson.getString(JSONConstants.Fields.SECONDARY_COLOR)).matches());
 
     // Test that the name of the icon file is "icon.png" & that the file exists.
     // Although any filename should work, having it be consistent in the library can let us

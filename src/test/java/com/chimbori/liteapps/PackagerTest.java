@@ -25,6 +25,6 @@ public class PackagerTest extends ParameterizedLiteAppTest {
 
   @Test
   public void testParameterizedChecker() {
-    assertTrue(Packager.packageManifest(liteApp));
+    assertTrue("Packaging failed for " + liteApp.getName(), Packager.packageManifest(liteApp));
   }
 }
