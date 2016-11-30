@@ -56,11 +56,5 @@
       "url": "https://www.youtube.com/upload",
       "name": "Upload video"
     }
-  ],
-  "hermit_feeds": [
-    {
-      "url": "https://www.youtube.com/subscription_manager?action_takeout=1",
-      "name": "All subscriptions"
-    }
   ]
 }
