@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 public class Scraper {
   private static final int FETCH_TIMEOUT_MS = 10000;
   private static final String CHROME_MOBILE_USER_AGENT = "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.23 Mobile Safari/537.36";
-  private static final String GOOGLE_COM_HOME_PAGE = "http://www.google.com";
+  private static final String GOOGLE_COM_HOME_PAGE = "https://www.google.com";
 
   private final String url;
   private Document doc;
@@ -92,7 +92,7 @@ public class Scraper {
     return new Scraper(url).fetch().parse();
   }
 
-  public Scraper(String url) {
+  private Scraper(String url) {
     this.url = url;
   }
 
@@ -111,7 +111,7 @@ public class Scraper {
     return this;
   }
 
-  public SiteMetadata parse() {
+  private SiteMetadata parse() {
     SiteMetadata metadata = new SiteMetadata();
     if (doc == null) {  // Fetch failed or never fetched.
       metadata.bookmarks = new ArrayList<>();  // So callers need not check for null-ness.

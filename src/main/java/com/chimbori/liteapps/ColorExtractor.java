@@ -15,7 +15,7 @@ import java.util.Map;
  */
 class ColorExtractor {
   public static class Color {
-    private static int TOLERANCE_FOR_GREY = 16;
+    private static final int TOLERANCE_FOR_GREY = 16;
 
     private final int r;
     private final int g;

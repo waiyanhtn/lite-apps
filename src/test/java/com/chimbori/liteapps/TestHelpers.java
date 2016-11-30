@@ -6,7 +6,7 @@ import java.net.URL;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-public class TestHelpers {
+class TestHelpers {
   public static void assertIsURL(String url) {
     try {
       new URL(url);

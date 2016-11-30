@@ -12,7 +12,7 @@ import java.io.IOException;
  * Does not validate each Lite App prior to packaging: it is assumed that this is run on a green
  * build which has already passed all validation tests.
  */
-public class Packager {
+class Packager {
   /**
    * Packages a single manifest from a source directory & individual files into a zipped file and
    * places it in the correct location.
@@ -20,7 +20,7 @@ public class Packager {
   public static boolean packageManifest(File liteAppDirectory) {
     File liteAppZipped = new File(FileUtils.OUT_LITE_APPS_DIR, String.format("%s.hermit", liteAppDirectory.getName()));
     try {
-      JSONObject manifestJson = new JSONObject(FileUtils.readFully(new FileInputStream(
+      new JSONObject(FileUtils.readFully(new FileInputStream(
           new File(liteAppDirectory, FileUtils.MANIFEST_JSON_FILE_NAME))));
     } catch (JSONException | IOException e) {
       return false;

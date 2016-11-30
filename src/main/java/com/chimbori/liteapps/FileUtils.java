@@ -11,7 +11,7 @@ import java.nio.file.attribute.FileTime;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-public class FileUtils {
+class FileUtils {
 
   private static final int BUFFER_SIZE = 8192;
 

@@ -25,12 +25,12 @@ import javax.imageio.ImageIO;
 /**
  * Generates a skeleton Lite App with as many fields pre-filled as possible.
  */
-public class Scaffolder {
+class Scaffolder {
   /**
    * The lite-apps.json file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
    */
-  public static boolean createScaffolding(String startUrl, String appName) throws JSONException, IOException {
+  private static boolean createScaffolding(String startUrl, String appName) throws JSONException, IOException {
     // Create the root directory if it doesn’t exist yet.
     File liteAppDirectoryRoot = new File(FileUtils.SRC_ROOT_DIR, appName);
     if (!liteAppDirectoryRoot.exists()) {

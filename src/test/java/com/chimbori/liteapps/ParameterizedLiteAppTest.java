@@ -11,9 +11,9 @@ import java.util.Collection;
  * that’s the root directory of the Lite App.
  */
 public class ParameterizedLiteAppTest {
-  protected final File liteApp;
+  final File liteApp;
 
-  public ParameterizedLiteAppTest(File liteApp) {
+  ParameterizedLiteAppTest(File liteApp) {
     this.liteApp = liteApp;
   }
 

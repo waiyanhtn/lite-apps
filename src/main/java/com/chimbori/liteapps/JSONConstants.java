@@ -1,6 +1,6 @@
 package com.chimbori.liteapps;
 
-public class JSONConstants {
+class JSONConstants {
 
   public class Fields {
     // Used in manifest.json.
