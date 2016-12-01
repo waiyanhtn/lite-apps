@@ -91,7 +91,10 @@
       },
       {
         "name": "Bing"
-      }
+      },
+	  {
+		"name": "StartPage"
+	  }
     ]
   },
   {

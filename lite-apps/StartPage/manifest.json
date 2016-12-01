@@ -1,0 +1,46 @@
+{
+  "theme_color": "#e9effa",
+  "manifest_version": 1,
+  "name": "StartPage",
+  "start_url": "https://www.startpage.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/StartPage.hermit",
+  "secondary_color": "#d1d7e1",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_settings": {
+    "open_links": "browser"
+  },
+  "hermit_bookmarks": [
+    {
+      "name": "Advanced Search",
+      "url": "https://www.startpage.com/advanced-search.html"
+    },
+    {
+      "name": "Preferences",
+      "url": "https://www.startpage.com/do/preferences"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://www.startpage.com/do/search?query=%s",
+      "name": "Search StartPage"
+    }
+  ],
+  "hermit_share": [
+    {
+      "url": "https://www.startpage.com/do/search?query=%t",
+      "name": "Search with StartPage"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.startpage.mobile",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.startpage.mobile"
+    }
+  ]
+}
