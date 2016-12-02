@@ -11,19 +11,10 @@
       "src": "icon.png"
     }
   ],
-  "hermit_settings": {
-    "open_links": "browser"
-  },
   "hermit_search": [
     {
       "url": "http://www.baidu.com/s?wd=%s",
       "name": "__MSG_search__"
-    }
-  ],
-  "hermit_share": [
-    {
-      "url": "http://www.baidu.com/s?wd=%t",
-      "name": "__MSG_share__"
     }
   ],
   "related_applications": [
