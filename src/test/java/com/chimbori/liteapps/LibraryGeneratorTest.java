@@ -11,7 +11,6 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-import static com.chimbori.liteapps.FileUtils.SRC_ROOT_DIR;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -20,6 +19,11 @@ import static org.junit.Assert.fail;
  * Generates the library JSON file.
  */
 public class LibraryGeneratorTest {
+  @Test
+  public void testIndexJsonIsWellFormedAndReformat() throws IOException {
+    TestHelpers.assertJsonIsWellFormedAndReformat(FileUtils.SRC_INDEX_JSON);
+  }
+
   @Test
   public void testLibraryDataIsGeneratedSuccessfully() {
     try {
@@ -34,7 +38,7 @@ public class LibraryGeneratorTest {
     Set<String> allLiteApps = new HashSet<>();
 
     // Add all Lite Apps to a set.
-    File[] files = SRC_ROOT_DIR.listFiles();
+    File[] files = FileUtils.SRC_ROOT_DIR.listFiles();
     for (File file : files) {
       if (file.isDirectory()) {
         allLiteApps.add(file.getName());
