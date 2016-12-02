@@ -5,12 +5,16 @@ import com.eclipsesource.json.JsonValue;
 import com.eclipsesource.json.ParseException;
 import com.eclipsesource.json.WriterConfig;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import javax.imageio.ImageIO;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -37,5 +41,17 @@ class TestHelpers {
     } catch (ParseException e) {
       fail(String.format("%s: %s", file.getPath(), e.getMessage()));
     }
+  }
+
+  static void assertThatIconIs300x300(File icon) {
+    BufferedImage bufferedImage = null;
+    try {
+      bufferedImage = ImageIO.read(icon);
+    } catch (IOException e) {
+      fail(e.getMessage());
+    }
+
+    assertEquals(String.format("[%s] is not the correct size.", icon.getPath()), 300, bufferedImage.getWidth());
+    assertEquals(String.format("[%s] is not the correct size.", icon.getPath()), 300, bufferedImage.getHeight());
   }
 }
