@@ -11,9 +11,6 @@
       "src": "icon.png"
     }
   ],
-  "hermit_settings": {
-    "open_links": "browser"
-  },
   "hermit_bookmarks": [
     {
       "name": "Advanced Search",
@@ -28,12 +25,6 @@
     {
       "url": "https://www.startpage.com/do/search?query=%s",
       "name": "Search StartPage"
-    }
-  ],
-  "hermit_share": [
-    {
-      "url": "https://www.startpage.com/do/search?query=%t",
-      "name": "Search with StartPage"
     }
   ],
   "related_applications": [
