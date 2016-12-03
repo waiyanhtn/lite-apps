@@ -9,36 +9,11 @@ This is a directory of manifest files for [Hermit](https://hermit.chimbori.com).
 
 [![Build Status](https://travis-ci.org/chimbori/lite-apps.svg?branch=master)](https://travis-ci.org/chimbori/lite-apps)
 
-# Submit a New Lite App — Create Automatically
+## Submitting New Lite Apps
 
-Use the Scaffolder tool to quickly generate a new Lite App from scratch, using just the URL of a site. In one step, it will:
+We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations).
 
-- fetch the root page,
-- create a brand new manifest file,
-- locate and download an icon,
-- attempt to infer theme colors from the downloaded icon,
-- locate feed URLs,
-- build skeleton navigation (bookmarks),
-- infer any related Android native apps, etc.
-
-and create a skeleton manifest ready for manual customization. You must review everything that was automatically generated, then manually customize the almost-ready Lite App. After you confirm that all the tests work fine, submit a pull request via GitHub.
-
-1. Run the Scaffolder for the site `https://example.com` with title `Example`.
-   ```
-    ./gradlew run -Pargs="--url https://example.com --title Example"
-   ```
-
-1. Manually inspect the generated `manifest.json`, check if all icons are appropriate (size should be 300×300).
-
-1. Run all tests, re-indent all JSON files, and generate the zipped `*.hermit` files.
-
-    ```
-    ./gradlew check --info
-    ```
-
-1. `git commit`, `git push`, etc.
-1. Send a pull request, with the Title and URL of the new Lite App in the commit message.
-1. Please submit a separate pull request for each new Lite App.
+Please see the [step by step instructions](CONTRIBUTING.md) and an overview of the automated tools and tests we’ve made available.
 
 # Syntax
 
@@ -160,6 +135,7 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
 - `preferred_view`: `"accelerated"` will load fast Accelerated Mobile Pages instead of slow regular ones. `"original`" loads the original pages.
 - `save_data`: Whether to send the [Save Data client hint](https://httpwg.org/http-extensions/client-hints.html#the-save-data-hint) on every request. Boolean, `true` \| `false`
 - `scroll_to_top`: Whether to show the Scroll to Top button in the Hermit UI. Boolean, `true` \| `false`
+- `pull_to_refresh`: Whether swiping down in the Lite App should refresh the page. Boolean, `true` \| `false`
 - `text_zoom`: A percentage number between `0` to `200`, in steps of `20`. The default is `100`.
 - `user_agent`: `"desktop"` reports the user agent of this browser as a desktop user agent, `""` to use the default mobile user agent.
 
@@ -196,13 +172,6 @@ A string (e.g. `app_name`) can be used in `manifest.json` by referencing it as `
       }
     }
 
-## Submitting New Lite Apps
-
-We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations). Clone this repo, make your changes, run the tests, and send us a pull request.
-
-This repository contains not only the manifests for the individual Lite App definitions, but also a set of Java unit tests that validates & packages each Lite App. Once you clone this project to your local disk, open it in Android Studio as a Gradle project. After making changes to existing Lite Apps or creating your new Lite App, re-run all the unit tests with `./gradlew check` before submitting a pull request.
-
 ## Questions?
 
 Email us at [hello@chimbori.com](mailto:hello@chimbori.com) with your questions; we’ll be happy to answer. Be sure to include a link to your work-in-progress source code.
-
