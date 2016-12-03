@@ -1,0 +1,27 @@
+{
+  "theme_color": "#ff0000",
+  "manifest_version": 1,
+  "name": "Yandex",
+  "start_url": "https://yandex.ru",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Yandex.hermit",
+  "secondary_color": "#e50000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://yandex.ru/search/smart/?text=%s",
+      "name": "__MSG_search__"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "ru.yandex.searchplugin",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=ru.yandex.searchplugin"
+    }
+  ]
+}
