@@ -169,6 +169,18 @@
         "theme_color": "#008485",
         "name": "Bing",
         "url": "https://www.bing.com"
+      },
+      {
+        "app": "Yandex.hermit",
+        "theme_color": "#ff0000",
+        "name": "Yandex",
+        "url": "https://yandex.ru"
+      },
+      {
+        "app": "StartPage.hermit",
+        "theme_color": "#e9effa",
+        "name": "StartPage",
+        "url": "https://www.startpage.com/"
       }
     ]
   },
