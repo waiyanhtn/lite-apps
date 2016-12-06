@@ -1,0 +1,27 @@
+{
+  "theme_color": "#b3c9ff",
+  "manifest_version": 1,
+  "name": "Baidu",
+  "start_url": "https://baidu.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Baidu.hermit",
+  "secondary_color": "#a1b4e5",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "http://www.baidu.com/s?wd=%s",
+      "name": "__MSG_search__"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.baidu.searchbox",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.baidu.searchbox"
+    }
+  ]
+}
