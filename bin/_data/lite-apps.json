@@ -181,6 +181,12 @@
         "theme_color": "#e9effa",
         "name": "StartPage",
         "url": "https://www.startpage.com/"
+      },
+      {
+        "app": "Baidu.hermit",
+        "theme_color": "#b3c9ff",
+        "name": "Baidu",
+        "url": "https://baidu.com"
       }
     ]
   },
