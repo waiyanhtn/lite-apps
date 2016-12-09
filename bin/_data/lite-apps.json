@@ -9,6 +9,12 @@
         "url": "https://m.facebook.com"
       },
       {
+        "app": "Messenger.hermit",
+        "theme_color": "#0086ff",
+        "name": "Messenger",
+        "url": "https://mobile.facebook.com/messages"
+      },
+      {
         "app": "Twitter.hermit",
         "theme_color": "#4798d8",
         "name": "Twitter",
