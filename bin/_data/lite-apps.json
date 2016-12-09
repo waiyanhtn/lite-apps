@@ -70,9 +70,8 @@
       {
         "app": "Messenger.hermit",
         "theme_color": "#0086ff",
-        "display": false,
         "name": "Messenger",
-        "url": "https://messenger.com"
+        "url": "https://mobile.facebook.com/messages"
       },
       {
         "app": "WhatsApp.hermit",
