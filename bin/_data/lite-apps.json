@@ -531,10 +531,16 @@
     "category": "Entertainment",
     "apps": [
       {
-        "app": "GoodReads.hermit",
-        "theme_color": "#e7e0c3",
-        "name": "GoodReads",
-        "url": "https://www.goodreads.com"
+        "app": "IMDb.hermit",
+        "theme_color": "#f6e397",
+        "name": "IMDb",
+        "url": "https://m.imdb.com"
+      },
+      {
+        "app": "Fandango.hermit",
+        "theme_color": "#f17604",
+        "name": "Fandango",
+        "url": "https://mobile.fandango.com/"
       },
       {
         "app": "YouTube.hermit",
@@ -555,10 +561,10 @@
         "url": "https://m.xkcd.com"
       },
       {
-        "app": "IMDb.hermit",
-        "theme_color": "#f6e397",
-        "name": "IMDb",
-        "url": "https://m.imdb.com"
+        "app": "GoodReads.hermit",
+        "theme_color": "#e7e0c3",
+        "name": "GoodReads",
+        "url": "https://www.goodreads.com"
       },
       {
         "app": "AlloCine.hermit",
