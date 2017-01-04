@@ -305,12 +305,6 @@
         "theme_color": "#fe8000",
         "name": "Al Jazeera",
         "url": "http://aljazeera.com"
-      },
-      {
-        "app": "Breaking News.hermit",
-        "theme_color": "#d82500",
-        "name": "Breaking News",
-        "url": "http://breakingnews.com"
       }
     ]
   },
