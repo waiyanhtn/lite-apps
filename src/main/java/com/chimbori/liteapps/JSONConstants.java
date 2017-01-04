@@ -22,11 +22,14 @@ class JSONConstants {
     public static final String PLATFORM = "platform";
     public static final String ID = "id";
     public static final String SRC = "src";
+    public static final String SETTINGS = "hermit_settings";
+    public static final String USER_AGENT = "user_agent";
   }
 
   public class Values {
     public static final String EN = "en";
     public static final String PLAY = "play";
+    public static final String USER_AGENT_DESKTOP = "desktop";
   }
 
   public class Roles {

@@ -45,6 +45,12 @@ class LibraryGenerator {
             app.put(JSONConstants.Fields.URL, manifest.optString(JSONConstants.Fields.START_URL));
             app.put(JSONConstants.Fields.APP, String.format("%s.hermit", appName));
             app.put(JSONConstants.Fields.THEME_COLOR, manifest.optString(JSONConstants.Fields.THEME_COLOR));
+
+            JSONObject settings = manifest.optJSONObject(JSONConstants.Fields.SETTINGS);
+            if (settings != null &&
+                settings.optString(JSONConstants.Fields.USER_AGENT, "").equals(JSONConstants.Values.USER_AGENT_DESKTOP)) {
+              app.put(JSONConstants.Fields.USER_AGENT, JSONConstants.Values.USER_AGENT_DESKTOP);
+            }
           }
         }
       }

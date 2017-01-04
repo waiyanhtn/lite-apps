@@ -12,7 +12,8 @@
         "app": "Messenger.hermit",
         "theme_color": "#0086ff",
         "name": "Messenger",
-        "url": "https://mobile.facebook.com/messages"
+        "url": "https://mobile.facebook.com/messages",
+        "user_agent": "desktop"
       },
       {
         "app": "Twitter.hermit",
@@ -77,14 +78,16 @@
         "app": "Messenger.hermit",
         "theme_color": "#0086ff",
         "name": "Messenger",
-        "url": "https://mobile.facebook.com/messages"
+        "url": "https://mobile.facebook.com/messages",
+        "user_agent": "desktop"
       },
       {
         "app": "WhatsApp.hermit",
         "theme_color": "#32ba46",
         "display": false,
         "name": "WhatsApp",
-        "url": "https://web.whatsapp.com"
+        "url": "https://web.whatsapp.com",
+        "user_agent": "desktop"
       },
       {
         "app": "Instagram.hermit",
@@ -114,7 +117,8 @@
         "app": "Skype.hermit",
         "theme_color": "#019ed8",
         "name": "Skype",
-        "url": "https://web.skype.com"
+        "url": "https://web.skype.com",
+        "user_agent": "desktop"
       },
       {
         "app": "Twitter.hermit",
