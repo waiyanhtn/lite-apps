@@ -57,6 +57,7 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
       "hermit_settings": {
         "block_malware":  true | false,
         "do_not_track":  true | false,
+        "third_party_cookies":  true | false,
         "load_images":  true | false,
         "open_links": "in_app" | "browser",
         "preferred_view": "accelerated",
