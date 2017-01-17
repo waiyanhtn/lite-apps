@@ -1,0 +1,58 @@
+[
+  {
+    "blocklist": "Adware and Malware",
+    "name": "adware-malware.json",
+    "sources": [
+      {
+        "name": "PaidContentLinks.txt"
+      },
+      {
+        "name": "UserSuggested.txt"
+      },
+      {
+        "url": "https://zeustracker.abuse.ch/blocklist.php?download=baddomains",
+        "name": "Abuse.ch.txt"
+      },
+      {
+        "url": "https://disconnect.me/lists/malvertising",
+        "name": "DisconnectMe.txt"
+      },
+      {
+        "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+        "name": "DisconnectMe.SimpleAd.txt"
+      },
+      {
+        "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt",
+        "name": "DisconnectMe.SimpleMalware.txt"
+      },
+      {
+        "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
+        "name": "DisconnectMe.SimpleTracking.txt"
+      },
+      {
+        "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
+        "name": "DisconnectMe.SimpleMalvertising.txt"
+      },
+      {
+        "url": "http://www.malwaredomainlist.com/hostslist/hosts.txt",
+        "name": "MalwareDomainList.txt"
+      },
+      {
+        "url": "http://someonewhocares.org/hosts/hosts",
+        "name": "SomeoneWhoCares.txt"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+        "name": "StevenBlack.txt"
+      },
+      {
+        "url": "http://sysctl.org/cameleon/hosts",
+        "name": "SysCtlCameleon.txt"
+      },
+      {
+        "url": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0",
+        "name": "Yoyo.txt"
+      }
+    ]
+  }
+]
