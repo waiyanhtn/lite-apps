@@ -4,4 +4,4 @@
 _site
 build/
 local.properties
-blocklists/**/*.txt
+blocklists/**/*.cached.txt

@@ -11,47 +11,47 @@
       },
       {
         "url": "https://zeustracker.abuse.ch/blocklist.php?download=baddomains",
-        "name": "Abuse.ch.txt"
+        "name": "Abuse.ch.cached.txt"
       },
       {
         "url": "https://disconnect.me/lists/malvertising",
-        "name": "DisconnectMe.txt"
+        "name": "DisconnectMe.cached.txt"
       },
       {
         "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
-        "name": "DisconnectMe.SimpleAd.txt"
+        "name": "DisconnectMe.SimpleAd.cached.txt"
       },
       {
         "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt",
-        "name": "DisconnectMe.SimpleMalware.txt"
+        "name": "DisconnectMe.SimpleMalware.cached.txt"
       },
       {
         "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
-        "name": "DisconnectMe.SimpleTracking.txt"
+        "name": "DisconnectMe.SimpleTracking.cached.txt"
       },
       {
         "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
-        "name": "DisconnectMe.SimpleMalvertising.txt"
+        "name": "DisconnectMe.SimpleMalvertising.cached.txt"
       },
       {
         "url": "http://www.malwaredomainlist.com/hostslist/hosts.txt",
-        "name": "MalwareDomainList.txt"
+        "name": "MalwareDomainList.cached.txt"
       },
       {
         "url": "http://someonewhocares.org/hosts/hosts",
-        "name": "SomeoneWhoCares.txt"
+        "name": "SomeoneWhoCares.cached.txt"
       },
       {
         "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-        "name": "StevenBlack.txt"
+        "name": "StevenBlack.cached.txt"
       },
       {
         "url": "http://sysctl.org/cameleon/hosts",
-        "name": "SysCtlCameleon.txt"
+        "name": "SysCtlCameleon.cached.txt"
       },
       {
         "url": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0",
-        "name": "Yoyo.txt"
+        "name": "Yoyo.cached.txt"
       }
     ]
   }
