@@ -1,0 +1,42 @@
+{
+  "manifest_version": 1,
+  "name": "The A.V. Club",
+  "start_url": "http://avclub.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20A.V.%20Club.hermit",
+  "lang": "en",
+  "theme_color": "#1c243c",
+  "secondary_color": "#1d263c",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Film",
+      "url": "http://www.avclub.com/film/"
+    },
+    {
+      "name": "Aux",
+      "url": "http://www.avclub.com/aux/"
+    },
+    {
+      "name": "Books",
+      "url": "http://www.avclub.com/books/"
+    },
+    {
+      "name": "Music",
+      "url": "http://www.avclub.com/music/"
+    },
+    {
+      "name": "Games",
+      "url": "http://www.avclub.com/games/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "The A.V. Club",
+      "url": "http://www.avclub.com/feeds/rss/"
+    }
+  ]
+}

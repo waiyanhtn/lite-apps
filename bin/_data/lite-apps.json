@@ -613,6 +613,12 @@
         "url": "https://tvguide.com/listings"
       },
       {
+        "app": "The A.V. Club.hermit",
+        "theme_color": "#1c243c",
+        "name": "The A.V. Club",
+        "url": "http://avclub.com/"
+      },
+      {
         "app": "Twit.tv.hermit",
         "theme_color": "#34aad2",
         "name": "Twit.tv",
