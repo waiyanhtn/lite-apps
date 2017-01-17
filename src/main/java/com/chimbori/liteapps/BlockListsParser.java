@@ -75,8 +75,14 @@ public class BlockListsParser {
       for (int j = 0; j < sources.length(); j++) {
         JSONObject source = sources.getJSONObject(j);
         String sourceName = source.getString(JSONConstants.Fields.NAME);
+
+        // Since we don’t want to download the blocklists to keep the test hermetic, and we want to
+        // still run the test on blocklists that are uploaded to the repo (i.e. first-party owned),
+        // we skip adding hosts from a file if it doesn’t already exist.
         File hostsList = new File(blockListDirectory, sourceName);
-        parseBlockList(sourceName, new FileInputStream(hostsList), hosts);
+        if (hostsList.exists()) {
+          parseBlockList(sourceName, new FileInputStream(hostsList), hosts);
+        }
       }
 
       writeToDisk(FileUtils.BLOCK_LISTS_ROOT_DIR, fileName, hosts);
