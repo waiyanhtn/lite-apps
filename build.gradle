@@ -30,6 +30,7 @@ dependencies {
   // org.json is the actual parser used for all processing (apart from testing string JSON parsing.)
   compile 'org.json:json:20160810'
   compile 'org.jsoup:jsoup:1.9.2'
+  compile 'com.squareup.okhttp3:okhttp:3.5.0'
   testCompile 'junit:junit:4.12'
 }
 
