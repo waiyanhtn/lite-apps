@@ -11,9 +11,15 @@ import java.nio.file.attribute.FileTime;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 class FileUtils {
 
   private static final int BUFFER_SIZE = 8192;
+
+  private static OkHttpClient client = new OkHttpClient();
 
   public static final String MANIFEST_JSON_FILE_NAME = "manifest.json";
   public static final String LOCALES_DIR_NAME = "_locales";
@@ -27,7 +33,11 @@ class FileUtils {
   private static final File OUT_DATA_DIR = new File(OUT_ROOT_DIR, "_data/");
   public static final File OUT_LITE_APPS_JSON = new File(OUT_DATA_DIR, LITE_APPS_JSON_FILE_NAME);
   public static final File OUT_LITE_APPS_DIR = new File(OUT_ROOT_DIR, "lite-apps/");
+
   public static final File SRC_INDEX_JSON = new File(SRC_ROOT_DIR, INDEX_JSON_FILE_NAME);
+
+  public static final File BLOCK_LISTS_ROOT_DIR = new File("blocklists/");
+  public static final File BLOCK_LISTS_INDEX_JSON = new File(FileUtils.BLOCK_LISTS_ROOT_DIR, INDEX_JSON_FILE_NAME);
 
   static {
     OUT_ROOT_DIR.mkdirs();
@@ -100,5 +110,11 @@ class FileUtils {
     try (FileOutputStream fout = new FileOutputStream(file)) {
       fout.write(content.getBytes());
     }
+  }
+
+  public static String fetch(String url) throws IOException {
+    Request request = new Request.Builder().url(url).build();
+    Response response = client.newCall(request).execute();
+    return response.body().string();
   }
 }
