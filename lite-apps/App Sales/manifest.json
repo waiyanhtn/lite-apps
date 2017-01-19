@@ -1,0 +1,27 @@
+{
+  "manifest_version": 1,
+  "name": "App Sales",
+  "start_url": "http://app-sales.net/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/App%20Sales.hermit",
+  "lang": "en",
+  "theme_color": "#c20a00",
+  "secondary_color": "#b20a00",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Most Wanted",
+      "url": "http://www.app-sales.net/mostwanted/24hours"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "net.tsapps.appsales",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=net.tsapps.appsales"
+    }
+  ]
+}

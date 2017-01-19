@@ -346,6 +346,12 @@
         "url": "https://www.androidpit.com"
       },
       {
+        "app": "App Sales.hermit",
+        "theme_color": "#c20a00",
+        "name": "App Sales",
+        "url": "http://app-sales.net/"
+      },
+      {
         "app": "APK Mirror.hermit",
         "theme_color": "#ff9800",
         "name": "APK Mirror",
