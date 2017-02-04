@@ -2,7 +2,7 @@
   "theme_color": "#f3a294",
   "manifest_version": 1,
   "name": "Wolfram Alpha",
-  "start_url": "https://m.wolframalpha.com",
+  "start_url": "http://m.wolframalpha.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wolfram%20Alpha.hermit",
   "secondary_color": "#da9185",
   "icons": [

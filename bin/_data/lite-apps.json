@@ -497,7 +497,7 @@
         "app": "Wolfram Alpha.hermit",
         "theme_color": "#f3a294",
         "name": "Wolfram Alpha",
-        "url": "https://m.wolframalpha.com"
+        "url": "http://m.wolframalpha.com"
       },
       {
         "app": "Khan Academy.hermit",
