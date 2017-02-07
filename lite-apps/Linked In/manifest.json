@@ -2,14 +2,14 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Linked In",
-  "start_url": "https://touch.www.linkedin.com",
+  "start_url": "https://www.linkedin.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Linked%20In.hermit",
   "theme_color": "#0076b7",
   "secondary_color": "#005d95",
   "hermit_search": [
     {
       "name": "__MSG_search__",
-      "url": "https://www.linkedin.com/vsearch/f?type=all&keywords=%s"
+      "url": "https://www.linkedin.com/search/?keywords=%s"
     }
   ],
   "hermit_share": [
