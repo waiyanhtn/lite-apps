@@ -135,8 +135,14 @@ class Scaffolder {
             .desc("Title of Lite App")
             .build());
     try {
+      // The Gradle wrapper makes it hard to pass spaces within arguments, so allow users
+      // to type in underscores instead of spaces, and we strip them out here. This is simpler
+      // than trying to parse the parameters in Groovy/Gradle, so we chose this slightly-hacky
+      // approach.
       CommandLine command = parser.parse(options, arguments);
-      boolean success = Scaffolder.createScaffolding(command.getOptionValue("url"), command.getOptionValue("title"));
+      boolean success = Scaffolder.createScaffolding(
+          command.getOptionValue("url"),
+          command.getOptionValue("title").replaceAll("_", " "));
       if (!success) {
         System.exit(1);
       }

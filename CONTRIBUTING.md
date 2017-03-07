@@ -22,7 +22,7 @@ This repository contains not only the manifests for the individual Lite App defi
 
 # Step by Step
 
-1. Run the Scaffolder for the site `https://example.com/` with title `Example`.
+1. Run the Scaffolder for the site `https://example.com/` with title `Example`. To include spaces in the title of the app, type an underscore instead of a space. E.g. `New_York_Times` instead of `New York Times`.
 
     ```
     ./gradlew run -Pargs="--url https://example.com/ --title Example"
