@@ -28,6 +28,7 @@ class JSONConstants {
     public static final String UPDATED = "updated";
     public static final String URL = "url";
     public static final String USER_AGENT = "user_agent";
+    public static final String SELECTOR = "selector";
   }
 
   public class Values {
@@ -42,5 +43,6 @@ class JSONConstants {
     public static final String CREATE = "hermit_create";
     public static final String SHARE = "hermit_share";
     public static final String SEARCH = "hermit_search";
+    public static final String MONITORS = "hermit_monitors";
   }
 }

@@ -90,6 +90,7 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
     validateEndpoints(manifestJson, JSONConstants.Roles.CREATE);
     validateEndpoints(manifestJson, JSONConstants.Roles.SHARE);
     validateEndpoints(manifestJson, JSONConstants.Roles.SEARCH);
+    validateEndpoints(manifestJson, JSONConstants.Roles.MONITORS);
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
     try {
@@ -140,6 +141,9 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
           assertTrue(url, url.contains("%s")
               || url.contains("%t")
               || url.contains("%u"));
+        } else if (JSONConstants.Roles.MONITORS.equals(role)) {
+          String monitorSelector = feed.optString(JSONConstants.Fields.SELECTOR);
+          assertIsNotEmpty(monitorSelector);
         }
       }
     }
