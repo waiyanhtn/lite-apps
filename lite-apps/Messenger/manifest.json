@@ -13,5 +13,13 @@
   "lang": "en",
   "hermit_settings": {
     "user_agent": "desktop"
-  }
+  },
+  "hermit_monitors": [
+    {
+      "name": "Messenger",
+      "url": "https://mbasic.facebook.com/messages",
+      "selector": ".e.bi",
+      "icon": "facebook"
+    }
+  ]
 }

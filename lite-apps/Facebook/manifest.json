@@ -61,6 +61,14 @@
       "url": "https://www.facebook.com/sharer/sharer.php?u=%u"
     }
   ],
+  "hermit_monitors": [
+    {
+      "name": "__MSG_notifications__",
+      "url": "https://m.facebook.com/notifications",
+      "selector": "#notifications_list .touchable-notification",
+      "icon": "facebook"
+    }
+  ],
   "related_applications": [
     {
       "id": "com.facebook.katana",
