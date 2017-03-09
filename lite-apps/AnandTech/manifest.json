@@ -1,0 +1,70 @@
+{
+  "theme_color": "#58accb",
+  "manifest_version": 1,
+  "name": "AnandTech",
+  "start_url": "http://www.anandtech.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/AnandTech.hermit",
+  "secondary_color": "#4f9ab6",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Smartphones",
+      "url": "http://www.anandtech.com/tag/smartphones"
+    },
+    {
+      "name": "Wearables",
+      "url": "http://www.anandtech.com/tag/wearables"
+    },
+    {
+      "name": "Tablets",
+      "url": "http://www.anandtech.com/tag/tablets"
+    },
+    {
+      "name": "Google/Android",
+      "url": "http://www.anandtech.com/tag/google"
+    },
+    {
+      "name": "Enterprise",
+      "url": "http://www.anandtech.com/tag/enterprise"
+    },
+    {
+      "name": "Notebook Reviews",
+      "url": "http://www.anandtech.com/tag/laptops"
+    },
+    {
+      "name": "Desktop Reviews",
+      "url": "http://www.anandtech.com/tag/desktops"
+    },
+    {
+      "name": "CPUs",
+      "url": "http://www.anandtech.com/tag/cpus"
+    },
+    {
+      "name": "Storage",
+      "url": "http://www.anandtech.com/tag/storage"
+    },
+    {
+      "name": "GPUs",
+      "url": "http://www.anandtech.com/tag/gpus"
+    },
+    {
+      "name": "SSDs",
+      "url": "http://www.anandtech.com/tag/ssd"
+    },
+    {
+      "name": "SoCs",
+      "url": "http://www.anandtech.com/tag/soc"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "RSS Feed for AnandTech.com",
+      "url": "http://www.anandtech.com/rss/"
+    }
+  ]
+}

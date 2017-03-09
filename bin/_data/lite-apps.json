@@ -352,6 +352,12 @@
         "url": "http://app-sales.net/"
       },
       {
+        "app": "AnandTech.hermit",
+        "theme_color": "#58accb",
+        "name": "AnandTech",
+        "url": "http://www.anandtech.com/"
+      },
+      {
         "app": "APK Mirror.hermit",
         "theme_color": "#ff9800",
         "name": "APK Mirror",
