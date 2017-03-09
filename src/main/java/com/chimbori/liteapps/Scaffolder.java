@@ -63,6 +63,9 @@ class Scaffolder {
       URL website = new URL(metadata.iconUrl);
       try (InputStream inputStream = website.openStream()) {
         Files.copy(inputStream, new File(liteAppDirectoryRoot, FileUtils.ICON_FILENAME).toPath(), StandardCopyOption.REPLACE_EXISTING);
+      } catch (IOException e) {
+        e.printStackTrace();
+        // But still continue with the rest of the manifest generation.
       }
       root.put(JSONConstants.Fields.ICONS, new JSONArray().put(new JSONObject().put("src", FileUtils.ICON_FILENAME)));
 
