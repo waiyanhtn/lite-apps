@@ -126,14 +126,16 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
   }
 
   private void validateEndpoints(JSONObject manifestJson, String role) {
+    final String LITE_APP_NAME = manifestJson.optString(JSONConstants.Fields.NAME);
     JSONArray feeds = manifestJson.optJSONArray(role);
     if (feeds != null) {
       for (int i = 0; i < feeds.length(); i++) {
+
         JSONObject feed = feeds.getJSONObject(i);
         String name = feed.optString(JSONConstants.Fields.NAME);
-        assertIsNotEmpty(name);
+        assertIsNotEmpty("Endpoint name should not be empty: " + LITE_APP_NAME, name);
         String url = feed.optString(JSONConstants.Fields.URL);
-        assertIsURL(url);
+        assertIsURL("Endpoint should have a valid URL: " + LITE_APP_NAME, url);
 
         if (JSONConstants.Roles.SEARCH.equals(role)) {
           assertTrue(url, url.contains("%s"));
@@ -143,7 +145,7 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
               || url.contains("%u"));
         } else if (JSONConstants.Roles.MONITORS.equals(role)) {
           String monitorSelector = feed.optString(JSONConstants.Fields.SELECTOR);
-          assertIsNotEmpty(monitorSelector);
+          assertIsNotEmpty("Endpoint name should not be empty: " + LITE_APP_NAME, monitorSelector);
         }
       }
     }

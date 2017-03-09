@@ -19,16 +19,16 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 class TestHelpers {
-  public static void assertIsURL(String url) {
+  public static void assertIsURL(String message, String url) {
     try {
       new URL(url);
     } catch (MalformedURLException e) {
-      fail(url);
+      fail(message);
     }
   }
 
-  public static void assertIsNotEmpty(String string) {
-    assertTrue(!string.isEmpty());
+  public static void assertIsNotEmpty(String message, String string) {
+    assertTrue(message, !string.isEmpty());
   }
 
   static void assertJsonIsWellFormedAndReformat(File file) throws IOException {
