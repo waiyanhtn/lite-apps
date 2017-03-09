@@ -1,0 +1,14 @@
+{
+  "manifest_version": 1,
+  "name": "QRCode Scanner",
+  "start_url": "https://qrcodescan.in/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/QRCode%20Scanner.hermit",
+  "lang": "en",
+  "theme_color": "#5f7d8c",
+  "secondary_color": "#3f87ff",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}

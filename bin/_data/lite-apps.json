@@ -675,8 +675,14 @@
     ]
   },
   {
-    "category": "Productivity",
+    "category": "Tools & Productivity",
     "apps": [
+      {
+        "app": "QRCode Scanner.hermit",
+        "theme_color": "#5f7d8c",
+        "name": "QRCode Scanner",
+        "url": "https://qrcodescan.in/"
+      },
       {
         "app": "Pocket.hermit",
         "theme_color": "#ee4055",

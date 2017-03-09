@@ -344,8 +344,11 @@
     ]
   },
   {
-    "category": "Productivity",
+    "category": "Tools & Productivity",
     "apps": [
+      {
+        "name": "QRCode Scanner"
+      },
       {
         "name": "Pocket"
       },
