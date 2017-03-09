@@ -221,6 +221,12 @@
         "url": "http://cnn.com"
       },
       {
+        "app": "NBC.hermit",
+        "theme_color": "#4372b8",
+        "name": "NBC",
+        "url": "http://www.nbcnews.com/"
+      },
+      {
         "app": "The Guardian.hermit",
         "theme_color": "#005689",
         "name": "The Guardian",

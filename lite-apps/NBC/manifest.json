@@ -1,0 +1,72 @@
+{
+  "manifest_version": 1,
+  "name": "NBC",
+  "start_url": "http://www.nbcnews.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/NBC.hermit",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "theme_color": "#4372b8",
+  "secondary_color": "#1f7db7",
+  "hermit_bookmarks": [
+    {
+      "name": "World",
+      "url": "http://www.nbcnews.com/news/world"
+    },
+    {
+      "name": "Investigations",
+      "url": "http://www.nbcnews.com/investigations"
+    },
+    {
+      "name": "Science",
+      "url": "http://www.nbcnews.com/science"
+    },
+    {
+      "name": "Photo",
+      "url": "http://www.nbcnews.com/news/photo"
+    },
+    {
+      "name": "Health",
+      "url": "http://www.nbcnews.com/health"
+    },
+    {
+      "name": "Meet The Press",
+      "url": "http://www.nbcnews.com/meet-the-press"
+    },
+    {
+      "name": "Weather",
+      "url": "http://www.nbcnews.com/news/weather"
+    },
+    {
+      "name": "Lifestyle",
+      "url": "http://www.nbcnews.com/pop-culture/lifestyle"
+    },
+    {
+      "name": "Politics",
+      "url": "http://www.nbcnews.com/politics"
+    },
+    {
+      "name": "Tech",
+      "url": "http://www.nbcnews.com/tech"
+    },
+    {
+      "name": "Pop Culture",
+      "url": "http://www.nbcnews.com/pop-culture"
+    },
+    {
+      "name": "Video",
+      "url": "http://www.nbcnews.com/video"
+    },
+    {
+      "name": "NBC News VR",
+      "url": "http://www.nbcnews.com/storyline/nbc-news-vr"
+    },
+    {
+      "name": "Business",
+      "url": "http://www.nbcnews.com/business"
+    }
+  ]
+}
