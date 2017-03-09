@@ -239,6 +239,12 @@
         "url": "http://mobile.nytimes.com"
       },
       {
+        "app": "Reuters.hermit",
+        "theme_color": "#ffa74e",
+        "name": "Reuters",
+        "url": "http://www.reuters.com/"
+      },
+      {
         "app": "Time.hermit",
         "theme_color": "#d60002",
         "name": "Time",

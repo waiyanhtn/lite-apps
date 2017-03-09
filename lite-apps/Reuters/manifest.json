@@ -1,0 +1,80 @@
+{
+  "theme_color": "#ffa74e",
+  "manifest_version": 1,
+  "name": "Reuters",
+  "start_url": "http://www.reuters.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Reuters.hermit",
+  "secondary_color": "#e59646",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Top News",
+      "url": "http://mobile.reuters.com/video/top-news"
+    },
+    {
+      "name": "Politics",
+      "url": "http://mobile.reuters.com/politics"
+    },
+    {
+      "name": "Markets",
+      "url": "http://mobile.reuters.com/finance/markets"
+    },
+    {
+      "name": "Technology",
+      "url": "http://mobile.reuters.com/news/technology"
+    },
+    {
+      "name": "Business",
+      "url": "http://mobile.reuters.com/video/business"
+    },
+    {
+      "name": "Editor's Choice",
+      "url": "http://mobile.reuters.com/video/editor"
+    },
+    {
+      "name": "World",
+      "url": "http://mobile.reuters.com/video/world"
+    },
+    {
+      "name": "Health",
+      "url": "http://mobile.reuters.com/news/health"
+    },
+    {
+      "name": "Sports",
+      "url": "http://mobile.reuters.com/news/sports"
+    },
+    {
+      "name": "Stocks",
+      "url": "http://mobile.reuters.com/finance/stocks"
+    },
+    {
+      "name": "Arts",
+      "url": "http://mobile.reuters.com/news/entertainment/arts"
+    },
+    {
+      "name": "Science",
+      "url": "http://mobile.reuters.com/news/science"
+    },
+    {
+      "name": "Pictures",
+      "url": "http://mobile.reuters.com/news/pictures"
+    },
+    {
+      "name": "Entertainment",
+      "url": "http://mobile.reuters.com/video/entertainment"
+    },
+    {
+      "name": "Life",
+      "url": "http://mobile.reuters.com/news/lifestyle"
+    },
+    {
+      "name": "Politics",
+      "url": "http://mobile.reuters.com/video/politics"
+    }
+  ]
+}
