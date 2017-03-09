@@ -118,10 +118,16 @@
         "name": "CNN"
       },
       {
+        "name": "NBC"
+      },
+      {
         "name": "The Guardian"
       },
       {
         "name": "New York Times"
+      },
+      {
+        "name": "Reuters"
       },
       {
         "name": "Time"
@@ -168,12 +174,6 @@
     "category": "Technology",
     "apps": [
       {
-        "name": "Product Hunt"
-      },
-      {
-        "name": "Hacker News"
-      },
-      {
         "name": "Android Police"
       },
       {
@@ -184,6 +184,12 @@
       },
       {
         "name": "App Sales"
+      },
+      {
+        "name": "AnandTech"
+      },
+      {
+        "name": "Hacker News"
       },
       {
         "name": "APK Mirror"
@@ -199,6 +205,9 @@
       },
       {
         "name": "CNet"
+      },
+      {
+        "name": "Product Hunt"
       },
       {
         "name": "Designer News"
@@ -316,6 +325,9 @@
       },
       {
         "name": "Giphy"
+      },
+      {
+        "name": "Bored Panda"
       },
       {
         "name": "Last.fm"

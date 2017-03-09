@@ -328,18 +328,6 @@
     "category": "Technology",
     "apps": [
       {
-        "app": "Product Hunt.hermit",
-        "theme_color": "#da552f",
-        "name": "Product Hunt",
-        "url": "https://producthunt.com"
-      },
-      {
-        "app": "Hacker News.hermit",
-        "theme_color": "#ff6600",
-        "name": "Hacker News",
-        "url": "https://news.ycombinator.com"
-      },
-      {
         "app": "Android Police.hermit",
         "theme_color": "#ed1b2b",
         "name": "Android Police",
@@ -370,6 +358,12 @@
         "url": "http://www.anandtech.com/"
       },
       {
+        "app": "Hacker News.hermit",
+        "theme_color": "#ff6600",
+        "name": "Hacker News",
+        "url": "https://news.ycombinator.com"
+      },
+      {
         "app": "APK Mirror.hermit",
         "theme_color": "#ff9800",
         "name": "APK Mirror",
@@ -398,6 +392,12 @@
         "theme_color": "#b80000",
         "name": "CNet",
         "url": "http://cnet.com"
+      },
+      {
+        "app": "Product Hunt.hermit",
+        "theme_color": "#da552f",
+        "name": "Product Hunt",
+        "url": "https://producthunt.com"
       },
       {
         "app": "Designer News.hermit",
