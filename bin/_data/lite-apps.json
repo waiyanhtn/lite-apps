@@ -607,6 +607,12 @@
         "url": "https://giphy.com"
       },
       {
+        "app": "Bored Panda.hermit",
+        "theme_color": "#000000",
+        "name": "Bored Panda",
+        "url": "http://boredpanda.com/"
+      },
+      {
         "app": "Last.fm.hermit",
         "theme_color": "#cc0000",
         "name": "Last.fm",

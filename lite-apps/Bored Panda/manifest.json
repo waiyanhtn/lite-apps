@@ -1,0 +1,117 @@
+{
+  "theme_color": "#000000",
+  "manifest_version": 1,
+  "name": "Bored Panda",
+  "start_url": "http://boredpanda.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Bored%20Panda.hermit",
+  "secondary_color": "#000000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Art",
+      "url": "http://www.boredpanda.com/category/art/"
+    },
+    {
+      "name": "Digital Art",
+      "url": "http://www.boredpanda.com/category/digital-art-art/"
+    },
+    {
+      "name": "Photography",
+      "url": "http://www.boredpanda.com/category/photography/"
+    },
+    {
+      "name": "Social Issues",
+      "url": "http://www.boredpanda.com/category/social-issues/"
+    },
+    {
+      "name": "Food Art",
+      "url": "http://www.boredpanda.com/category/food/"
+    },
+    {
+      "name": "Body Art",
+      "url": "http://www.boredpanda.com/category/body-art-art/"
+    },
+    {
+      "name": "Good News",
+      "url": "http://www.boredpanda.com/category/good-news/"
+    },
+    {
+      "name": "Parenting",
+      "url": "http://www.boredpanda.com/category/parenting/"
+    },
+    {
+      "name": "Travel",
+      "url": "http://www.boredpanda.com/category/travel/"
+    },
+    {
+      "name": "Nature",
+      "url": "http://www.boredpanda.com/category/nature/"
+    },
+    {
+      "name": "Weird",
+      "url": "http://www.boredpanda.com/category/weird/"
+    },
+    {
+      "name": "Funny",
+      "url": "http://www.boredpanda.com/category/funny/"
+    },
+    {
+      "name": "Trending",
+      "url": "http://www.boredpanda.com?show=trending"
+    },
+    {
+      "name": "History",
+      "url": "http://www.boredpanda.com/category/history/"
+    },
+    {
+      "name": "Architecture",
+      "url": "http://www.boredpanda.com/category/architecture/"
+    },
+    {
+      "name": "Entertainment",
+      "url": "http://www.boredpanda.com/category/entertainment/"
+    },
+    {
+      "name": "Illustration",
+      "url": "http://www.boredpanda.com/category/illustration/"
+    },
+    {
+      "name": "Latest",
+      "url": "http://www.boredpanda.com?show=recent"
+    },
+    {
+      "name": "DIY",
+      "url": "http://www.boredpanda.com/category/diy/"
+    },
+    {
+      "name": "Animals",
+      "url": "http://www.boredpanda.com/category/animals/"
+    },
+    {
+      "name": "Product Design",
+      "url": "http://www.boredpanda.com/category/industrial-design/"
+    },
+    {
+      "name": "Style",
+      "url": "http://www.boredpanda.com/category/style/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "Bored Panda RSS Feed",
+      "url": "http://www.boredpanda.com/feed/"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.boredpanda.android",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.boredpanda.android"
+    }
+  ]
+}
