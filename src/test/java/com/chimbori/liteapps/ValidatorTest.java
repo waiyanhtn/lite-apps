@@ -92,6 +92,9 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
     validateEndpoints(manifestJson, JSONConstants.Roles.SEARCH);
     validateEndpoints(manifestJson, JSONConstants.Roles.MONITORS);
 
+    // Test all Settings to see whether they belong to our whitelisted set of allowable strings.
+    validateSettings(manifestJson);
+
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
     try {
       JSONArray relatedApps = manifestJson.optJSONArray(JSONConstants.Fields.RELATED_APPLICATIONS);
@@ -148,6 +151,19 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
           assertIsNotEmpty("Endpoint name should not be empty: " + LITE_APP_NAME, monitorSelector);
         }
       }
+    }
+  }
+
+  private void validateSettings(JSONObject manifestJson) {
+    if (!manifestJson.has(JSONConstants.Fields.SETTINGS)) {
+      return;
+    }
+
+    JSONObject settings = manifestJson.getJSONObject(JSONConstants.Fields.SETTINGS);
+    final String LITE_APP_NAME = manifestJson.optString(JSONConstants.Fields.NAME);
+    for (String setting : settings.keySet()) {
+      assertTrue(String.format("Unexpected setting found: [%s] in [%s]", setting, LITE_APP_NAME),
+          JSONConstants.SETTINGS_SET.contains(setting));
     }
   }
 

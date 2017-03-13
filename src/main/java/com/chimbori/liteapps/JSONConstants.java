@@ -1,5 +1,8 @@
 package com.chimbori.liteapps;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 class JSONConstants {
 
   public class Fields {
@@ -45,4 +48,44 @@ class JSONConstants {
     public static final String SEARCH = "hermit_search";
     public static final String MONITORS = "hermit_monitors";
   }
+
+  public class Settings {
+    public static final String BLOCK_MALWARE = "block_malware";
+    public static final String BLOCK_POPUPS = "block_popups";
+    public static final String BLOCK_THIRD_PARTY_COOKIES = "block_third_party_cookies";
+    public static final String DO_NOT_TRACK = "do_not_track";
+    public static final String LOAD_IMAGES = "load_images";
+    public static final String OPEN_LINKS = "open_links";
+    public static final String OPEN_LINKS_IN_APP = "in_app";
+    public static final String OPEN_LINKS_IN_BROWSER = "browser";
+    public static final String PREFERRED_VIEW = "preferred_view";
+    public static final String DAY_NIGHT_MODE = "day_night_mode";
+    public static final String NIGHT_MODE_PAGE_STYLE = "night_mode_page_style";
+    public static final String SAVE_DATA = "save_data";
+    public static final String SCROLL_TO_TOP = "scroll_to_top";
+    public static final String PULL_TO_REFRESH = "pull_to_refresh";
+    public static final String TEXT_ZOOM = "text_zoom";
+    public static final String USER_AGENT = "user_agent";
+    public static final String JAVASCRIPT_ENABLED = "javascript";
+  }
+
+  public static final HashSet<String> SETTINGS_SET = new HashSet<>(Arrays.asList(
+      JSONConstants.Settings.BLOCK_MALWARE,
+      JSONConstants.Settings.BLOCK_POPUPS,
+      JSONConstants.Settings.BLOCK_THIRD_PARTY_COOKIES,
+      JSONConstants.Settings.DO_NOT_TRACK,
+      JSONConstants.Settings.LOAD_IMAGES,
+      JSONConstants.Settings.OPEN_LINKS,
+      JSONConstants.Settings.OPEN_LINKS_IN_APP,
+      JSONConstants.Settings.OPEN_LINKS_IN_BROWSER,
+      JSONConstants.Settings.PREFERRED_VIEW,
+      JSONConstants.Settings.DAY_NIGHT_MODE,
+      JSONConstants.Settings.NIGHT_MODE_PAGE_STYLE,
+      JSONConstants.Settings.SAVE_DATA,
+      JSONConstants.Settings.SCROLL_TO_TOP,
+      JSONConstants.Settings.PULL_TO_REFRESH,
+      JSONConstants.Settings.TEXT_ZOOM,
+      JSONConstants.Settings.USER_AGENT,
+      JSONConstants.Settings.JAVASCRIPT_ENABLED
+  ));
 }
