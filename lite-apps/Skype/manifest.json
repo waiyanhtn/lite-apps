@@ -12,6 +12,7 @@
   ],
   "lang": "en",
   "hermit_settings": {
-    "user_agent": "desktop"
+    "user_agent": "desktop",
+    "block_third_party_cookies": false
   }
 }
