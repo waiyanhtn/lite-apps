@@ -60,7 +60,7 @@ public class BlockListsParser {
   /**
    * Package multiple blocklists into a single JSON file, as specified in index.json.
    */
-  public static boolean packageBlockLists() throws IOException {
+  public static boolean packageBlockLists(boolean shouldMinify) throws IOException {
     JSONArray blockListSources = new JSONArray(FileUtils.readFully(new FileInputStream(FileUtils.BLOCK_LISTS_INDEX_JSON)));
     for (int i = 0; i < blockListSources.length(); i++) {
       Set<String> hosts = new HashSet<>();
@@ -85,7 +85,7 @@ public class BlockListsParser {
         }
       }
 
-      writeToDisk(FileUtils.BLOCK_LISTS_ROOT_DIR, fileName, hosts);
+      writeToDisk(FileUtils.BLOCK_LISTS_ROOT_DIR, fileName, hosts, shouldMinify);
       hosts.clear();  // Empty the list before writing each one.
     }
 
@@ -147,7 +147,7 @@ public class BlockListsParser {
     return false;
   }
 
-  private static void writeToDisk(File rootDirectory, String fileName, Set<String> hosts) throws IOException {
+  private static void writeToDisk(File rootDirectory, String fileName, Set<String> hosts, boolean shouldMinify) throws IOException {
     String[] hostsArray = hosts.toArray(new String[0]);
     Arrays.sort(hostsArray);
 
@@ -163,7 +163,7 @@ public class BlockListsParser {
     System.err.println(String.format("Wrote %d hosts.\n", hosts.size()));
 
     FileOutputStream blockList = new FileOutputStream(new File(rootDirectory, fileName));
-    blockList.write(outputFile.toString(2).getBytes());
+    blockList.write(outputFile.toString(shouldMinify ? 0 : 2).getBytes());
     blockList.close();
   }
 }

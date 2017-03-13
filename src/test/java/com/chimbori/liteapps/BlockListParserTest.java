@@ -12,7 +12,7 @@ public class BlockListParserTest {
   public void testAssembleAllBlockLists() {
     try {
       // BlockListsParser.downloadFromSources();
-      assertTrue(BlockListsParser.packageBlockLists());
+      assertTrue(BlockListsParser.packageBlockLists(false));
     } catch (IOException e) {
       fail(e.getMessage());
     }
