@@ -245,13 +245,13 @@
         "name": "Bank of America"
       },
       {
-        "name": "Wells Fargo"
-      },
-      {
         "name": "Capital One 360"
       },
       {
         "name": "PayPal"
+      },
+      {
+        "name": "Chase"
       },
       {
         "name": "American Express"
@@ -261,6 +261,9 @@
       },
       {
         "name": "RBC Canada"
+      },
+      {
+        "name": "Wells Fargo"
       }
     ]
   },

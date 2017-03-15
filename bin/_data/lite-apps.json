@@ -465,12 +465,6 @@
         "url": "https://bankofamerica.com"
       },
       {
-        "app": "Wells Fargo.hermit",
-        "theme_color": "#f1b6bc",
-        "name": "Wells Fargo",
-        "url": "https://m.wellsfargo.com"
-      },
-      {
         "app": "Capital One 360.hermit",
         "theme_color": "#99d7ee",
         "name": "Capital One 360",
@@ -481,6 +475,12 @@
         "theme_color": "#009cde",
         "name": "PayPal",
         "url": "https://paypal.com"
+      },
+      {
+        "app": "Chase.hermit",
+        "theme_color": "#0459a9",
+        "name": "Chase",
+        "url": "https://m.chase.com/"
       },
       {
         "app": "American Express.hermit",
@@ -499,6 +499,12 @@
         "theme_color": "#263780",
         "name": "RBC Canada",
         "url": "https://www.rbcroyalbank.com"
+      },
+      {
+        "app": "Wells Fargo.hermit",
+        "theme_color": "#f1b6bc",
+        "name": "Wells Fargo",
+        "url": "https://m.wellsfargo.com"
       }
     ]
   },

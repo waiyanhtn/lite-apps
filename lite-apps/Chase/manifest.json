@@ -1,0 +1,14 @@
+{
+  "manifest_version": 1,
+  "name": "Chase",
+  "start_url": "https://m.chase.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Chase.hermit",
+  "lang": "en",
+  "theme_color": "#0459a9",
+  "secondary_color": "#0077c4",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}
