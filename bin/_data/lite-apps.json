@@ -920,6 +920,12 @@
         "url": "https://dropbox.com"
       },
       {
+        "app": "Google Drive.hermit",
+        "theme_color": "#ffd038",
+        "name": "Google Drive",
+        "url": "https://drive.google.com/drive/mobile/my-drive"
+      },
+      {
         "app": "OneDrive.hermit",
         "theme_color": "#2350a2",
         "name": "OneDrive",
