@@ -58,6 +58,11 @@ class Scaffolder {
     Scraper.SiteMetadata metadata = Scraper.scrape(startUrl);
     System.out.println(metadata);
 
+    // Put the icon even if we don’t manage to fetch an icon successfully.
+    // This way, we can avoid additional typing, and the validator will check for the presence
+    // of the file anyway (and fail as expected).
+    root.put(JSONConstants.Fields.ICONS, new JSONArray().put(new JSONObject().put(JSONConstants.Fields.SRC, FileUtils.ICON_FILENAME)));
+
     // TODO(manas): Fetch favicon or apple-touch-icon.
     if (metadata.iconUrl != null && !metadata.iconUrl.isEmpty()) {
       URL website = new URL(metadata.iconUrl);
@@ -67,7 +72,6 @@ class Scaffolder {
         e.printStackTrace();
         // But still continue with the rest of the manifest generation.
       }
-      root.put(JSONConstants.Fields.ICONS, new JSONArray().put(new JSONObject().put("src", FileUtils.ICON_FILENAME)));
 
       // Extract the color from the icon.
       File iconFile = new File(liteAppDirectoryRoot, FileUtils.ICON_FILENAME);
@@ -75,9 +79,13 @@ class Scaffolder {
         ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
         root.put(JSONConstants.Fields.THEME_COLOR, themeColor.toString());
         root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor.darken(0.9f).toString());
-      } else {
-        // TODO(manas): Boom, go get an icon first!
       }
+    } else {
+      // Insert a placeholder for theme_color and secondary_color so we don’t have to
+      // type it in manually, but put invalid values so that the validator will catch it
+      // in case we forget to replace with valid values.
+      root.put(JSONConstants.Fields.THEME_COLOR, "#");
+      root.put(JSONConstants.Fields.SECONDARY_COLOR, "#");
     }
 
     // Collect bookmarkable links from likely navigation links on the page.
