@@ -48,7 +48,7 @@ class TestHelpers {
     try {
       bufferedImage = ImageIO.read(icon);
     } catch (IOException e) {
-      fail(e.getMessage());
+      fail(String.format("%s: %s", icon.getPath(), e.getMessage()));
     }
 
     assertEquals(String.format("[%s] is not the correct size.", icon.getPath()), 300, bufferedImage.getWidth());
