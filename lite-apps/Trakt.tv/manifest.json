@@ -1,0 +1,36 @@
+{
+  "theme_color": "#ed2224",
+  "manifest_version": 1,
+  "name": "Trakt.tv",
+  "start_url": "https://trakt.tv/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Trakt.tv.hermit",
+  "secondary_color": "#d51e20",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "TV",
+      "url": "https://trakt.tv/shows/trending"
+    },
+    {
+      "name": "Movies",
+      "url": "https://trakt.tv/movies/trending"
+    },
+    {
+      "name": "Discover",
+      "url": "https://trakt.tv/discover"
+    },
+    {
+      "name": "Calendar",
+      "url": "https://trakt.tv/calendars"
+    },
+    {
+      "name": "VIP",
+      "url": "https://trakt.tv/vip"
+    }
+  ]
+}

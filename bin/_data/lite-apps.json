@@ -613,6 +613,12 @@
         "url": "https://plex.tv"
       },
       {
+        "app": "Trakt.tv.hermit",
+        "theme_color": "#ed2224",
+        "name": "Trakt.tv",
+        "url": "https://trakt.tv/"
+      },
+      {
         "app": "Imgur.hermit",
         "theme_color": "#3bd443",
         "name": "Imgur",
