@@ -696,6 +696,12 @@
         "url": "https://qrcodescan.in/"
       },
       {
+        "app": "Translate.hermit",
+        "theme_color": "#508ff5",
+        "name": "Translate",
+        "url": "https://translate.google.com/m/translate"
+      },
+      {
         "app": "Pocket.hermit",
         "theme_color": "#ee4055",
         "name": "Pocket",

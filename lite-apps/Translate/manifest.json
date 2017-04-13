@@ -1,0 +1,20 @@
+{
+  "theme_color": "#508ff5",
+  "manifest_version": 1,
+  "name": "Translate",
+  "start_url": "https://translate.google.com/m/translate",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Translate.hermit",
+  "secondary_color": "#3b4a9d",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_share": [
+    {
+      "name": "Translate",
+      "url": "https://translate.google.com/m/translate#auto/auto/%s"
+    }
+  ]
+}
