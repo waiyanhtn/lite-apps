@@ -16,4 +16,4 @@ description: Library of free Hermit Lite Apps
 
 <p class="tooltip">All product names, icons, and web sites linked from this page are trademarks of their respective owners. <span class="notranslate">Hermit</span> only provides these links as a courtesy and may not be held accountable for their contents.</p>
 
-<script src="library.js">
+<script src="{{ site.cdn_url }}/library/library.js">

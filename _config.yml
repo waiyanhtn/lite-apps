@@ -1,6 +1,6 @@
 title:    "Lite App Manifests"
 tagline:  "Lite Apps for use with Hermit: https://hermit.chimbori.com/"
-url:      "https://chimbori.github.io/lite-apps/"
+url:      "https://chimbori.github.io/lite-apps"
 cdn_url:
 include:  [
             "_data"
