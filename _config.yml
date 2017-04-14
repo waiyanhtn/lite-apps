@@ -2,6 +2,9 @@ title:    "Lite App Manifests"
 tagline:  "Lite Apps for use with Hermit: https://hermit.chimbori.com/"
 url:      "https://chimbori.github.io/lite-apps/"
 cdn_url:
+include:  [
+            "_data"
+          ]
 exclude:  [
             "*.bat",
             "*.gradle",
@@ -15,5 +18,3 @@ exclude:  [
             "lite-apps/",
             "src/"
           ]
-gems:
-  - jekyll-babel  # Processes .jsx files to .js.

@@ -16,12 +16,20 @@ function makeCreateUrl(liteApp) {
 }
 
 function LiteApp(props) {
-  return <div className="lite-app-icon">
-    <a href={ makeCreateUrl(props.liteApp) }>
-      <img className="lite-app-icon-image" src={ makeImageUrl(props.liteApp) }/>
-      <p>{ props.liteApp.name }</p>
-    </a>
-  </div>
+  return React.createElement(
+    'div',
+    { className: 'lite-app-icon' },
+    React.createElement(
+      'a',
+      { href: makeCreateUrl(props.liteApp) },
+      React.createElement('img', { className: 'lite-app-icon-image', src: makeImageUrl(props.liteApp) }),
+      React.createElement(
+        'p',
+        null,
+        props.liteApp.name
+      )
+    )
+  );
 }
 
 function isDisplayed(liteApp) {
@@ -29,24 +37,33 @@ function isDisplayed(liteApp) {
 }
 
 function Category(props) {
-  return <div>
-    <h2>{ props.category.category }</h2>
-    <div className="lite-app-category">
-    {
-      props.category.apps.map(function(liteApp, i) {
+  return React.createElement(
+    'div',
+    null,
+    React.createElement(
+      'h2',
+      null,
+      props.category.category
+    ),
+    React.createElement(
+      'div',
+      { className: 'lite-app-category' },
+      props.category.apps.map(function (liteApp, i) {
         if (!isDisplayed(liteApp)) {
           return null;
         }
-        return <LiteApp liteApp={ liteApp } key={ i }/>;
+        return React.createElement(LiteApp, { liteApp: liteApp, key: i });
       })
-    }
-    </div>
-  </div>
+    )
+  );
 }
 
 function Library(props) {
-  return <div> {
-    props.library.map(function(category, i) {
+  return React.createElement(
+    'div',
+    null,
+    ' ',
+    props.library.map(function (category, i) {
       var isAtleastOneLiteAppDisplayed = false;
       for (var liteAppIndex in category.apps) {
         if (isDisplayed(category.apps[liteAppIndex])) {
@@ -55,19 +72,14 @@ function Library(props) {
         }
       }
 
-      return isAtleastOneLiteAppDisplayed
-          ? <Category category={ category } key={ i }/>
-          : null;
-    })
-  } </div>
+      return isAtleastOneLiteAppDisplayed ? React.createElement(Category, { category: category, key: i }) : null;
+    }),
+    ' '
+  );
 }
 
-
 function updateDisplay(libraryJson) {
-  ReactDOM.render(
-    <Library library={ libraryJson }/>,
-    document.querySelector('.lite-apps-json')
-  );
+  ReactDOM.render(React.createElement(Library, { library: libraryJson }), document.querySelector('.lite-apps-json'));
 }
 
 function applyQueryFilter(queryText) {
@@ -77,19 +89,17 @@ function applyQueryFilter(queryText) {
     for (var liteAppIndex in category.apps) {
       var liteApp = category.apps[liteAppIndex];
       liteApp.display = isQueryBlank;
-      if (liteApp.name.toLowerCase().indexOf(queryText) != -1 ||
-          liteApp.url.toLowerCase().indexOf(queryText) != -1) {
+      if (liteApp.name.toLowerCase().indexOf(queryText) != -1 || liteApp.url.toLowerCase().indexOf(queryText) != -1) {
         liteApp.display = true;
       }
     }
   }
 }
 
-document.querySelector('#query').addEventListener('input', function(e) {
+document.querySelector('#query').addEventListener('input', function (e) {
   applyQueryFilter(e.target.value.toLowerCase());
   updateDisplay(libraryJson);
 });
-
 
 function getQueryVariable(paramName) {
   var query = window.location.search.substring(1);
@@ -104,7 +114,7 @@ function getQueryVariable(paramName) {
 }
 
 function fetchJson() {
-  $.getJSON( "../bin/_data/lite-apps.json", function(data) {
+  $.getJSON("../bin/_data/lite-apps.json", function (data) {
     libraryJson = data;
     applyQueryFilter(document.querySelector('#query').value.toLowerCase());
     updateDisplay(libraryJson);
