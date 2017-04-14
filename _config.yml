@@ -10,11 +10,14 @@ exclude:  [
             "*.gradle",
             "*.properties",
             "*.sh",
+            "blocklists/",
             "build/",
             "Gemfile",
             "Gemfile.lock",
             "gradle/",
             "gradlew",
             "lite-apps/",
+            "node_modules/",
+            "package.json",
             "src/"
           ]
