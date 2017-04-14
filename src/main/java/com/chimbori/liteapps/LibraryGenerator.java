@@ -57,7 +57,7 @@ class LibraryGenerator {
     }
 
     try (PrintWriter writer = new PrintWriter(FileUtils.OUT_LITE_APPS_JSON)) {
-      writer.print(library.toString(2));
+      writer.print(library.toString());
     }
     return true;
   }

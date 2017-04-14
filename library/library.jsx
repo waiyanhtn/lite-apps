@@ -106,7 +106,7 @@ function getQueryVariable(paramName) {
 }
 
 function fetchJson() {
-  $.getJSON( "../bin/_data/lite-apps.json", function(data) {
+  $.getJSON( "../bin/lite-apps/lite-apps.json", function(data) {
     libraryJson = data;
     applyQueryFilter(document.querySelector('#query').value.toLowerCase());
     updateDisplay(libraryJson);

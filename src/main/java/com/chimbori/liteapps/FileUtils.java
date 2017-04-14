@@ -30,9 +30,8 @@ class FileUtils {
 
   public static final File SRC_ROOT_DIR = new File("lite-apps/");
   public static final File OUT_ROOT_DIR = new File("bin/");
-  private static final File OUT_DATA_DIR = new File(OUT_ROOT_DIR, "_data/");
-  public static final File OUT_LITE_APPS_JSON = new File(OUT_DATA_DIR, LITE_APPS_JSON_FILE_NAME);
   public static final File OUT_LITE_APPS_DIR = new File(OUT_ROOT_DIR, "lite-apps/");
+  public static final File OUT_LITE_APPS_JSON = new File(OUT_LITE_APPS_DIR, LITE_APPS_JSON_FILE_NAME);
 
   public static final File SRC_INDEX_JSON = new File(SRC_ROOT_DIR, INDEX_JSON_FILE_NAME);
 
@@ -41,7 +40,6 @@ class FileUtils {
 
   static {
     OUT_ROOT_DIR.mkdirs();
-    OUT_DATA_DIR.mkdirs();
     OUT_LITE_APPS_DIR.mkdirs();
   }
 
