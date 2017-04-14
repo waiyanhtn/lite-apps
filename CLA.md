@@ -1,3 +1,7 @@
+---
+title: Chimbori Individual Contributor License Agreement
+---
+
 # Chimbori Individual Contributor License Agreement
 
 Thank you for your interest in contributing to open source software projects (“Projects”) made

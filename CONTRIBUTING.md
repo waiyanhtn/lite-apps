@@ -1,3 +1,7 @@
+---
+title: Submitting New Lite Apps
+---
+
 # Submitting New Lite Apps
 
 We welcome new additions to this Library and enhancements to existing ones (e.g. adding new Bookmarks or Integrations). Clone this repo, make your changes, run the tests, and send us a pull request.
