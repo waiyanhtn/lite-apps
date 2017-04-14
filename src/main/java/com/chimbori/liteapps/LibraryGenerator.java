@@ -1,17 +1,16 @@
 package com.chimbori.liteapps;
 
+import net.coobird.thumbnailator.Thumbnailator;
+import net.coobird.thumbnailator.Thumbnails;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
-
-import javax.imageio.ImageIO;
 
 class LibraryGenerator {
   private static final int LIBRARY_ICON_SIZE = 112;
@@ -60,10 +59,9 @@ class LibraryGenerator {
             }
 
             // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
-            resizeImage(
-                new File(liteAppDirectory, FileUtils.ICON_FILENAME),
-                new File(FileUtils.OUT_LIBRARY_ICONS_DIR, appName + FileUtils.ICON_EXTENSION),
-                LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE);
+            Thumbnails.of(new File(liteAppDirectory, FileUtils.ICON_FILENAME))
+                .size(LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE)
+                .toFile(new File(FileUtils.OUT_LIBRARY_ICONS_DIR, appName + FileUtils.ICON_EXTENSION));
           }
         }
       }
@@ -73,24 +71,5 @@ class LibraryGenerator {
       writer.print(library.toString());
     }
     return true;
-  }
-
-  public static void resizeImage(File input, File output, int scaledWidth, int scaledHeight) throws IOException {
-    BufferedImage inputImage = null;
-    try {
-      inputImage = ImageIO.read(input);
-      BufferedImage outputImage = new BufferedImage(scaledWidth, scaledHeight, inputImage.getType());
-
-      Graphics2D g2d = outputImage.createGraphics();
-      g2d.drawImage(inputImage, 0, 0, scaledWidth, scaledHeight, null);
-      g2d.dispose();
-
-      ImageIO.write(outputImage, FileUtils.getExtension(output), output);
-    } catch (IOException | IllegalArgumentException e) {
-      // Wrap in an IOException that forces callers to handle it, and insert a more detailed
-      // error message.
-      throw new IOException(
-          String.format("Problem resizing [%s]", input.getAbsolutePath()), e);
-    }
   }
 }

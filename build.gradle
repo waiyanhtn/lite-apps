@@ -24,12 +24,15 @@ run {
 
 dependencies {
   compile 'commons-cli:commons-cli:1.3.1'
-  // Parser used only to confirm well-formed-ness of JSON, because the org.json parser does not
-  // do a strict parse, allowing malformed files to be pushed that break the Android app.
+  // Eclipse Parser used only to confirm well-formed-ness of JSON, because the org.json parser does
+  // not do a strict parse, allowing malformed files to be pushed that break the Android app.
   compile 'com.eclipsesource.minimal-json:minimal-json:0.9.4'
-  compile 'org.json:json:20160810'  // org.json is the actual parser used for all processing (apart from testing string JSON parsing.)
+  // org.json is the actual parser used for all processing (apart from testing string JSON parsing.)
+  compile 'org.json:json:20160810'
   compile 'org.jsoup:jsoup:1.9.2'
   compile 'com.squareup.okhttp3:okhttp:3.5.0'
+  compile 'net.coobird:thumbnailator:0.4.8'
+
   testCompile 'junit:junit:4.12'
 }
 
