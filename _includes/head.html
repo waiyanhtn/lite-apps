@@ -1,0 +1,23 @@
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="robots" content="noodp,noydir">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title itemprop="name">{% if page.permalink == "/" %}{{ site.title }}{% else %}{{ page.title }} • {{ site.title }}{% endif %}</title>
+  {% if page.description %}<meta name="description" itemprop="description" content="{{ page.description }}">{% endif %}
+  <meta name="theme-color" content="#fe7a4d">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | remove:'/index.html' }}">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400|Varela:400">
+  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="{{ site.cdn_url }}/media/ic_apps-192.png">
+
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.cdn_url }}/favicon.ico">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" property="og:url" content="{{ site.url }}{{ page.url | remove:'/index.html' }}">
+  <meta name="twitter:title" property="og:title" content="{{ page.title }}">
+  <meta name="twitter:description" property="og:description" content="{{ page.description }}">
+  <meta name="twitter:image" property="og:image" content="{{ site.cdn_url }}/media/cover-photo.png">
+  <meta name="twitter:label1" value="Google Play" />
+  <meta name="twitter:data1" value="★★★★★ 4.5+" />
+  <meta name="twitter:label2" value="Downloads" />
+  <meta name="twitter:data2" value="220,000+" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><!-- TODO: Move to footer, but just before inline scripts execute. -->

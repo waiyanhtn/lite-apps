@@ -1,0 +1,26 @@
+
+.lite-app-icons {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 11pt;
+}
+
+.lite-app-icon {
+  width: 84px;
+  height: 128px;
+  overflow: hidden;
+  padding-top: 12px;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $color-text-dark;
+  }
+}

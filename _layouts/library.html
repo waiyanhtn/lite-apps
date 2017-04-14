@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html itemscope itemtype="https://schema.org/{% if page.itemtype %}{{ page.itemtype }}{% else %}SoftwareApplication{% endif %}">
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ site.cdn_url }}/library/library.css">
+  <script src="{{ site.cdn_url }}/library/react.min.js"></script>
+  <script src="{{ site.cdn_url }}/library/react-dom.min.js"></script>
+</head>
+<body>
+  {{content}}
+  {% include analytics.html %}
+</body>
+</html>

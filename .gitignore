@@ -1,7 +1,8 @@
 *.iml
 .gradle/
 .idea/
+.sass-cache
 _site
+blocklists/**/*.cached.txt
 build/
 local.properties
-blocklists/**/*.cached.txt
