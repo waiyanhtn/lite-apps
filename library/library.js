@@ -2,7 +2,7 @@
 var libraryJson = {};
 
 function makeImageUrl(liteApp) {
-  return 'https://chimbori.github.io/lite-apps/library/112x112/' + encodeURIComponent(liteApp.name) + '.png';
+  return 'https://chimbori.github.io/lite-apps/bin/library/112x112/' + encodeURIComponent(liteApp.name) + '.png';
 }
 
 function makeCreateUrl(liteApp) {
