@@ -28,19 +28,33 @@ class LibraryGenerator {
    * https://hermit.chimbori.com/library.
    */
   public static boolean generateLibraryData() throws IOException, JSONException {
-    JSONArray library = new JSONArray(FileUtils.readFully(new FileInputStream(FileUtils.SRC_INDEX_JSON)));
-    for (int i = 0; i < library.length(); i++) {
-      JSONObject category = library.getJSONObject(i);
-      String categoryName = category.getString(JSONConstants.Fields.CATEGORY);
+    JSONArray inputLibrary = new JSONArray(FileUtils.readFully(new FileInputStream(FileUtils.SRC_INDEX_JSON)));
+    JSONArray outputLibrary = new JSONArray();
+
+    for (int i = 0; i < inputLibrary.length(); i++) {
+      JSONObject inputCategory = inputLibrary.getJSONObject(i);
+      String categoryName = inputCategory.getString(JSONConstants.Fields.CATEGORY);
       if (categoryName == null) {
         return false;
       }
 
+      JSONObject outputCategory = new JSONObject();
+      outputCategory.put(JSONConstants.Fields.CATEGORY, categoryName);
+
       // For each Lite App in Category:
-      JSONArray apps = category.getJSONArray(JSONConstants.Fields.APPS);
-      for (int j = 0; j < apps.length(); j++) {
-        JSONObject app = apps.getJSONObject(j);
-        String appName = app.getString(JSONConstants.Fields.NAME);
+      JSONArray inputApps = inputCategory.getJSONArray(JSONConstants.Fields.APPS);
+      JSONArray outputApps = new JSONArray();
+
+      for (int j = 0; j < inputApps.length(); j++) {
+        JSONObject inputApp = inputApps.getJSONObject(j);
+        // If this entry has an explicit "display":false, then skip to the next one.
+        if (!inputApp.optBoolean(JSONConstants.Fields.DISPLAY, true /* defaultValue */)) {
+          continue;
+        }
+
+        JSONObject outputApp = new JSONObject();
+        String appName = inputApp.getString(JSONConstants.Fields.NAME);
+        outputApp.put(JSONConstants.Fields.NAME, appName);
 
         File liteAppDirectory = new File(FileUtils.SRC_ROOT_DIR, appName);
         if (liteAppDirectory.exists()) {
@@ -48,15 +62,17 @@ class LibraryGenerator {
           if (manifestJson.exists()) {
             // Add manifest entry for this Lite App to the directory index file.
             JSONObject manifest = new JSONObject(FileUtils.readFully(new FileInputStream(manifestJson)));
-            app.put(JSONConstants.Fields.URL, manifest.optString(JSONConstants.Fields.START_URL));
-            app.put(JSONConstants.Fields.APP, String.format("%s.hermit", appName));
-            app.put(JSONConstants.Fields.THEME_COLOR, manifest.optString(JSONConstants.Fields.THEME_COLOR));
+            outputApp.put(JSONConstants.Fields.URL, manifest.optString(JSONConstants.Fields.START_URL));
+            outputApp.put(JSONConstants.Fields.APP, String.format("%s.hermit", appName));
+            outputApp.put(JSONConstants.Fields.THEME_COLOR, manifest.optString(JSONConstants.Fields.THEME_COLOR));
 
             JSONObject settings = manifest.optJSONObject(JSONConstants.Fields.SETTINGS);
             if (settings != null &&
                 settings.optString(JSONConstants.Fields.USER_AGENT, "").equals(JSONConstants.Values.USER_AGENT_DESKTOP)) {
-              app.put(JSONConstants.Fields.USER_AGENT, JSONConstants.Values.USER_AGENT_DESKTOP);
+              outputApp.put(JSONConstants.Fields.USER_AGENT, JSONConstants.Values.USER_AGENT_DESKTOP);
             }
+
+            outputApps.put(outputApp);
 
             // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
             Thumbnails.of(new File(liteAppDirectory, FileUtils.ICON_FILENAME))
@@ -65,10 +81,14 @@ class LibraryGenerator {
           }
         }
       }
+
+      outputCategory.put(JSONConstants.Fields.APPS, outputApps);
+
+      outputLibrary.put(outputCategory);
     }
 
     try (PrintWriter writer = new PrintWriter(FileUtils.OUT_LITE_APPS_JSON)) {
-      writer.print(library.toString());
+      writer.print(outputLibrary.toString());
     }
     return true;
   }

@@ -13,6 +13,7 @@ class JSONConstants {
 
     // Used in manifest.json.
     public static final String BLOCK_LIST = "blocklist";
+    public static final String DISPLAY = "display";
     public static final String HOSTS = "hosts";
     public static final String ICONS = "icons";
     public static final String ID = "id";
@@ -23,6 +24,7 @@ class JSONConstants {
     public static final String PLATFORM = "platform";
     public static final String RELATED_APPLICATIONS = "related_applications";
     public static final String SECONDARY_COLOR = "secondary_color";
+    public static final String SELECTOR = "selector";
     public static final String SETTINGS = "hermit_settings";
     public static final String SOURCES = "sources";
     public static final String SRC = "src";
@@ -31,7 +33,6 @@ class JSONConstants {
     public static final String UPDATED = "updated";
     public static final String URL = "url";
     public static final String USER_AGENT = "user_agent";
-    public static final String SELECTOR = "selector";
   }
 
   public class Values {
