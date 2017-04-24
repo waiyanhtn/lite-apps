@@ -1,5 +1,7 @@
 package com.chimbori.liteapps;
 
+import com.google.common.collect.ImmutableList;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -13,6 +15,7 @@ import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -20,6 +23,10 @@ import java.util.Set;
  * and combines them into a single JSON file suitable for consumption in Hermit.
  */
 public class BlockListsParser {
+  private static final List<String> WHITELISTED_SUBSTRINGS = ImmutableList.of(
+      "youtube"
+  );
+
   private static final String LOCAL_IP_V4 = "127.0.0.1";
   private static final String LOCAL_IP_V4_ALT = "0.0.0.0";
   private static final String LOCAL_IP_V6 = "::1";
@@ -112,12 +119,12 @@ public class BlockListsParser {
           if (!line.isEmpty() && !line.equals(LOCALHOST)) {
             while (line.contains(SPACE)) {
               int space = line.indexOf(SPACE);
-              if (addHostIfNotNull(line.substring(0, space), hosts)) {
+              if (addHostIfNotNullOrWhiteListed(line.substring(0, space), hosts)) {
                 hostsAdded++;
               }
               line = line.substring(space, line.length()).trim();
             }
-            if (addHostIfNotNull(line.trim(), hosts)) {
+            if (addHostIfNotNullOrWhiteListed(line.trim(), hosts)) {
               hostsAdded++;
             }
           }
@@ -139,8 +146,8 @@ public class BlockListsParser {
     }
   }
 
-  private static boolean addHostIfNotNull(String host, Set<String> hosts) {
-    if (host != null) {
+  private static boolean addHostIfNotNullOrWhiteListed(String host, Set<String> hosts) {
+    if (host != null && !isHostWhitelisted(host)) {
       hosts.add(host.trim());
       return true;
     }
@@ -165,5 +172,18 @@ public class BlockListsParser {
     FileOutputStream blockList = new FileOutputStream(new File(rootDirectory, fileName));
     blockList.write(outputFile.toString(shouldMinify ? 0 : 2).getBytes());
     blockList.close();
+  }
+
+  /**
+   * In order to allow Hermit to continue to be distributed via Google Play, certain ads domains
+   * cannot be blocked. We apologize for the inconvenience, but this is not in our control.
+   */
+  private static boolean isHostWhitelisted(String host) {
+    for (String whitelistedSubstring : WHITELISTED_SUBSTRINGS) {
+      if (host.contains(whitelistedSubstring)) {
+        return true;
+      }
+    }
+    return false;
   }
 }
