@@ -1,0 +1,14 @@
+{
+  "theme_color": "#6f6f00",
+  "manifest_version": 1,
+  "name": "Hotstar",
+  "start_url": "http://hotstar.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Hotstar.hermit",
+  "secondary_color": "#636300",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}
