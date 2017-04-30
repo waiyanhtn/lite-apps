@@ -1,0 +1,40 @@
+{
+  "theme_color": "#b30013",
+  "manifest_version": 1,
+  "name": "NFL",
+  "start_url": "http://www.nfl.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/NFL.hermit",
+  "secondary_color": "#a10011",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Video",
+      "url": "http://www.nfl.com/videos"
+    },
+    {
+      "name": "News",
+      "url": "http://www.nfl.com/news"
+    },
+    {
+      "name": "Tickets",
+      "url": "http://www.nfl.com/tickets"
+    },
+    {
+      "name": "Fantasy",
+      "url": "http://fantasy.nfl.com?icampaign=nflnav_mobileweb_header_fantasy"
+    },
+    {
+      "name": "Standings",
+      "url": "http://www.nfl.com/standings"
+    },
+    {
+      "name": "Stats",
+      "url": "http://www.nfl.com/stats"
+    }
+  ]
+}

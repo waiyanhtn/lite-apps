@@ -121,6 +121,9 @@
         "name": "The Guardian"
       },
       {
+        "name": "The Atlantic"
+      },
+      {
         "name": "New York Times"
       },
       {
@@ -157,6 +160,9 @@
         "name": "Google News"
       },
       {
+        "name": "Slate"
+      },
+      {
         "name": "Haaretz"
       },
       {
@@ -164,6 +170,20 @@
       },
       {
         "name": "Al Jazeera"
+      }
+    ]
+  },
+  {
+    "category": "Sports",
+    "apps": [
+      {
+        "name": "NFL"
+      },
+      {
+        "name": "NHL"
+      },
+      {
+        "name": "ESPN"
       }
     ]
   },
@@ -268,6 +288,9 @@
     "category": "Education",
     "apps": [
       {
+        "name": "Coursera"
+      },
+      {
         "name": "Duolingo"
       },
       {
@@ -316,6 +339,9 @@
       },
       {
         "name": "E! Online"
+      },
+      {
+        "name": "BuzzFeed"
       },
       {
         "name": "Plex"

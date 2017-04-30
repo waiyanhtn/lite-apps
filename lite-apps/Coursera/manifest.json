@@ -1,0 +1,31 @@
+{
+  "theme_color": "#4689c6",
+  "manifest_version": 1,
+  "name": "Coursera",
+  "start_url": "https://www.coursera.org",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Coursera.hermit",
+  "secondary_color": "#3f7bb2",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Search",
+      "url": "https://www.coursera.org/courses"
+    },
+    {
+      "name": "Browse",
+      "url": "https://www.coursera.org/browse"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "org.coursera.android",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=org.coursera.android"
+    }
+  ]
+}

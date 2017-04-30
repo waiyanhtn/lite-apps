@@ -1,0 +1,36 @@
+{
+  "theme_color": "#000000",
+  "manifest_version": 1,
+  "name": "NHL",
+  "start_url": "https://www.nhl.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/NHL.hermit",
+  "secondary_color": "#000000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Schedule",
+      "url": "https://www.nhl.com/schedule"
+    },
+    {
+      "name": "Teams",
+      "url": "https://www.nhl.com/info/teams"
+    },
+    {
+      "name": "News",
+      "url": "https://www.nhl.com/news"
+    },
+    {
+      "name": "Bracket Challenge",
+      "url": "https://www.nhl.com/bracket"
+    },
+    {
+      "name": "Stats",
+      "url": "http://www.nhl.com/stats/"
+    }
+  ]
+}

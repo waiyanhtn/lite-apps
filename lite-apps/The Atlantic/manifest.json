@@ -1,0 +1,74 @@
+{
+  "theme_color": "#000000",
+  "manifest_version": 1,
+  "name": "The Atlantic",
+  "start_url": "https://www.theatlantic.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Atlantic.hermit",
+  "secondary_color": "#000000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Latest",
+      "url": "https://www.theatlantic.com/latest/"
+    },
+    {
+      "name": "Photo",
+      "url": "https://www.theatlantic.com/photo/"
+    },
+    {
+      "name": "Video",
+      "url": "https://www.theatlantic.com/video/"
+    },
+    {
+      "name": "Notes",
+      "url": "https://www.theatlantic.com/notes/"
+    },
+    {
+      "name": "Culture",
+      "url": "https://www.theatlantic.com/entertainment/"
+    },
+    {
+      "name": "Health",
+      "url": "https://www.theatlantic.com/health/"
+    },
+    {
+      "name": "Popular",
+      "url": "https://www.theatlantic.com/most-popular/"
+    },
+    {
+      "name": "Technology",
+      "url": "https://www.theatlantic.com/technology/"
+    },
+    {
+      "name": "Science",
+      "url": "https://www.theatlantic.com/science/"
+    },
+    {
+      "name": "Books",
+      "url": "https://www.theatlantic.com/ebooks/"
+    },
+    {
+      "name": "Politics & Policy",
+      "url": "https://www.theatlantic.com/politics/"
+    },
+    {
+      "name": "Business",
+      "url": "https://www.theatlantic.com/business/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "The Atlantic",
+      "url": "https://www.theatlantic.com/feed/all/"
+    },
+    {
+      "name": "Best of The Atlantic",
+      "url": "https://www.theatlantic.com/feed/best-of/"
+    }
+  ]
+}

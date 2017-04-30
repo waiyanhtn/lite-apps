@@ -1,0 +1,52 @@
+{
+  "theme_color": "#ee1533",
+  "manifest_version": 1,
+  "name": "ESPN",
+  "start_url": "http://www.espn.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/ESPN.hermit",
+  "secondary_color": "#d6122d",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Watch",
+      "url": "http://www.espn.com/watch/"
+    },
+    {
+      "name": "Listen",
+      "url": "http://www.espn.com/espnradio/index"
+    },
+    {
+      "name": "Tennis",
+      "url": "http://www.espn.com/tennis/"
+    },
+    {
+      "name": "MLB",
+      "url": "http://www.espn.com/mlb/"
+    },
+    {
+      "name": "Boxing",
+      "url": "http://www.espn.com/boxing/"
+    },
+    {
+      "name": "WNBA",
+      "url": "http://www.espn.com/womens-basketball/"
+    },
+    {
+      "name": "NASCAR",
+      "url": "http://www.espn.com/racing/nascar/"
+    },
+    {
+      "name": "NBA",
+      "url": "http://www.espn.com/nba/"
+    },
+    {
+      "name": "Fantasy",
+      "url": "http://www.espn.com/fantasy/"
+    }
+  ]
+}

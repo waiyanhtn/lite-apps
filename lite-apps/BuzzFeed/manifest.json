@@ -1,0 +1,76 @@
+{
+  "theme_color": "#ee3322",
+  "manifest_version": 1,
+  "name": "BuzzFeed",
+  "start_url": "https://www.buzzfeed.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/BuzzFeed.hermit",
+  "secondary_color": "#d62d1e",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Videos",
+      "url": "https://www.buzzfeed.com/videos"
+    },
+    {
+      "name": "Sports",
+      "url": "https://www.buzzfeed.com/sports"
+    },
+    {
+      "name": "LOL",
+      "url": "https://www.buzzfeed.com/lol"
+    },
+    {
+      "name": "OMG",
+      "url": "https://www.buzzfeed.com/omg"
+    },
+    {
+      "name": "Food",
+      "url": "https://www.buzzfeed.com/food"
+    },
+    {
+      "name": "Style",
+      "url": "https://www.buzzfeed.com/style"
+    },
+    {
+      "name": "Tech",
+      "url": "https://www.buzzfeed.com/tech"
+    },
+    {
+      "name": "LGBT",
+      "url": "https://www.buzzfeed.com/lgbt"
+    },
+    {
+      "name": "Trending",
+      "url": "https://www.buzzfeed.com/trending"
+    },
+    {
+      "name": "Animals",
+      "url": "https://www.buzzfeed.com/animals"
+    },
+    {
+      "name": "Business",
+      "url": "https://www.buzzfeed.com/business"
+    },
+    {
+      "name": "Travel",
+      "url": "https://www.buzzfeed.com/travel"
+    },
+    {
+      "name": "Entertainment",
+      "url": "https://www.buzzfeed.com/entertainment"
+    },
+    {
+      "name": "Shopping",
+      "url": "https://www.buzzfeed.com/shopping"
+    },
+    {
+      "name": "Music",
+      "url": "https://www.buzzfeed.com/music"
+    }
+  ]
+}
