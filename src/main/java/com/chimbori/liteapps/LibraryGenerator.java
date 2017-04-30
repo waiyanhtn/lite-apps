@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -76,7 +77,10 @@ class LibraryGenerator {
 
             // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
             Thumbnails.of(new File(liteAppDirectory, FileUtils.ICON_FILENAME))
+                .outputQuality(1.0f)
+                .useOriginalFormat()
                 .size(LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE)
+                .imageType(BufferedImage.TYPE_INT_ARGB)
                 .toFile(new File(FileUtils.OUT_LIBRARY_ICONS_DIR, appName + FileUtils.ICON_EXTENSION));
           }
         }
