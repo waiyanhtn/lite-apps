@@ -1,0 +1,14 @@
+{
+  "theme_color": "#cb202d",
+  "manifest_version": 1,
+  "name": "Zomato",
+  "start_url": "https://zomato.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Zomato.hermit",
+  "secondary_color": "#b61c28",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}
