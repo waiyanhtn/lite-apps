@@ -7,7 +7,7 @@ function makeImageUrl(liteApp) {
 }
 
 function makeCreateUrl(liteApp) {
-  var createUrl = '/create?url=' + liteApp.url;
+  var createUrl = 'https://hermit.chimbori.com/create?url=' + liteApp.url;
   if (liteApp.user_agent == 'desktop') {
     createUrl += '&ua=d';
   }
@@ -32,6 +32,7 @@ function isDisplayed(liteApp) {
 
 function Category(props) {
   return <div>
+    <h3 className="lite-app-category-count">{props.category.apps.length} Lite Apps</h3>
     <h2>{ props.category.category }</h2>
     <div className="lite-app-category">
     {

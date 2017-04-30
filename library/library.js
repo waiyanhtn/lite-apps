@@ -6,7 +6,7 @@ function makeImageUrl(liteApp) {
 }
 
 function makeCreateUrl(liteApp) {
-  var createUrl = '/create?url=' + liteApp.url;
+  var createUrl = 'https://hermit.chimbori.com/create?url=' + liteApp.url;
   if (liteApp.user_agent == 'desktop') {
     createUrl += '&ua=d';
   }
@@ -41,6 +41,12 @@ function Category(props) {
   return React.createElement(
     'div',
     null,
+    React.createElement(
+      'h3',
+      { className: 'lite-app-category-count' },
+      props.category.apps.length,
+      ' Lite Apps'
+    ),
     React.createElement(
       'h2',
       null,

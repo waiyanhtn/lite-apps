@@ -1,25 +1,25 @@
 body {
-  font-family: "Roboto Condensed", sans-serif-condensed, sans-serif;
+  font-family: Roboto,sans-serif;
   font-size: 11pt;
   background: $color-body-background;
 }
 
 h2 {
-  text-align: left;
-  font-family: Roboto, sans-serif;
-  width: 100%;
-  margin: 16px 16px 8px 16px;
+  margin: 16px 16px 4px 16px;
   font-size: 20px;
 }
 
-.lite-app-icons {
-  padding: 8px;
+h3 {
+  margin: 0 16px;
+  font-weight: normal;
 }
 
-.lite-app-icon-image {
-  width: 56px;
-  height: 56px;
-  margin: 0 14px;
+.library {
+  padding: 8px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 11pt;
 }
 
 .tooltip {
@@ -30,23 +30,54 @@ h2 {
 }
 
 .lite-app-category {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #fff;
+  display: block;
   padding: 8px 0;
-  margin: 0 0 8px 0;
-  overflow: hidden;
+  margin: 0;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
 
-  &:after {
-    clear: both;
+.lite-app-category-count {
+  float: right;
+  line-height: 26px;
+  margin-right: 8px;
+}
+
+.lite-app-icon {
+  background: white;
+  border-radius: 2px;
+  margin: 0 4px 8px 4px;
+  padding: 12px;
+  display: inline-block;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+
+  /*width: 100px;*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $color-text-dark;
   }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.lite-app-icon-image {
+  width: 56px;
+  height: 56px;
+  margin: 8px 8px 0 8px;
 }
 
 .query-container {
   padding: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  background: white;
+  border-radius: 2px;
 }
 
 #query {
