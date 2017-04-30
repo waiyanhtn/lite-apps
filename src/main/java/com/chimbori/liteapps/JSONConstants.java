@@ -42,12 +42,12 @@ class JSONConstants {
   }
 
   public class Roles {
-    public static final String FEEDS = "hermit_feeds";
     public static final String BOOKMARKS = "hermit_bookmarks";
     public static final String CREATE = "hermit_create";
-    public static final String SHARE = "hermit_share";
-    public static final String SEARCH = "hermit_search";
+    public static final String FEEDS = "hermit_feeds";
     public static final String MONITORS = "hermit_monitors";
+    public static final String SEARCH = "hermit_search";
+    public static final String SHARE = "hermit_share";
   }
 
   public class Settings {

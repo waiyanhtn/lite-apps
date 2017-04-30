@@ -28,6 +28,9 @@ import javax.imageio.ImageIO;
  */
 class Scaffolder {
   private static final String MANIFEST_URL_TEMPLATE = "https://hermit.chimbori.com/lite-apps/%s.hermit";
+  private static final String PLAY_STORE_URL_TEMPLATE = "https://play.google.com/store/apps/details?id=";
+  private static final String OPTION_URL = "url";
+  private static final String OPTION_TITLE = "title";
 
   /**
    * The lite-apps.json file (containing metadata about all Lite Apps) is used as the basis for
@@ -86,7 +89,7 @@ class Scaffolder {
             .put(JSONConstants.Fields.NAME, bookmark.title));
       }
       if (bookmarks.length() > 0) {
-        root.put("hermit_bookmarks", bookmarks);
+        root.put(JSONConstants.Roles.BOOKMARKS, bookmarks);
       }
 
       // Collect feed URLs.
@@ -98,7 +101,7 @@ class Scaffolder {
             .put(JSONConstants.Fields.NAME, feed.title));
       }
       if (feeds.length() > 0) {
-        root.put("hermit_feeds", feeds);
+        root.put(JSONConstants.Roles.FEEDS, feeds);
       }
 
       // If this site has a related Android app, we can grab the ID automatically too.
@@ -106,11 +109,11 @@ class Scaffolder {
       for (String appId : metadata.relatedApps) {
         relatedApps.put(new JSONObject()
             .put(JSONConstants.Fields.PLATFORM, JSONConstants.Values.PLAY)
-            .put(JSONConstants.Fields.URL, "https://play.google.com/store/apps/details?id=" + appId)
+            .put(JSONConstants.Fields.URL, PLAY_STORE_URL_TEMPLATE + appId)
             .put(JSONConstants.Fields.ID, appId));
       }
       if (relatedApps.length() > 0) {
-        root.put("related_applications", relatedApps);
+        root.put(JSONConstants.Fields.RELATED_APPLICATIONS, relatedApps);
       }
     }
 
@@ -140,12 +143,12 @@ class Scaffolder {
     CommandLineParser parser = new DefaultParser();
     Options options = new Options()
         .addOption(Option.builder("u").required(true).hasArg(true)
-            .longOpt("url")
+            .longOpt(OPTION_URL)
             .argName("https://example.com")
             .desc("URL to create a Lite App for")
             .build())
         .addOption(Option.builder("t").required(true).hasArg(true)
-            .longOpt("title")
+            .longOpt(OPTION_TITLE)
             .argName("Example")
             .desc("Title of Lite App")
             .build());
@@ -156,8 +159,8 @@ class Scaffolder {
       // approach.
       CommandLine command = parser.parse(options, arguments);
       boolean success = Scaffolder.createScaffolding(
-          command.getOptionValue("url"),
-          command.getOptionValue("title").replaceAll("_", " "));
+          command.getOptionValue(OPTION_URL),
+          command.getOptionValue(OPTION_TITLE).replaceAll("_", " "));
       if (!success) {
         System.exit(1);
       }
