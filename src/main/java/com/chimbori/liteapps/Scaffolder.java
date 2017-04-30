@@ -45,6 +45,7 @@ class Scaffolder {
       File manifestJson = new File(liteAppDirectoryRoot, FileUtils.MANIFEST_JSON_FILE_NAME);
       root = new JSONObject(FileUtils.readFully(new FileInputStream(manifestJson)));
     } else {
+      Log.i("Creating new Lite App %s", appName);
       // Create the root directory if it doesn’t exist yet.
       liteAppDirectoryRoot.mkdirs();
       root = new JSONObject();
@@ -58,62 +59,65 @@ class Scaffolder {
       root.put(JSONConstants.Fields.START_URL, startUrl);
       root.put(JSONConstants.Fields.MANIFEST_URL, String.format(MANIFEST_URL_TEMPLATE,
           URLEncoder.encode(appName, "UTF-8").replace("+", "%20")));
+    }
 
-      // Scrape the Web looking for RSS & Atom feeds, theme colors, and site metadata.
-      System.out.println(String.format("Fetching %s…", startUrl));
-      Scraper.SiteMetadata metadata = Scraper.scrape(startUrl);
-      System.out.println(metadata);
+    // Scrape the Web looking for RSS & Atom feeds, theme colors, and site metadata.
+    Log.i("Fetching %s…", startUrl);
+    Scraper.SiteMetadata metadata = Scraper.scrape(startUrl);
+    System.out.println(metadata);
 
-      // Put the icon even if we don’t manage to fetch an icon successfully.
-      // This way, we can avoid additional typing, and the validator will check for the presence
-      // of the file anyway (and fail as expected).
-      root.put(JSONConstants.Fields.ICONS, new JSONArray().put(new JSONObject().put(JSONConstants.Fields.SRC, FileUtils.ICON_FILENAME)));
+    // Collect bookmarkable links from likely navigation links on the page.
+    JSONArray bookmarks = new JSONArray();
+    for (Scraper.Endpoint bookmark : metadata.bookmarks) {
+      Log.i("Adding BOOKMARK: %s", bookmark.url);
+      bookmarks.put(new JSONObject()
+          .put(JSONConstants.Fields.URL, bookmark.url)
+          .put(JSONConstants.Fields.NAME, bookmark.title));
+    }
+    if (bookmarks.length() > 0) {
+      root.put(JSONConstants.Roles.BOOKMARKS, bookmarks);
+    }
 
-      // TODO(manas): Fetch favicon or apple-touch-icon.
-      if (metadata.iconUrl != null && !metadata.iconUrl.isEmpty()) {
-        URL icon = new URL(metadata.iconUrl);
-        try (InputStream inputStream = icon.openStream()) {
-          Files.copy(inputStream, new File(liteAppDirectoryRoot, FileUtils.ICON_FILENAME).toPath(), StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
-          e.printStackTrace();
-          // But still continue with the rest of the manifest generation.
-        }
-      }
+    // Collect feed URLs.
+    JSONArray feeds = new JSONArray();
+    for (Scraper.Endpoint feed : metadata.feeds) {
+      Log.i("Adding FEED: %s", feed.url);
+      feeds.put(new JSONObject()
+          .put(JSONConstants.Fields.URL, feed.url)
+          .put(JSONConstants.Fields.NAME, feed.title));
+    }
+    if (feeds.length() > 0) {
+      root.put(JSONConstants.Roles.FEEDS, feeds);
+    }
 
-      // Collect bookmarkable links from likely navigation links on the page.
-      JSONArray bookmarks = new JSONArray();
-      for (Scraper.Endpoint bookmark : metadata.bookmarks) {
-        System.out.println("Adding BOOKMARK: " + bookmark.url);
-        bookmarks.put(new JSONObject()
-            .put(JSONConstants.Fields.URL, bookmark.url)
-            .put(JSONConstants.Fields.NAME, bookmark.title));
-      }
-      if (bookmarks.length() > 0) {
-        root.put(JSONConstants.Roles.BOOKMARKS, bookmarks);
-      }
+    // If this site has a related Android app, we can grab the ID automatically too.
+    JSONArray relatedApps = new JSONArray();
+    for (String appId : metadata.relatedApps) {
+      Log.i("Adding Related App: %s", appId);
+      relatedApps.put(new JSONObject()
+          .put(JSONConstants.Fields.PLATFORM, JSONConstants.Values.PLAY)
+          .put(JSONConstants.Fields.URL, PLAY_STORE_URL_TEMPLATE + appId)
+          .put(JSONConstants.Fields.ID, appId));
+    }
+    if (relatedApps.length() > 0) {
+      root.put(JSONConstants.Fields.RELATED_APPLICATIONS, relatedApps);
+    }
 
-      // Collect feed URLs.
-      JSONArray feeds = new JSONArray();
-      for (Scraper.Endpoint feed : metadata.feeds) {
-        System.out.println("Adding FEED: " + feed.url);
-        feeds.put(new JSONObject()
-            .put(JSONConstants.Fields.URL, feed.url)
-            .put(JSONConstants.Fields.NAME, feed.title));
-      }
-      if (feeds.length() > 0) {
-        root.put(JSONConstants.Roles.FEEDS, feeds);
-      }
+    // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
+    // This way, we can avoid additional typing, and the validator will check for the presence
+    // of the file anyway (and fail as expected).
+    root.put(JSONConstants.Fields.ICONS, new JSONArray().put(
+        new JSONObject().put(JSONConstants.Fields.SRC, FileUtils.ICON_FILENAME)));
 
-      // If this site has a related Android app, we can grab the ID automatically too.
-      JSONArray relatedApps = new JSONArray();
-      for (String appId : metadata.relatedApps) {
-        relatedApps.put(new JSONObject()
-            .put(JSONConstants.Fields.PLATFORM, JSONConstants.Values.PLAY)
-            .put(JSONConstants.Fields.URL, PLAY_STORE_URL_TEMPLATE + appId)
-            .put(JSONConstants.Fields.ID, appId));
-      }
-      if (relatedApps.length() > 0) {
-        root.put(JSONConstants.Fields.RELATED_APPLICATIONS, relatedApps);
+    // TODO: Fetch favicon or apple-touch-icon.
+    if (metadata.iconUrl != null && !metadata.iconUrl.isEmpty()) {
+      Log.i("Fetching icon from %s…", metadata.iconUrl);
+      URL icon = new URL(metadata.iconUrl);
+      try (InputStream inputStream = icon.openStream()) {
+        Files.copy(inputStream, new File(liteAppDirectoryRoot, FileUtils.ICON_FILENAME).toPath(), StandardCopyOption.REPLACE_EXISTING);
+      } catch (IOException e) {
+        e.printStackTrace();
+        // But still continue with the rest of the manifest generation.
       }
     }
 
