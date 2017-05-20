@@ -26,6 +26,9 @@
   "notifications": {
     "message": "Notifications"
   },
+  "facebook_notifications": {
+    "message": "Facebook Notifications"
+  },
   "settings": {
     "message": "Settings"
   },

@@ -63,7 +63,7 @@
   ],
   "hermit_monitors": [
     {
-      "name": "__MSG_notifications__",
+      "name": "__MSG_facebook_notifications__",
       "url": "https://m.facebook.com/notifications",
       "selector": "#notifications_list .touchable-notification",
       "icon": "facebook"
