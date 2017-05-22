@@ -11,6 +11,14 @@
       "src": "icon.png"
     }
   ],
+  "hermit_monitors": [
+    {
+      "name": "BBC News",
+      "url": "http://www.bbc.com/",
+      "selector": ".media__link",
+      "icon": "news"
+    }
+  ],
   "hermit_bookmarks": [
     {
       "name": "News",
