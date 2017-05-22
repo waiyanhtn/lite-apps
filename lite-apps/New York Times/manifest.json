@@ -11,6 +11,14 @@
       "src": "icon.png"
     }
   ],
+  "hermit_monitors": [
+    {
+      "name": "New York Times",
+      "url": "http://mobile.nytimes.com/",
+      "selector": ".sfgAsset-link",
+      "icon": "news"
+    }
+  ],
   "hermit_bookmarks": [
     {
       "name": "Home",
