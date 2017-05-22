@@ -11,6 +11,14 @@
     }
   ],
   "lang": "en",
+  "hermit_monitors": [
+    {
+      "name": "Washington Post",
+      "url": "https://m.washingtonpost.com",
+      "selector": ".text-align-inherit a",
+      "icon": "news"
+    }
+  ],
   "hermit_bookmarks": [
     {
       "name": "Tech",
