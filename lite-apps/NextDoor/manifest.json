@@ -1,0 +1,14 @@
+{
+  "theme_color": "#4cce67",
+  "manifest_version": 1,
+  "name": "NextDoor",
+  "start_url": "https://nextdoor.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/NextDoor.hermit",
+  "secondary_color": "#44b95c",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}
