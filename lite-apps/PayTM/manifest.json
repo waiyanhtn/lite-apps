@@ -1,0 +1,14 @@
+{
+  "theme_color": "#012b72",
+  "manifest_version": 1,
+  "name": "PayTM",
+  "start_url": "https://paytm.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/PayTM.hermit",
+  "secondary_color": "#002666",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}
