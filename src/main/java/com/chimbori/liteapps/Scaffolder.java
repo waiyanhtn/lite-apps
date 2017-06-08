@@ -110,33 +110,35 @@ class Scaffolder {
         new JSONObject().put(JSONConstants.Fields.SRC, FileUtils.ICON_FILENAME)));
 
     // TODO: Fetch favicon or apple-touch-icon.
-    if (metadata.iconUrl != null && !metadata.iconUrl.isEmpty()) {
+    File iconFile = new File(liteAppDirectoryRoot, FileUtils.ICON_FILENAME);
+    if (!iconFile.exists() && metadata.iconUrl != null && !metadata.iconUrl.isEmpty()) {
       Log.i("Fetching icon from %s…", metadata.iconUrl);
       URL icon = new URL(metadata.iconUrl);
       try (InputStream inputStream = icon.openStream()) {
-        Files.copy(inputStream, new File(liteAppDirectoryRoot, FileUtils.ICON_FILENAME).toPath(), StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(inputStream, iconFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
       } catch (IOException e) {
         e.printStackTrace();
         // But still continue with the rest of the manifest generation.
       }
     }
 
+    // Insert a placeholder for theme_color and secondary_color so we don’t have to
+    // type it in manually, but put invalid values so that the validator will catch it
+    // in case we forget to replace with valid values.
+    root.put(JSONConstants.Fields.THEME_COLOR, "#");
+    root.put(JSONConstants.Fields.SECONDARY_COLOR, "#");
+
     // Extract the color from the icon (either newly downloaded, or from existing icon).
-    File iconFile = new File(liteAppDirectoryRoot, FileUtils.ICON_FILENAME);
     if (iconFile.exists()) {
       ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
-      root.put(JSONConstants.Fields.THEME_COLOR, themeColor.toString());
-      root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor.darken(0.9f).toString());
-    } else {
-      // Insert a placeholder for theme_color and secondary_color so we don’t have to
-      // type it in manually, but put invalid values so that the validator will catch it
-      // in case we forget to replace with valid values.
-      root.put(JSONConstants.Fields.THEME_COLOR, "#");
-      root.put(JSONConstants.Fields.SECONDARY_COLOR, "#");
+      if (themeColor != null) {
+        // Overwrite the dummy values already inserted, if we are able to extract real values.
+        root.put(JSONConstants.Fields.THEME_COLOR, themeColor.toString());
+        root.put(JSONConstants.Fields.SECONDARY_COLOR, themeColor.darken(0.9f).toString());
+      }
     }
 
     // Write the output manifest.
-    File manifestJson = new File(liteAppDirectoryRoot, FileUtils.MANIFEST_JSON_FILE_NAME);
     try (PrintWriter writer = new PrintWriter(manifestJson)) {
       writer.print(root.toString(2));
     }

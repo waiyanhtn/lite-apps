@@ -49,6 +49,10 @@ class ColorExtractor {
   }
 
   static Color getDominantColor(BufferedImage image) {
+    if (image == null) {
+      return null;
+    }
+
     Map<Color, Integer> colorFrequencies = new HashMap<>();
     int height = image.getHeight();
     int width = image.getWidth();
