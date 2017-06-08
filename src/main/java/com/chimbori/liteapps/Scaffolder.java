@@ -40,9 +40,9 @@ class Scaffolder {
     File liteAppDirectoryRoot = new File(FileUtils.SRC_ROOT_DIR, appName);
 
     JSONObject root;
+    File manifestJson = new File(liteAppDirectoryRoot, FileUtils.MANIFEST_JSON_FILE_NAME);
     // If the manifest.json exists, read it before modifying, else create a new JSON object.
-    if (liteAppDirectoryRoot.exists()) {
-      File manifestJson = new File(liteAppDirectoryRoot, FileUtils.MANIFEST_JSON_FILE_NAME);
+    if (manifestJson.exists()) {
       root = new JSONObject(FileUtils.readFully(new FileInputStream(manifestJson)));
     } else {
       Log.i("Creating new Lite App %s", appName);
