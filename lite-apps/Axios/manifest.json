@@ -1,0 +1,50 @@
+{
+  "theme_color": "#008dc8",
+  "manifest_version": 1,
+  "name": "Axios",
+  "start_url": "https://www.axios.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Axios.hermit",
+  "secondary_color": "#007eb4",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Tech",
+      "url": "https://www.axios.com/technology"
+    },
+    {
+      "name": "Future of Work",
+      "url": "https://www.axios.com/future-of-work"
+    },
+    {
+      "name": "Science",
+      "url": "https://www.axios.com/science"
+    },
+    {
+      "name": "Health Care",
+      "url": "https://www.axios.com/health-care"
+    },
+    {
+      "name": "Business",
+      "url": "https://www.axios.com/business"
+    },
+    {
+      "name": "Politics",
+      "url": "https://www.axios.com/politics"
+    },
+    {
+      "name": "Events",
+      "url": "https://www.axios.com/events/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "Axios",
+      "url": "https://www.axios.com/feeds/feed.rss"
+    }
+  ]
+}
