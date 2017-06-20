@@ -50,7 +50,7 @@
         "name": "SysCtlCameleon.cached.txt"
       },
       {
-        "url": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0",
+        "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
         "name": "Yoyo.cached.txt"
       }
     ]
