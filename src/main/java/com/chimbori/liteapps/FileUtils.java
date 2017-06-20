@@ -21,7 +21,7 @@ class FileUtils {
 
   public static final String ICON_EXTENSION = ".png";
 
-  private static OkHttpClient client = new OkHttpClient();
+  private static final OkHttpClient client = new OkHttpClient();
 
   // Filenames
   public static final String MANIFEST_JSON_FILE_NAME = "manifest.json";

@@ -1,9 +1,10 @@
 package com.chimbori.liteapps;
 
+import com.chimbori.liteapps.json.AppManifestBlockList;
+import com.chimbori.liteapps.json.BlockListsIndex;
 import com.google.common.collect.ImmutableList;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -22,7 +23,7 @@ import java.util.Set;
  * Parses a meta-list of block-lists, fetches the original blocklists from various remote URLs,
  * and combines them into a single JSON file suitable for consumption in Hermit.
  */
-public class BlockListsParser {
+class BlockListsParser {
   private static final List<String> WHITELISTED_SUBSTRINGS = ImmutableList.of(
       "youtube"
   );
@@ -40,23 +41,14 @@ public class BlockListsParser {
    * Downloads all the meta-lists from index.json and saves them locally.
    */
   public static boolean downloadFromSources() throws IOException {
-    JSONArray blockListSources = new JSONArray(FileUtils.readFully(new FileInputStream(FileUtils.BLOCK_LISTS_INDEX_JSON)));
-
-    for (int i = 0; i < blockListSources.length(); i++) {
-      JSONObject blockList = blockListSources.getJSONObject(i);
-      String blockListName = blockList.getString(JSONConstants.Fields.BLOCK_LIST);
-      File blockListDirectory = new File(FileUtils.BLOCK_LISTS_ROOT_DIR, blockListName);
+    BlockListsIndex blockListsIndex = readIndexJsonWithGson();
+    for (BlockListsIndex.BlockList blockList : blockListsIndex.blocklists) {
+      File blockListDirectory = new File(FileUtils.BLOCK_LISTS_ROOT_DIR, blockList.blocklist);
       blockListDirectory.mkdirs();
-
-      JSONArray sources = blockList.getJSONArray(JSONConstants.Fields.SOURCES);
-      for (int j = 0; j < sources.length(); j++) {
-        JSONObject source = sources.getJSONObject(j);
-        String sourceName = source.getString(JSONConstants.Fields.NAME);
-
+      for (BlockListsIndex.BlockList.Source source : blockList.sources) {
         // A blank URL means it’s a local file, so no need to fetch it from a remote server.
-        String sourceUrl = source.optString(JSONConstants.Fields.URL);
-        if (sourceUrl != null && !sourceUrl.isEmpty()) {
-          FileUtils.writeFile(new File(blockListDirectory, sourceName), FileUtils.fetch(sourceUrl));
+        if (source.url != null && !source.url.isEmpty()) {
+          FileUtils.writeFile(new File(blockListDirectory, source.name), FileUtils.fetch(source.url));
         }
       }
     }
@@ -68,31 +60,25 @@ public class BlockListsParser {
    * Package multiple blocklists into a single JSON file, as specified in index.json.
    */
   public static boolean packageBlockLists(boolean shouldMinify) throws IOException {
-    JSONArray blockListSources = new JSONArray(FileUtils.readFully(new FileInputStream(FileUtils.BLOCK_LISTS_INDEX_JSON)));
-    for (int i = 0; i < blockListSources.length(); i++) {
+    BlockListsIndex blockListsIndex = readIndexJsonWithGson();
+
+    for (BlockListsIndex.BlockList blockList : blockListsIndex.blocklists) {
       Set<String> hosts = new HashSet<>();
 
-      JSONObject blockList = blockListSources.getJSONObject(i);
-      String blockListName = blockList.getString(JSONConstants.Fields.BLOCK_LIST);
-      String fileName = blockList.getString(JSONConstants.Fields.NAME);
-      File blockListDirectory = new File(FileUtils.BLOCK_LISTS_ROOT_DIR, blockListName);
+      File blockListDirectory = new File(FileUtils.BLOCK_LISTS_ROOT_DIR, blockList.blocklist);
       blockListDirectory.mkdirs();
 
-      JSONArray sources = blockList.getJSONArray(JSONConstants.Fields.SOURCES);
-      for (int j = 0; j < sources.length(); j++) {
-        JSONObject source = sources.getJSONObject(j);
-        String sourceName = source.getString(JSONConstants.Fields.NAME);
-
+      for (BlockListsIndex.BlockList.Source source : blockList.sources) {
         // Since we don’t want to download the blocklists to keep the test hermetic, and we want to
         // still run the test on blocklists that are uploaded to the repo (i.e. first-party owned),
         // we skip adding hosts from a file if it doesn’t already exist.
-        File hostsList = new File(blockListDirectory, sourceName);
+        File hostsList = new File(blockListDirectory, source.name);
         if (hostsList.exists()) {
-          parseBlockList(sourceName, new FileInputStream(hostsList), hosts);
+          parseBlockList(source.name, new FileInputStream(hostsList), hosts);
         }
       }
 
-      writeToDisk(FileUtils.BLOCK_LISTS_ROOT_DIR, fileName, hosts, shouldMinify);
+      writeToDisk(FileUtils.BLOCK_LISTS_ROOT_DIR, blockList.name, hosts, shouldMinify);
       hosts.clear();  // Empty the list before writing each one.
     }
 
@@ -158,19 +144,17 @@ public class BlockListsParser {
     String[] hostsArray = hosts.toArray(new String[0]);
     Arrays.sort(hostsArray);
 
-    JSONObject outputFile = new JSONObject();
-    outputFile.put(JSONConstants.Fields.NAME, fileName);
-    outputFile.put(JSONConstants.Fields.UPDATED, new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis()));
-    JSONArray jsonHosts = new JSONArray();
-    for (String host : hostsArray) {
-      jsonHosts.put(host);
-    }
-    outputFile.put(JSONConstants.Fields.HOSTS, jsonHosts);
+    AppManifestBlockList appManifestBlockList = new AppManifestBlockList();
+    appManifestBlockList.name = fileName;
+    appManifestBlockList.updated = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
+    appManifestBlockList.hosts = hostsArray;
 
     System.err.println(String.format("Wrote %d hosts.\n", hosts.size()));
 
+    Gson gson = shouldMinify ? new Gson() : new GsonBuilder().setPrettyPrinting().create();
+
     FileOutputStream blockList = new FileOutputStream(new File(rootDirectory, fileName));
-    blockList.write(outputFile.toString(shouldMinify ? 0 : 2).getBytes());
+    blockList.write(gson.toJson(appManifestBlockList).getBytes());
     blockList.close();
   }
 
@@ -185,5 +169,10 @@ public class BlockListsParser {
       }
     }
     return false;
+  }
+
+  private static BlockListsIndex readIndexJsonWithGson() throws IOException {
+    Gson gson = new Gson();
+    return gson.fromJson(FileUtils.readFully(new FileInputStream(FileUtils.BLOCK_LISTS_INDEX_JSON)), BlockListsIndex.class);
   }
 }

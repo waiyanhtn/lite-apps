@@ -1,6 +1,5 @@
 package com.chimbori.liteapps;
 
-import net.coobird.thumbnailator.Thumbnailator;
 import net.coobird.thumbnailator.Thumbnails;
 
 import org.json.JSONArray;
