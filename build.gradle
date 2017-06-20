@@ -40,3 +40,7 @@ dependencies {
 configurations.all {
   resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
+
+test {
+  testLogging.showStandardStreams = true
+}

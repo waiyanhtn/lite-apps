@@ -117,6 +117,7 @@ class FileUtils {
   }
 
   public static String fetch(String url) throws IOException {
+    System.out.println("Fetching: " + url);
     Request request = new Request.Builder().url(url).build();
     Response response = client.newCall(request).execute();
     return response.body().string();
