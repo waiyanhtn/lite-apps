@@ -5,4 +5,4 @@ notifications:
   email:
     - hello@chimbori.com
 script:
-- ./gradlew check --info
+- ./tools/gradlew check --info
