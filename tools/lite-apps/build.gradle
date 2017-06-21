@@ -1,0 +1,25 @@
+apply plugin: 'application'
+
+// Support running the Scaffolder from the command line, with arguments.
+// ./gradlew run -Pargs="--url https://example.com --title Example"
+mainClassName = "com.chimbori.liteapps.Scaffolder"
+run {
+  if (project.hasProperty('args')) {
+    args project.args.split('\\s+')
+  }
+}
+
+dependencies {
+  compile project(':utils')
+
+  compile 'commons-cli:commons-cli:1.3.1'
+  // Eclipse Parser used only to confirm well-formed-ness of JSON, because the org.json parser does
+  // not do a strict parse, allowing malformed files to be pushed that break the Android app.
+  compile 'com.eclipsesource.minimal-json:minimal-json:0.9.4'
+  // org.json is the actual parser used for all processing (apart from testing string JSON parsing.)
+  compile 'org.json:json:20160810'
+  compile 'org.jsoup:jsoup:1.9.2'
+  compile 'net.coobird:thumbnailator:0.4.8'
+  compile 'com.google.guava:guava:20.0'
+  compile 'com.google.code.gson:gson:2.8.0'
+}

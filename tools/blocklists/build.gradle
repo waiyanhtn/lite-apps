@@ -1,0 +1,6 @@
+dependencies {
+  compile project(':utils')
+
+  compile 'com.google.guava:guava:20.0'
+  compile 'com.google.code.gson:gson:2.8.0'
+}
