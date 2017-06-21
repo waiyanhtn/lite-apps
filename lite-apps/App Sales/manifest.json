@@ -17,12 +17,6 @@
       "url": "http://www.app-sales.net/mostwanted/24hours"
     }
   ],
-  "hermit_feeds": [
-    {
-      "name": "App Sales",
-      "url": "http://feeds.feedburner.com/AppsalesRss"
-    }
-  ],
   "related_applications": [
     {
       "id": "net.tsapps.appsales",
