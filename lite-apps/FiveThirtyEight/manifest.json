@@ -1,0 +1,72 @@
+{
+  "theme_color": "#ef7237",
+  "manifest_version": 1,
+  "name": "FiveThirtyEight",
+  "start_url": "https://fivethirtyeight.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/FiveThirtyEight.hermit",
+  "secondary_color": "#d76631",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Politics",
+      "url": "https://fivethirtyeight.com/politics/"
+    },
+    {
+      "name": "Sports",
+      "url": "https://fivethirtyeight.com/sports/"
+    },
+    {
+      "name": "Interactives",
+      "url": "https://fivethirtyeight.com/interactives/"
+    },
+    {
+      "name": "Economics",
+      "url": "https://fivethirtyeight.com/economics/"
+    },
+    {
+      "name": "Science & Health",
+      "url": "https://fivethirtyeight.com/science/"
+    },
+    {
+      "name": "Culture",
+      "url": "https://fivethirtyeight.com/life/"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "Politics – FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/politics/feed/"
+    },
+    {
+      "name": "Economics – FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/economics/feed/"
+    },
+    {
+      "name": "Sports – FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/sports/feed/"
+    },
+    {
+      "name": "Science & Health – FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/science/feed/"
+    },
+    {
+      "name": "Culture – FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/life/feed/"
+    },
+    {
+      "name": "Nate Silver – FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/contributors/nate-silver/feed/"
+    }
+  ],
+  "hermit_search": [
+    {
+      "name": "Search",
+      "url": "https://fivethirtyeight.com/?s=%s"
+    }
+  ]
+}
