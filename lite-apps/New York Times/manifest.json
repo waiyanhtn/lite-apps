@@ -170,5 +170,8 @@
       "name": "Search",
       "url": "http://mobile.nytimes.com/search?query=%s&sort=rel"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

@@ -16,5 +16,8 @@
       "name": "XKCD",
       "url": "https://m.xkcd.com/atom.xml"
     }
+  ],
+  "tags": [
+    "Entertainment"
   ]
 }

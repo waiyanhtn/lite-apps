@@ -16,5 +16,8 @@
       "url": "https://www.khanacademy.org/search?page_search_query=%s",
       "name": "Search"
     }
+  ],
+  "tags": [
+    "Education"
   ]
 }

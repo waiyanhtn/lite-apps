@@ -49,5 +49,8 @@
       "name": "__MSG_reddit__",
       "url": "https://www.reddit.com/submit?url=%u&title=%t"
     }
+  ],
+  "tags": [
+    "Social"
   ]
 }

@@ -19,5 +19,8 @@
   ],
   "hermit_settings": {
     "pull_to_refresh": false
-  }
+  },
+  "tags": [
+    "News"
+  ]
 }

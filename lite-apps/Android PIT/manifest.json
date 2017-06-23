@@ -68,5 +68,8 @@
       "name": "Search",
       "url": "https://www.androidpit.com/search?st=%s"
     }
+  ],
+  "tags": [
+    "Technology"
   ]
 }

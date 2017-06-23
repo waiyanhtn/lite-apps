@@ -36,5 +36,8 @@
       "name": "Stats",
       "url": "http://www.nfl.com/stats"
     }
+  ],
+  "tags": [
+    "Sports"
   ]
 }

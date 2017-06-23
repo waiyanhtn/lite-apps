@@ -64,5 +64,8 @@
       "name": "Home",
       "url": "http://www.cnn.com/"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

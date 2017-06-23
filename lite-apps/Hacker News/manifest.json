@@ -16,5 +16,8 @@
       "name": "Hacker News",
       "url": "https://news.ycombinator.com/rss"
     }
+  ],
+  "tags": [
+    "Technology"
   ]
 }

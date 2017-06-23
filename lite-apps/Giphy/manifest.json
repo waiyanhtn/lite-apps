@@ -16,5 +16,8 @@
       "url": "https://giphy.com/search/%s",
       "name": "Search Giphy"
     }
+  ],
+  "tags": [
+    "Entertainment"
   ]
 }

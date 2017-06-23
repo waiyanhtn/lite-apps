@@ -32,5 +32,8 @@
       "name": "Stats",
       "url": "http://www.nhl.com/stats/"
     }
+  ],
+  "tags": [
+    "Sports"
   ]
 }

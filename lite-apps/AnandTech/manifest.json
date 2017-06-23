@@ -66,5 +66,8 @@
       "name": "RSS Feed for AnandTech.com",
       "url": "http://www.anandtech.com/rss/"
     }
+  ],
+  "tags": [
+    "Technology"
   ]
 }

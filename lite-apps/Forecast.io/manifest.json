@@ -17,5 +17,8 @@
       "platform": "play",
       "url": "https://play.google.com/store/apps/details?id=net.darksky.darksky"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

@@ -10,5 +10,8 @@
       "src": "icon.png"
     }
   ],
-  "lang": "en"
+  "lang": "en",
+  "tags": [
+    "Email"
+  ]
 }

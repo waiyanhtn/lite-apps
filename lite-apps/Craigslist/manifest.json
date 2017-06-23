@@ -28,5 +28,8 @@
       "name": "__MSG_post_to_craigslist__",
       "url": "https://post.craigslist.org"
     }
+  ],
+  "tags": [
+    "Shopping"
   ]
 }

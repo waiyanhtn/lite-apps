@@ -16,5 +16,8 @@
       "url": "https://vimeo.com/search?q=%s",
       "name": "Search Vimeo"
     }
+  ],
+  "tags": [
+    "Entertainment"
   ]
 }

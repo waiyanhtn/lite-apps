@@ -16,5 +16,8 @@
       "url": "https://www.google.com/search?q=%s",
       "name": "Search Google"
     }
+  ],
+  "tags": [
+    "Search"
   ]
 }

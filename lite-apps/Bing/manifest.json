@@ -16,5 +16,8 @@
       "url": "https://www.bing.com/search?q=%s",
       "name": "Search Bing"
     }
+  ],
+  "tags": [
+    "Search"
   ]
 }

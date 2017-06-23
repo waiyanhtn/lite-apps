@@ -14,5 +14,8 @@
   "hermit_settings": {
     "block_third_party_cookies": false,
     "open_links": "in_app"
-  }
+  },
+  "tags": [
+    "Social"
+  ]
 }

@@ -68,5 +68,8 @@
       "name": "Food",
       "url": "http://www.bbc.com/food/"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

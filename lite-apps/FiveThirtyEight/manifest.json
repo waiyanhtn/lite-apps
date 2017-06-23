@@ -68,5 +68,8 @@
       "name": "Search",
       "url": "https://fivethirtyeight.com/?s=%s"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

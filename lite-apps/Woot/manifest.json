@@ -16,5 +16,8 @@
       "name": "Woot Blog",
       "url": "https://www.woot.com/blog/feed.rss"
     }
+  ],
+  "tags": [
+    "Shopping"
   ]
 }

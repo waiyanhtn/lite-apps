@@ -54,5 +54,8 @@
       "name": "Designer News",
       "url": "https://www.designernews.co/?format=atom"
     }
+  ],
+  "tags": [
+    "Technology"
   ]
 }

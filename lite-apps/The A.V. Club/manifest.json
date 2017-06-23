@@ -38,5 +38,8 @@
       "name": "The A.V. Club",
       "url": "http://www.avclub.com/feeds/rss/"
     }
+  ],
+  "tags": [
+    "Entertainment"
   ]
 }

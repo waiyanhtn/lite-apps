@@ -94,5 +94,8 @@
       "name": "CNET",
       "url": "http://www.cnet.com/rss/all/"
     }
+  ],
+  "tags": [
+    "Technology"
   ]
 }

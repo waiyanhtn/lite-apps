@@ -16,5 +16,8 @@
       "name": "Slate Articles",
       "url": "http://www.slate.com/all.fulltext.all.rss"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

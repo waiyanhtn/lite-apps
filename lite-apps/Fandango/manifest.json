@@ -50,5 +50,8 @@
       "name": "Trailers",
       "url": "http://www.fandango.com/rss/trailers.rss"
     }
+  ],
+  "tags": [
+    "Entertainment"
   ]
 }

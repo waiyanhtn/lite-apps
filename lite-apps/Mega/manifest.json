@@ -13,5 +13,8 @@
   "lang": "en",
   "hermit_settings": {
     "user_agent": "desktop"
-  }
+  },
+  "tags": [
+    "Storage"
+  ]
 }

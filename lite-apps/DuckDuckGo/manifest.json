@@ -16,5 +16,8 @@
       "url": "https://duckduckgo.com/?t=hs&ia=web&q=%s",
       "name": "Search DuckDuckGo"
     }
+  ],
+  "tags": [
+    "Search"
   ]
 }

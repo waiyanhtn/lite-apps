@@ -16,5 +16,8 @@
       "name": "Translate",
       "url": "https://translate.google.com/m/translate#auto/auto/%s"
     }
+  ],
+  "tags": [
+    "Tools & Productivity"
   ]
 }

@@ -16,5 +16,8 @@
       "url": "https://m.retailmenot.com/s/%s",
       "name": "Search"
     }
+  ],
+  "tags": [
+    "Shopping"
   ]
 }

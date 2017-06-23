@@ -16,5 +16,8 @@
       "name": "Gizmodo",
       "url": "http://feeds.gawker.com/gizmodo/full"
     }
+  ],
+  "tags": [
+    "Technology"
   ]
 }

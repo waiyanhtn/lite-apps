@@ -70,5 +70,8 @@
       "name": "Best of The Atlantic",
       "url": "https://www.theatlantic.com/feed/best-of/"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

@@ -106,5 +106,8 @@
       "name": "The Guardian",
       "url": "https://www.theguardian.com/us/rss"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

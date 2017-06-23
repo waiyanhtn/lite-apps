@@ -50,5 +50,8 @@
       "name": "Al Jazeera English",
       "url": "http://www.aljazeera.com/xml/rss/all.xml"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

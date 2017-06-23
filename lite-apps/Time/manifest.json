@@ -88,5 +88,8 @@
       "name": "Health",
       "url": "http://time.com/health/"
     }
+  ],
+  "tags": [
+    "News"
   ]
 }

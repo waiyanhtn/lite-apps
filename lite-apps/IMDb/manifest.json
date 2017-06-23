@@ -16,5 +16,8 @@
       "name": "Search IMDb",
       "url": "https://m.imdb.com/find?q=%s"
     }
+  ],
+  "tags": [
+    "Entertainment"
   ]
 }
