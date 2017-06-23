@@ -173,6 +173,6 @@ public class BlockListsParser {
 
   private static BlockListsIndex readIndexJsonWithGson() throws IOException {
     Gson gson = new Gson();
-    return gson.fromJson(FileUtils.readFully(new FileInputStream(FilePaths.BLOCK_LISTS_INDEX_JSON)), BlockListsIndex.class);
+    return gson.fromJson(FileUtils.readFully(new FileInputStream(FilePaths.SRC_BLOCK_LISTS_JSON)), BlockListsIndex.class);
   }
 }

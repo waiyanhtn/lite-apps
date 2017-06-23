@@ -22,7 +22,7 @@ public class PackagerTest extends ParameterizedLiteAppTest {
 
   @Before
   public void setUp() {
-    FilePaths.OUT_ROOT_DIR.delete();
+    FilePaths.OUT_LITE_APPS_DIR.delete();
   }
 
   @Test

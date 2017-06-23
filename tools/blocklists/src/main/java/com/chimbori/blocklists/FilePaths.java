@@ -1,12 +1,14 @@
 package com.chimbori.blocklists;
 
+import com.chimbori.common.FileUtils;
+
 import java.io.File;
 
 public class FilePaths {
-  private static final String INDEX_JSON_FILE_NAME = "index.json";
+  // Inputs
+  static final File SRC_ROOT_DIR         = new File(FileUtils.PROJECT_ROOT, "blocklists/");
+  static final File SRC_BLOCK_LISTS_JSON = new File(FileUtils.PROJECT_ROOT, "blocklists/index.json");
 
-  public static final File SRC_ROOT_DIR = new File("../../blocklists/");
-  public static final File OUT_ROOT_DIR = new File("../../bin/blocklists");
-
-  public static final File BLOCK_LISTS_INDEX_JSON = new File(FilePaths.SRC_ROOT_DIR, INDEX_JSON_FILE_NAME);
+  // Outputs
+  static final File OUT_ROOT_DIR = new File(FileUtils.PROJECT_ROOT, "bin/blocklists/");
 }
