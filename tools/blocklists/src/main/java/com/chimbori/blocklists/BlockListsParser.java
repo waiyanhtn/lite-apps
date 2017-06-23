@@ -118,7 +118,7 @@ public class BlockListsParser {
           }
         }
       }
-      System.err.println(String.format("%s: %d", sourceName, hostsAdded));
+      System.out.println(String.format("%s: %d", sourceName, hostsAdded));
 
     } catch (IOException e) {
       e.printStackTrace();
@@ -151,7 +151,7 @@ public class BlockListsParser {
     appManifestBlockList.updated = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
     appManifestBlockList.hosts = hostsArray;
 
-    System.err.println(String.format("Wrote %d hosts.\n", hosts.size()));
+    System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
 
     Gson gson = shouldMinify ? new Gson() : new GsonBuilder().setPrettyPrinting().create();
 
