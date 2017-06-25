@@ -12,7 +12,6 @@ class JSONConstants {
     public static final String APP = "app";
 
     // Used in manifest.json.
-    public static final String DISPLAY = "display";
     public static final String ICONS = "icons";
     public static final String ID = "id";
     public static final String LANG = "lang";
@@ -26,6 +25,7 @@ class JSONConstants {
     public static final String SETTINGS = "hermit_settings";
     public static final String SRC = "src";
     public static final String START_URL = "start_url";
+    public static final String TAGS = "tags";
     public static final String THEME_COLOR = "theme_color";
     public static final String URL = "url";
     public static final String USER_AGENT = "user_agent";

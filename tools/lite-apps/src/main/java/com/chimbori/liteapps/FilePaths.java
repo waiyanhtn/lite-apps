@@ -14,7 +14,7 @@ public class FilePaths {
 
   // Inputs
   static final File SRC_ROOT_DIR          = new File(FileUtils.PROJECT_ROOT, "lite-apps/");
-  static final File SRC_INDEX_JSON        = new File(FileUtils.PROJECT_ROOT, "lite-apps/index.json");
+  static final File SRC_TAGS_JSON_FILE    = new File(FileUtils.PROJECT_ROOT, "lite-apps/tags.json");
 
   // Outputs
   static final File OUT_LITE_APPS_DIR     = new File(FileUtils.PROJECT_ROOT, "bin/lite-apps/");
