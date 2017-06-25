@@ -119,4 +119,49 @@ class LibraryGenerator {
 
     return true;
   }
+
+  public static boolean updateTagsGson() throws IOException, JSONException {
+    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+    // Read the list of all known tags from the tags.json file. In case we discover any new tags,
+    // we will add them to this file, taking care not to overwrite those that already exist.
+    LibraryTagsList tagsGson = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.SRC_TAGS_JSON_FILE));
+
+    Map<String, LibraryTag> globalTags = new HashMap<>();
+    File[] liteAppDirs = FilePaths.SRC_ROOT_DIR.listFiles();
+    for (File liteAppDirectory : liteAppDirs) {
+      if (!liteAppDirectory.isDirectory()) {
+        continue; // Probably a temporary file, like .DS_Store.
+      }
+
+      File manifestJsonFile = new File(liteAppDirectory, FilePaths.MANIFEST_JSON_FILE_NAME);
+      if (!manifestJsonFile.exists()) {
+        throw new ManifestMissingException(liteAppDirectory.getName());
+      }
+
+      Manifest manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
+
+      // For all tags applied to this manifest, check if they exist in the global tags list.
+      for (String tagName : manifest.tags) {
+        LibraryTag tag = globalTags.get(tagName);
+        if (tag == null) {
+          // If this is the first time we are seeing this tag, create a new JSONArray to hold its contents.
+          LibraryTag newTag = new LibraryTag(tagName);
+          globalTags.put(tagName, newTag);
+          tagsGson.addTag(newTag);
+        }
+      }
+    }
+
+    // Write the tags to JSON
+    FileUtils.writeFile(FilePaths.SRC_TAGS_JSON_FILE, tagsGson.toJson(gson));
+
+    return true;
+  }
+
+  private static class ManifestMissingException extends RuntimeException {
+    public ManifestMissingException(String liteAppName) {
+      super("Error: Missing manifest.json for " + liteAppName);
+    }
+  }
 }

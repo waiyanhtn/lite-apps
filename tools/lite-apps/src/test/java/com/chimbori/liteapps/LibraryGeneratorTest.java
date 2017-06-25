@@ -18,6 +18,15 @@ public class LibraryGeneratorTest {
   }
 
   @Test
+  public void testUpdateTagsJSON() {
+    try {
+      assertTrue(LibraryGenerator.updateTagsGson());
+    } catch (IOException | JSONException e) {
+      fail(e.getMessage());
+    }
+  }
+
+  @Test
   public void testLibraryDataIsGeneratedSuccessfully() {
     try {
       assertTrue(LibraryGenerator.generateLibraryData());
