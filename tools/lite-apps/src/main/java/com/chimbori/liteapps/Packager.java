@@ -1,12 +1,10 @@
 package com.chimbori.liteapps;
 
 import com.chimbori.common.FileUtils;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.eclipsesource.json.Json;
 
 import java.io.File;
-import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 
 /**
@@ -20,15 +18,15 @@ class Packager {
    * places it in the correct location.
    */
   public static boolean packageManifest(File liteAppDirectory) {
-    File liteAppZipped = new File(FilePaths.OUT_LITE_APPS_DIR, String.format("%s.hermit", liteAppDirectory.getName()));
+    File manifestJsonFile = new File(liteAppDirectory, FilePaths.MANIFEST_JSON_FILE_NAME);
+    File liteAppZippedFile = new File(FilePaths.OUT_LITE_APPS_DIR, String.format("%s.hermit", liteAppDirectory.getName()));
     try {
-      new JSONObject(FileUtils.readFully(new FileInputStream(
-          new File(liteAppDirectory, FilePaths.MANIFEST_JSON_FILE_NAME))));
-    } catch (JSONException | IOException e) {
+      Json.parse(new FileReader(manifestJsonFile));
+    } catch (IOException e) {
       return false;
     }
 
-    FileUtils.zip(liteAppDirectory, liteAppZipped);
+    FileUtils.zip(liteAppDirectory, liteAppZippedFile);
     return true;
   }
 }
