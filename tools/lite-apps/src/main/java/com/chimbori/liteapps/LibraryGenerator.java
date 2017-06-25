@@ -1,20 +1,20 @@
 package com.chimbori.liteapps;
 
 import com.chimbori.common.FileUtils;
+import com.chimbori.schema.library.LibraryApp;
+import com.chimbori.schema.library.Library;
 import com.chimbori.schema.library.LibraryTag;
 import com.chimbori.schema.library.LibraryTagsList;
+import com.chimbori.schema.manifest.Manifest;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import net.coobird.thumbnailator.Thumbnails;
 
-import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
@@ -40,10 +40,9 @@ class LibraryGenerator {
 
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
-    LibraryTagsList tagsGson = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.SRC_TAGS_JSON_FILE));
+    LibraryTagsList globalTags = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.SRC_TAGS_JSON_FILE));
+    Library outputLibrary = new Library(globalTags);
 
-    JSONArray outputLibrary = new JSONArray();
-    Map<String, JSONArray> outputTags = new HashMap<>();
     File[] liteAppDirs = FilePaths.SRC_ROOT_DIR.listFiles();
     for (File liteAppDirectory : liteAppDirs) {
       if (!liteAppDirectory.isDirectory()) {
@@ -51,49 +50,27 @@ class LibraryGenerator {
       }
 
       String appName = liteAppDirectory.getName();
-      JSONObject outputApp = new JSONObject();
-      outputApp.put(JSONConstants.Fields.NAME, appName);
-
-      File manifestJson = new File(liteAppDirectory, FilePaths.MANIFEST_JSON_FILE_NAME);
-      if (!manifestJson.exists()) {
-        System.err.println("Error: Missing manifest.json for " + liteAppDirectory.getName());
-        return false;  // Error, missing manifest.json.
+      File manifestJsonFile = new File(liteAppDirectory, FilePaths.MANIFEST_JSON_FILE_NAME);
+      if (!manifestJsonFile.exists()) {
+        throw new ManifestMissingException(appName);
       }
 
       // Create an entry for this Lite App to be put in the directory index file.
-      JSONObject manifest = new JSONObject(FileUtils.readFully(new FileInputStream(manifestJson)));
-      outputApp.put(JSONConstants.Fields.URL, manifest.optString(JSONConstants.Fields.START_URL));
-      outputApp.put(JSONConstants.Fields.APP, String.format("%s.hermit", appName));
-      outputApp.put(JSONConstants.Fields.THEME_COLOR, manifest.optString(JSONConstants.Fields.THEME_COLOR));
+      Manifest manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
+
+      LibraryApp outputApp = new LibraryApp();
+      outputApp.url = manifest.start_url;
+      outputApp.name = appName;
+      outputApp.app = String.format("%s.hermit", appName);
+      outputApp.theme_color = manifest.theme_color;
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
-      JSONObject settings = manifest.optJSONObject(JSONConstants.Fields.SETTINGS);
-      if (settings != null &&
-          settings.optString(JSONConstants.Fields.USER_AGENT, "").equals(JSONConstants.Values.USER_AGENT_DESKTOP)) {
-        outputApp.put(JSONConstants.Fields.USER_AGENT, JSONConstants.Values.USER_AGENT_DESKTOP);
+      String userAgent = manifest.hermit_settings != null ? manifest.hermit_settings.user_agent : null;
+      if (JSONConstants.Values.USER_AGENT_DESKTOP.equals(userAgent)) {
+        outputApp.user_agent = JSONConstants.Values.USER_AGENT_DESKTOP;
       }
 
-      // Insert this new entry into all the categories that this Lite App belongs to.
-      if (!manifest.has(JSONConstants.Fields.TAGS)) {
-        System.err.println("JSON tags not found for: " + liteAppDirectory.getName());
-        return false;
-      }
-
-      JSONArray tags = manifest.getJSONArray(JSONConstants.Fields.TAGS);
-
-      for (int i = 0; i < tags.length(); i++) {
-        String tag = tags.getString(i);
-        JSONArray tagContent = outputTags.get(tag);
-        if (tagContent == null) {
-          // If this is the first time we are seeing this tag, create a new JSONArray to hold its contents.
-          tagContent = new JSONArray();
-          outputTags.put(tag, tagContent);
-        }
-        tagContent.put(outputApp);
-
-        // Also write tag to the tags.json if not already present.
-        tagsGson.addTag(new LibraryTag(tag));
-      }
+      outputLibrary.addAppToCategories(outputApp, manifest.tags);
 
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
       Thumbnails.of(new File(liteAppDirectory, FilePaths.ICON_FILENAME))
@@ -104,19 +81,7 @@ class LibraryGenerator {
           .toFile(new File(FilePaths.OUT_LIBRARY_ICONS_DIR, appName + FilePaths.ICON_EXTENSION));
     }
 
-    // Write the map of output categories to JSON.
-    for (String key : outputTags.keySet()) {
-      JSONObject outputCategory = new JSONObject();
-      outputCategory.put(JSONConstants.Fields.CATEGORY, key);
-      outputCategory.put(JSONConstants.Fields.APPS, outputTags.get(key));
-      outputLibrary.put(outputCategory);
-    }
-
-    FileUtils.writeFile(FilePaths.OUT_LITE_APPS_JSON, outputLibrary.toString(2));
-
-    // Write out tags.json if we ended up adding any tags to it.
-    FileUtils.writeFile(FilePaths.SRC_TAGS_JSON_FILE, tagsGson.toJson(gson));
-
+    FileUtils.writeFile(FilePaths.OUT_LIBRARY_JSON, outputLibrary.toJson(gson));
     return true;
   }
 

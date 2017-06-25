@@ -3,27 +3,32 @@ package com.chimbori.schema.library;
 import com.google.gson.Gson;
 
 import java.io.Reader;
-import java.util.HashSet;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LibraryTagsList {
   public List<LibraryTag> tags;
 
-  private transient HashSet<String> tagNamesSet;
+  private transient Map<String, LibraryTag> tagsMap;
 
   private void updateTransientFields() {
-    tagNamesSet = new HashSet<>();
+    tagsMap = new HashMap<>();
     for (LibraryTag tag : tags) {
-      tagNamesSet.add(tag.name);
+      tagsMap.put(tag.name, tag);
     }
   }
 
   public void addTag(LibraryTag tag) {
-    if (tagNamesSet.contains(tag.name)) {
+    if (tagsMap.keySet().contains(tag.name)) {
       return;
     }
-    tagNamesSet.add(tag.name);
+    tagsMap.put(tag.name, tag);
     tags.add(tag);
+  }
+
+  public LibraryTag findByName(String tagName) {
+    return tagsMap.get(tagName);
   }
 
   public static LibraryTagsList fromGson(Gson gson, Reader reader) {
@@ -40,7 +45,7 @@ public class LibraryTagsList {
   public String toString() {
     return "LibraryTagsList{" +
         "tags=" + tags +
-        ", tagNamesSet=" + tagNamesSet +
+        ", tagsMap=" + tagsMap +
         '}';
   }
 }

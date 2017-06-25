@@ -19,7 +19,7 @@ public class FilePaths {
   // Outputs
   static final File OUT_LITE_APPS_DIR     = new File(FileUtils.PROJECT_ROOT, "bin/lite-apps/");
   static final File OUT_LIBRARY_ICONS_DIR = new File(FileUtils.PROJECT_ROOT, "bin/library/112x112/");
-  static final File OUT_LITE_APPS_JSON    = new File(FileUtils.PROJECT_ROOT, "bin/lite-apps/lite-apps.json");
+  static final File OUT_LIBRARY_JSON      = new File(FileUtils.PROJECT_ROOT, "bin/library/library.json");
 
   static {
     OUT_LITE_APPS_DIR.mkdirs();
