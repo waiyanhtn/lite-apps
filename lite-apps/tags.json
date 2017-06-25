@@ -1,1 +1,46 @@
-{"tags":[{"name":"Popular"},{"name":"Social"},{"name":"Search"},{"name":"News"},{"name":"Sports"},{"name":"Technology"},{"name":"Banking \u0026 Financial"},{"name":"Education"},{"name":"Entertainment"},{"name":"Tools \u0026 Productivity"},{"name":"Food, Travel, Photography"},{"name":"Shopping"},{"name":"Email"},{"name":"Storage"}]}
+{
+  "tags": [
+    {
+      "name": "Popular"
+    },
+    {
+      "name": "Social"
+    },
+    {
+      "name": "Search"
+    },
+    {
+      "name": "News"
+    },
+    {
+      "name": "Sports"
+    },
+    {
+      "name": "Technology"
+    },
+    {
+      "name": "Banking \u0026 Financial"
+    },
+    {
+      "name": "Education"
+    },
+    {
+      "name": "Entertainment"
+    },
+    {
+      "name": "Tools \u0026 Productivity"
+    },
+    {
+      "name": "Food, Travel, Photography"
+    },
+    {
+      "name": "Shopping"
+    },
+    {
+      "name": "Email"
+    },
+    {
+      "name": "Storage"
+    }
+  ]
+}
