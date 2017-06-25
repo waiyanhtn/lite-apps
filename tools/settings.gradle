@@ -1,1 +1,1 @@
-include ':blocklists', ':lite-apps', ':utils'
+include ':blocklists', ':lite-apps', ':utils', ':schema'
