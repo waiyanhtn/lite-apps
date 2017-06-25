@@ -20,7 +20,7 @@ public class LibraryGeneratorTest {
   @Test
   public void testUpdateTagsJSON() {
     try {
-      assertTrue(LibraryGenerator.updateTagsGson());
+      assertTrue(TagsCollector.updateTagsGson());
     } catch (IOException | JSONException e) {
       fail(e.getMessage());
     }
