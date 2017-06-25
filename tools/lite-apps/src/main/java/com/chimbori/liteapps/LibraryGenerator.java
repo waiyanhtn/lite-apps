@@ -10,8 +10,6 @@ import com.google.gson.GsonBuilder;
 
 import net.coobird.thumbnailator.Thumbnails;
 
-import org.json.JSONException;
-
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileReader;
@@ -28,11 +26,11 @@ class LibraryGenerator {
    * or anything about a Lite App other than its name (same as the directory name).
    * <p>
    * This generator tool combines the basic organizational metadata from index.json & detailed
-   * Lite Apps data from * / manifest.json files. It outputs bin/lite-apps.json,
+   * Lite Apps data from * / manifest.json files. It outputs library.json,
    * which is used as the basis for generating the Hermit Library page at
    * https://hermit.chimbori.com/library.
    */
-  public static boolean generateLibraryData() throws IOException, JSONException {
+  public static boolean generateLibraryData() throws IOException {
     Gson gson = new GsonBuilder()
         .setPrettyPrinting()
         .create();

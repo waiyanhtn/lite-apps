@@ -6,7 +6,6 @@ import com.chimbori.schema.manifest.RelatedApplication;
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
 
-import org.json.JSONException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -74,7 +73,7 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
       assertTrue(manifestUrl.getPath().startsWith("/lite-apps/"));
       assertTrue(manifestUrl.getPath().endsWith(".hermit"));
       assertEquals(liteApp.getName() + ".hermit", new File(URLDecoder.decode(manifestUrl.getFile())).getName());
-    } catch (JSONException | MalformedURLException e) {
+    } catch (MalformedURLException e) {
       fail(e.getMessage());
     }
 
@@ -172,7 +171,7 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
     Gson gson = new Gson();
     try {
       return file.exists() ? gson.fromJson(new FileReader(file), Manifest.class) : null;
-    } catch (IOException | JSONException e) {
+    } catch (IOException e) {
       fail(String.format("Invalid JSON: %s", file.getName()));
       return null;
     }

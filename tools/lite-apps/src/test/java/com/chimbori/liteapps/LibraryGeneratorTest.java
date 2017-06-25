@@ -1,6 +1,5 @@
 package com.chimbori.liteapps;
 
-import org.json.JSONException;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -21,7 +20,7 @@ public class LibraryGeneratorTest {
   public void testUpdateTagsJSON() {
     try {
       assertTrue(TagsCollector.updateTagsGson());
-    } catch (IOException | JSONException e) {
+    } catch (IOException e) {
       fail(e.getMessage());
     }
   }
@@ -30,7 +29,7 @@ public class LibraryGeneratorTest {
   public void testLibraryDataIsGeneratedSuccessfully() {
     try {
       assertTrue(LibraryGenerator.generateLibraryData());
-    } catch (IOException | JSONException e) {
+    } catch (IOException e) {
       fail(e.getMessage());
     }
   }

@@ -34,7 +34,7 @@ class TestHelpers {
 
   static void assertJsonIsWellFormedAndReformat(File file) throws IOException {
     try {
-      // Use a stricter parser than {@code JSONObject}, so we can catch issues such as
+      // Use a stricter parser than {@code Gson}, so we can catch issues such as
       // extra commas after the last element.
       JsonValue manifest = Json.parse(FileUtils.readFully(new FileInputStream(file)));
       // Re-indent the <b>source file</b> by saving the JSON back to the same file.
