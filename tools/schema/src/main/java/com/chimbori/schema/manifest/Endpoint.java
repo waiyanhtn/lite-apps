@@ -3,6 +3,7 @@ package com.chimbori.schema.manifest;
 public class Endpoint {
   public String url = "";
   public String name = "";
+  public String selector = "";
 
   @Override
   public boolean equals(Object o) {

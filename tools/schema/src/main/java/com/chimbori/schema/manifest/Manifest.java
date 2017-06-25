@@ -21,6 +21,11 @@ public class Manifest {
   public List<Icon> icons;
   public Collection<Endpoint> hermit_bookmarks;
   public Collection<Endpoint> hermit_feeds;
+  public Collection<Endpoint> hermit_create;
+  public Collection<Endpoint> hermit_share;
+  public Collection<Endpoint> hermit_search;
+  public Collection<Endpoint> hermit_monitors;
+
   public Collection<RelatedApplication> related_applications;
 
   public Manifest() {
