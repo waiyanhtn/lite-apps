@@ -24,6 +24,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.util.Arrays;
 
 import javax.imageio.ImageIO;
 
@@ -63,6 +64,9 @@ class Scaffolder {
       root.put(JSONConstants.Fields.START_URL, startUrl);
       root.put(JSONConstants.Fields.MANIFEST_URL, String.format(MANIFEST_URL_TEMPLATE,
           URLEncoder.encode(appName, "UTF-8").replace("+", "%20")));
+
+      // Empty fields that must be manually populated.
+      root.put(JSONConstants.Fields.TAGS, Arrays.asList(new String[]{"TODO"} ));
     }
 
     // Scrape the Web looking for RSS & Atom feeds, theme colors, and site metadata.
