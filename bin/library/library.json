@@ -871,6 +871,12 @@
           "url": "https://www.orbitz.com"
         },
         {
+          "app": "Priceline.hermit",
+          "theme_color": "#0a84c1",
+          "name": "Priceline",
+          "url": "http://priceline.com"
+        },
+        {
           "app": "TripAdvisor.hermit",
           "theme_color": "#1e892f",
           "name": "TripAdvisor",
@@ -920,10 +926,22 @@
           "url": "https://amazon.com"
         },
         {
+          "app": "Coupons.com.hermit",
+          "theme_color": "#e67452",
+          "name": "Coupons.com",
+          "url": "https://www.coupons.com"
+        },
+        {
           "app": "Craigslist.hermit",
           "theme_color": "#5c008e",
           "name": "Craigslist",
           "url": "https://craigslist.org"
+        },
+        {
+          "app": "CVS.hermit",
+          "theme_color": "#cc0001",
+          "name": "CVS",
+          "url": "http://m.cvs.com"
         },
         {
           "app": "eBay.hermit",
@@ -954,6 +972,24 @@
           "theme_color": "#0094d1",
           "name": "SlickDeals",
           "url": "https://slickdeals.net"
+        },
+        {
+          "app": "Target.hermit",
+          "theme_color": "#cc0000",
+          "name": "Target",
+          "url": "https://www.target.com"
+        },
+        {
+          "app": "Walgreens.hermit",
+          "theme_color": "#4c6971",
+          "name": "Walgreens",
+          "url": "https://www.walgreens.com"
+        },
+        {
+          "app": "WalMart.hermit",
+          "theme_color": "#1086f8",
+          "name": "WalMart",
+          "url": "https://www.walmart.com"
         },
         {
           "app": "Woot.hermit",

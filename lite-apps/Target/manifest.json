@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "Target",
+  "start_url": "https://www.target.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Target.hermit",
+  "theme_color": "#cc0000",
+  "secondary_color": "#b70000",
+  "tags": [
+    "Shopping"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}

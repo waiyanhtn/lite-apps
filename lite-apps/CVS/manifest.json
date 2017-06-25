@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "CVS",
+  "start_url": "http://m.cvs.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/CVS.hermit",
+  "theme_color": "#cc0001",
+  "secondary_color": "#f23859",
+  "tags": [
+    "Shopping"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}

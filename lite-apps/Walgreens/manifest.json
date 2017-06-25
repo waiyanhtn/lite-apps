@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "Walgreens",
+  "start_url": "https://www.walgreens.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Walgreens.hermit",
+  "theme_color": "#4c6971",
+  "secondary_color": "#445e65",
+  "tags": [
+    "Shopping"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}

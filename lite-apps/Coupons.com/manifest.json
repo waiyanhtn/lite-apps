@@ -1,0 +1,39 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "Coupons.com",
+  "start_url": "https://www.coupons.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Coupons.com.hermit",
+  "theme_color": "#e67452",
+  "secondary_color": "#ffc64b",
+  "tags": [
+    "Shopping"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "url": "https://www.coupons.com/",
+      "name": "Home"
+    },
+    {
+      "url": "https://www.coupons.com/store-loyalty-card-coupons/",
+      "name": "Paperless Coupons"
+    },
+    {
+      "url": "https://www.coupons.com/coupons/",
+      "name": "Printable Coupons"
+    },
+    {
+      "url": "https://www.coupons.com/card-linked-offers/",
+      "name": "Cash Back Offers"
+    },
+    {
+      "url": "https://www.coupons.com/coupon-codes/",
+      "name": "Coupon Codes"
+    }
+  ]
+}

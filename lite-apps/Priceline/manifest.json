@@ -1,0 +1,39 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "Priceline",
+  "start_url": "http://priceline.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Priceline.hermit",
+  "theme_color": "#0a84c1",
+  "secondary_color": "#0976ad",
+  "tags": [
+    "Food, Travel, Photography"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "url": "https://www.priceline.com/flights/",
+      "name": "Flights"
+    },
+    {
+      "url": "https://www.priceline.com/hotels/",
+      "name": "Hotels"
+    },
+    {
+      "url": "https://www.priceline.com/rentalcars/",
+      "name": "Cars"
+    },
+    {
+      "url": "http://cruises.priceline.com/",
+      "name": "Cruises"
+    },
+    {
+      "url": "https://www.priceline.com/vacationpackages/",
+      "name": "Packages"
+    }
+  ]
+}
