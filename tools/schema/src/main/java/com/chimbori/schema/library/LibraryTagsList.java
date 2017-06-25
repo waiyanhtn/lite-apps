@@ -27,10 +27,6 @@ public class LibraryTagsList {
     tags.add(tag);
   }
 
-  public LibraryTag findByName(String tagName) {
-    return tagsMap.get(tagName);
-  }
-
   public static LibraryTagsList fromGson(Gson gson, Reader reader) {
     LibraryTagsList libraryTagsList = gson.fromJson(reader, LibraryTagsList.class);
     libraryTagsList.updateTransientFields();

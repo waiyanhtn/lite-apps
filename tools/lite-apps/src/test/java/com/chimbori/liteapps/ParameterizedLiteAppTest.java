@@ -1,7 +1,5 @@
 package com.chimbori.liteapps;
 
-import com.chimbori.common.FileUtils;
-
 import org.junit.runners.Parameterized;
 
 import java.io.File;

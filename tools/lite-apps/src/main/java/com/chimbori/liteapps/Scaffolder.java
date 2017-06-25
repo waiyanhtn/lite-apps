@@ -43,7 +43,7 @@ class Scaffolder {
    * The library.json file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
    */
-  private static boolean createScaffolding(String startUrl, String appName) throws IOException {
+  private static void createScaffolding(String startUrl, String appName) throws IOException {
     File liteAppDirectoryRoot = new File(FilePaths.SRC_ROOT_DIR, appName);
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
@@ -119,7 +119,6 @@ class Scaffolder {
 
     // Write the output manifest.
     FileUtils.writeFile(manifestJsonFile, manifest.toJson(gson));
-    return true;
   }
 
   public static void main(String[] arguments) {
@@ -141,20 +140,19 @@ class Scaffolder {
       // than trying to parse the parameters in Groovy/Gradle, so we chose this slightly-hacky
       // approach.
       CommandLine command = parser.parse(options, arguments);
-      boolean success = Scaffolder.createScaffolding(
+      Scaffolder.createScaffolding(
           command.getOptionValue(COMMAND_LINE_OPTION_URL),
           command.getOptionValue(COMMAND_LINE_OPTION_NAME).replaceAll("_", " "));
-      if (!success) {
-        System.exit(1);
-      }
 
     } catch (ParseException e) {
       final PrintWriter writer = new PrintWriter(System.out);
       new HelpFormatter().printHelp("Scaffolder", options);
       writer.flush();
+      System.exit(1);
 
     } catch (IOException e) {
       e.printStackTrace();
+      System.exit(1);
     }
   }
 }

@@ -30,7 +30,7 @@ class LibraryGenerator {
    * which is used as the basis for generating the Hermit Library page at
    * https://hermit.chimbori.com/library.
    */
-  public static boolean generateLibraryData() throws IOException {
+  public static void generateLibraryData() throws IOException {
     Gson gson = new GsonBuilder()
         .setPrettyPrinting()
         .create();
@@ -79,6 +79,5 @@ class LibraryGenerator {
     }
 
     FileUtils.writeFile(FilePaths.OUT_LIBRARY_JSON, outputLibrary.toJson(gson));
-    return true;
   }
 }

@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.io.IOException;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 /**
@@ -19,7 +18,7 @@ public class LibraryGeneratorTest {
   @Test
   public void testUpdateTagsJSON() {
     try {
-      assertTrue(TagsCollector.updateTagsGson());
+      TagsCollector.updateTagsGson();
     } catch (IOException e) {
       fail(e.getMessage());
     }
@@ -28,7 +27,7 @@ public class LibraryGeneratorTest {
   @Test
   public void testLibraryDataIsGeneratedSuccessfully() {
     try {
-      assertTrue(LibraryGenerator.generateLibraryData());
+      LibraryGenerator.generateLibraryData();
     } catch (IOException e) {
       fail(e.getMessage());
     }

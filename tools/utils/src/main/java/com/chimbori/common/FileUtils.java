@@ -114,9 +114,4 @@ public class FileUtils {
     Response response = client.newCall(request).execute();
     return response.body().string();
   }
-
-  public static String getExtension(File file) {
-    String name = file.getName();
-    return name.substring(name.lastIndexOf(".") + 1);
-  }
 }

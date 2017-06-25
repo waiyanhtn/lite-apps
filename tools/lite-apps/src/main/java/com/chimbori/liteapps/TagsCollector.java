@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TagsCollector {
-  public static boolean updateTagsGson() throws IOException {
+  public static void updateTagsGson() throws IOException {
     Gson gson = new GsonBuilder()
         .setPrettyPrinting()
         .create();
@@ -53,7 +53,5 @@ public class TagsCollector {
 
     // Write the tags to JSON
     FileUtils.writeFile(FilePaths.SRC_TAGS_JSON_FILE, tagsGson.toJson(gson));
-
-    return true;
   }
 }

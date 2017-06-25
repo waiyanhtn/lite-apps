@@ -6,5 +6,5 @@ enum EndpointRole {
   SEARCH,
   SHARE,
   MONITOR,
-  CREATE;
+  CREATE
 }

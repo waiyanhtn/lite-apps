@@ -40,7 +40,7 @@ public class BlockListsParser {
   /**
    * Downloads all the meta-lists from index.json and saves them locally.
    */
-  public static boolean downloadFromSources() throws IOException {
+  public static void downloadFromSources() throws IOException {
     BlockListsIndex blockListsIndex = readIndexJsonWithGson();
     for (BlockListsIndex.BlockList blockList : blockListsIndex.blocklists) {
       File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR, blockList.blocklist);
@@ -52,14 +52,12 @@ public class BlockListsParser {
         }
       }
     }
-
-    return true;
   }
 
   /**
    * Package multiple blocklists into a single JSON file, as specified in index.json.
    */
-  public static boolean packageBlockLists(boolean shouldMinify) throws IOException {
+  public static void packageBlockLists(boolean shouldMinify) throws IOException {
     System.out.println(new File(".").getAbsolutePath());
 
     BlockListsIndex blockListsIndex = readIndexJsonWithGson();
@@ -83,8 +81,6 @@ public class BlockListsParser {
       writeToDisk(FilePaths.OUT_ROOT_DIR, blockList.name, hosts, shouldMinify);
       hosts.clear();  // Empty the list before writing each one.
     }
-
-    return true;
   }
 
   private static void parseBlockList(String sourceName, InputStream inputStream, Set<String> hosts) {

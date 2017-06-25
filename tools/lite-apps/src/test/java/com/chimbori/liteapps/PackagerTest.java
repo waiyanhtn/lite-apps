@@ -1,7 +1,5 @@
 package com.chimbori.liteapps;
 
-import com.chimbori.common.FileUtils;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
