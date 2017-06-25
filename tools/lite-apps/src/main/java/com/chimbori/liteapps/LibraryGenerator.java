@@ -33,7 +33,9 @@ class LibraryGenerator {
    * https://hermit.chimbori.com/library.
    */
   public static boolean generateLibraryData() throws IOException, JSONException {
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    Gson gson = new GsonBuilder()
+        // .setPrettyPrinting()
+        .create();
 
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
