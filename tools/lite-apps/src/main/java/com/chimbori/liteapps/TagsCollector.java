@@ -18,7 +18,7 @@ import java.util.Map;
 public class TagsCollector {
   public static boolean updateTagsGson() throws IOException, JSONException {
     Gson gson = new GsonBuilder()
-        // .setPrettyPrinting()
+        .setPrettyPrinting()
         .create();
 
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
