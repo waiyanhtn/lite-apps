@@ -1,0 +1,24 @@
+{
+  "theme_color": "#004f93",
+  "manifest_version": 1,
+  "name": "Veja",
+  "start_url": "http://veja.abril.com.br",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Veja.hermit",
+  "secondary_color": "#004784",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "br.com.abril.revvejanoandroid3",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=br.com.abril.revvejanoandroid3"
+    }
+  ],
+  "tags": [
+    "Brasil"
+  ]
+}

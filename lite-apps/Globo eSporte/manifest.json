@@ -1,0 +1,17 @@
+{
+  "theme_color": "#697353",
+  "manifest_version": 1,
+  "name": "Globo eSporte",
+  "start_url": "http://globoesporte.globo.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Globo%20eSporte.hermit",
+  "secondary_color": "#5e674a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "tags": [
+    "Brasil"
+  ]
+}

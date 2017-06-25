@@ -1025,6 +1025,55 @@
           "url": "https://onedrive.live.com"
         }
       ]
+    },
+    {
+      "category": {
+        "name": "Brasil"
+      },
+      "apps": [
+        {
+          "app": "ESPN Brasil.hermit",
+          "theme_color": "#cc0000",
+          "name": "ESPN Brasil",
+          "url": "http://espn.uol.com.br"
+        },
+        {
+          "app": "Estadao.hermit",
+          "theme_color": "#6490b4",
+          "name": "Estadao",
+          "url": "http://www.estadao.com.br"
+        },
+        {
+          "app": "Folha de San Paulo.hermit",
+          "theme_color": "#4cc7f2",
+          "name": "Folha de San Paulo",
+          "url": "http://m.folha.uol.com.br"
+        },
+        {
+          "app": "Globo.hermit",
+          "theme_color": "#439ef6",
+          "name": "Globo",
+          "url": "http://www.globo.com"
+        },
+        {
+          "app": "Globo eSporte.hermit",
+          "theme_color": "#697353",
+          "name": "Globo eSporte",
+          "url": "http://globoesporte.globo.com"
+        },
+        {
+          "app": "Outer Space.hermit",
+          "theme_color": "#000000",
+          "name": "Outer Space",
+          "url": "https://www.outerspace.com.br"
+        },
+        {
+          "app": "Veja.hermit",
+          "theme_color": "#004f93",
+          "name": "Veja",
+          "url": "http://veja.abril.com.br"
+        }
+      ]
     }
   ]
 }

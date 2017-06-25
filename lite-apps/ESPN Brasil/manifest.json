@@ -1,0 +1,17 @@
+{
+  "theme_color": "#cc0000",
+  "manifest_version": 1,
+  "name": "ESPN Brasil",
+  "start_url": "http://espn.uol.com.br",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/ESPN%20Brasil.hermit",
+  "secondary_color": "#b70000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "tags": [
+    "Brasil"
+  ]
+}

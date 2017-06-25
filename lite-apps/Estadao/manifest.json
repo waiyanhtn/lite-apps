@@ -1,0 +1,71 @@
+{
+  "theme_color": "#6490b4",
+  "manifest_version": 1,
+  "name": "Estadao",
+  "start_url": "http://www.estadao.com.br",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Estadao.hermit",
+  "secondary_color": "#5a81a2",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "name": "Brasil",
+      "url": "http://brasil.estadao.com.br/"
+    },
+    {
+      "name": "Paladar",
+      "url": "http://paladar.estadao.com.br/"
+    },
+    {
+      "name": "Quadrinhos",
+      "url": "http://cultura.estadao.com.br/quadrinhos"
+    },
+    {
+      "name": "Política",
+      "url": "http://politica.estadao.com.br/"
+    },
+    {
+      "name": "Últimas",
+      "url": "http://www.estadao.com.br/ultimas"
+    },
+    {
+      "name": "Aplicativos",
+      "url": "http://www.estadao.com.br/aplicativos/"
+    },
+    {
+      "name": "Economia & Negócios",
+      "url": "http://economia.estadao.com.br/"
+    },
+    {
+      "name": "Opinião",
+      "url": "http://opiniao.estadao.com.br/"
+    },
+    {
+      "name": "Internacional",
+      "url": "http://internacional.estadao.com.br/"
+    },
+    {
+      "name": "Trânsito",
+      "url": "http://transito.estadao.com.br"
+    },
+    {
+      "name": "Jornal do Carro",
+      "url": "http://www.estadao.com.br/jornal-do-carro/"
+    },
+    {
+      "name": "iLocal",
+      "url": "http://www.ilocal.com.br/"
+    },
+    {
+      "name": "Planeta Digital",
+      "url": "http://planetadigital.estadao.com.br/"
+    }
+  ],
+  "tags": [
+    "Brasil"
+  ]
+}

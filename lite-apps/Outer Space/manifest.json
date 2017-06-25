@@ -1,0 +1,23 @@
+{
+  "theme_color": "#000000",
+  "manifest_version": 1,
+  "name": "Outer Space",
+  "start_url": "https://www.outerspace.com.br",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Outer%20Space.hermit",
+  "secondary_color": "#000000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "name": "Outer Space",
+      "url": "https://www.outerspace.com.br/feed/"
+    }
+  ],
+  "tags": [
+    "Brasil"
+  ]
+}
