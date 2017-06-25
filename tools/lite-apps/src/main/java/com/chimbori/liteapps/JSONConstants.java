@@ -6,11 +6,6 @@ import java.util.HashSet;
 class JSONConstants {
 
   public class Fields {
-    // Used in index.json & lite-apps.json.
-    public static final String CATEGORY = "category";
-    public static final String APPS = "apps";
-    public static final String APP = "app";
-
     // Used in manifest.json.
     public static final String ICONS = "icons";
     public static final String ID = "id";
@@ -25,10 +20,8 @@ class JSONConstants {
     public static final String SETTINGS = "hermit_settings";
     public static final String SRC = "src";
     public static final String START_URL = "start_url";
-    public static final String TAGS = "tags";
     public static final String THEME_COLOR = "theme_color";
     public static final String URL = "url";
-    public static final String USER_AGENT = "user_agent";
   }
 
   public class Values {
