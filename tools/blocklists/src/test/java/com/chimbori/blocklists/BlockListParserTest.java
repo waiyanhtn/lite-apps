@@ -14,7 +14,7 @@ public class BlockListParserTest {
       if (FETCH_REMOTE_FILES) {
         BlockListsParser.downloadFromSources();
       }
-      Assert.assertTrue(BlockListsParser.packageBlockLists(false));
+      BlockListsParser.packageBlockLists(false);
     } catch (IOException e) {
       Assert.fail(e.getMessage());
     }
