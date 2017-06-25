@@ -40,13 +40,15 @@ public class TagsCollector {
       Manifest manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
 
       // For all tags applied to this manifest, check if they exist in the global tags list.
-      for (String tagName : manifest.tags) {
-        LibraryTag tag = globalTags.get(tagName);
-        if (tag == null) {
-          // If this is the first time we are seeing this tag, create a new JSONArray to hold its contents.
-          LibraryTag newTag = new LibraryTag(tagName);
-          globalTags.put(tagName, newTag);
-          tagsGson.addTag(newTag);
+      if (manifest.tags != null) {
+        for (String tagName : manifest.tags) {
+          LibraryTag tag = globalTags.get(tagName);
+          if (tag == null) {
+            // If this is the first time we are seeing this tag, create a new JSONArray to hold its contents.
+            LibraryTag newTag = new LibraryTag(tagName);
+            globalTags.put(tagName, newTag);
+            tagsGson.addTag(newTag);
+          }
         }
       }
     }
