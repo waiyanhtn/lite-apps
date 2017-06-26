@@ -6,12 +6,6 @@
       },
       "apps": [
         {
-          "app": "BBC.hermit",
-          "theme_color": "#bd160d",
-          "name": "BBC",
-          "url": "https://bbc.com"
-        },
-        {
           "app": "Facebook.hermit",
           "theme_color": "#3b5998",
           "name": "Facebook",
@@ -25,12 +19,6 @@
           "user_agent": "desktop"
         },
         {
-          "app": "New York Times.hermit",
-          "theme_color": "#000000",
-          "name": "New York Times",
-          "url": "http://mobile.nytimes.com"
-        },
-        {
           "app": "Reddit.hermit",
           "theme_color": "#ff4300",
           "name": "Reddit",
@@ -41,6 +29,18 @@
           "theme_color": "#4798d8",
           "name": "Twitter",
           "url": "https://m.twitter.com/"
+        },
+        {
+          "app": "BBC.hermit",
+          "theme_color": "#bd160d",
+          "name": "BBC",
+          "url": "https://bbc.com"
+        },
+        {
+          "app": "New York Times.hermit",
+          "theme_color": "#000000",
+          "name": "New York Times",
+          "url": "http://mobile.nytimes.com"
         },
         {
           "app": "Washington Post.hermit",
@@ -62,12 +62,6 @@
       },
       "apps": [
         {
-          "app": "Ask.fm.hermit",
-          "theme_color": "#ff6648",
-          "name": "Ask.fm",
-          "url": "https://ask.fm"
-        },
-        {
           "app": "Facebook.hermit",
           "theme_color": "#3b5998",
           "name": "Facebook",
@@ -80,10 +74,23 @@
           "url": "https://mbasic.facebook.com"
         },
         {
-          "app": "Google Plus.hermit",
-          "theme_color": "#dd4330",
-          "name": "Google Plus",
-          "url": "https://plus.google.com"
+          "app": "Messenger.hermit",
+          "theme_color": "#0086ff",
+          "name": "Messenger",
+          "url": "https://mobile.facebook.com/messages",
+          "user_agent": "desktop"
+        },
+        {
+          "app": "Reddit.hermit",
+          "theme_color": "#ff4300",
+          "name": "Reddit",
+          "url": "https://m.reddit.com"
+        },
+        {
+          "app": "Twitter.hermit",
+          "theme_color": "#4798d8",
+          "name": "Twitter",
+          "url": "https://m.twitter.com/"
         },
         {
           "app": "Instagram.hermit",
@@ -92,17 +99,22 @@
           "url": "https://instagram.com"
         },
         {
+          "app": "Ask.fm.hermit",
+          "theme_color": "#ff6648",
+          "name": "Ask.fm",
+          "url": "https://ask.fm"
+        },
+        {
+          "app": "Google Plus.hermit",
+          "theme_color": "#dd4330",
+          "name": "Google Plus",
+          "url": "https://plus.google.com"
+        },
+        {
           "app": "Linked In.hermit",
           "theme_color": "#0076b7",
           "name": "Linked In",
           "url": "https://www.linkedin.com"
-        },
-        {
-          "app": "Messenger.hermit",
-          "theme_color": "#0086ff",
-          "name": "Messenger",
-          "url": "https://mobile.facebook.com/messages",
-          "user_agent": "desktop"
         },
         {
           "app": "NextDoor.hermit",
@@ -115,12 +127,6 @@
           "theme_color": "#88a0ca",
           "name": "OkCupid",
           "url": "https://m.okcupid.com"
-        },
-        {
-          "app": "Reddit.hermit",
-          "theme_color": "#ff4300",
-          "name": "Reddit",
-          "url": "https://m.reddit.com"
         },
         {
           "app": "Skype.hermit",
@@ -140,12 +146,6 @@
           "theme_color": "#36465d",
           "name": "Tumblr",
           "url": "https://tumblr.com"
-        },
-        {
-          "app": "Twitter.hermit",
-          "theme_color": "#4798d8",
-          "name": "Twitter",
-          "url": "https://m.twitter.com/"
         }
       ]
     },
@@ -154,6 +154,12 @@
         "name": "Search"
       },
       "apps": [
+        {
+          "app": "Google.hermit",
+          "theme_color": "#4485a7",
+          "name": "Google",
+          "url": "https://www.google.com"
+        },
         {
           "app": "Baidu.hermit",
           "theme_color": "#b3c9ff",
@@ -171,12 +177,6 @@
           "theme_color": "#e0572a",
           "name": "DuckDuckGo",
           "url": "https://duckduckgo.com"
-        },
-        {
-          "app": "Google.hermit",
-          "theme_color": "#4485a7",
-          "name": "Google",
-          "url": "https://www.google.com"
         },
         {
           "app": "StartPage.hermit",
@@ -198,6 +198,36 @@
       },
       "apps": [
         {
+          "app": "The Guardian.hermit",
+          "theme_color": "#005689",
+          "name": "The Guardian",
+          "url": "https://theguardian.com"
+        },
+        {
+          "app": "BBC.hermit",
+          "theme_color": "#bd160d",
+          "name": "BBC",
+          "url": "https://bbc.com"
+        },
+        {
+          "app": "New York Times.hermit",
+          "theme_color": "#000000",
+          "name": "New York Times",
+          "url": "http://mobile.nytimes.com"
+        },
+        {
+          "app": "Wall St. Journal.hermit",
+          "theme_color": "#000000",
+          "name": "Wall St. Journal",
+          "url": "https://mobile.wsj.com"
+        },
+        {
+          "app": "Washington Post.hermit",
+          "theme_color": "#001212",
+          "name": "Washington Post",
+          "url": "https://m.washingtonpost.com"
+        },
+        {
           "app": "AccuWeather.hermit",
           "theme_color": "#f05714",
           "name": "AccuWeather",
@@ -214,12 +244,6 @@
           "theme_color": "#008dc8",
           "name": "Axios",
           "url": "https://www.axios.com"
-        },
-        {
-          "app": "BBC.hermit",
-          "theme_color": "#bd160d",
-          "name": "BBC",
-          "url": "https://bbc.com"
         },
         {
           "app": "Bloomberg.hermit",
@@ -282,12 +306,6 @@
           "url": "http://www.nbcnews.com/"
         },
         {
-          "app": "New York Times.hermit",
-          "theme_color": "#000000",
-          "name": "New York Times",
-          "url": "http://mobile.nytimes.com"
-        },
-        {
           "app": "NPR.hermit",
           "theme_color": "#2851a0",
           "name": "NPR",
@@ -312,28 +330,10 @@
           "url": "https://www.theatlantic.com/"
         },
         {
-          "app": "The Guardian.hermit",
-          "theme_color": "#005689",
-          "name": "The Guardian",
-          "url": "https://theguardian.com"
-        },
-        {
           "app": "Time.hermit",
           "theme_color": "#d60002",
           "name": "Time",
           "url": "https://time.com"
-        },
-        {
-          "app": "Wall St. Journal.hermit",
-          "theme_color": "#000000",
-          "name": "Wall St. Journal",
-          "url": "https://mobile.wsj.com"
-        },
-        {
-          "app": "Washington Post.hermit",
-          "theme_color": "#001212",
-          "name": "Washington Post",
-          "url": "https://m.washingtonpost.com"
         },
         {
           "app": "Yahoo! Finance.hermit",
@@ -568,6 +568,12 @@
       },
       "apps": [
         {
+          "app": "Wikipedia.hermit",
+          "theme_color": "#000000",
+          "name": "Wikipedia",
+          "url": "https://wikipedia.org"
+        },
+        {
           "app": "Coursera.hermit",
           "theme_color": "#4689c6",
           "name": "Coursera",
@@ -592,12 +598,6 @@
           "url": "https://khanacademy.org"
         },
         {
-          "app": "Wikipedia.hermit",
-          "theme_color": "#000000",
-          "name": "Wikipedia",
-          "url": "https://wikipedia.org"
-        },
-        {
           "app": "Wiktionary.hermit",
           "theme_color": "#329865",
           "name": "Wiktionary",
@@ -617,16 +617,40 @@
       },
       "apps": [
         {
-          "app": "AlloCine.hermit",
-          "theme_color": "#ffca00",
-          "name": "AlloCine",
-          "url": "http://allocine.fr"
-        },
-        {
           "app": "Bored Panda.hermit",
           "theme_color": "#000000",
           "name": "Bored Panda",
           "url": "http://boredpanda.com/"
+        },
+        {
+          "app": "Fandango.hermit",
+          "theme_color": "#f17604",
+          "name": "Fandango",
+          "url": "https://mobile.fandango.com/"
+        },
+        {
+          "app": "IMDb.hermit",
+          "theme_color": "#f6e397",
+          "name": "IMDb",
+          "url": "https://m.imdb.com"
+        },
+        {
+          "app": "Rotten Tomatoes.hermit",
+          "theme_color": "#0c89c9",
+          "name": "Rotten Tomatoes",
+          "url": "https://rottentomatoes.com"
+        },
+        {
+          "app": "Vimeo.hermit",
+          "theme_color": "#00acf2",
+          "name": "Vimeo",
+          "url": "https://www.vimeo.com"
+        },
+        {
+          "app": "AlloCine.hermit",
+          "theme_color": "#ffca00",
+          "name": "AlloCine",
+          "url": "http://allocine.fr"
         },
         {
           "app": "BuzzFeed.hermit",
@@ -639,12 +663,6 @@
           "theme_color": "#3e4f53",
           "name": "E! Online",
           "url": "https://m.eonline.com"
-        },
-        {
-          "app": "Fandango.hermit",
-          "theme_color": "#f17604",
-          "name": "Fandango",
-          "url": "https://mobile.fandango.com/"
         },
         {
           "app": "Giphy.hermit",
@@ -663,12 +681,6 @@
           "theme_color": "#6f6f00",
           "name": "Hotstar",
           "url": "http://hotstar.com"
-        },
-        {
-          "app": "IMDb.hermit",
-          "theme_color": "#f6e397",
-          "name": "IMDb",
-          "url": "https://m.imdb.com"
         },
         {
           "app": "Imgur.hermit",
@@ -693,12 +705,6 @@
           "theme_color": "#ce7d00",
           "name": "Plex",
           "url": "https://plex.tv"
-        },
-        {
-          "app": "Rotten Tomatoes.hermit",
-          "theme_color": "#0c89c9",
-          "name": "Rotten Tomatoes",
-          "url": "https://rottentomatoes.com"
         },
         {
           "app": "SoundCloud.hermit",
@@ -731,12 +737,6 @@
           "url": "https://twit.tv"
         },
         {
-          "app": "Vimeo.hermit",
-          "theme_color": "#00acf2",
-          "name": "Vimeo",
-          "url": "https://www.vimeo.com"
-        },
-        {
           "app": "XKCD.hermit",
           "theme_color": "#95a7c9",
           "name": "XKCD",
@@ -749,6 +749,18 @@
         "name": "Tools \u0026 Productivity"
       },
       "apps": [
+        {
+          "app": "Translate.hermit",
+          "theme_color": "#508ff5",
+          "name": "Translate",
+          "url": "https://translate.google.com/m/translate"
+        },
+        {
+          "app": "QRCode Scanner.hermit",
+          "theme_color": "#5f7d8c",
+          "name": "QRCode Scanner",
+          "url": "https://qrcodescan.in/"
+        },
         {
           "app": "Flipboard.hermit",
           "theme_color": "#e12828",
@@ -780,12 +792,6 @@
           "url": "https://getpocket.com"
         },
         {
-          "app": "QRCode Scanner.hermit",
-          "theme_color": "#5f7d8c",
-          "name": "QRCode Scanner",
-          "url": "https://qrcodescan.in/"
-        },
-        {
           "app": "Sleepy Time.hermit",
           "theme_color": "#000000",
           "name": "Sleepy Time",
@@ -802,12 +808,6 @@
           "theme_color": "#bc342d",
           "name": "Todoist",
           "url": "https://todoist.com"
-        },
-        {
-          "app": "Translate.hermit",
-          "theme_color": "#508ff5",
-          "name": "Translate",
-          "url": "https://translate.google.com/m/translate"
         }
       ]
     },
@@ -816,6 +816,24 @@
         "name": "Food, Travel, Photography"
       },
       "apps": [
+        {
+          "app": "TripAdvisor.hermit",
+          "theme_color": "#1e892f",
+          "name": "TripAdvisor",
+          "url": "https://tripadvisor.com"
+        },
+        {
+          "app": "Yelp.hermit",
+          "theme_color": "#d01e0c",
+          "name": "Yelp",
+          "url": "https://m.yelp.com"
+        },
+        {
+          "app": "Zomato.hermit",
+          "theme_color": "#cb202d",
+          "name": "Zomato",
+          "url": "https://zomato.com"
+        },
         {
           "app": "All Recipes.hermit",
           "theme_color": "#ff7e1a",
@@ -877,34 +895,16 @@
           "url": "http://priceline.com"
         },
         {
-          "app": "TripAdvisor.hermit",
-          "theme_color": "#1e892f",
-          "name": "TripAdvisor",
-          "url": "https://tripadvisor.com"
-        },
-        {
           "app": "United Airlines.hermit",
           "theme_color": "#000099",
           "name": "United Airlines",
           "url": "https://mobile.united.com"
         },
         {
-          "app": "Yelp.hermit",
-          "theme_color": "#d01e0c",
-          "name": "Yelp",
-          "url": "https://m.yelp.com"
-        },
-        {
           "app": "Yummly.hermit",
           "theme_color": "#e0601e",
           "name": "Yummly",
           "url": "https://yummly.com"
-        },
-        {
-          "app": "Zomato.hermit",
-          "theme_color": "#cb202d",
-          "name": "Zomato",
-          "url": "https://zomato.com"
         }
       ]
     },
@@ -914,16 +914,22 @@
       },
       "apps": [
         {
-          "app": "AliExpress.hermit",
-          "theme_color": "#e4330b",
-          "name": "AliExpress",
-          "url": "https://m.aliexpress.com"
-        },
-        {
           "app": "Amazon.hermit",
           "theme_color": "#3680ba",
           "name": "Amazon",
           "url": "https://amazon.com"
+        },
+        {
+          "app": "FlipKart.hermit",
+          "theme_color": "#027bd4",
+          "name": "FlipKart",
+          "url": "https://flipkart.com"
+        },
+        {
+          "app": "AliExpress.hermit",
+          "theme_color": "#e4330b",
+          "name": "AliExpress",
+          "url": "https://m.aliexpress.com"
         },
         {
           "app": "Coupons.com.hermit",
@@ -948,12 +954,6 @@
           "theme_color": "#e43138",
           "name": "eBay",
           "url": "https://m.ebay.com"
-        },
-        {
-          "app": "FlipKart.hermit",
-          "theme_color": "#027bd4",
-          "name": "FlipKart",
-          "url": "https://flipkart.com"
         },
         {
           "app": "Groupon.hermit",
@@ -1005,16 +1005,16 @@
       },
       "apps": [
         {
-          "app": "FastMail.hermit",
-          "theme_color": "#fcbf26",
-          "name": "FastMail",
-          "url": "https://www.fastmail.com"
-        },
-        {
           "app": "Gmail.hermit",
           "theme_color": "#dd5043",
           "name": "Gmail",
           "url": "https://mail.google.com"
+        },
+        {
+          "app": "FastMail.hermit",
+          "theme_color": "#fcbf26",
+          "name": "FastMail",
+          "url": "https://www.fastmail.com"
         },
         {
           "app": "Outlook.hermit",
@@ -1042,6 +1042,12 @@
           "url": "https://dropbox.com"
         },
         {
+          "app": "OneDrive.hermit",
+          "theme_color": "#2350a2",
+          "name": "OneDrive",
+          "url": "https://onedrive.live.com"
+        },
+        {
           "app": "Google Drive.hermit",
           "theme_color": "#ffd038",
           "name": "Google Drive",
@@ -1053,12 +1059,6 @@
           "name": "Mega",
           "url": "https://mega.nz",
           "user_agent": "desktop"
-        },
-        {
-          "app": "OneDrive.hermit",
-          "theme_color": "#2350a2",
-          "name": "OneDrive",
-          "url": "https://onedrive.live.com"
         }
       ]
     },

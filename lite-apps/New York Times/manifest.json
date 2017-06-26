@@ -2,7 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "New York Times",
-  "priority": 10,
+  "priority": 50,
   "start_url": "http://mobile.nytimes.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/New%20York%20Times.hermit",
   "theme_color": "#000000",

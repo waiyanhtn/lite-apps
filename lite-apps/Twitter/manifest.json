@@ -2,7 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Twitter",
-  "priority": 10,
+  "priority": 90,
   "start_url": "https://m.twitter.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Twitter.hermit",
   "theme_color": "#4798d8",

@@ -2,7 +2,7 @@
   "theme_color": "#2350a2",
   "manifest_version": 1,
   "name": "OneDrive",
-  "priority": 10,
+  "priority": 90,
   "start_url": "https://onedrive.live.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/OneDrive.hermit",
   "secondary_color": "#1f4891",

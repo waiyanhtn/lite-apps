@@ -3,6 +3,7 @@ package com.chimbori.schema.library;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Library {
@@ -32,6 +33,13 @@ public class Library {
            categoryWithApps.apps.add(app);
          }
        }
+
+      categoryWithApps.apps.sort(new Comparator<LibraryApp>() {
+        @Override
+        public int compare(LibraryApp app1, LibraryApp app2) {
+          return app2.priority - app1.priority;
+        }
+      });
     }
   }
 

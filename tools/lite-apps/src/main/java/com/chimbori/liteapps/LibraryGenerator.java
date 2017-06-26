@@ -62,6 +62,7 @@ class LibraryGenerator {
       outputApp.name = appName;
       outputApp.app = String.format("%s.hermit", appName);
       outputApp.theme_color = manifest.theme_color;
+      outputApp.priority = manifest.priority;
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
       String userAgent = manifest.hermit_settings != null ? manifest.hermit_settings.user_agent : null;

@@ -2,7 +2,7 @@
   "theme_color": "#0086ff",
   "manifest_version": 1,
   "name": "Messenger",
-  "priority": 10,
+  "priority": 90,
   "start_url": "https://mobile.facebook.com/messages",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Messenger.hermit",
   "secondary_color": "#0078e5",

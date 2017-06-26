@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
   "name": "Fandango",
-  "priority": 10,
+  "priority": 50,
   "start_url": "https://mobile.fandango.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Fandango.hermit",
   "theme_color": "#f17604",

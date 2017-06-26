@@ -6,4 +6,5 @@ public class LibraryApp {
   public String name;
   public String url;
   public String user_agent;
+  public transient int priority;
 }
