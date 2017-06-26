@@ -2,8 +2,8 @@
 var libraryJson = {};
 
 function makeImageUrl(liteApp) {
-  return 'https://chimbori.github.io/lite-apps/bin/library/112x112/' +
-      encodeURIComponent(liteApp.name) + '.png';
+  return 'https://chimbori.github.io/lite-apps/bin/library/112x112/'
+      + encodeURIComponent(liteApp.name) + '.png';
 }
 
 function makeCreateUrl(liteApp) {
@@ -12,7 +12,7 @@ function makeCreateUrl(liteApp) {
     createUrl += '&ua=d';
   }
   if (liteApp.app != '') {
-    createUrl += '&app=/lite-apps/' + encodeURIComponent(liteApp.app.replace(/ /g, '%20'));
+    createUrl += '&app=https://hermit.chimbori.com/lite-apps/' + encodeURIComponent(liteApp.app.replace(/ /g, '%20'));
   }
   return createUrl;
 }
@@ -33,7 +33,7 @@ function isDisplayed(liteApp) {
 function Category(props) {
   return <div>
     <h3 className="lite-app-category-count">{props.category.apps.length} Lite Apps</h3>
-    <h2>{ props.category.category }</h2>
+    <h2>{ props.category.category.name }</h2>
     <div className="lite-app-category">
     {
       props.category.apps.map(function(liteApp, i) {
@@ -49,7 +49,7 @@ function Category(props) {
 
 function Library(props) {
   return <div> {
-    props.library.map(function(category, i) {
+    props.library.categories.map(function(category, i) {
       var isAtleastOneLiteAppDisplayed = false;
       for (var liteAppIndex in category.apps) {
         if (isDisplayed(category.apps[liteAppIndex])) {
@@ -75,8 +75,8 @@ function updateDisplay(libraryJson) {
 
 function applyQueryFilter(queryText) {
   var isQueryBlank = queryText.length == 0;
-  for (var categoryIndex in libraryJson) {
-    var category = libraryJson[categoryIndex];
+  for (var categoryIndex in libraryJson.categories) {
+    var category = libraryJson.categories[categoryIndex];
     for (var liteAppIndex in category.apps) {
       var liteApp = category.apps[liteAppIndex];
       liteApp.display = isQueryBlank;
@@ -107,7 +107,7 @@ function getQueryVariable(paramName) {
 }
 
 function fetchJson() {
-  $.getJSON( "../bin/lite-apps/lite-apps.json", function(data) {
+  $.getJSON( "../bin/library/library.json", function(data) {
     libraryJson = data;
     applyQueryFilter(document.querySelector('#query').value.toLowerCase());
     updateDisplay(libraryJson);
@@ -116,9 +116,10 @@ function fetchJson() {
 
 function showQueryParamInSearchBox() {
   var queryParam = getQueryVariable('q');
-  if (queryParam != null && queryParam.length == 0) {
+  if (queryParam != null && queryParam != undefined && queryParam.length != 0) {
     try {
-      var queryAsUrl = new URL(queryParam);
+      var queryAsUrl = document.createElement('a');
+      queryAsUrl.href = queryParam;
       if (queryAsUrl != null) {
         document.querySelector('#query').value = queryAsUrl.hostname;
       }
