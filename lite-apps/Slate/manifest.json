@@ -2,6 +2,7 @@
   "theme_color": "#760c3f",
   "manifest_version": 1,
   "name": "Slate",
+  "priority": 10,
   "start_url": "http://slate.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Slate.hermit",
   "secondary_color": "#530229",

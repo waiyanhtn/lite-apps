@@ -2,6 +2,7 @@
   "theme_color": "#439ef6",
   "manifest_version": 1,
   "name": "Globo",
+  "priority": 10,
   "start_url": "http://www.globo.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Globo.hermit",
   "secondary_color": "#3c8edd",

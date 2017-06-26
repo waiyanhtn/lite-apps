@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Fuelly",
+  "priority": 10,
   "start_url": "https://www.fuelly.com/",
   "theme_color": "#3eb9ae",
   "secondary_color": "#289890",

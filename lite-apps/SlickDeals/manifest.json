@@ -2,6 +2,7 @@
   "theme_color": "#0094d1",
   "manifest_version": 1,
   "name": "SlickDeals",
+  "priority": 10,
   "start_url": "https://slickdeals.net",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/SlickDeals.hermit",
   "secondary_color": "#0085bc",

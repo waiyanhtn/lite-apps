@@ -2,6 +2,7 @@
   "theme_color": "#3d0092",
   "manifest_version": 1,
   "name": "Yahoo! Finance",
+  "priority": 10,
   "start_url": "https://finance.yahoo.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yahoo%21%20Finance.hermit",
   "secondary_color": "#360083",

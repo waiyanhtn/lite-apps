@@ -2,6 +2,7 @@
   "theme_color": "#ee3322",
   "manifest_version": 1,
   "name": "BuzzFeed",
+  "priority": 10,
   "start_url": "https://www.buzzfeed.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/BuzzFeed.hermit",
   "secondary_color": "#d62d1e",

@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "APK Mirror",
+  "priority": 10,
   "start_url": "http://www.apkmirror.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/APK%20Mirror.hermit",
   "theme_color": "#ff9800",

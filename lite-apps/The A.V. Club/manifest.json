@@ -1,6 +1,7 @@
 {
   "manifest_version": 1,
   "name": "The A.V. Club",
+  "priority": 10,
   "start_url": "http://avclub.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20A.V.%20Club.hermit",
   "lang": "en",

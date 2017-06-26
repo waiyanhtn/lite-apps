@@ -2,6 +2,7 @@
   "theme_color": "#ee1533",
   "manifest_version": 1,
   "name": "ESPN",
+  "priority": 10,
   "start_url": "http://www.espn.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/ESPN.hermit",
   "secondary_color": "#d6122d",

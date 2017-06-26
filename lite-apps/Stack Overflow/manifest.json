@@ -2,6 +2,7 @@
   "theme_color": "#e3652c",
   "manifest_version": 1,
   "name": "Stack Overflow",
+  "priority": 10,
   "start_url": "https://stackoverflow.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Stack%20Overflow.hermit",
   "secondary_color": "#cc5a27",

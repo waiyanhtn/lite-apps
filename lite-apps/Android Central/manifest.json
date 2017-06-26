@@ -2,6 +2,7 @@
   "theme_color": "#d7e580",
   "manifest_version": 1,
   "name": "Android Central",
+  "priority": 10,
   "start_url": "https://m.androidcentral.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Central.hermit",
   "secondary_color": "#c1ce73",

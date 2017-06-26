@@ -2,6 +2,7 @@
   "theme_color": "#000000",
   "manifest_version": 1,
   "name": "Wired",
+  "priority": 10,
   "start_url": "https://wired.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wired.hermit",
   "secondary_color": "#000000",

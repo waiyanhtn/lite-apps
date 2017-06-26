@@ -2,6 +2,7 @@
   "theme_color": "#ff8700",
   "manifest_version": 1,
   "name": "SoundCloud",
+  "priority": 10,
   "start_url": "https://m.soundcloud.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/SoundCloud.hermit",
   "secondary_color": "#e57900",

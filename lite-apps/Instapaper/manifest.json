@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Instapaper",
+  "priority": 10,
   "start_url": "https://instapaper.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Instapaper.hermit",
   "theme_color": "#9a938d",

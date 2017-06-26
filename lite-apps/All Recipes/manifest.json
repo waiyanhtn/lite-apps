@@ -2,6 +2,7 @@
   "theme_color": "#ff7e1a",
   "manifest_version": 1,
   "name": "All Recipes",
+  "priority": 10,
   "start_url": "https://allrecipes.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/All%20Recipes.hermit",
   "secondary_color": "#e57117",

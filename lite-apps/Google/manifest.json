@@ -1,6 +1,7 @@
 {
   "manifest_version": 1,
   "name": "Google",
+  "priority": 10,
   "start_url": "https://www.google.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google.hermit",
   "lang": "en",

@@ -2,6 +2,7 @@
   "theme_color": "#4689c6",
   "manifest_version": 1,
   "name": "Coursera",
+  "priority": 10,
   "start_url": "https://www.coursera.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Coursera.hermit",
   "secondary_color": "#3f7bb2",

@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Linked In",
+  "priority": 10,
   "start_url": "https://www.linkedin.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Linked%20In.hermit",
   "theme_color": "#0076b7",

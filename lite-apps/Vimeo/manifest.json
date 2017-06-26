@@ -1,6 +1,7 @@
 {
   "manifest_version": 1,
   "name": "Vimeo",
+  "priority": 10,
   "start_url": "https://www.vimeo.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Vimeo.hermit",
   "theme_color": "#00acf2",

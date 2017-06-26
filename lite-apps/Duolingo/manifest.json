@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Duolingo.hermit",
   "name": "Duolingo",
+  "priority": 10,
   "start_url": "https://www.duolingo.com/",
   "theme_color": "#75ca00",
   "secondary_color": "#6fb400",

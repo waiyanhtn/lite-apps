@@ -2,6 +2,7 @@
   "theme_color": "#008dc8",
   "manifest_version": 1,
   "name": "Axios",
+  "priority": 10,
   "start_url": "https://www.axios.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Axios.hermit",
   "secondary_color": "#007eb4",

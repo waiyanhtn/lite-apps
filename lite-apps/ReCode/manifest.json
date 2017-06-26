@@ -2,6 +2,7 @@
   "theme_color": "#c60018",
   "manifest_version": 1,
   "name": "ReCode",
+  "priority": 10,
   "start_url": "https://recode.net",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/ReCode.hermit",
   "secondary_color": "#b20015",

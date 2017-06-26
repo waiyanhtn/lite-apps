@@ -2,6 +2,7 @@
   "theme_color": "#f05714",
   "manifest_version": 1,
   "name": "AccuWeather",
+  "priority": 10,
   "start_url": "https://m.accuweather.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/AccuWeather.hermit",
   "secondary_color": "#d84e12",

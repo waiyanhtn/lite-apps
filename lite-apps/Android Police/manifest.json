@@ -2,6 +2,7 @@
   "theme_color": "#ed1b2b",
   "manifest_version": 1,
   "name": "Android Police",
+  "priority": 10,
   "start_url": "https://androidpolice.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Police.hermit",
   "secondary_color": "#d51826",

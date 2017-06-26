@@ -2,6 +2,7 @@
   "theme_color": "#ce7d00",
   "manifest_version": 1,
   "name": "Plex",
+  "priority": 10,
   "start_url": "https://plex.tv",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Plex.hermit",
   "secondary_color": "#b97000",

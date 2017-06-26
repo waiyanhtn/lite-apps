@@ -2,6 +2,7 @@
   "theme_color": "#3b438f",
   "manifest_version": 1,
   "name": "Forecast.io",
+  "priority": 10,
   "start_url": "https://forecast.io",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Forecast.io.hermit",
   "secondary_color": "#353c80",

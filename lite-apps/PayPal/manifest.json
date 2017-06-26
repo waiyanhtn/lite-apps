@@ -2,6 +2,7 @@
   "theme_color": "#009cde",
   "manifest_version": 1,
   "name": "PayPal",
+  "priority": 10,
   "start_url": "https://paypal.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/PayPal.hermit",
   "secondary_color": "#008cc7",

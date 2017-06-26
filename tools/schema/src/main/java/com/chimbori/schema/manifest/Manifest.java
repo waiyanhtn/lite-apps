@@ -16,6 +16,7 @@ public class Manifest {
   public String theme_color;
   public String secondary_color;
   public Settings hermit_settings;
+  public int priority;
 
   public List<String> tags;
   public List<Icon> icons;

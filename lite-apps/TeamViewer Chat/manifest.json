@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "TeamViewer Chat",
+  "priority": 10,
   "start_url": "https://integratedchat.teamviewer.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TeamViewer%20Chat.hermit",
   "theme_color": "#2196f3",

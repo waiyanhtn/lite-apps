@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "__MSG_facebook__",
+  "priority": 10,
   "start_url": "https://m.facebook.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook.hermit",
   "theme_color": "#3b5998",

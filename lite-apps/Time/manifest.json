@@ -2,6 +2,7 @@
   "theme_color": "#d60002",
   "manifest_version": 1,
   "name": "Time",
+  "priority": 10,
   "start_url": "https://time.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Time.hermit",
   "secondary_color": "#c00001",

@@ -2,6 +2,7 @@
   "theme_color": "#000000",
   "manifest_version": 1,
   "name": "Gizmodo",
+  "priority": 10,
   "start_url": "https://gizmodo.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Gizmodo.hermit",
   "secondary_color": "#000000",

@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Priceline",
+  "priority": 10,
   "start_url": "http://priceline.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Priceline.hermit",
   "theme_color": "#0a84c1",

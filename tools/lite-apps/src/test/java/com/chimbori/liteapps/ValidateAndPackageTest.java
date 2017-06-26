@@ -32,6 +32,7 @@ import static com.chimbori.liteapps.TestHelpers.assertIsNotEmpty;
 import static com.chimbori.liteapps.TestHelpers.assertIsURL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -129,6 +130,8 @@ public class ValidateAndPackageTest {
     assertFieldExists(tag, "secondary_color", manifest.secondary_color);
     assertFieldExists(tag, "manifest_version", manifest.manifest_version);
     assertFieldExists(tag, "icons", manifest.icons);
+    assertNotEquals(String.format("priority not defined for %s", liteApp),
+        manifest.priority, 0);
 
     // Test that the "manifest_url" field contains a valid URL.
     try {

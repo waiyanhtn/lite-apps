@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "CVS",
+  "priority": 10,
   "start_url": "http://m.cvs.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/CVS.hermit",
   "theme_color": "#cc0001",

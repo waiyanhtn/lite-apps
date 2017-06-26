@@ -2,6 +2,7 @@
   "theme_color": "#34aad2",
   "manifest_version": 1,
   "name": "Twit.tv",
+  "priority": 10,
   "start_url": "https://twit.tv",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Twit.tv.hermit",
   "secondary_color": "#2e99bd",

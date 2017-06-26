@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Coupons.com",
+  "priority": 10,
   "start_url": "https://www.coupons.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Coupons.com.hermit",
   "theme_color": "#e67452",

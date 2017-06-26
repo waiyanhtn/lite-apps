@@ -2,6 +2,7 @@
   "theme_color": "#4cc7f2",
   "manifest_version": 1,
   "name": "Folha de San Paulo",
+  "priority": 10,
   "start_url": "http://m.folha.uol.com.br",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Folha%20de%20San%20Paulo.hermit",
   "secondary_color": "#0db4eb",

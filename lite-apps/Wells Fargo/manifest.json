@@ -2,6 +2,7 @@
   "theme_color": "#f1b6bc",
   "manifest_version": 1,
   "name": "Wells Fargo",
+  "priority": 10,
   "start_url": "https://m.wellsfargo.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wells%20Fargo.hermit",
   "secondary_color": "#d8a3a9",

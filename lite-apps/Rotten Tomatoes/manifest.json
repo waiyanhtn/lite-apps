@@ -2,6 +2,7 @@
   "theme_color": "#0c89c9",
   "manifest_version": 1,
   "name": "Rotten Tomatoes",
+  "priority": 10,
   "start_url": "https://rottentomatoes.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Rotten%20Tomatoes.hermit",
   "secondary_color": "#0a7bb4",

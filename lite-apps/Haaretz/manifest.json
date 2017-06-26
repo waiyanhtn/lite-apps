@@ -2,6 +2,7 @@
   "theme_color": "#008cd4",
   "manifest_version": 1,
   "name": "Ha'aretz",
+  "priority": 10,
   "start_url": "https://haaretz.co.il",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Haaretz.hermit",
   "secondary_color": "#007ebe",

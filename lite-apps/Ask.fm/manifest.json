@@ -2,6 +2,7 @@
   "theme_color": "#ff6648",
   "manifest_version": 1,
   "name": "Ask.fm",
+  "priority": 10,
   "start_url": "https://ask.fm",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Ask.fm.hermit",
   "secondary_color": "#e55b40",

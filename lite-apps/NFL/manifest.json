@@ -2,6 +2,7 @@
   "theme_color": "#b30013",
   "manifest_version": 1,
   "name": "NFL",
+  "priority": 10,
   "start_url": "http://www.nfl.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/NFL.hermit",
   "secondary_color": "#a10011",

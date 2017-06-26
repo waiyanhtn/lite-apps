@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "__MSG_google_plus__",
+  "priority": 10,
   "start_url": "https://plus.google.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Plus.hermit",
   "theme_color": "#dd4330",

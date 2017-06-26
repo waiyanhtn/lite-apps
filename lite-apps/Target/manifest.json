@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "Target",
+  "priority": 10,
   "start_url": "https://www.target.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Target.hermit",
   "theme_color": "#cc0000",

@@ -2,6 +2,7 @@
   "theme_color": "#ffa74e",
   "manifest_version": 1,
   "name": "Reuters",
+  "priority": 10,
   "start_url": "http://www.reuters.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Reuters.hermit",
   "secondary_color": "#e59646",

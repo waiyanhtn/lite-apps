@@ -2,6 +2,7 @@
   "theme_color": "#019ed8",
   "manifest_version": 1,
   "name": "Skype",
+  "priority": 10,
   "start_url": "https://web.skype.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Skype.hermit",
   "secondary_color": "#008ec2",

@@ -2,6 +2,7 @@
   "theme_color": "#82bc17",
   "manifest_version": 1,
   "name": "Woot",
+  "priority": 10,
   "start_url": "https://woot.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Woot.hermit",
   "secondary_color": "#75a914",

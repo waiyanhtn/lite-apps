@@ -1,6 +1,7 @@
 {
   "manifest_version": 1,
   "name": "App Sales",
+  "priority": 10,
   "start_url": "http://app-sales.net/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/App%20Sales.hermit",
   "lang": "en",

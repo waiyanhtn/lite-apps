@@ -2,6 +2,7 @@
   "theme_color": "#329865",
   "manifest_version": 1,
   "name": "Wiktionary",
+  "priority": 10,
   "start_url": "https://www.wiktionary.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wiktionary.hermit",
   "secondary_color": "#2d885a",

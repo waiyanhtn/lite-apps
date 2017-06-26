@@ -2,6 +2,7 @@
   "theme_color": "#000000",
   "manifest_version": 1,
   "name": "Wikipedia",
+  "priority": 10,
   "start_url": "https://wikipedia.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wikipedia.hermit",
   "secondary_color": "#000000",

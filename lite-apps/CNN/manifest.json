@@ -2,6 +2,7 @@
   "theme_color": "#cc0000",
   "manifest_version": 1,
   "name": "CNN",
+  "priority": 10,
   "start_url": "http://cnn.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/CNN.hermit",
   "secondary_color": "#b70000",

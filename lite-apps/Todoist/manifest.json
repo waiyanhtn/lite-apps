@@ -2,6 +2,7 @@
   "theme_color": "#bc342d",
   "manifest_version": 1,
   "name": "Todoist",
+  "priority": 10,
   "start_url": "https://todoist.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Todoist.hermit",
   "secondary_color": "#a92e28",

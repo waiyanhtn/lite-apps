@@ -1,6 +1,7 @@
 {
   "manifest_version": 1,
   "name": "Giphy",
+  "priority": 10,
   "start_url": "https://giphy.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Giphy.hermit",
   "theme_color": "#fe6666",

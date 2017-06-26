@@ -2,6 +2,7 @@
   "theme_color": "#fcdabb",
   "manifest_version": 1,
   "name": "Financial Times",
+  "priority": 10,
   "start_url": "https://m.ft.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Financial%20Times.hermit",
   "secondary_color": "#e2c4a8",

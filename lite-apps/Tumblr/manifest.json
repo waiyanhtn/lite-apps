@@ -2,6 +2,7 @@
   "theme_color": "#36465d",
   "manifest_version": 1,
   "name": "Tumblr",
+  "priority": 10,
   "start_url": "https://tumblr.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Tumblr.hermit",
   "secondary_color": "#303f53",

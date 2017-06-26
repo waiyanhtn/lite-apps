@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "__MSG_reddit__",
+  "priority": 10,
   "start_url": "https://m.reddit.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Reddit.hermit",
   "theme_color": "#ff4300",

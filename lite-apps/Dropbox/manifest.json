@@ -2,6 +2,7 @@
   "theme_color": "#0aa5fb",
   "manifest_version": 1,
   "name": "Dropbox",
+  "priority": 10,
   "start_url": "https://dropbox.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Dropbox.hermit",
   "secondary_color": "#0994e1",

@@ -2,6 +2,7 @@
   "theme_color": "#e9effa",
   "manifest_version": 1,
   "name": "StartPage",
+  "priority": 10,
   "start_url": "https://www.startpage.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/StartPage.hermit",
   "secondary_color": "#d1d7e1",

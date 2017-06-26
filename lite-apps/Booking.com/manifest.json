@@ -2,6 +2,7 @@
   "theme_color": "#00246d",
   "manifest_version": 1,
   "name": "Booking.com",
+  "priority": 10,
   "start_url": "https://www.booking.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Booking.com.hermit",
   "secondary_color": "#002062",

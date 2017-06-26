@@ -2,6 +2,7 @@
   "theme_color": "#43aee0",
   "manifest_version": 1,
   "name": "Android PIT",
+  "priority": 10,
   "start_url": "https://www.androidpit.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20PIT.hermit",
   "secondary_color": "#3c9cc9",

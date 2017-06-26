@@ -2,6 +2,7 @@
   "theme_color": "#fc903b",
   "manifest_version": 1,
   "name": "Kayak",
+  "priority": 10,
   "start_url": "https://kayak.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Kayak.hermit",
   "secondary_color": "#e28135",

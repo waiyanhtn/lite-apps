@@ -2,6 +2,7 @@
   "manifest_version": 1,
   "lang": "en",
   "name": "BBC",
+  "priority": 10,
   "start_url": "https://bbc.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/BBC.hermit",
   "theme_color": "#bd160d",

@@ -2,6 +2,7 @@
   "theme_color": "#0cacf4",
   "manifest_version": 1,
   "name": "Google News",
+  "priority": 10,
   "start_url": "https://news.google.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20News.hermit",
   "secondary_color": "#0a9adb",
