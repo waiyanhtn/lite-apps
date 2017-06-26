@@ -18,6 +18,8 @@ import java.io.IOException;
 class LibraryGenerator {
   private static final int LIBRARY_ICON_SIZE = 112;
 
+  private static final String USER_AGENT_DESKTOP = "desktop";
+
   /**
    * Individual manifest.json files do not contain any information about the organization of the
    * Lite Apps in the Library (e.g. categories, order within category, whether it should be
@@ -63,8 +65,8 @@ class LibraryGenerator {
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
       String userAgent = manifest.hermit_settings != null ? manifest.hermit_settings.user_agent : null;
-      if (JSONConstants.Values.USER_AGENT_DESKTOP.equals(userAgent)) {
-        outputApp.user_agent = JSONConstants.Values.USER_AGENT_DESKTOP;
+      if (USER_AGENT_DESKTOP.equals(userAgent)) {
+        outputApp.user_agent = USER_AGENT_DESKTOP;
       }
 
       outputLibrary.addAppToCategories(outputApp, manifest.tags);

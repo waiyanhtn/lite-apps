@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TagsCollector {
-  public static void updateTagsGson() throws IOException {
+  public static void updateTagsJson() throws IOException {
     Gson gson = new GsonBuilder()
         .setPrettyPrinting()
         .create();

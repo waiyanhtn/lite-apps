@@ -36,6 +36,8 @@ import javax.imageio.ImageIO;
 class Scaffolder {
   private static final String MANIFEST_URL_TEMPLATE = "https://hermit.chimbori.com/lite-apps/%s.hermit";
 
+  private static final String LANG_EN = "en";
+
   private static final String COMMAND_LINE_OPTION_URL = "url";
   private static final String COMMAND_LINE_OPTION_NAME = "name";
 
@@ -64,7 +66,7 @@ class Scaffolder {
 
       // Constant fields, same for all apps.
       manifest.manifest_version = 1;
-      manifest.lang = JSONConstants.Values.EN;
+      manifest.lang = LANG_EN;
 
       // Fields that can be populated from the data provided on the command-line.
       manifest.name = appName;

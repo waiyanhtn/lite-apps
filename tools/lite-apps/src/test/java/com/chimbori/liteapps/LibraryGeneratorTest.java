@@ -7,18 +7,18 @@ import java.io.IOException;
 import static org.junit.Assert.fail;
 
 /**
- * Generates the library JSON file.
+ * Generates the library JSON file, updates tags.json, and reformat it.
  */
 public class LibraryGeneratorTest {
   @Test
-  public void testIndexJsonIsWellFormedAndReformat() throws IOException {
+  public void testTagsJSONIsWellFormedAndReformat() throws IOException {
     TestHelpers.assertJsonIsWellFormedAndReformat(FilePaths.SRC_TAGS_JSON_FILE);
   }
 
   @Test
   public void testUpdateTagsJSON() {
     try {
-      TagsCollector.updateTagsGson();
+      TagsCollector.updateTagsJson();
     } catch (IOException e) {
       fail(e.getMessage());
     }

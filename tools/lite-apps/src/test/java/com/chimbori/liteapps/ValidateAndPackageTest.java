@@ -18,7 +18,14 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLDecoder;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.regex.Pattern;
 
 import static com.chimbori.liteapps.TestHelpers.assertIsNotEmpty;
@@ -37,17 +44,75 @@ import static org.junit.Assert.fail;
  * - Extra files that are not part of the expected structure.
  */
 @RunWith(Parameterized.class)
-public class ValidatorTest extends ParameterizedLiteAppTest {
+public class ValidateAndPackageTest {
   private static final String HEX_COLOR_REGEXP = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
   private static final Pattern HEX_COLOR_PATTERN = Pattern.compile(HEX_COLOR_REGEXP);
 
-  public ValidatorTest(File liteApp) {
-    super(liteApp);
+  private static final String GOOGLE_PLAY = "play";
+
+  private static final HashSet<String> SETTINGS_SET = new HashSet<>(Arrays.asList(
+      "block_malware",
+      "block_popups",
+      "block_third_party_cookies",
+      "browser",
+      "day_night_mode",
+      "do_not_track",
+      "in_app",
+      "javascript",
+      "load_images",
+      "night_mode_page_style",
+      "open_links",
+      "preferred_view",
+      "pull_to_refresh",
+      "save_data",
+      "scroll_to_top",
+      "text_zoom",
+      "user_agent"
+  ));
+
+  private final File liteApp;
+
+  public ValidateAndPackageTest(File liteApp) {
+    this.liteApp = liteApp;
+  }
+
+  @Parameterized.Parameters
+  public static Collection listOfLiteApps() {
+    return Arrays.asList(FilePaths.SRC_ROOT_DIR.listFiles(File::isDirectory));
   }
 
   @Before
   public void setUp() {
     FilePaths.OUT_LITE_APPS_DIR.delete();
+  }
+
+  @Test
+  public void testPackageAllLiteApps() {
+    assertTrue("Packaging failed for " + liteApp.getName(), Packager.packageManifest(liteApp));
+  }
+
+  @Test
+  public void testParseJSONStrictlyAndCheckWellFormed() throws IOException {
+    Files.walkFileTree(liteApp.toPath(), new SimpleFileVisitor<Path>() {
+      @Override
+      public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+        if (attrs.isRegularFile() && file.toFile().getName().endsWith(".json")) {
+          TestHelpers.assertJsonIsWellFormedAndReformat(file.toFile());
+        }
+        return FileVisitResult.CONTINUE;
+      }
+
+      @Override
+      public FileVisitResult visitFileFailed(Path file, IOException e) throws IOException {
+        fail(e.getMessage());
+        return FileVisitResult.CONTINUE;
+      }
+    });
+  }
+
+  @Test
+  public void testIconIs300x300() {
+    TestHelpers.assertThatIconIs300x300(new File(liteApp, FilePaths.ICON_FILENAME));
   }
 
   @Test
@@ -102,7 +167,7 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
     for (RelatedApplication relatedApplication : manifest.related_applications) {
-      assertEquals(JSONConstants.Values.PLAY, relatedApplication.platform);
+      assertEquals(GOOGLE_PLAY, relatedApplication.platform);
       assertFalse(relatedApplication.id.isEmpty());
       assertTrue(relatedApplication.url.startsWith("https://play.google.com/store/apps/details?id="));
       assertTrue(relatedApplication.url.endsWith(relatedApplication.id));
@@ -157,8 +222,7 @@ public class ValidatorTest extends ParameterizedLiteAppTest {
     LinkedTreeMap settings = (LinkedTreeMap<String, Object>) json.get("hermit_settings");
     if (settings != null) {
       for (Object key : settings.keySet()) {
-        assertTrue(String.format("Unexpected setting found: [%s] in [%s]", key, tag),
-          JSONConstants.SETTINGS_SET.contains(key));
+        assertTrue(String.format("Unexpected setting found: [%s] in [%s]", key, tag), SETTINGS_SET.contains(key));
       }
     }
   }
