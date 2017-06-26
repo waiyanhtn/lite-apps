@@ -345,31 +345,6 @@
     },
     {
       "category": {
-        "name": "Sports"
-      },
-      "apps": [
-        {
-          "app": "ESPN.hermit",
-          "theme_color": "#ee1533",
-          "name": "ESPN",
-          "url": "http://www.espn.com"
-        },
-        {
-          "app": "NFL.hermit",
-          "theme_color": "#b30013",
-          "name": "NFL",
-          "url": "http://www.nfl.com"
-        },
-        {
-          "app": "NHL.hermit",
-          "theme_color": "#000000",
-          "name": "NHL",
-          "url": "https://www.nhl.com"
-        }
-      ]
-    },
-    {
-      "category": {
         "name": "Technology"
       },
       "apps": [
@@ -498,116 +473,6 @@
           "theme_color": "#ff8600",
           "name": "XDA Developers",
           "url": "https://xda-developers.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Banking \u0026 Financial"
-      },
-      "apps": [
-        {
-          "app": "American Express.hermit",
-          "theme_color": "#103a79",
-          "name": "American Express",
-          "url": "https://www.americanexpress.com"
-        },
-        {
-          "app": "Bank of America.hermit",
-          "theme_color": "#dc1431",
-          "name": "Bank of America",
-          "url": "https://bankofamerica.com"
-        },
-        {
-          "app": "Capital One 360.hermit",
-          "theme_color": "#99d7ee",
-          "name": "Capital One 360",
-          "url": "https://home.capitalone360.com"
-        },
-        {
-          "app": "Chase.hermit",
-          "theme_color": "#0459a9",
-          "name": "Chase",
-          "url": "https://m.chase.com/"
-        },
-        {
-          "app": "Citibank.hermit",
-          "theme_color": "#004278",
-          "name": "Citibank",
-          "url": "https://online.citi.com"
-        },
-        {
-          "app": "PayPal.hermit",
-          "theme_color": "#009cde",
-          "name": "PayPal",
-          "url": "https://paypal.com"
-        },
-        {
-          "app": "PayTM.hermit",
-          "theme_color": "#012b72",
-          "name": "PayTM",
-          "url": "https://paytm.com"
-        },
-        {
-          "app": "RBC Canada.hermit",
-          "theme_color": "#263780",
-          "name": "RBC Canada",
-          "url": "https://www.rbcroyalbank.com"
-        },
-        {
-          "app": "Wells Fargo.hermit",
-          "theme_color": "#f1b6bc",
-          "name": "Wells Fargo",
-          "url": "https://m.wellsfargo.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Education"
-      },
-      "apps": [
-        {
-          "app": "Wikipedia.hermit",
-          "theme_color": "#000000",
-          "name": "Wikipedia",
-          "url": "https://wikipedia.org"
-        },
-        {
-          "app": "Coursera.hermit",
-          "theme_color": "#4689c6",
-          "name": "Coursera",
-          "url": "https://www.coursera.org"
-        },
-        {
-          "app": "Duolingo.hermit",
-          "theme_color": "#75ca00",
-          "name": "Duolingo",
-          "url": "https://www.duolingo.com/"
-        },
-        {
-          "app": "Instructables.hermit",
-          "theme_color": "#f9bc58",
-          "name": "Instructables",
-          "url": "https://m.instructables.com"
-        },
-        {
-          "app": "Khan Academy.hermit",
-          "theme_color": "#9cb639",
-          "name": "Khan Academy",
-          "url": "https://khanacademy.org"
-        },
-        {
-          "app": "Wiktionary.hermit",
-          "theme_color": "#329865",
-          "name": "Wiktionary",
-          "url": "https://www.wiktionary.org"
-        },
-        {
-          "app": "Wolfram Alpha.hermit",
-          "theme_color": "#f3a294",
-          "name": "Wolfram Alpha",
-          "url": "http://m.wolframalpha.com"
         }
       ]
     },
@@ -746,6 +611,67 @@
     },
     {
       "category": {
+        "name": "Banking \u0026 Financial"
+      },
+      "apps": [
+        {
+          "app": "American Express.hermit",
+          "theme_color": "#103a79",
+          "name": "American Express",
+          "url": "https://www.americanexpress.com"
+        },
+        {
+          "app": "Bank of America.hermit",
+          "theme_color": "#dc1431",
+          "name": "Bank of America",
+          "url": "https://bankofamerica.com"
+        },
+        {
+          "app": "Capital One 360.hermit",
+          "theme_color": "#99d7ee",
+          "name": "Capital One 360",
+          "url": "https://home.capitalone360.com"
+        },
+        {
+          "app": "Chase.hermit",
+          "theme_color": "#0459a9",
+          "name": "Chase",
+          "url": "https://m.chase.com/"
+        },
+        {
+          "app": "Citibank.hermit",
+          "theme_color": "#004278",
+          "name": "Citibank",
+          "url": "https://online.citi.com"
+        },
+        {
+          "app": "PayPal.hermit",
+          "theme_color": "#009cde",
+          "name": "PayPal",
+          "url": "https://paypal.com"
+        },
+        {
+          "app": "PayTM.hermit",
+          "theme_color": "#012b72",
+          "name": "PayTM",
+          "url": "https://paytm.com"
+        },
+        {
+          "app": "RBC Canada.hermit",
+          "theme_color": "#263780",
+          "name": "RBC Canada",
+          "url": "https://www.rbcroyalbank.com"
+        },
+        {
+          "app": "Wells Fargo.hermit",
+          "theme_color": "#f1b6bc",
+          "name": "Wells Fargo",
+          "url": "https://m.wellsfargo.com"
+        }
+      ]
+    },
+    {
+      "category": {
         "name": "Tools \u0026 Productivity"
       },
       "apps": [
@@ -808,103 +734,6 @@
           "theme_color": "#bc342d",
           "name": "Todoist",
           "url": "https://todoist.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Food, Travel, Photography"
-      },
-      "apps": [
-        {
-          "app": "TripAdvisor.hermit",
-          "theme_color": "#1e892f",
-          "name": "TripAdvisor",
-          "url": "https://tripadvisor.com"
-        },
-        {
-          "app": "Yelp.hermit",
-          "theme_color": "#d01e0c",
-          "name": "Yelp",
-          "url": "https://m.yelp.com"
-        },
-        {
-          "app": "Zomato.hermit",
-          "theme_color": "#cb202d",
-          "name": "Zomato",
-          "url": "https://zomato.com"
-        },
-        {
-          "app": "All Recipes.hermit",
-          "theme_color": "#ff7e1a",
-          "name": "All Recipes",
-          "url": "https://allrecipes.com"
-        },
-        {
-          "app": "Booking.com.hermit",
-          "theme_color": "#00246d",
-          "name": "Booking.com",
-          "url": "https://www.booking.com"
-        },
-        {
-          "app": "Delta Airlines.hermit",
-          "theme_color": "#18408b",
-          "name": "Delta Airlines",
-          "url": "https://m.delta.com"
-        },
-        {
-          "app": "Deviant Art.hermit",
-          "theme_color": "#06cc47",
-          "name": "Deviant Art",
-          "url": "https://deviantart.com"
-        },
-        {
-          "app": "Flickr.hermit",
-          "theme_color": "#0d64d2",
-          "name": "Flickr",
-          "url": "https://flickr.com"
-        },
-        {
-          "app": "Fuelly.hermit",
-          "theme_color": "#3eb9ae",
-          "name": "Fuelly",
-          "url": "https://www.fuelly.com/"
-        },
-        {
-          "app": "Kayak.hermit",
-          "theme_color": "#fc903b",
-          "name": "Kayak",
-          "url": "https://kayak.com"
-        },
-        {
-          "app": "OpenTable.hermit",
-          "theme_color": "#c9101d",
-          "name": "OpenTable",
-          "url": "https://m.opentable.com"
-        },
-        {
-          "app": "Orbitz.hermit",
-          "theme_color": "#00b1ff",
-          "name": "Orbitz",
-          "url": "https://www.orbitz.com"
-        },
-        {
-          "app": "Priceline.hermit",
-          "theme_color": "#0a84c1",
-          "name": "Priceline",
-          "url": "http://priceline.com"
-        },
-        {
-          "app": "United Airlines.hermit",
-          "theme_color": "#000099",
-          "name": "United Airlines",
-          "url": "https://mobile.united.com"
-        },
-        {
-          "app": "Yummly.hermit",
-          "theme_color": "#e0601e",
-          "name": "Yummly",
-          "url": "https://yummly.com"
         }
       ]
     },
@@ -996,6 +825,191 @@
           "theme_color": "#82bc17",
           "name": "Woot",
           "url": "https://woot.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Travel"
+      },
+      "apps": [
+        {
+          "app": "TripAdvisor.hermit",
+          "theme_color": "#1e892f",
+          "name": "TripAdvisor",
+          "url": "https://tripadvisor.com"
+        },
+        {
+          "app": "Booking.com.hermit",
+          "theme_color": "#00246d",
+          "name": "Booking.com",
+          "url": "https://www.booking.com"
+        },
+        {
+          "app": "Delta Airlines.hermit",
+          "theme_color": "#18408b",
+          "name": "Delta Airlines",
+          "url": "https://m.delta.com"
+        },
+        {
+          "app": "Fuelly.hermit",
+          "theme_color": "#3eb9ae",
+          "name": "Fuelly",
+          "url": "https://www.fuelly.com/"
+        },
+        {
+          "app": "Kayak.hermit",
+          "theme_color": "#fc903b",
+          "name": "Kayak",
+          "url": "https://kayak.com"
+        },
+        {
+          "app": "Orbitz.hermit",
+          "theme_color": "#00b1ff",
+          "name": "Orbitz",
+          "url": "https://www.orbitz.com"
+        },
+        {
+          "app": "Priceline.hermit",
+          "theme_color": "#0a84c1",
+          "name": "Priceline",
+          "url": "http://priceline.com"
+        },
+        {
+          "app": "United Airlines.hermit",
+          "theme_color": "#000099",
+          "name": "United Airlines",
+          "url": "https://mobile.united.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Education"
+      },
+      "apps": [
+        {
+          "app": "Wikipedia.hermit",
+          "theme_color": "#000000",
+          "name": "Wikipedia",
+          "url": "https://wikipedia.org"
+        },
+        {
+          "app": "Coursera.hermit",
+          "theme_color": "#4689c6",
+          "name": "Coursera",
+          "url": "https://www.coursera.org"
+        },
+        {
+          "app": "Duolingo.hermit",
+          "theme_color": "#75ca00",
+          "name": "Duolingo",
+          "url": "https://www.duolingo.com/"
+        },
+        {
+          "app": "Instructables.hermit",
+          "theme_color": "#f9bc58",
+          "name": "Instructables",
+          "url": "https://m.instructables.com"
+        },
+        {
+          "app": "Khan Academy.hermit",
+          "theme_color": "#9cb639",
+          "name": "Khan Academy",
+          "url": "https://khanacademy.org"
+        },
+        {
+          "app": "Wiktionary.hermit",
+          "theme_color": "#329865",
+          "name": "Wiktionary",
+          "url": "https://www.wiktionary.org"
+        },
+        {
+          "app": "Wolfram Alpha.hermit",
+          "theme_color": "#f3a294",
+          "name": "Wolfram Alpha",
+          "url": "http://m.wolframalpha.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Food and Cuisine"
+      },
+      "apps": [
+        {
+          "app": "Yelp.hermit",
+          "theme_color": "#d01e0c",
+          "name": "Yelp",
+          "url": "https://m.yelp.com"
+        },
+        {
+          "app": "Zomato.hermit",
+          "theme_color": "#cb202d",
+          "name": "Zomato",
+          "url": "https://zomato.com"
+        },
+        {
+          "app": "All Recipes.hermit",
+          "theme_color": "#ff7e1a",
+          "name": "All Recipes",
+          "url": "https://allrecipes.com"
+        },
+        {
+          "app": "OpenTable.hermit",
+          "theme_color": "#c9101d",
+          "name": "OpenTable",
+          "url": "https://m.opentable.com"
+        },
+        {
+          "app": "Yummly.hermit",
+          "theme_color": "#e0601e",
+          "name": "Yummly",
+          "url": "https://yummly.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Art and Photography"
+      },
+      "apps": [
+        {
+          "app": "Deviant Art.hermit",
+          "theme_color": "#06cc47",
+          "name": "Deviant Art",
+          "url": "https://deviantart.com"
+        },
+        {
+          "app": "Flickr.hermit",
+          "theme_color": "#0d64d2",
+          "name": "Flickr",
+          "url": "https://flickr.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Sports"
+      },
+      "apps": [
+        {
+          "app": "ESPN.hermit",
+          "theme_color": "#ee1533",
+          "name": "ESPN",
+          "url": "http://www.espn.com"
+        },
+        {
+          "app": "NFL.hermit",
+          "theme_color": "#b30013",
+          "name": "NFL",
+          "url": "http://www.nfl.com"
+        },
+        {
+          "app": "NHL.hermit",
+          "theme_color": "#000000",
+          "name": "NHL",
+          "url": "https://www.nhl.com"
         }
       ]
     },

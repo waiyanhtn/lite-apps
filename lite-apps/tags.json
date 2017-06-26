@@ -13,28 +13,34 @@
       "name": "News"
     },
     {
-      "name": "Sports"
-    },
-    {
       "name": "Technology"
-    },
-    {
-      "name": "Banking & Financial"
-    },
-    {
-      "name": "Education"
     },
     {
       "name": "Entertainment"
     },
     {
+      "name": "Banking & Financial"
+    },
+    {
       "name": "Tools & Productivity"
     },
     {
-      "name": "Food, Travel, Photography"
+      "name": "Shopping"
     },
     {
-      "name": "Shopping"
+      "name": "Travel"
+    },
+    {
+      "name": "Education"
+    },
+    {
+      "name": "Food and Cuisine"
+    },
+    {
+      "name": "Art and Photography"
+    },
+    {
+      "name": "Sports"
     },
     {
       "name": "Email"
