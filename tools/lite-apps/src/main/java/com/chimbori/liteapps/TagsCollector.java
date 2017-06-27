@@ -6,6 +6,7 @@ import com.chimbori.schema.library.LibraryTagsList;
 import com.chimbori.schema.manifest.Manifest;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonSyntaxException;
 
 import java.io.File;
 import java.io.FileReader;
@@ -35,7 +36,13 @@ public class TagsCollector {
         throw new MissingManifestException(liteAppDirectory.getName());
       }
 
-      Manifest manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
+      Manifest manifest;
+      try {
+        manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
+      } catch (JsonSyntaxException e) {
+        System.err.println("Failed to parse JSON: " + liteAppDirectory.getName());
+        throw e;
+      }
 
       // For all tags applied to this manifest, check if they exist in the global tags list.
       if (manifest.tags != null) {
