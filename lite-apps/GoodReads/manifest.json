@@ -2,7 +2,7 @@
   "theme_color": "#e7e0c3",
   "manifest_version": 1,
   "name": "GoodReads",
-  "priority": 10,
+  "priority": 50,
   "start_url": "https://www.goodreads.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/GoodReads.hermit",
   "secondary_color": "#cfc9af",
@@ -20,6 +20,6 @@
     }
   ],
   "tags": [
-    "Entertainment"
+    "Books"
   ]
 }
