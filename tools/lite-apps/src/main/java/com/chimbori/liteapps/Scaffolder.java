@@ -74,6 +74,7 @@ class Scaffolder {
       manifest.manifest_url = String.format(MANIFEST_URL_TEMPLATE, URLEncoder.encode(appName, "UTF-8").replace("+", "%20"));
 
       // Empty fields that must be manually populated.
+      manifest.priority = 10;
       manifest.tags = new ArrayList<>(Arrays.asList(new String[]{"TODO"} ));
 
       // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
