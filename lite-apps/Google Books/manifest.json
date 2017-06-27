@@ -18,8 +18,7 @@
   "hermit_search": [
     {
       "url": "https://www.google.com/search?tbm=bks&q=%s",
-      "name": "Search",
-      "selector": ""
+      "name": "Search"
     }
   ]
 }
