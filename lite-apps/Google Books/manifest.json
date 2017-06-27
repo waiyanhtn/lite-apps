@@ -1,0 +1,25 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "Google Books",
+  "start_url": "https://books.google.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Books.hermit",
+  "theme_color": "#3ed7fa",
+  "secondary_color": "#37c1e1",
+  "priority": 10,
+  "tags": [
+    "Books"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_search": [
+    {
+      "url": "https://www.google.com/search?tbm=bks&q=%s",
+      "name": "Search",
+      "selector": ""
+    }
+  ]
+}

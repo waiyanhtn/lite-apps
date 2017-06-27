@@ -536,12 +536,6 @@
           "url": "https://giphy.com"
         },
         {
-          "app": "GoodReads.hermit",
-          "theme_color": "#e7e0c3",
-          "name": "GoodReads",
-          "url": "https://www.goodreads.com"
-        },
-        {
           "app": "Hotstar.hermit",
           "theme_color": "#6f6f00",
           "name": "Hotstar",
@@ -852,6 +846,12 @@
           "url": "https://m.delta.com"
         },
         {
+          "app": "Enterprise.hermit",
+          "theme_color": "#01975a",
+          "name": "Enterprise",
+          "url": "https://www.enterprise.com"
+        },
+        {
           "app": "Fuelly.hermit",
           "theme_color": "#3eb9ae",
           "name": "Fuelly",
@@ -990,6 +990,43 @@
     },
     {
       "category": {
+        "name": "Books"
+      },
+      "apps": [
+        {
+          "app": "Amazon.hermit",
+          "theme_color": "#3680ba",
+          "name": "Amazon",
+          "url": "https://amazon.com"
+        },
+        {
+          "app": "GoodReads.hermit",
+          "theme_color": "#e7e0c3",
+          "name": "GoodReads",
+          "url": "https://www.goodreads.com"
+        },
+        {
+          "app": "Kobo.hermit",
+          "theme_color": "#007aba",
+          "name": "Kobo",
+          "url": "https://www.kobo.com"
+        },
+        {
+          "app": "Books A Million.hermit",
+          "theme_color": "#366e9e",
+          "name": "Books A Million",
+          "url": "https://m.booksamillion.com"
+        },
+        {
+          "app": "Google Books.hermit",
+          "theme_color": "#3ed7fa",
+          "name": "Google Books",
+          "url": "https://books.google.com"
+        }
+      ]
+    },
+    {
+      "category": {
         "name": "Sports"
       },
       "apps": [
@@ -1073,6 +1110,25 @@
           "name": "Mega",
           "url": "https://mega.nz",
           "user_agent": "desktop"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Home and Lifestyle"
+      },
+      "apps": [
+        {
+          "app": "Realtor.hermit",
+          "theme_color": "#db251c",
+          "name": "Realtor",
+          "url": "http://www.realtor.com"
+        },
+        {
+          "app": "Trulia.hermit",
+          "theme_color": "#57a418",
+          "name": "Trulia",
+          "url": "https://m.trulia.com"
         }
       ]
     },

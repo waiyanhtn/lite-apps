@@ -1,0 +1,117 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "Trulia",
+  "start_url": "https://m.trulia.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Trulia.hermit",
+  "theme_color": "#57a418",
+  "secondary_color": "#4e9315",
+  "priority": 10,
+  "tags": [
+    "Home and Lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ],
+  "hermit_bookmarks": [
+    {
+      "url": "http://hastrk1.com/serve?action=click&publisher_id=60010&site_id=17314&offer_id=249772",
+      "name": "Trulia For Sale App",
+      "selector": ""
+    },
+    {
+      "url": "https://www.trulia.com/help",
+      "name": "Help Center",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com#",
+      "name": "Search",
+      "selector": ""
+    },
+    {
+      "url": "https://www.trulia.com/roomforrent/landing",
+      "name": "List a rental property",
+      "selector": ""
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.trulia.android.mortgage",
+      "name": "Trulia Mortgage App",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com/",
+      "name": "Home",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com/sell/?ts=trulia&tscamp=global_nav_mobilesite_sell/",
+      "name": "What's My Home Worth?",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com/directory/",
+      "name": "Find an Agent",
+      "selector": ""
+    },
+    {
+      "url": "http://hastrk1.com/serve?action=click&publisher_id=60010&site_id=17646&offer_id=249958",
+      "name": "Trulia Rentals App",
+      "selector": ""
+    },
+    {
+      "url": "https://www.trulia.com/mortgage-rates/",
+      "name": "Mortgage",
+      "selector": ""
+    },
+    {
+      "url": "https://www.trulia.com/mortgage-payment-calculator/",
+      "name": "Mortgage Calculator",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com/voices/",
+      "name": "Advice",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com/leave_feedback/?chrome=mobileSite",
+      "name": "Leave Feedback",
+      "selector": ""
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.trulia.android.agent",
+      "name": "Trulia Agent App",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com/login",
+      "name": "Login / Create Account NEW PROFILE, CHECK IT OUT!",
+      "selector": ""
+    },
+    {
+      "url": "https://www.trulia.com/real_estate/New_York-New_York/",
+      "name": "Local Info",
+      "selector": ""
+    },
+    {
+      "url": "https://m.trulia.com/local-info/cities",
+      "name": "Neighborhood Guides",
+      "selector": ""
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.trulia.android.mortgage",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.trulia.android.mortgage"
+    },
+    {
+      "id": "com.trulia.android.agent",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.trulia.android.agent"
+    }
+  ]
+}

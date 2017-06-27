@@ -1,0 +1,18 @@
+{
+  "manifest_version": 1,
+  "lang": "en",
+  "name": "Books A Million",
+  "start_url": "https://m.booksamillion.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Books%20A%20Million.hermit",
+  "theme_color": "#366e9e",
+  "secondary_color": "#30638e",
+  "priority": 10,
+  "tags": [
+    "Books"
+  ],
+  "icons": [
+    {
+      "src": "icon.png"
+    }
+  ]
+}
