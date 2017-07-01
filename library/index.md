@@ -12,7 +12,7 @@ description: Library of free Hermit Lite Apps
 
 <div class="lite-app-icons lite-apps-json"></div>
 
-<p class="tooltip">Want to see a site listed here? <a href="https://facebook.com/hermitapp">Recommend a site</a>.</p>
+<p class="tooltip">Recommend Lite Apps to add to <span class="notranslate">Hermit</span> Library: email hello@chimbori.com.</p>
 
 <p class="tooltip">All product names, icons, and web sites linked from this page are trademarks of their respective owners. <span class="notranslate">Hermit</span> only provides these links as a courtesy and may not be held accountable for their contents.</p>
 
