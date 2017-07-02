@@ -1,0 +1,3 @@
+[submodule "tools/schema"]
+	path = tools/schema
+	url = /Users/manas/Dropbox/Manas/Source/Android/Hermit/Schema
