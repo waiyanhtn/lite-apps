@@ -1,10 +1,10 @@
 package com.chimbori.liteapps;
 
 import com.chimbori.common.FileUtils;
-import com.chimbori.schema.library.Library;
-import com.chimbori.schema.library.LibraryApp;
-import com.chimbori.schema.library.LibraryTagsList;
-import com.chimbori.schema.manifest.Manifest;
+import com.chimbori.hermitcrab.schema.library.Library;
+import com.chimbori.hermitcrab.schema.library.LibraryApp;
+import com.chimbori.hermitcrab.schema.library.LibraryTagsList;
+import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

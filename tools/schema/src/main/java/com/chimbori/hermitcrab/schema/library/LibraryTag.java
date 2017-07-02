@@ -1,4 +1,4 @@
-package com.chimbori.schema.library;
+package com.chimbori.hermitcrab.schema.library;
 
 public class LibraryTag {
   public String name;

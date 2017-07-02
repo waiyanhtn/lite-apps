@@ -3,8 +3,8 @@ package com.chimbori.liteapps;
 import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
 import com.chimbori.common.Log;
-import com.chimbori.schema.manifest.Icon;
-import com.chimbori.schema.manifest.Manifest;
+import com.chimbori.hermitcrab.schema.manifest.Icon;
+import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

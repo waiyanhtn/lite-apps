@@ -1,8 +1,8 @@
 package com.chimbori.liteapps;
 
-import com.chimbori.schema.manifest.Endpoint;
-import com.chimbori.schema.manifest.Manifest;
-import com.chimbori.schema.manifest.RelatedApplication;
+import com.chimbori.hermitcrab.schema.manifest.Endpoint;
+import com.chimbori.hermitcrab.schema.manifest.Manifest;
+import com.chimbori.hermitcrab.schema.manifest.RelatedApplication;
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
 

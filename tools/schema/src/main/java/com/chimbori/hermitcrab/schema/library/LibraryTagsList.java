@@ -1,4 +1,4 @@
-package com.chimbori.schema.library;
+package com.chimbori.hermitcrab.schema.library;
 
 import com.google.gson.Gson;
 

@@ -1,4 +1,4 @@
-package com.chimbori.schema.manifest;
+package com.chimbori.hermitcrab.schema.manifest;
 
 public class RelatedApplication {
   private static final String PLAY_STORE_URL_TEMPLATE = "https://play.google.com/store/apps/details?id=";

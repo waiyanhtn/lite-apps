@@ -1,9 +1,10 @@
 package com.chimbori.liteapps;
 
-import com.chimbori.schema.manifest.Endpoint;
-import com.chimbori.schema.manifest.Icon;
-import com.chimbori.schema.manifest.Manifest;
-import com.chimbori.schema.manifest.RelatedApplication;
+
+import com.chimbori.hermitcrab.schema.manifest.Endpoint;
+import com.chimbori.hermitcrab.schema.manifest.Icon;
+import com.chimbori.hermitcrab.schema.manifest.Manifest;
+import com.chimbori.hermitcrab.schema.manifest.RelatedApplication;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

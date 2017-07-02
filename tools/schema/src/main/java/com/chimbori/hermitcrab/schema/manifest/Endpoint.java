@@ -1,4 +1,4 @@
-package com.chimbori.schema.manifest;
+package com.chimbori.hermitcrab.schema.manifest;
 
 public class Endpoint {
   public String url = "";
