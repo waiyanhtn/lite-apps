@@ -1,12 +1,12 @@
 package com.chimbori.liteapps;
 
 import com.chimbori.common.FileUtils;
+import com.chimbori.hermitcrab.schema.gson.GsonInstance;
 import com.chimbori.hermitcrab.schema.library.Library;
 import com.chimbori.hermitcrab.schema.library.LibraryApp;
 import com.chimbori.hermitcrab.schema.library.LibraryTagsList;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import net.coobird.thumbnailator.Thumbnails;
 
@@ -33,9 +33,7 @@ class LibraryGenerator {
    * https://hermit.chimbori.com/library.
    */
   public static void generateLibraryData() throws IOException {
-    Gson gson = new GsonBuilder()
-        .setPrettyPrinting()
-        .create();
+    Gson gson = GsonInstance.getPrettyPrinter();
 
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.

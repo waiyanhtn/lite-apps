@@ -1,5 +1,6 @@
 package com.chimbori.liteapps;
 
+import com.chimbori.hermitcrab.schema.gson.GsonInstance;
 import com.chimbori.hermitcrab.schema.manifest.Endpoint;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.chimbori.hermitcrab.schema.manifest.RelatedApplication;
@@ -214,7 +215,7 @@ public class ValidateAndPackageTest {
   }
 
   private void validateSettings(String tag, File manifest) {
-    Gson gson = new Gson();
+    Gson gson = GsonInstance.getMinifier();
     LinkedTreeMap<String, Object> json = null;
     try {
       json = (LinkedTreeMap<String, Object>) gson.fromJson(new FileReader(manifest), Object.class);
@@ -235,7 +236,7 @@ public class ValidateAndPackageTest {
       fail("Not found: " + file.getAbsolutePath());
     }
 
-    Gson gson = new Gson();
+    Gson gson = GsonInstance.getMinifier();
     try {
       return file.exists() ? gson.fromJson(new FileReader(file), Manifest.class) : null;
     } catch (IOException e) {

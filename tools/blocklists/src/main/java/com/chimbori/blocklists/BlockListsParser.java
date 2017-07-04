@@ -3,9 +3,9 @@ package com.chimbori.blocklists;
 import com.chimbori.blocklists.json.AppManifestBlockList;
 import com.chimbori.blocklists.json.BlockListsIndex;
 import com.chimbori.common.FileUtils;
+import com.chimbori.hermitcrab.schema.gson.GsonInstance;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -149,7 +149,7 @@ public class BlockListsParser {
 
     System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
 
-    Gson gson = shouldMinify ? new Gson() : new GsonBuilder().setPrettyPrinting().create();
+    Gson gson = shouldMinify ? GsonInstance.getMinifier() : GsonInstance.getPrettyPrinter();
 
     FileUtils.writeFile(new File(rootDirectory, fileName), gson.toJson(appManifestBlockList));
   }
@@ -168,7 +168,8 @@ public class BlockListsParser {
   }
 
   private static BlockListsIndex readIndexJsonWithGson() throws IOException {
-    Gson gson = new Gson();
-    return gson.fromJson(FileUtils.readFully(new FileInputStream(FilePaths.SRC_BLOCK_LISTS_JSON)), BlockListsIndex.class);
+    return GsonInstance.getMinifier().fromJson(
+        FileUtils.readFully(new FileInputStream(FilePaths.SRC_BLOCK_LISTS_JSON)),
+        BlockListsIndex.class);
   }
 }

@@ -3,10 +3,9 @@ package com.chimbori.liteapps;
 import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
 import com.chimbori.common.Log;
+import com.chimbori.hermitcrab.schema.gson.GsonInstance;
 import com.chimbori.hermitcrab.schema.manifest.Icon;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -47,13 +46,12 @@ class Scaffolder {
    */
   private static void createScaffolding(String startUrl, String appName) throws IOException {
     File liteAppDirectoryRoot = new File(FilePaths.SRC_ROOT_DIR, appName);
-    Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     Manifest manifest;
     File manifestJsonFile = new File(liteAppDirectoryRoot, FilePaths.MANIFEST_JSON_FILE_NAME);
     // If the manifest.json exists, read it before modifying, else create a new JSON object.
     if (manifestJsonFile.exists()) {
-      manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
+      manifest = Manifest.fromGson(GsonInstance.getMinifier(), new FileReader(manifestJsonFile));
     } else {
       Log.i("Creating new Lite App %s", appName);
       // Create the root directory if it doesn’t exist yet.
@@ -80,7 +78,9 @@ class Scaffolder {
       // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
       // This way, we can avoid additional typing, and the validator will check for the presence
       // of the file anyway (and fail as expected).
-      manifest.addIcon(new Icon(FilePaths.ICON_FILENAME));
+      Icon icon = new Icon();
+      icon.src = FilePaths.ICON_FILENAME;
+      manifest.addIcon(icon);
     }
 
     // TODO: Fetch favicon or apple-touch-icon.
@@ -121,7 +121,7 @@ class Scaffolder {
     }
 
     // Write the output manifest.
-    FileUtils.writeFile(manifestJsonFile, manifest.toJson(gson));
+    FileUtils.writeFile(manifestJsonFile, manifest.toJson(GsonInstance.getMinifier()));
   }
 
   public static void main(String[] arguments) {

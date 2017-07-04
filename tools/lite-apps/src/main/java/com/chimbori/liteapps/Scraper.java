@@ -13,7 +13,6 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -75,7 +74,9 @@ public class Scraper {
       iconUrl = doc.select("link[rel=apple-touch-icon-precomposed]").attr("abs:href");
     }
     if (iconUrl != null) {
-      manifest.addIcon(new Icon(iconUrl));
+      Icon icon = new Icon();
+      icon.src = iconUrl;
+      manifest.addIcon(icon);
     }
 
     manifest.hermit_bookmarks = findBookmarkableLinks();
@@ -85,7 +86,7 @@ public class Scraper {
     return manifest;
   }
 
-  private Collection<RelatedApplication> findRelatedApps() {
+  private List<RelatedApplication> findRelatedApps() {
     List<RelatedApplication> relatedApps = new ArrayList<>();
     Elements playStoreLinks = doc.select("a[href*=play.google.com]");
     for (Element playStoreLink : playStoreLinks) {
@@ -99,7 +100,7 @@ public class Scraper {
     return relatedApps;
   }
 
-  private Collection<Endpoint> findAtomAndRssFeeds() {
+  private List<Endpoint> findAtomAndRssFeeds() {
     List<Endpoint> feeds = new ArrayList<>();
     Elements atomOrRssFeeds = doc.select("link[type=application/rss+xml], link[type=application/atom+xml]");
     for (Element feed : atomOrRssFeeds) {
@@ -108,7 +109,7 @@ public class Scraper {
     return feeds;
   }
 
-  private Collection<Endpoint> findBookmarkableLinks() {
+  private List<Endpoint> findBookmarkableLinks() {
     // Use a Map so we can ensure that we only keep one Endpoint per URL if the same URL appears
     // more than once in the navigation links.
     Map<String, Endpoint> bookmarkableLinks = new HashMap<>();
@@ -127,6 +128,6 @@ public class Scraper {
       }
     }
 
-    return bookmarkableLinks.values();
+    return new ArrayList<>(bookmarkableLinks.values());
   }
 }
