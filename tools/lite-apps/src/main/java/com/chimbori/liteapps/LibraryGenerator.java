@@ -1,7 +1,7 @@
 package com.chimbori.liteapps;
 
 import com.chimbori.common.FileUtils;
-import com.chimbori.hermitcrab.schema.gson.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.library.Library;
 import com.chimbori.hermitcrab.schema.library.LibraryApp;
 import com.chimbori.hermitcrab.schema.library.LibraryTagsList;

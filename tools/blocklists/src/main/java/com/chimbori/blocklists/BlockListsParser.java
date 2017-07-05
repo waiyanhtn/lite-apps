@@ -3,7 +3,7 @@ package com.chimbori.blocklists;
 import com.chimbori.blocklists.json.AppManifestBlockList;
 import com.chimbori.blocklists.json.BlockListsIndex;
 import com.chimbori.common.FileUtils;
-import com.chimbori.hermitcrab.schema.gson.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.Gson;
 
