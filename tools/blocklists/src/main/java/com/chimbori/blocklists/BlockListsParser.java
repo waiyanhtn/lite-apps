@@ -4,6 +4,7 @@ import com.chimbori.blocklists.json.AppManifestBlockList;
 import com.chimbori.blocklists.json.BlockListsIndex;
 import com.chimbori.common.FileUtils;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.SchemaDate;
 import com.google.common.collect.ImmutableList;
 import com.google.gson.Gson;
 
@@ -13,7 +14,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -144,7 +144,7 @@ public class BlockListsParser {
 
     AppManifestBlockList appManifestBlockList = new AppManifestBlockList();
     appManifestBlockList.name = fileName;
-    appManifestBlockList.updated = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
+    appManifestBlockList.updated = SchemaDate.fromTimestamp(System.currentTimeMillis());
     appManifestBlockList.hosts = hostsArray;
 
     System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
