@@ -67,7 +67,7 @@ public class Scraper {
       // But if the page isn’t using OpenGraph tags, then fallback to using the current page’s title.
       manifest.name = doc.select("title").text();
     }
-    manifest.theme_color = doc.select("meta[name=theme-color]").attr("content");
+    manifest.themeColor = doc.select("meta[name=theme-color]").attr("content");
     // The "abs:" prefix is a JSoup shortcut that converts this into an absolute URL.
     String iconUrl = doc.select("link[rel=apple-touch-icon]").attr("abs:href");
     if (iconUrl == null || iconUrl.isEmpty()) {
@@ -79,9 +79,9 @@ public class Scraper {
       manifest.addIcon(icon);
     }
 
-    manifest.hermit_bookmarks = findBookmarkableLinks();
-    manifest.hermit_feeds = findAtomAndRssFeeds();
-    manifest.related_applications = findRelatedApps();
+    manifest.hermitBookmarks = findBookmarkableLinks();
+    manifest.hermitFeeds = findAtomAndRssFeeds();
+    manifest.relatedApplications = findRelatedApps();
 
     return manifest;
   }

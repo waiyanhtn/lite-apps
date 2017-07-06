@@ -56,14 +56,14 @@ class LibraryGenerator {
       Manifest manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
 
       LibraryApp outputApp = new LibraryApp();
-      outputApp.url = manifest.start_url;
+      outputApp.url = manifest.startUrl;
       outputApp.name = appName;
       outputApp.app = String.format("%s.hermit", appName);
-      outputApp.theme_color = manifest.theme_color;
+      outputApp.theme_color = manifest.themeColor;
       outputApp.priority = manifest.priority;
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
-      String userAgent = manifest.hermit_settings != null ? manifest.hermit_settings.user_agent : null;
+      String userAgent = manifest.hermitSettings != null ? manifest.hermitSettings.userAgent : null;
       if (USER_AGENT_DESKTOP.equals(userAgent)) {
         outputApp.user_agent = USER_AGENT_DESKTOP;
       }

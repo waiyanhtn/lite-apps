@@ -63,13 +63,13 @@ class Scaffolder {
       System.out.println(manifest);
 
       // Constant fields, same for all apps.
-      manifest.manifest_version = 1;
+      manifest.manifestVersion = 1;
       manifest.lang = LANG_EN;
 
       // Fields that can be populated from the data provided on the command-line.
       manifest.name = appName;
-      manifest.start_url = startUrl;
-      manifest.manifest_url = String.format(MANIFEST_URL_TEMPLATE, URLEncoder.encode(appName, "UTF-8").replace("+", "%20"));
+      manifest.startUrl = startUrl;
+      manifest.manifestUrl = String.format(MANIFEST_URL_TEMPLATE, URLEncoder.encode(appName, "UTF-8").replace("+", "%20"));
 
       // Empty fields that must be manually populated.
       manifest.priority = 10;
@@ -103,21 +103,21 @@ class Scaffolder {
       ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
       if (themeColor != null) {
         // Overwrite the dummy values already inserted, if we are able to extract real values.
-        manifest.theme_color = themeColor.toString();
-        manifest.secondary_color = themeColor.darken(0.9f).toString();
+        manifest.themeColor = themeColor.toString();
+        manifest.secondaryColor = themeColor.darken(0.9f).toString();
       } else {
         // Insert a placeholder for theme_color and secondary_color so we don’t have to
         // type it in manually, but put invalid values so that the validator will catch it
         // in case we forget to replace with valid values.
-        manifest.theme_color = "#";
-        manifest.secondary_color = "#";
+        manifest.themeColor = "#";
+        manifest.secondaryColor = "#";
       }
     } else {
       // Insert a placeholder for theme_color and secondary_color so we don’t have to
       // type it in manually, but put invalid values so that the validator will catch it
       // in case we forget to replace with valid values.
-      manifest.theme_color = "#";
-      manifest.secondary_color = "#";
+      manifest.themeColor = "#";
+      manifest.secondaryColor = "#";
     }
 
     // Write the output manifest.

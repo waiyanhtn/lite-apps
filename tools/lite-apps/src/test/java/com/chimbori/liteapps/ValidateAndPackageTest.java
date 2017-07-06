@@ -125,19 +125,19 @@ public class ValidateAndPackageTest {
     String tag = liteApp.getName();
 
     assertFieldExists(tag, "name", manifest.name);
-    assertFieldExists(tag, "start_url", manifest.start_url);
+    assertFieldExists(tag, "start_url", manifest.startUrl);
     assertFieldExists(tag, "lang", manifest.lang);
-    assertFieldExists(tag, "manifest_url", manifest.manifest_url);
-    assertFieldExists(tag, "theme_color", manifest.theme_color);
-    assertFieldExists(tag, "secondary_color", manifest.secondary_color);
-    assertFieldExists(tag, "manifest_version", manifest.manifest_version);
+    assertFieldExists(tag, "manifest_url", manifest.manifestUrl);
+    assertFieldExists(tag, "theme_color", manifest.themeColor);
+    assertFieldExists(tag, "secondary_color", manifest.secondaryColor);
+    assertFieldExists(tag, "manifest_version", manifest.manifestVersion);
     assertFieldExists(tag, "icons", manifest.icons);
     assertNotEquals(String.format("priority not defined for %s", liteApp),
         manifest.priority, 0);
 
     // Test that the "manifest_url" field contains a valid URL.
     try {
-      URL manifestUrl = new URL(manifest.manifest_url);
+      URL manifestUrl = new URL(manifest.manifestUrl);
       assertEquals("https", manifestUrl.getProtocol());
       assertEquals("hermit.chimbori.com", manifestUrl.getHost());
       assertTrue(manifestUrl.getPath().startsWith("/lite-apps/"));
@@ -149,9 +149,9 @@ public class ValidateAndPackageTest {
 
     // Test that colors are valid hex colors.
     assertTrue(String.format("[%s] theme_color should be a valid hex color", tag),
-        HEX_COLOR_PATTERN.matcher(manifest.theme_color).matches());
+        HEX_COLOR_PATTERN.matcher(manifest.themeColor).matches());
     assertTrue(String.format("[%s] secondary_color should be a valid hex color", tag),
-        HEX_COLOR_PATTERN.matcher(manifest.secondary_color).matches());
+        HEX_COLOR_PATTERN.matcher(manifest.secondaryColor).matches());
 
     // Test that the name of the icon file is "icon.png" & that the file exists.
     // Although any filename should work, having it be consistent in the library can let us
@@ -160,22 +160,24 @@ public class ValidateAndPackageTest {
     assertTrue(new File(liteApp, FilePaths.ICON_FILENAME).exists());
 
     // Test Endpoints for basic parseability.
-    validateEndpoints(tag, manifest.hermit_bookmarks, EndpointRole.BOOKMARK);
-    validateEndpoints(tag, manifest.hermit_feeds, EndpointRole.FEED);
-    validateEndpoints(tag, manifest.hermit_create, EndpointRole.CREATE);
-    validateEndpoints(tag, manifest.hermit_share, EndpointRole.SHARE);
-    validateEndpoints(tag, manifest.hermit_search, EndpointRole.SEARCH);
-    validateEndpoints(tag, manifest.hermit_monitors, EndpointRole.MONITOR);
+    validateEndpoints(tag, manifest.hermitBookmarks, EndpointRole.BOOKMARK);
+    validateEndpoints(tag, manifest.hermitFeeds, EndpointRole.FEED);
+    validateEndpoints(tag, manifest.hermitCreate, EndpointRole.CREATE);
+    validateEndpoints(tag, manifest.hermitShare, EndpointRole.SHARE);
+    validateEndpoints(tag, manifest.hermitSearch, EndpointRole.SEARCH);
+    validateEndpoints(tag, manifest.hermitMonitors, EndpointRole.MONITOR);
 
     // Test all Settings to see whether they belong to our whitelisted set of allowable strings.
     validateSettings(tag, manifestFile);
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
-    for (RelatedApplication relatedApplication : manifest.related_applications) {
-      assertEquals(GOOGLE_PLAY, relatedApplication.platform);
-      assertFalse(relatedApplication.id.isEmpty());
-      assertTrue(relatedApplication.url.startsWith("https://play.google.com/store/apps/details?id="));
-      assertTrue(relatedApplication.url.endsWith(relatedApplication.id));
+    if (manifest.relatedApplications != null) {
+      for (RelatedApplication relatedApplication : manifest.relatedApplications) {
+        assertEquals(GOOGLE_PLAY, relatedApplication.platform);
+        assertFalse(relatedApplication.id.isEmpty());
+        assertTrue(relatedApplication.url.startsWith("https://play.google.com/store/apps/details?id="));
+        assertTrue(relatedApplication.url.endsWith(relatedApplication.id));
+      }
     }
 
     // Test that if any localization files are present, then they are well-formed.
