@@ -55,7 +55,7 @@ class LibraryGenerator {
       }
 
       // Create an entry for this Lite App to be put in the directory index file.
-      Manifest manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
+      Manifest manifest = gson.fromJson(new FileReader(manifestJsonFile), Manifest.class);
 
       LibraryApp outputApp = new LibraryApp();
       outputApp.url = manifest.startUrl;

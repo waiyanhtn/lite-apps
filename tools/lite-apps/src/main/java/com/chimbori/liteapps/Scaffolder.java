@@ -50,7 +50,7 @@ class Scaffolder {
     File manifestJsonFile = new File(liteAppDirectoryRoot, FilePaths.MANIFEST_JSON_FILE_NAME);
     // If the manifest.json exists, read it before modifying, else create a new JSON object.
     if (manifestJsonFile.exists()) {
-      manifest = Manifest.fromGson(GsonInstance.getMinifier(), new FileReader(manifestJsonFile));
+      manifest = GsonInstance.getMinifier().fromJson(new FileReader(manifestJsonFile), Manifest.class);
     } else {
       Log.i("Creating new Lite App %s", appName);
       // Create the root directory if it doesn’t exist yet.
@@ -118,7 +118,7 @@ class Scaffolder {
     }
 
     // Write the output manifest.
-    FileUtils.writeFile(manifestJsonFile, manifest.toJson(GsonInstance.getMinifier()));
+    FileUtils.writeFile(manifestJsonFile, GsonInstance.getMinifier().toJson(manifest));
   }
 
   public static void main(String[] arguments) {

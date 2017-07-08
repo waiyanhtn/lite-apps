@@ -1,8 +1,10 @@
 package com.chimbori.blocklists;
 
-import com.chimbori.blocklists.json.AppManifestBlockList;
-import com.chimbori.blocklists.json.BlockListsIndex;
 import com.chimbori.common.FileUtils;
+import com.chimbori.hermitcrab.schema.blocklists.BlockList;
+import com.chimbori.hermitcrab.schema.blocklists.SourceBlockList;
+import com.chimbori.hermitcrab.schema.blocklists.BlockListsLibrary;
+import com.chimbori.hermitcrab.schema.blocklists.CombinedBlockList;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.common.SchemaDate;
 import com.google.common.collect.ImmutableList;
@@ -41,11 +43,11 @@ public class BlockListsParser {
    * Downloads all the meta-lists from index.json and saves them locally.
    */
   public static void downloadFromSources() throws IOException {
-    BlockListsIndex blockListsIndex = readIndexJsonWithGson();
-    for (BlockListsIndex.BlockList blockList : blockListsIndex.blocklists) {
-      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR, blockList.blocklist);
+    BlockListsLibrary blockListsLibrary = readBlockListsLibrary();
+    for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
+      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR, combinedBlockList.blocklist);
       blockListDirectory.mkdirs();
-      for (BlockListsIndex.BlockList.Source source : blockList.sources) {
+      for (SourceBlockList source : combinedBlockList.sources) {
         // A blank URL means it’s a local file, so no need to fetch it from a remote server.
         if (source.url != null && !source.url.isEmpty()) {
           FileUtils.writeFile(new File(blockListDirectory, source.name), FileUtils.fetch(source.url));
@@ -60,15 +62,15 @@ public class BlockListsParser {
   public static void packageBlockLists(boolean shouldMinify) throws IOException {
     System.out.println(new File(".").getAbsolutePath());
 
-    BlockListsIndex blockListsIndex = readIndexJsonWithGson();
+    BlockListsLibrary blockListsLibrary = readBlockListsLibrary();
 
-    for (BlockListsIndex.BlockList blockList : blockListsIndex.blocklists) {
+    for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
       Set<String> hosts = new HashSet<>();
 
-      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR, blockList.blocklist);
+      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR, combinedBlockList.blocklist);
       blockListDirectory.mkdirs();
 
-      for (BlockListsIndex.BlockList.Source source : blockList.sources) {
+      for (SourceBlockList source : combinedBlockList.sources) {
         // Since we don’t want to download the blocklists to keep the test hermetic, and we want to
         // still run the test on blocklists that are uploaded to the repo (i.e. first-party owned),
         // we skip adding hosts from a file if it doesn’t already exist.
@@ -78,7 +80,7 @@ public class BlockListsParser {
         }
       }
 
-      writeToDisk(FilePaths.OUT_ROOT_DIR, blockList.name, hosts, shouldMinify);
+      writeToDisk(FilePaths.OUT_ROOT_DIR, combinedBlockList.name, hosts, shouldMinify);
       hosts.clear();  // Empty the list before writing each one.
     }
   }
@@ -142,7 +144,7 @@ public class BlockListsParser {
     String[] hostsArray = hosts.toArray(new String[0]);
     Arrays.sort(hostsArray);
 
-    AppManifestBlockList appManifestBlockList = new AppManifestBlockList();
+    BlockList appManifestBlockList = new BlockList();
     appManifestBlockList.name = fileName;
     appManifestBlockList.updated = SchemaDate.fromTimestamp(System.currentTimeMillis());
     appManifestBlockList.hosts = hostsArray;
@@ -167,9 +169,9 @@ public class BlockListsParser {
     return false;
   }
 
-  private static BlockListsIndex readIndexJsonWithGson() throws IOException {
+  private static BlockListsLibrary readBlockListsLibrary() throws IOException {
     return GsonInstance.getMinifier().fromJson(
         FileUtils.readFully(new FileInputStream(FilePaths.SRC_BLOCK_LISTS_JSON)),
-        BlockListsIndex.class);
+        BlockListsLibrary.class);
   }
 }

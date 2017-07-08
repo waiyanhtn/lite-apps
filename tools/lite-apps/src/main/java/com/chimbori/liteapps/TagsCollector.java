@@ -36,7 +36,7 @@ public class TagsCollector {
 
       Manifest manifest;
       try {
-        manifest = Manifest.fromGson(gson, new FileReader(manifestJsonFile));
+        manifest = gson.fromJson(new FileReader(manifestJsonFile), Manifest.class);
       } catch (JsonSyntaxException e) {
         System.err.println("Failed to parse JSON: " + liteAppDirectory.getName());
         throw e;
