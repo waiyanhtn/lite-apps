@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Vimeo",
   "priority": 50,
   "start_url": "https://www.vimeo.com",
@@ -7,11 +7,7 @@
   "theme_color": "#00acf2",
   "secondary_color": "#009bd7",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_search": [
     {
       "url": "https://vimeo.com/search?q=%s",

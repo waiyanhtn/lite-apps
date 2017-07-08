@@ -1,16 +1,12 @@
 {
   "theme_color": "#005689",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "The Guardian",
   "priority": 90,
   "start_url": "https://theguardian.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Guardian.hermit",
   "secondary_color": "#004d7b",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

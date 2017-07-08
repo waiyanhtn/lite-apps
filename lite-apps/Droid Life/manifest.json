@@ -1,16 +1,12 @@
 {
   "theme_color": "#f99cc0",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Droid Life",
   "priority": 10,
   "start_url": "https://droid-life.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Droid%20Life.hermit",
   "secondary_color": "#e08cac",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Technology"

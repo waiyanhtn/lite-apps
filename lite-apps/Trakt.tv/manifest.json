@@ -1,17 +1,13 @@
 {
   "theme_color": "#ed2224",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Trakt.tv",
   "priority": 10,
   "start_url": "https://trakt.tv/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Trakt.tv.hermit",
   "secondary_color": "#d51e20",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "TV",

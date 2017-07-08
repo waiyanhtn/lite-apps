@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Trulia",
   "start_url": "https://m.trulia.com",
@@ -10,11 +10,7 @@
   "tags": [
     "Home and Lifestyle"
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "url": "https://m.trulia.com",

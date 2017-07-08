@@ -1,16 +1,12 @@
 {
   "theme_color": "#88a0ca",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "OkCupid",
   "priority": 10,
   "start_url": "https://m.okcupid.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/OkCupid.hermit",
   "secondary_color": "#7a90b5",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Social"

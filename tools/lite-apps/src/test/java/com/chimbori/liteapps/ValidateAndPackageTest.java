@@ -4,7 +4,7 @@ package com.chimbori.liteapps;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.manifest.Endpoint;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
-import com.chimbori.hermitcrab.schema.manifest.RelatedApplication;
+import com.chimbori.hermitcrab.schema.manifest.RelatedApp;
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
 
@@ -115,7 +115,8 @@ public class ValidateAndPackageTest {
 
   @Test
   public void testIconIs300x300() {
-    TestHelpers.assertThatIconIs300x300(new File(liteApp, FilePaths.ICON_FILENAME));
+    File iconsDirectory = new File(liteApp, FilePaths.ICONS_DIR_NAME);
+    TestHelpers.assertThatIconIs300x300(new File(iconsDirectory, FilePaths.FAVICON_FILENAME));
   }
 
   @Test
@@ -131,9 +132,9 @@ public class ValidateAndPackageTest {
     assertFieldExists(tag, "theme_color", manifest.themeColor);
     assertFieldExists(tag, "secondary_color", manifest.secondaryColor);
     assertFieldExists(tag, "manifest_version", manifest.manifestVersion);
-    assertFieldExists(tag, "icons", manifest.icons);
+    assertFieldExists(tag, "icon", manifest.icon);
     assertNotEquals(String.format("priority not defined for %s", liteApp),
-        manifest.priority, 0);
+        0, manifest.priority.longValue());
 
     // Test that the "manifest_url" field contains a valid URL.
     try {
@@ -156,8 +157,9 @@ public class ValidateAndPackageTest {
     // Test that the name of the icon file is "icon.png" & that the file exists.
     // Although any filename should work, having it be consistent in the library can let us
     // avoid a filename lookup in automated tests and refactors.
-    assertEquals(FilePaths.ICON_FILENAME, manifest.icons.get(0).src);
-    assertTrue(new File(liteApp, FilePaths.ICON_FILENAME).exists());
+    assertEquals(FilePaths.FAVICON_FILENAME, manifest.icon);
+    File iconsDirectory = new File(liteApp, FilePaths.ICONS_DIR_NAME);
+    assertTrue(new File(iconsDirectory, FilePaths.FAVICON_FILENAME).exists());
 
     // Test Endpoints for basic parseability.
     validateEndpoints(tag, manifest.hermitBookmarks, EndpointRole.BOOKMARK);
@@ -172,7 +174,7 @@ public class ValidateAndPackageTest {
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
     if (manifest.relatedApplications != null) {
-      for (RelatedApplication relatedApplication : manifest.relatedApplications) {
+      for (RelatedApp relatedApplication : manifest.relatedApplications) {
         assertEquals(GOOGLE_PLAY, relatedApplication.platform);
         assertFalse(relatedApplication.id.isEmpty());
         assertTrue(relatedApplication.url.startsWith("https://play.google.com/store/apps/details?id="));

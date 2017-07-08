@@ -1,16 +1,12 @@
 {
   "theme_color": "#2b71d7",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Designer News",
   "priority": 10,
   "start_url": "http://designernews.co",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Designer%20News.hermit",
   "secondary_color": "#2665c1",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

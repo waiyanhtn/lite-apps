@@ -1,16 +1,12 @@
 {
   "theme_color": "#06cc47",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Deviant Art",
   "priority": 10,
   "start_url": "https://deviantart.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Deviant%20Art.hermit",
   "secondary_color": "#05b73f",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_search": [
     {

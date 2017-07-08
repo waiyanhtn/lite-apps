@@ -1,16 +1,12 @@
 {
   "theme_color": "#cc0000",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Last.fm",
   "priority": 10,
   "start_url": "https://last.fm",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Last.fm.hermit",
   "secondary_color": "#b70000",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Entertainment"

@@ -1,16 +1,12 @@
 {
   "theme_color": "#027bd4",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "FlipKart",
   "priority": 90,
   "start_url": "https://flipkart.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/FlipKart.hermit",
   "secondary_color": "#016ebe",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Shopping"

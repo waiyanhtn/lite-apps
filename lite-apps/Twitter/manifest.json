@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Twitter",
   "priority": 90,
@@ -51,11 +51,7 @@
       "url": "https://twitter.com/intent/tweet?text=%s"
     }
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "related_applications": [
     {
       "id": "com.twitter.android",

@@ -1,16 +1,12 @@
 {
   "theme_color": "#d7e580",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Android Central",
   "priority": 10,
   "start_url": "https://m.androidcentral.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Central.hermit",
   "secondary_color": "#c1ce73",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_feeds": [
     {

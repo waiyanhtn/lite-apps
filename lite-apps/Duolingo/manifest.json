@@ -1,16 +1,12 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Duolingo.hermit",
   "name": "Duolingo",
   "priority": 10,
   "start_url": "https://www.duolingo.com/",
   "theme_color": "#75ca00",
   "secondary_color": "#6fb400",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

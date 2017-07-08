@@ -1,16 +1,12 @@
 {
   "theme_color": "#2851a0",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "NPR",
   "priority": 10,
   "start_url": "http://npr.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/NPR.hermit",
   "secondary_color": "#244890",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

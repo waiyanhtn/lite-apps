@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Google Books",
   "start_url": "https://books.google.com",
@@ -10,11 +10,7 @@
   "tags": [
     "Books"
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_search": [
     {
       "url": "https://www.google.com/search?tbm=bks&q=%s",

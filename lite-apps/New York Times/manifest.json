@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "New York Times",
   "priority": 50,
@@ -7,11 +7,7 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/New%20York%20Times.hermit",
   "theme_color": "#000000",
   "secondary_color": "#333333",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_monitors": [
     {
       "name": "New York Times",

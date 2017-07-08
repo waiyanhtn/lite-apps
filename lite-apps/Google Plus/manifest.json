@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "__MSG_google_plus__",
   "priority": 10,
@@ -41,11 +41,7 @@
       "url": "https://plus.google.com/share?url=%u"
     }
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "related_applications": [
     {
       "id": "com.google.android.apps.plus",

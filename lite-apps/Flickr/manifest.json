@@ -1,16 +1,12 @@
 {
   "theme_color": "#0d64d2",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Flickr",
   "priority": 10,
   "start_url": "https://flickr.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Flickr.hermit",
   "secondary_color": "#0b5abd",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

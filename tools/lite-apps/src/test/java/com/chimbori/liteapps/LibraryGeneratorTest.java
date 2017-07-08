@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 /**
@@ -25,11 +26,8 @@ public class LibraryGeneratorTest {
   }
 
   @Test
-  public void testLibraryDataIsGeneratedSuccessfully() {
-    try {
-      LibraryGenerator.generateLibraryData();
-    } catch (IOException e) {
-      fail(e.getMessage());
-    }
+  public void testLibraryDataIsGeneratedSuccessfully() throws IOException {
+    LibraryGenerator.generateLibraryData();
+    assertTrue(true);
   }
 }

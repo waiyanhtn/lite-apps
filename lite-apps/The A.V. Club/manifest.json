@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "The A.V. Club",
   "priority": 10,
   "start_url": "http://avclub.com/",
@@ -7,11 +7,7 @@
   "lang": "en",
   "theme_color": "#1c243c",
   "secondary_color": "#1d263c",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "Film",

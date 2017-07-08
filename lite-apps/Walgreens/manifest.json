@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Walgreens",
   "priority": 10,
@@ -10,9 +10,5 @@
   "tags": [
     "Shopping"
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ]
+  "icon": "favicon.png"
 }

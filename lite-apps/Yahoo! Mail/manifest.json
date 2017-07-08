@@ -1,16 +1,12 @@
 {
   "theme_color": "#39008d",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Yahoo! Mail",
   "priority": 10,
   "start_url": "https://mail.yahoo.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yahoo%21%20Mail.hermit",
   "secondary_color": "#33007e",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Email"

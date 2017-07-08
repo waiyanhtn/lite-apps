@@ -1,16 +1,12 @@
 {
   "theme_color": "#09a2f2",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Engadget",
   "priority": 10,
   "start_url": "http://engadget.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Engadget.hermit",
   "secondary_color": "#0891d9",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

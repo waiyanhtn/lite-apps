@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Giphy",
   "priority": 10,
   "start_url": "https://giphy.com",
@@ -7,11 +7,7 @@
   "theme_color": "#fe6666",
   "secondary_color": "#00ccff",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_search": [
     {
       "url": "https://giphy.com/search/%s",

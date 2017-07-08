@@ -1,16 +1,12 @@
 {
   "theme_color": "#c9101d",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "OpenTable",
   "priority": 10,
   "start_url": "https://m.opentable.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/OpenTable.hermit",
   "secondary_color": "#b40e1a",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Food and Cuisine"

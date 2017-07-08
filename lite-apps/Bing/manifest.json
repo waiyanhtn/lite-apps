@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Bing",
   "priority": 10,
   "start_url": "https://www.bing.com",
@@ -7,11 +7,7 @@
   "lang": "en",
   "theme_color": "#008485",
   "secondary_color": "#43a3a4",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_search": [
     {
       "url": "https://www.bing.com/search?q=%s",

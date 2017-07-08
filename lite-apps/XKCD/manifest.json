@@ -1,17 +1,13 @@
 {
   "lang": "en",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "XKCD",
   "priority": 10,
   "start_url": "https://m.xkcd.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/XKCD.hermit",
   "theme_color": "#95a7c9",
   "secondary_color": "#6e7b92",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_feeds": [
     {
       "name": "XKCD",

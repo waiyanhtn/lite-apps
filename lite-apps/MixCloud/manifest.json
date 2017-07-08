@@ -1,16 +1,12 @@
 {
   "theme_color": "#395369",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "MixCloud",
   "priority": 10,
   "start_url": "https://m.mixcloud.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/MixCloud.hermit",
   "secondary_color": "#334a5e",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "related_applications": [
     {

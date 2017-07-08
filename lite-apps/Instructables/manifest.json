@@ -1,16 +1,12 @@
 {
   "theme_color": "#f9bc58",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Instructables",
   "priority": 10,
   "start_url": "https://m.instructables.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Instructables.hermit",
   "secondary_color": "#e0a94f",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Education"

@@ -1,16 +1,12 @@
 {
   "theme_color": "#0086ff",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Messenger",
   "priority": 90,
   "start_url": "https://mobile.facebook.com/messages",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Messenger.hermit",
   "secondary_color": "#0078e5",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_settings": {
     "user_agent": "desktop"

@@ -1,16 +1,12 @@
 {
   "theme_color": "#006a63",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Slashdot",
   "priority": 10,
   "start_url": "https://slashdot.org",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Slashdot.hermit",
   "secondary_color": "#005f59",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Technology"

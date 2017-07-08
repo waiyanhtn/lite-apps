@@ -1,16 +1,12 @@
 {
   "theme_color": "#43aee0",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Android PIT",
   "priority": 10,
   "start_url": "https://www.androidpit.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20PIT.hermit",
   "secondary_color": "#3c9cc9",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

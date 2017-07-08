@@ -1,16 +1,12 @@
 {
   "theme_color": "#d60002",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Time",
   "priority": 10,
   "start_url": "https://time.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Time.hermit",
   "secondary_color": "#c00001",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

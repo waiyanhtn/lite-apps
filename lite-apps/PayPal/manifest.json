@@ -1,16 +1,12 @@
 {
   "theme_color": "#009cde",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "PayPal",
   "priority": 10,
   "start_url": "https://paypal.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/PayPal.hermit",
   "secondary_color": "#008cc7",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Banking & Financial"

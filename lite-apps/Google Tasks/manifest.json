@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Google Tasks",
   "priority": 10,
@@ -7,11 +7,7 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Tasks.hermit",
   "theme_color": "#9e9e9e",
   "secondary_color": "#616161",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "tags": [
     "Tools & Productivity"
   ]

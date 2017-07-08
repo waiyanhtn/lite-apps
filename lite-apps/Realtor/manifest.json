@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Realtor",
   "start_url": "http://www.realtor.com",
@@ -10,9 +10,5 @@
   "tags": [
     "Home and Lifestyle"
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ]
+  "icon": "favicon.png"
 }

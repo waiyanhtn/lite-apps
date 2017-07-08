@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Kobo",
   "start_url": "https://www.kobo.com",
@@ -10,11 +10,7 @@
   "tags": [
     "Books"
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "related_applications": [
     {
       "id": "com.kobobooks.android",

@@ -1,16 +1,12 @@
 {
   "theme_color": "#3680ba",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Amazon",
   "priority": 100,
   "start_url": "https://amazon.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Amazon.hermit",
   "secondary_color": "#3073a7",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_search": [
     {

@@ -1,16 +1,12 @@
 {
   "theme_color": "#253938",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Instagram",
   "priority": 50,
   "start_url": "https://instagram.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Instagram.hermit",
   "secondary_color": "#213332",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_settings": {
     "block_third_party_cookies": false,

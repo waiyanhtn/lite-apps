@@ -1,16 +1,12 @@
 {
   "theme_color": "#e43138",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "eBay",
   "priority": 10,
   "start_url": "https://m.ebay.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/eBay.hermit",
   "secondary_color": "#cd2c32",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Shopping"

@@ -1,16 +1,12 @@
 {
   "theme_color": "#dc1431",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Bank of America",
   "priority": 10,
   "start_url": "https://bankofamerica.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bank%20of%20America.hermit",
   "secondary_color": "#c6122c",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

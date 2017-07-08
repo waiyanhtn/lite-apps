@@ -1,17 +1,13 @@
 {
   "theme_color": "#000000",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "The Atlantic",
   "priority": 10,
   "start_url": "https://www.theatlantic.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Atlantic.hermit",
   "secondary_color": "#000000",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "Latest",

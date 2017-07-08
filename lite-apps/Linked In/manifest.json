@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Linked In",
   "priority": 10,
@@ -19,11 +19,7 @@
       "url": "https://www.linkedin.com/shareArticle?mini=true&url=%u&title=%t&source=Hermit"
     }
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "related_applications": [
     {
       "id": "com.linkedin.android",

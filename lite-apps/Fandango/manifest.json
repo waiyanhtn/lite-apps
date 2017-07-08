@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Fandango",
   "priority": 50,
   "start_url": "https://mobile.fandango.com/",
@@ -7,11 +7,7 @@
   "theme_color": "#f17604",
   "secondary_color": "#398ce1",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "Spotlight",

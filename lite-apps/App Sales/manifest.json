@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "App Sales",
   "priority": 10,
   "start_url": "http://app-sales.net/",
@@ -7,11 +7,7 @@
   "lang": "en",
   "theme_color": "#c20a00",
   "secondary_color": "#b20a00",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "Most Wanted",

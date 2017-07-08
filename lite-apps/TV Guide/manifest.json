@@ -1,16 +1,12 @@
 {
   "theme_color": "#9f150a",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "TV Guide",
   "priority": 10,
   "start_url": "https://tvguide.com/listings",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TV%20Guide.hermit",
   "secondary_color": "#8f1209",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "related_applications": [
     {

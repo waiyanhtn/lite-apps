@@ -1,17 +1,13 @@
 {
   "theme_color": "#6490b4",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Estadao",
   "priority": 10,
   "start_url": "http://www.estadao.com.br",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Estadao.hermit",
   "secondary_color": "#5a81a2",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "Brasil",

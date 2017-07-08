@@ -1,16 +1,12 @@
 {
   "theme_color": "#ee0e15",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Mega",
   "priority": 10,
   "start_url": "https://mega.nz",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Mega.hermit",
   "secondary_color": "#d60c12",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_settings": {
     "user_agent": "desktop"

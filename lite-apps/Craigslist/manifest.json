@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "__MSG_craigslist__",
   "priority": 10,
@@ -7,11 +7,7 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Craigslist.hermit",
   "theme_color": "#5c008e",
   "secondary_color": "#5c008e",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "url": "https://accounts.craigslist.org",

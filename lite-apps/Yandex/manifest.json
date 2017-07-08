@@ -1,17 +1,13 @@
 {
   "theme_color": "#ff0000",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Yandex",
   "priority": 10,
   "start_url": "https://yandex.ru",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yandex.hermit",
   "secondary_color": "#e50000",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_search": [
     {
       "url": "https://yandex.ru/search/smart/?text=%s",

@@ -1,17 +1,13 @@
 {
   "theme_color": "#58accb",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "AnandTech",
   "priority": 10,
   "start_url": "http://www.anandtech.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/AnandTech.hermit",
   "secondary_color": "#4f9ab6",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "Smartphones",

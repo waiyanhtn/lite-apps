@@ -1,16 +1,12 @@
 {
   "theme_color": "#36465d",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Tumblr",
   "priority": 10,
   "start_url": "https://tumblr.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Tumblr.hermit",
   "secondary_color": "#303f53",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_search": [
     {

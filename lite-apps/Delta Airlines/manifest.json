@@ -1,16 +1,12 @@
 {
   "theme_color": "#18408b",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Delta Airlines",
   "priority": 10,
   "start_url": "https://m.delta.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Delta%20Airlines.hermit",
   "secondary_color": "#15397d",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "tags": [
     "Travel"

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Books A Million",
   "start_url": "https://m.booksamillion.com",
@@ -10,9 +10,5 @@
   "tags": [
     "Books"
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ]
+  "icon": "favicon.png"
 }

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "APK Mirror",
   "priority": 10,
@@ -7,11 +7,7 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/APK%20Mirror.hermit",
   "theme_color": "#ff9800",
   "secondary_color": "#f57c00",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "url": "http://www.apkmirror.com/developers/",

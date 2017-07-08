@@ -1,16 +1,12 @@
 {
   "theme_color": "#b80000",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "CNet",
   "priority": 10,
   "start_url": "http://cnet.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/CNet.hermit",
   "secondary_color": "#a50000",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

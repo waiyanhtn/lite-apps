@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "BBC",
   "priority": 50,
@@ -7,11 +7,7 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/BBC.hermit",
   "theme_color": "#bd160d",
   "secondary_color": "#ab140d",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_monitors": [
     {
       "name": "BBC News",

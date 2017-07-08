@@ -1,17 +1,13 @@
 {
   "theme_color": "#ef7237",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "FiveThirtyEight",
   "priority": 10,
   "start_url": "https://fivethirtyeight.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/FiveThirtyEight.hermit",
   "secondary_color": "#d76631",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "hermit_bookmarks": [
     {
       "name": "Politics",

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "__MSG_reddit__",
   "priority": 90,
@@ -7,11 +7,7 @@
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Reddit.hermit",
   "theme_color": "#ff4300",
   "secondary_color": "#eb4106",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "related_applications": [
     {
       "id": "com.reddit.frontpage",

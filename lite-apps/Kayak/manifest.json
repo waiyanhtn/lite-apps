@@ -1,16 +1,12 @@
 {
   "theme_color": "#fc903b",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Kayak",
   "priority": 10,
   "start_url": "https://kayak.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Kayak.hermit",
   "secondary_color": "#e28135",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "hermit_bookmarks": [
     {

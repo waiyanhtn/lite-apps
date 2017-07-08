@@ -1,17 +1,13 @@
 {
   "theme_color": "#ffd038",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Google Drive",
   "priority": 10,
   "start_url": "https://drive.google.com/drive/mobile/my-drive",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Drive.hermit",
   "secondary_color": "#0ea460",
   "lang": "en",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "tags": [
     "Storage"
   ]

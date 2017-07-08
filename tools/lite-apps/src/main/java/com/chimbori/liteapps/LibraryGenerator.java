@@ -46,6 +46,8 @@ class LibraryGenerator {
         continue; // Probably a temporary file, like .DS_Store.
       }
 
+      File iconsDirectory = new File(liteAppDirectory, FilePaths.ICONS_DIR_NAME);
+
       String appName = liteAppDirectory.getName();
       File manifestJsonFile = new File(liteAppDirectory, FilePaths.MANIFEST_JSON_FILE_NAME);
       if (!manifestJsonFile.exists()) {
@@ -71,7 +73,7 @@ class LibraryGenerator {
       outputLibrary.addAppToCategories(outputApp, manifest.tags);
 
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
-      Thumbnails.of(new File(liteAppDirectory, FilePaths.ICON_FILENAME))
+      Thumbnails.of(new File(iconsDirectory, FilePaths.FAVICON_FILENAME))
           .outputQuality(1.0f)
           .useOriginalFormat()
           .size(LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE)

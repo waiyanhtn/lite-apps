@@ -4,7 +4,6 @@ import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
 import com.chimbori.common.Log;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
-import com.chimbori.hermitcrab.schema.manifest.Icon;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 
 import org.apache.commons.cli.CommandLine;
@@ -74,29 +73,27 @@ class Scaffolder {
       // Empty fields that must be manually populated.
       manifest.priority = 10;
       manifest.tags = new ArrayList<>(Arrays.asList(new String[]{"TODO"} ));
-
-      // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
-      // This way, we can avoid additional typing, and the validator will check for the presence
-      // of the file anyway (and fail as expected).
-      Icon icon = new Icon();
-      icon.src = FilePaths.ICON_FILENAME;
-      manifest.addIcon(icon);
     }
 
     // TODO: Fetch favicon or apple-touch-icon.
-    File iconFile = new File(liteAppDirectoryRoot, FilePaths.ICON_FILENAME);
-    if (!iconFile.exists() &&
-        manifest.icons.get(0).src != null &&
-        !manifest.icons.get(0).src.isEmpty()) {
-      Log.i("Fetching icon from %s…", manifest.icons.get(0).src);
-      URL icon = new URL(manifest.icons.get(0).src);
-      try (InputStream inputStream = icon.openStream()) {
+    File iconsDirectory = new File(liteAppDirectoryRoot, FilePaths.ICONS_DIR_NAME);
+    File iconFile = new File(iconsDirectory, FilePaths.FAVICON_FILENAME);
+
+    if (!iconFile.exists() && manifest.icon != null && !manifest.icon.isEmpty()) {
+      Log.i("Fetching icon from %s…", manifest.icon);
+      URL iconUrl = new URL(manifest.icon);
+      try (InputStream inputStream = iconUrl.openStream()) {
         Files.copy(inputStream, iconFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
       } catch (IOException e) {
         e.printStackTrace();
         // But still continue with the rest of the manifest generation.
       }
     }
+
+    // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
+    // This way, we can avoid additional typing, and the validator will check for the presence
+    // of the file anyway (and fail as expected).
+    manifest.icon = FilePaths.FAVICON_FILENAME;
 
     // Extract the color from the icon (either newly downloaded, or from existing icon).
     if (iconFile.exists()) {

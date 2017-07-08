@@ -9,7 +9,8 @@ public class FilePaths {
   static final String MANIFEST_JSON_FILE_NAME = "manifest.json";
   static final String MESSAGES_JSON_FILE_NAME = "messages.json";
   static final String LOCALES_DIR_NAME = "_locales";
-  static final String ICON_FILENAME = "icon.png";
+  static final String ICONS_DIR_NAME = "icons";
+  static final String FAVICON_FILENAME = "favicon.png";
   static final String ICON_EXTENSION = ".png";
 
   // Inputs

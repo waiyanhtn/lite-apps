@@ -1,16 +1,12 @@
 {
   "theme_color": "#73cddc",
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Slack",
   "priority": 10,
   "start_url": "https://slack.com",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Slack.hermit",
   "secondary_color": "#67b8c6",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "lang": "en",
   "related_applications": [
     {

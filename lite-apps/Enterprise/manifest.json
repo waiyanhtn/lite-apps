@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "lang": "en",
   "name": "Enterprise",
   "start_url": "https://www.enterprise.com",
@@ -10,11 +10,7 @@
   "tags": [
     "Travel"
   ],
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "related_applications": [
     {
       "id": "com.ehi.enterprise.android",

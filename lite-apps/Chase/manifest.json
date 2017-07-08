@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Chase",
   "priority": 10,
   "start_url": "https://m.chase.com/",
@@ -7,11 +7,7 @@
   "lang": "en",
   "theme_color": "#0459a9",
   "secondary_color": "#0077c4",
-  "icons": [
-    {
-      "src": "icon.png"
-    }
-  ],
+  "icon": "favicon.png",
   "tags": [
     "Banking & Financial"
   ]
