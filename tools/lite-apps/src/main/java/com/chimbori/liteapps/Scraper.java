@@ -94,7 +94,7 @@ public class Scraper {
         relatedApps.add(new RelatedApp(matcher.group(1)));
       }
     }
-    return relatedApps;
+    return relatedApps.isEmpty() ? null : relatedApps;
   }
 
   private List<Endpoint> findAtomAndRssFeeds() {
@@ -105,7 +105,7 @@ public class Scraper {
           .url(feed.attr("abs:href"))
           .title(feed.attr("title")));
     }
-    return feeds;
+    return feeds.isEmpty() ? null : feeds;
   }
 
   private List<Endpoint> findBookmarkableLinks() {
@@ -127,6 +127,6 @@ public class Scraper {
       }
     }
 
-    return new ArrayList<>(bookmarkableLinks.values());
+    return bookmarkableLinks.isEmpty() ? null : new ArrayList<>(bookmarkableLinks.values());
   }
 }

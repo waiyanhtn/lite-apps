@@ -39,6 +39,8 @@ class Scaffolder {
   private static final String COMMAND_LINE_OPTION_URL = "url";
   private static final String COMMAND_LINE_OPTION_NAME = "name";
 
+  private static final Integer CURRENT_MANIFEST_VERSION = 2;
+
   /**
    * The library.json file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
@@ -62,7 +64,7 @@ class Scaffolder {
       System.out.println(manifest);
 
       // Constant fields, same for all apps.
-      manifest.manifestVersion = 1;
+      manifest.manifestVersion = CURRENT_MANIFEST_VERSION;
       manifest.lang = LANG_EN;
 
       // Fields that can be populated from the data provided on the command-line.
@@ -76,12 +78,15 @@ class Scaffolder {
     }
 
     // TODO: Fetch favicon or apple-touch-icon.
+    String remoteIconUrl = manifest.icon;
+
     File iconsDirectory = new File(liteAppDirectoryRoot, FilePaths.ICONS_DIR_NAME);
+    iconsDirectory.mkdirs();
     File iconFile = new File(iconsDirectory, FilePaths.FAVICON_FILENAME);
 
     if (!iconFile.exists() && manifest.icon != null && !manifest.icon.isEmpty()) {
       Log.i("Fetching icon from %s…", manifest.icon);
-      URL iconUrl = new URL(manifest.icon);
+      URL iconUrl = new URL(remoteIconUrl);
       try (InputStream inputStream = iconUrl.openStream()) {
         Files.copy(inputStream, iconFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
       } catch (IOException e) {
@@ -118,7 +123,7 @@ class Scaffolder {
     }
 
     // Write the output manifest.
-    FileUtils.writeFile(manifestJsonFile, GsonInstance.getMinifier().toJson(manifest));
+    FileUtils.writeFile(manifestJsonFile, GsonInstance.getPrettyPrinter().toJson(manifest));
   }
 
   public static void main(String[] arguments) {
