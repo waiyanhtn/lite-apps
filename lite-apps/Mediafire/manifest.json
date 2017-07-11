@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Mediafire",
+  "start_url": "https://www.mediafire.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Mediafire.hermit",
+  "theme_color": "#2f7cd0",
+  "secondary_color": "#2a6fbb",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Storage"
+  ]
+}

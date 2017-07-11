@@ -1105,6 +1105,12 @@
           "url": "https://drive.google.com/drive/mobile/my-drive"
         },
         {
+          "app": "Mediafire.hermit",
+          "theme_color": "#2f7cd0",
+          "name": "Mediafire",
+          "url": "https://www.mediafire.com"
+        },
+        {
           "app": "Mega.hermit",
           "theme_color": "#ee0e15",
           "name": "Mega",
