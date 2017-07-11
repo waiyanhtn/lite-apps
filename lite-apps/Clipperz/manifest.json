@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Clipperz",
+  "start_url": "https://clipperz.is/app",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Clipperz.hermit",
+  "theme_color": "#b46202",
+  "secondary_color": "#a25801",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity"
+  ]
+}

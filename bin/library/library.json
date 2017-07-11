@@ -682,6 +682,12 @@
           "url": "https://qrcodescan.in/"
         },
         {
+          "app": "Clipperz.hermit",
+          "theme_color": "#b46202",
+          "name": "Clipperz",
+          "url": "https://clipperz.is/app"
+        },
+        {
           "app": "Flipboard.hermit",
           "theme_color": "#e12828",
           "name": "Flipboard",
