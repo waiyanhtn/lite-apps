@@ -258,6 +258,12 @@
           "url": "http://cnn.com"
         },
         {
+          "app": "Estadao.hermit",
+          "theme_color": "#6490b4",
+          "name": "Estadao",
+          "url": "http://www.estadao.com.br"
+        },
+        {
           "app": "Financial Times.hermit",
           "theme_color": "#fcdabb",
           "name": "Financial Times",
@@ -270,10 +276,22 @@
           "url": "https://fivethirtyeight.com"
         },
         {
+          "app": "Folha de San Paulo.hermit",
+          "theme_color": "#4cc7f2",
+          "name": "Folha de San Paulo",
+          "url": "http://m.folha.uol.com.br"
+        },
+        {
           "app": "Forecast.io.hermit",
           "theme_color": "#3b438f",
           "name": "Forecast.io",
           "url": "https://forecast.io"
+        },
+        {
+          "app": "Globo.hermit",
+          "theme_color": "#439ef6",
+          "name": "Globo",
+          "url": "http://www.globo.com"
         },
         {
           "app": "Google News.hermit",
@@ -340,6 +358,12 @@
           "theme_color": "#d60002",
           "name": "Time",
           "url": "https://time.com"
+        },
+        {
+          "app": "Veja.hermit",
+          "theme_color": "#004f93",
+          "name": "Veja",
+          "url": "http://veja.abril.com.br"
         },
         {
           "app": "Yahoo! Finance.hermit",
@@ -1049,6 +1073,18 @@
           "url": "http://www.espn.com"
         },
         {
+          "app": "ESPN Brasil.hermit",
+          "theme_color": "#cc0000",
+          "name": "ESPN Brasil",
+          "url": "http://espn.uol.com.br"
+        },
+        {
+          "app": "Globo eSporte.hermit",
+          "theme_color": "#697353",
+          "name": "Globo eSporte",
+          "url": "http://globoesporte.globo.com"
+        },
+        {
           "app": "NFL.hermit",
           "theme_color": "#b30013",
           "name": "NFL",
@@ -1152,6 +1188,128 @@
     },
     {
       "category": {
+        "name": "USA"
+      },
+      "apps": [
+        {
+          "app": "Fandango.hermit",
+          "theme_color": "#f17604",
+          "name": "Fandango",
+          "url": "https://mobile.fandango.com/"
+        },
+        {
+          "app": "Capital One 360.hermit",
+          "theme_color": "#99d7ee",
+          "name": "Capital One 360",
+          "url": "https://home.capitalone360.com"
+        },
+        {
+          "app": "Chase.hermit",
+          "theme_color": "#0459a9",
+          "name": "Chase",
+          "url": "https://m.chase.com/"
+        },
+        {
+          "app": "Citibank.hermit",
+          "theme_color": "#004278",
+          "name": "Citibank",
+          "url": "https://online.citi.com"
+        },
+        {
+          "app": "CNN.hermit",
+          "theme_color": "#cc0000",
+          "name": "CNN",
+          "url": "http://cnn.com"
+        },
+        {
+          "app": "NBC.hermit",
+          "theme_color": "#4372b8",
+          "name": "NBC",
+          "url": "http://www.nbcnews.com/"
+        },
+        {
+          "app": "NFL.hermit",
+          "theme_color": "#b30013",
+          "name": "NFL",
+          "url": "http://www.nfl.com"
+        },
+        {
+          "app": "NHL.hermit",
+          "theme_color": "#000000",
+          "name": "NHL",
+          "url": "https://www.nhl.com"
+        },
+        {
+          "app": "NPR.hermit",
+          "theme_color": "#2851a0",
+          "name": "NPR",
+          "url": "http://npr.org"
+        },
+        {
+          "app": "Realtor.hermit",
+          "theme_color": "#db251c",
+          "name": "Realtor",
+          "url": "http://www.realtor.com"
+        },
+        {
+          "app": "Target.hermit",
+          "theme_color": "#cc0000",
+          "name": "Target",
+          "url": "https://www.target.com"
+        },
+        {
+          "app": "TV Guide.hermit",
+          "theme_color": "#9f150a",
+          "name": "TV Guide",
+          "url": "https://tvguide.com/listings"
+        },
+        {
+          "app": "Walgreens.hermit",
+          "theme_color": "#4c6971",
+          "name": "Walgreens",
+          "url": "https://www.walgreens.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "India"
+      },
+      "apps": [
+        {
+          "app": "FlipKart.hermit",
+          "theme_color": "#027bd4",
+          "name": "FlipKart",
+          "url": "https://flipkart.com"
+        },
+        {
+          "app": "Zomato.hermit",
+          "theme_color": "#cb202d",
+          "name": "Zomato",
+          "url": "https://zomato.com"
+        },
+        {
+          "app": "Hotstar.hermit",
+          "theme_color": "#6f6f00",
+          "name": "Hotstar",
+          "url": "http://hotstar.com"
+        },
+        {
+          "app": "PayTM.hermit",
+          "theme_color": "#012b72",
+          "name": "PayTM",
+          "url": "https://paytm.com"
+        },
+        {
+          "app": "The Hindu.hermit",
+          "theme_color": "#0e5ba8",
+          "name": "The Hindu",
+          "url": "http://www.thehindu.com"
+        }
+      ]
+    },
+    {
+      "category": {
         "name": "Brasil"
       },
       "apps": [
@@ -1201,14 +1359,85 @@
     },
     {
       "category": {
-        "name": "India"
+        "name": "France"
       },
       "apps": [
         {
-          "app": "The Hindu.hermit",
-          "theme_color": "#0e5ba8",
-          "name": "The Hindu",
-          "url": "http://www.thehindu.com"
+          "app": "AlloCine.hermit",
+          "theme_color": "#ffca00",
+          "name": "AlloCine",
+          "url": "http://allocine.fr"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "China"
+      },
+      "apps": [
+        {
+          "app": "Baidu.hermit",
+          "theme_color": "#b3c9ff",
+          "name": "Baidu",
+          "url": "https://baidu.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Israel"
+      },
+      "apps": [
+        {
+          "app": "Haaretz.hermit",
+          "theme_color": "#008cd4",
+          "name": "Haaretz",
+          "url": "https://haaretz.co.il"
+        },
+        {
+          "app": "Jerusalem Post.hermit",
+          "theme_color": "#c04d51",
+          "name": "Jerusalem Post",
+          "url": "http://m.jpost.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Canada"
+      },
+      "apps": [
+        {
+          "app": "RBC Canada.hermit",
+          "theme_color": "#263780",
+          "name": "RBC Canada",
+          "url": "https://www.rbcroyalbank.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Russia"
+      },
+      "apps": [
+        {
+          "app": "Yandex.hermit",
+          "theme_color": "#ff0000",
+          "name": "Yandex",
+          "url": "https://yandex.ru"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "UK"
+      },
+      "apps": [
+        {
+          "app": "BBC.hermit",
+          "theme_color": "#bd160d",
+          "name": "BBC",
+          "url": "https://bbc.com"
         }
       ]
     }
