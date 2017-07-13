@@ -330,6 +330,12 @@
           "url": "https://www.theatlantic.com/"
         },
         {
+          "app": "The Hindu.hermit",
+          "theme_color": "#0e5ba8",
+          "name": "The Hindu",
+          "url": "http://www.thehindu.com"
+        },
+        {
           "app": "Time.hermit",
           "theme_color": "#d60002",
           "name": "Time",
@@ -1190,6 +1196,19 @@
           "theme_color": "#004f93",
           "name": "Veja",
           "url": "http://veja.abril.com.br"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "India"
+      },
+      "apps": [
+        {
+          "app": "The Hindu.hermit",
+          "theme_color": "#0e5ba8",
+          "name": "The Hindu",
+          "url": "http://www.thehindu.com"
         }
       ]
     }

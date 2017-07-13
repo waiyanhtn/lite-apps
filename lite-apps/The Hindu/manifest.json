@@ -1,0 +1,97 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "The Hindu",
+  "start_url": "http://www.thehindu.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Hindu.hermit",
+  "theme_color": "#0e5ba8",
+  "secondary_color": "#0c5197",
+  "icon": "favicon.png",
+  "hermit_bookmarks": [
+    {
+      "url": "http://www.thehindu.com/entertainment/theatre/",
+      "name": "Theatre"
+    },
+    {
+      "url": "http://www.thehindu.com/opinion/op-ed/",
+      "name": "Op Ed"
+    },
+    {
+      "url": "http://www.thehindu.com/sci-tech/science/",
+      "name": "Science"
+    },
+    {
+      "url": "http://www.thehindu.com/entertainment/movies/",
+      "name": "Movies"
+    },
+    {
+      "url": "http://www.thehindu.com/entertainment/music/",
+      "name": "Music"
+    },
+    {
+      "url": "http://www.thehindu.com/life-and-style/",
+      "name": "Life & Style"
+    },
+    {
+      "url": "http://www.thehindu.com/news/states/",
+      "name": "States"
+    },
+    {
+      "url": "http://www.thehindu.com/sci-tech/agriculture/",
+      "name": "Agriculture"
+    },
+    {
+      "url": "http://www.thehindu.com/business/Industry/",
+      "name": "Industry"
+    },
+    {
+      "url": "http://www.thehindu.com/opinion/lead/",
+      "name": "Lead"
+    },
+    {
+      "url": "http://www.thehindu.com/opinion/cartoon/",
+      "name": "Cartoon"
+    },
+    {
+      "url": "http://www.thehindu.com/news/international/",
+      "name": "International"
+    },
+    {
+      "url": "http://www.thehindu.com/life-and-style/travel/",
+      "name": "Travel"
+    },
+    {
+      "url": "http://www.thehindu.com/entertainment/dance/",
+      "name": "Dance"
+    },
+    {
+      "url": "http://www.thehindu.com/news/national/",
+      "name": "National"
+    },
+    {
+      "url": "http://www.thehindu.com/entertainment/art/",
+      "name": "Art"
+    },
+    {
+      "url": "http://www.thehindu.com/sci-tech/technology/internet/",
+      "name": "Internet"
+    },
+    {
+      "url": "http://www.thehindu.com/sci-tech/health/",
+      "name": "Health"
+    },
+    {
+      "url": "http://www.thehindu.com/life-and-style/fashion/",
+      "name": "Fashion"
+    },
+    {
+      "url": "http://www.thehindu.com/business/",
+      "name": "Business"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "India",
+    "News"
+  ]
+}
