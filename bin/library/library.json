@@ -439,6 +439,12 @@
           "url": "http://engadget.com"
         },
         {
+          "app": "Gadget Hacks.hermit",
+          "theme_color": "#d9151a",
+          "name": "Gadget Hacks",
+          "url": "https://www.gadgethacks.com"
+        },
+        {
           "app": "Gizmodo.hermit",
           "theme_color": "#000000",
           "name": "Gizmodo",

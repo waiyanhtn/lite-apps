@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Gadget Hacks",
+  "start_url": "https://www.gadgethacks.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Gadget%20Hacks.hermit",
+  "theme_color": "#d9151a",
+  "secondary_color": "#c31217",
+  "icon": "favicon.png",
+  "hermit_feeds": [
+    {
+      "url": "https://www.gadgethacks.com/rss.xml",
+      "name": "Gadget Hacks RSS Feed"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Technology"
+  ]
+}
