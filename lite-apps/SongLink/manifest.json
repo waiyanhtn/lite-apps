@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "SongLink",
+  "start_url": "https://songlink.io",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/SongLink.hermit",
+  "theme_color": "#ee5359",
+  "secondary_color": "#d64a50",
+  "icon": "favicon.png",
+  "priority": 10,
+  "hermit_share": [
+    {
+      "url": "https://songlink.io/%u",
+      "name": "SongLink"
+    }
+  ],
+  "tags": [
+    "Entertainment"
+  ]
+}

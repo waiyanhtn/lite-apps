@@ -596,6 +596,12 @@
           "url": "https://plex.tv"
         },
         {
+          "app": "SongLink.hermit",
+          "theme_color": "#ee5359",
+          "name": "SongLink",
+          "url": "https://songlink.io"
+        },
+        {
           "app": "SoundCloud.hermit",
           "theme_color": "#ff8700",
           "name": "SoundCloud",
