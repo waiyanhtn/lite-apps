@@ -764,6 +764,12 @@
           "theme_color": "#bc342d",
           "name": "Todoist",
           "url": "https://todoist.com"
+        },
+        {
+          "app": "Zenkit.hermit",
+          "theme_color": "#ff72b5",
+          "name": "Zenkit",
+          "url": "https://zenkit.com"
         }
       ]
     },

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Zenkit",
+  "start_url": "https://zenkit.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Zenkit.hermit",
+  "theme_color": "#ff72b5",
+  "secondary_color": "#e566a2",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity"
+  ]
+}
