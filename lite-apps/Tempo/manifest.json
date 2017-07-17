@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Tempo",
+  "start_url": "https://sii.im/playground/tempo",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Tempo.hermit",
+  "theme_color": "#120d2f",
+  "secondary_color": "#120d2f",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity"
+  ]
+}

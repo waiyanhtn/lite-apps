@@ -772,6 +772,12 @@
           "url": "https://integratedchat.teamviewer.com/"
         },
         {
+          "app": "Tempo.hermit",
+          "theme_color": "#120d2f",
+          "name": "Tempo",
+          "url": "https://sii.im/playground/tempo"
+        },
+        {
           "app": "Todoist.hermit",
           "theme_color": "#bc342d",
           "name": "Todoist",
