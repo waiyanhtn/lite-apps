@@ -961,6 +961,12 @@
           "url": "https://www.coursera.org"
         },
         {
+          "app": "Dictionary.hermit",
+          "theme_color": "#297dbe",
+          "name": "Dictionary",
+          "url": "http://www.dictionary.com"
+        },
+        {
           "app": "Duolingo.hermit",
           "theme_color": "#75ca00",
           "name": "Duolingo",
