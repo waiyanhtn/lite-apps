@@ -73,12 +73,15 @@ class LibraryGenerator {
       outputLibrary.addAppToCategories(outputApp, manifest.tags);
 
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
-      Thumbnails.of(new File(iconsDirectory, FilePaths.FAVICON_FILENAME))
-          .outputQuality(1.0f)
-          .useOriginalFormat()
-          .size(LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE)
-          .imageType(BufferedImage.TYPE_INT_ARGB)
-          .toFile(new File(FilePaths.OUT_LIBRARY_ICONS_DIR, appName + FilePaths.ICON_EXTENSION));
+      File thumbnailImage = new File(FilePaths.OUT_LIBRARY_ICONS_DIR, appName + FilePaths.ICON_EXTENSION);
+      if (!thumbnailImage.exists()) {
+        Thumbnails.of(new File(iconsDirectory, FilePaths.FAVICON_FILENAME))
+            .outputQuality(1.0f)
+            .useOriginalFormat()
+            .size(LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE)
+            .imageType(BufferedImage.TYPE_INT_ARGB)
+            .toFile(thumbnailImage);
+      }
     }
 
     FileUtils.writeFile(FilePaths.OUT_LIBRARY_JSON, outputLibrary.toJson(gson));
