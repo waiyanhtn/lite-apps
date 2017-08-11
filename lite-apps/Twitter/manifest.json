@@ -33,12 +33,6 @@
       "url": "https://support.twitter.com/"
     }
   ],
-  "hermit_create": [
-    {
-      "name": "__MSG_tweet__",
-      "url": "https://mobile.twitter.com/compose/tweet"
-    }
-  ],
   "hermit_search": [
     {
       "name": "__MSG_search__",
