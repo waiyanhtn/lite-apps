@@ -1146,6 +1146,12 @@
           "url": "https://www.fastmail.com"
         },
         {
+          "app": "Mail.com.hermit",
+          "theme_color": "#003b8f",
+          "name": "Mail.com",
+          "url": "https://www.mail.com"
+        },
+        {
           "app": "Outlook.hermit",
           "theme_color": "#0069b6",
           "name": "Outlook",

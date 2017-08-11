@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Mail.com",
+  "start_url": "https://www.mail.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Mail.com.hermit",
+  "theme_color": "#003b8f",
+  "secondary_color": "#003580",
+  "icon": "favicon.png",
+  "related_applications": [
+    {
+      "id": "com.mail.mobile.android.mail",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.mail.mobile.android.mail"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Email"
+  ]
+}
