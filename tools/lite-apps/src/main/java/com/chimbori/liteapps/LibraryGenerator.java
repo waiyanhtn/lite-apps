@@ -60,7 +60,6 @@ class LibraryGenerator {
       LibraryApp outputApp = new LibraryApp();
       outputApp.url = manifest.startUrl;
       outputApp.name = appName;
-      outputApp.app = String.format("%s.hermit", appName);
       outputApp.theme_color = manifest.themeColor;
       outputApp.priority = manifest.priority;
 
