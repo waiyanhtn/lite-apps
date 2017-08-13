@@ -73,6 +73,20 @@ h3 {
   margin: 8px 8px 0 8px;
 }
 
+.update-required {
+  display: none;  // Default hidden; shown if version is too old.
+  background: #fff;
+  padding: 16px 16px 32px 16px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  margin-bottom: 16px;
+  text-align: center;
+
+  p {
+    margin: 32px 0;
+  }
+}
+
 .query-container {
   padding: 8px;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);

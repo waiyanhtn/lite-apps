@@ -5,6 +5,14 @@ description: Library of free Hermit Lite Apps
 ---
 
 <div class="library">
+  <div class="update-required">
+    <h2>Newer Version Required</h2>
+
+    <p>A updated version of Hermit is required to install Lite Apps from the Library.</p>
+
+    <a class="pill-button" href="https://play.google.com/store/apps/details?id=com.chimbori.hermitcrab" target="_blank">get it now</a>
+  </div>
+
   <div class="query-container">
     <input id="query" placeholder="Search for ready-made Lite Apps">
   </div>

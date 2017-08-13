@@ -1,6 +1,8 @@
 
 var libraryJson = {};
 
+var CURRENT_VERSION_CODE = 90003;
+
 function encodeLiteAppName(liteApp) {
   return encodeURIComponent(liteApp.name).replace(/ /g, '%20');
 }
@@ -136,6 +138,18 @@ function fetchJson() {
   });
 }
 
+function showMessageIfVersionTooOld() {
+  var versionParam = getQueryVariable('v');
+  if (versionParam == '') {
+    return;
+  }
+  var parsedVersion = versionParam.match(/([0-9]+)\.([0-9]+)\.([0-9]+)/);
+  var versionCode = parseInt(parsedVersion[1], 10) * 10000 + parseInt(parsedVersion[2], 10) * 100 + parseInt(parsedVersion[3], 10);
+  if (versionCode < CURRENT_VERSION_CODE) {
+    document.querySelector('.update-required').style.display = 'block';
+  }
+}
+
 function showQueryParamInSearchBox() {
   var queryParam = getQueryVariable('q');
   var queryText = queryParam;
@@ -151,5 +165,6 @@ function showQueryParamInSearchBox() {
   document.querySelector('#query').focus();
 }
 
+showMessageIfVersionTooOld();
 showQueryParamInSearchBox();
 fetchJson();

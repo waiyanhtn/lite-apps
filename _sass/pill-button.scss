@@ -1,0 +1,13 @@
+.pill-button {
+  background: $color-primary;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 24px;
+  font-size: 18px;
+  margin: 24px 0;
+  @media screen and (max-width: $break-medium) {
+    margin: 8px 0;
+  }
+}
