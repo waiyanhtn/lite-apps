@@ -59,7 +59,7 @@ public class BlockListsParser {
   /**
    * Package multiple blocklists into a single JSON file, as specified in index.json.
    */
-  public static void packageBlockLists(boolean shouldMinify) throws IOException {
+  public static void packageBlockLists() throws IOException {
     System.out.println(new File(".").getAbsolutePath());
 
     BlockListsLibrary blockListsLibrary = readBlockListsLibrary();
@@ -80,7 +80,7 @@ public class BlockListsParser {
         }
       }
 
-      writeToDisk(FilePaths.OUT_ROOT_DIR, combinedBlockList.name, hosts, shouldMinify);
+      writeToDisk(FilePaths.OUT_ROOT_DIR, combinedBlockList.name, hosts);
       hosts.clear();  // Empty the list before writing each one.
     }
   }
@@ -140,7 +140,7 @@ public class BlockListsParser {
     return false;
   }
 
-  private static void writeToDisk(File rootDirectory, String fileName, Set<String> hosts, boolean shouldMinify) throws IOException {
+  private static void writeToDisk(File rootDirectory, String fileName, Set<String> hosts) throws IOException {
     String[] hostsArray = hosts.toArray(new String[0]);
     Arrays.sort(hostsArray);
 
@@ -151,9 +151,8 @@ public class BlockListsParser {
 
     System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
 
-    Gson gson = shouldMinify ? GsonInstance.getMinifier() : GsonInstance.getPrettyPrinter();
-
-    FileUtils.writeFile(new File(rootDirectory, fileName), gson.toJson(appManifestBlockList));
+    FileUtils.writeFile(new File(rootDirectory, fileName),
+        GsonInstance.getPrettyPrinter().toJson(appManifestBlockList));
   }
 
   /**
