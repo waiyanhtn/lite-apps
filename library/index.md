@@ -10,7 +10,7 @@ description: Library of free Hermit Lite Apps
 
     <p>A updated version of Hermit is required to install Lite Apps from the Library.</p>
 
-    <a class="pill-button" href="https://play.google.com/store/apps/details?id=com.chimbori.hermitcrab" target="_blank">get it now</a>
+    <!-- <a class="pill-button" href="https://play.google.com/store/apps/details?id=com.chimbori.hermitcrab" target="_blank">get it now</a> -->
   </div>
 
   <div class="query-container">
