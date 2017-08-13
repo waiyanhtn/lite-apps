@@ -14,7 +14,7 @@ function makeManifestUrl(liteApp) {
 }
 
 function makeCreateUrl(liteApp) {
-  var createUrl = '/create?url=' + liteApp.url;
+  var createUrl = 'https://hermit.chimbori.com/create?url=' + liteApp.url;
   if (liteApp.user_agent == 'desktop') {
     createUrl += '&ua=d';
   }
