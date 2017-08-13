@@ -1,8 +1,16 @@
 
 var libraryJson = {};
 
+function encodeLiteAppName(liteApp) {
+  return encodeURIComponent(liteApp.name).replace(/ /g, '%20');
+}
+
 function makeImageUrl(liteApp) {
-  return 'https://chimbori.github.io/lite-apps/bin/library/112x112/' + encodeURIComponent(liteApp.name) + '.png';
+  return 'https://chimbori.github.io/lite-apps/bin/library/112x112/' + encodeLiteAppName(liteApp) + '.png';
+}
+
+function makeManifestUrl(liteApp) {
+  return 'https://hermit.chimbori.com/lite-apps/' + encodeLiteAppName(liteApp) + '.hermit';
 }
 
 function makeCreateUrl(liteApp) {
@@ -10,9 +18,9 @@ function makeCreateUrl(liteApp) {
   if (liteApp.user_agent == 'desktop') {
     createUrl += '&ua=d';
   }
-  if (liteApp.app != '') {
-    createUrl += '&app=https://hermit.chimbori.com/lite-apps/' + encodeURIComponent(liteApp.app.replace(/ /g, '%20'));
-  }
+  createUrl += '&name=' + encodeLiteAppName(liteApp); // The /create page uses this; don’t change.
+  createUrl += '&icon=' + makeImageUrl(liteApp); // The /create page uses this; don’t change.
+  createUrl += '&app=' + makeManifestUrl(liteApp); // The app uses this; don’t change.
   return createUrl;
 }
 
