@@ -130,17 +130,16 @@ function fetchJson() {
 
 function showQueryParamInSearchBox() {
   var queryParam = getQueryVariable('q');
-  if (queryParam != null && queryParam != undefined && queryParam.length != 0) {
-    try {
-      var queryAsUrl = document.createElement('a');
-      queryAsUrl.href = queryParam;
-      if (queryAsUrl != null) {
-        document.querySelector('#query').value = queryAsUrl.hostname;
-      }
-    } catch (e) {
-      document.querySelector('#query').value = queryParam;
+  var queryText = queryParam;
+  if (queryParam != null && queryParam != undefined && queryParam.length != 0 && queryParam.indexOf('http') == 0) {
+    // Only if query is (likely to be) a URL, try to parse a hostname from it.
+    var queryAsUrl = document.createElement('a');
+    queryAsUrl.href = queryParam;
+    if (queryAsUrl != null) {
+      queryText = queryAsUrl.hostname;
     }
   }
+  document.querySelector('#query').value = queryText;
   document.querySelector('#query').focus();
 }
 
