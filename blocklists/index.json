@@ -53,6 +53,10 @@
         {
           "url": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
           "name": "Yoyo.cached.txt"
+        },
+        {
+          "name": "MVPS.txt",
+          "url": "http://winhelp2002.mvps.org/hosts.txt"
         }
       ]
     }
