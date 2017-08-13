@@ -114,7 +114,7 @@ function getQueryVariable(paramName) {
 }
 
 function fetchJson() {
-  $.getJSON( "/_data/library.json", function(data) {
+  $.getJSON("../bin/library/library.json", function (data) {
     libraryJson = data;
     applyQueryFilter(document.querySelector('#query').value.toLowerCase());
     updateDisplay(libraryJson);
