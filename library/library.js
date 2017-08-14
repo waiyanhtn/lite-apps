@@ -21,8 +21,8 @@ function makeCreateUrl(liteApp) {
     createUrl += '&ua=d';
   }
   createUrl += '&name=' + encodeLiteAppName(liteApp); // The /create page uses this; don’t change.
-  createUrl += '&icon=' + makeImageUrl(liteApp); // The /create page uses this; don’t change.
-  createUrl += '&app=' + makeManifestUrl(liteApp); // The app uses this; don’t change.
+  createUrl += '&icon=' + encodeURIComponent(makeImageUrl(liteApp)); // The /create page uses this; don’t change.
+  createUrl += '&app=' + encodeURIComponent(makeManifestUrl(liteApp)); // The app uses this; don’t change.
   return createUrl;
 }
 
