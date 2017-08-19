@@ -110,6 +110,24 @@
           "url": "https://m.okcupid.com"
         },
         {
+          "theme_color": "#36465d",
+          "name": "Tumblr",
+          "url": "https://tumblr.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Communication"
+      },
+      "apps": [
+        {
+          "theme_color": "#0086ff",
+          "name": "Messenger",
+          "url": "https://mobile.facebook.com/messages",
+          "user_agent": "desktop"
+        },
+        {
           "theme_color": "#019ed8",
           "name": "Skype",
           "url": "https://web.skype.com",
@@ -121,9 +139,46 @@
           "url": "https://slack.com"
         },
         {
-          "theme_color": "#36465d",
-          "name": "Tumblr",
-          "url": "https://tumblr.com"
+          "theme_color": "#2196f3",
+          "name": "TeamViewer Chat",
+          "url": "https://integratedchat.teamviewer.com/"
+        },
+        {
+          "theme_color": "#1f95d4",
+          "name": "Telegram",
+          "url": "https://web.telegram.org"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Art and Photography"
+      },
+      "apps": [
+        {
+          "theme_color": "#253938",
+          "name": "Instagram",
+          "url": "https://instagram.com"
+        },
+        {
+          "theme_color": "#06cc47",
+          "name": "Deviant Art",
+          "url": "https://deviantart.com"
+        },
+        {
+          "theme_color": "#0d64d2",
+          "name": "Flickr",
+          "url": "https://flickr.com"
+        },
+        {
+          "theme_color": "#fe6666",
+          "name": "Giphy",
+          "url": "https://giphy.com"
+        },
+        {
+          "theme_color": "#3bd443",
+          "name": "Imgur",
+          "url": "https://imgur.com"
         }
       ]
     },
@@ -205,6 +260,21 @@
           "url": "http://aljazeera.com"
         },
         {
+          "theme_color": "#58accb",
+          "name": "AnandTech",
+          "url": "http://www.anandtech.com/"
+        },
+        {
+          "theme_color": "#d7e580",
+          "name": "Android Central",
+          "url": "https://m.androidcentral.com"
+        },
+        {
+          "theme_color": "#ed1b2b",
+          "name": "Android Police",
+          "url": "https://androidpolice.com"
+        },
+        {
           "theme_color": "#008dc8",
           "name": "Axios",
           "url": "https://www.axios.com"
@@ -240,11 +310,6 @@
           "url": "http://m.folha.uol.com.br"
         },
         {
-          "theme_color": "#3b438f",
-          "name": "Forecast.io",
-          "url": "https://forecast.io"
-        },
-        {
           "theme_color": "#439ef6",
           "name": "Globo",
           "url": "http://www.globo.com"
@@ -258,6 +323,16 @@
           "theme_color": "#008cd4",
           "name": "Haaretz",
           "url": "https://haaretz.co.il"
+        },
+        {
+          "theme_color": "#ff6600",
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com"
+        },
+        {
+          "theme_color": "#000000",
+          "name": "Heise",
+          "url": "https://www.heise.de"
         },
         {
           "theme_color": "#c04d51",
@@ -290,6 +365,11 @@
           "url": "http://slate.com"
         },
         {
+          "theme_color": "#98141b",
+          "name": "Spiegel",
+          "url": "http://www.spiegel.de"
+        },
+        {
           "theme_color": "#000000",
           "name": "The Atlantic",
           "url": "https://www.theatlantic.com/"
@@ -310,6 +390,11 @@
           "url": "http://veja.abril.com.br"
         },
         {
+          "theme_color": "#009f98",
+          "name": "Vibbo",
+          "url": "https://www.vibbo.com"
+        },
+        {
           "theme_color": "#3d0092",
           "name": "Yahoo! Finance",
           "url": "https://finance.yahoo.com"
@@ -318,9 +403,31 @@
     },
     {
       "category": {
+        "name": "Weather"
+      },
+      "apps": [
+        {
+          "theme_color": "#f05714",
+          "name": "AccuWeather",
+          "url": "https://m.accuweather.com"
+        },
+        {
+          "theme_color": "#3b438f",
+          "name": "Forecast.io",
+          "url": "https://forecast.io"
+        }
+      ]
+    },
+    {
+      "category": {
         "name": "Technology"
       },
       "apps": [
+        {
+          "theme_color": "#1073a8",
+          "name": "AlternativeTo",
+          "url": "https://alternativeto.net"
+        },
         {
           "theme_color": "#58accb",
           "name": "AnandTech",
@@ -350,6 +457,11 @@
           "theme_color": "#c20a00",
           "name": "App Sales",
           "url": "http://app-sales.net/"
+        },
+        {
+          "theme_color": "#0473bd",
+          "name": "Caschys Blog",
+          "url": "http://stadt-bremerhaven.de"
         },
         {
           "theme_color": "#b80000",
@@ -435,14 +547,9 @@
     },
     {
       "category": {
-        "name": "Entertainment"
+        "name": "Movies and TV"
       },
       "apps": [
-        {
-          "theme_color": "#000000",
-          "name": "Bored Panda",
-          "url": "http://boredpanda.com/"
-        },
         {
           "theme_color": "#f17604",
           "name": "Fandango",
@@ -469,9 +576,9 @@
           "url": "http://allocine.fr"
         },
         {
-          "theme_color": "#ee3322",
-          "name": "BuzzFeed",
-          "url": "https://www.buzzfeed.com"
+          "theme_color": "#35a5a1",
+          "name": "Can I Stream It",
+          "url": "http://www.canistream.it/mobile/query"
         },
         {
           "theme_color": "#3e4f53",
@@ -479,44 +586,14 @@
           "url": "https://m.eonline.com"
         },
         {
-          "theme_color": "#fe6666",
-          "name": "Giphy",
-          "url": "https://giphy.com"
-        },
-        {
           "theme_color": "#6f6f00",
           "name": "Hotstar",
           "url": "http://hotstar.com"
         },
         {
-          "theme_color": "#3bd443",
-          "name": "Imgur",
-          "url": "https://imgur.com"
-        },
-        {
-          "theme_color": "#cc0000",
-          "name": "Last.fm",
-          "url": "https://last.fm"
-        },
-        {
-          "theme_color": "#395369",
-          "name": "MixCloud",
-          "url": "https://m.mixcloud.com"
-        },
-        {
           "theme_color": "#ce7d00",
           "name": "Plex",
           "url": "https://plex.tv"
-        },
-        {
-          "theme_color": "#ee5359",
-          "name": "SongLink",
-          "url": "https://songlink.io"
-        },
-        {
-          "theme_color": "#ff8700",
-          "name": "SoundCloud",
-          "url": "https://m.soundcloud.com"
         },
         {
           "theme_color": "#1c243c",
@@ -537,11 +614,6 @@
           "theme_color": "#34aad2",
           "name": "Twit.tv",
           "url": "https://twit.tv"
-        },
-        {
-          "theme_color": "#95a7c9",
-          "name": "XKCD",
-          "url": "https://m.xkcd.com"
         }
       ]
     },
@@ -638,6 +710,11 @@
           "url": "https://lifehacker.com"
         },
         {
+          "theme_color": "#000000",
+          "name": "Notes",
+          "url": "https://sii.im/playground/notes"
+        },
+        {
           "theme_color": "#ee4055",
           "name": "Pocket",
           "url": "https://getpocket.com"
@@ -648,9 +725,9 @@
           "url": "http://sleepyti.me"
         },
         {
-          "theme_color": "#2196f3",
-          "name": "TeamViewer Chat",
-          "url": "https://integratedchat.teamviewer.com/"
+          "theme_color": "#b1951b",
+          "name": "Smaller Pictures",
+          "url": "https://smaller-pictures.appspot.com"
         },
         {
           "theme_color": "#120d2f",
@@ -661,6 +738,21 @@
           "theme_color": "#bc342d",
           "name": "Todoist",
           "url": "https://todoist.com"
+        },
+        {
+          "theme_color": "#4d7eb4",
+          "name": "Toodledo",
+          "url": "https://www.toodledo.com"
+        },
+        {
+          "theme_color": "#673ab7",
+          "name": "Voice Memos",
+          "url": "https://voice-memos.appspot.com"
+        },
+        {
+          "theme_color": "#f3a294",
+          "name": "Wolfram Alpha",
+          "url": "http://m.wolframalpha.com"
         },
         {
           "theme_color": "#ff72b5",
@@ -752,9 +844,24 @@
       },
       "apps": [
         {
+          "theme_color": "#508ff5",
+          "name": "Translate",
+          "url": "https://translate.google.com/m/translate"
+        },
+        {
           "theme_color": "#1e892f",
           "name": "TripAdvisor",
           "url": "https://tripadvisor.com"
+        },
+        {
+          "theme_color": "#d01e0c",
+          "name": "Yelp",
+          "url": "https://m.yelp.com"
+        },
+        {
+          "theme_color": "#cb202d",
+          "name": "Zomato",
+          "url": "https://zomato.com"
         },
         {
           "theme_color": "#00246d",
@@ -834,6 +941,11 @@
           "url": "https://khanacademy.org"
         },
         {
+          "theme_color": "#89bb5c",
+          "name": "Wikiwand",
+          "url": "https://www.wikiwand.com"
+        },
+        {
           "theme_color": "#329865",
           "name": "Wiktionary",
           "url": "https://www.wiktionary.org"
@@ -879,18 +991,38 @@
     },
     {
       "category": {
-        "name": "Art and Photography"
+        "name": "Music"
       },
       "apps": [
         {
-          "theme_color": "#06cc47",
-          "name": "Deviant Art",
-          "url": "https://deviantart.com"
+          "theme_color": "#e8debb",
+          "name": "Guitar Tuner",
+          "url": "https://guitar-tuner.appspot.com"
         },
         {
-          "theme_color": "#0d64d2",
-          "name": "Flickr",
-          "url": "https://flickr.com"
+          "theme_color": "#cc0000",
+          "name": "Last.fm",
+          "url": "https://last.fm"
+        },
+        {
+          "theme_color": "#395369",
+          "name": "MixCloud",
+          "url": "https://m.mixcloud.com"
+        },
+        {
+          "theme_color": "#ee5359",
+          "name": "SongLink",
+          "url": "https://songlink.io"
+        },
+        {
+          "theme_color": "#ff8700",
+          "name": "SoundCloud",
+          "url": "https://m.soundcloud.com"
+        },
+        {
+          "theme_color": "#d81f38",
+          "name": "Wavepad",
+          "url": "https://alexgibson.github.io/wavepad"
         }
       ]
     },
@@ -1037,6 +1169,111 @@
           "theme_color": "#57a418",
           "name": "Trulia",
           "url": "https://m.trulia.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Games"
+      },
+      "apps": [
+        {
+          "theme_color": "#ecc400",
+          "name": "2048",
+          "url": "https://2048-opera-pwa.surge.sh"
+        },
+        {
+          "theme_color": "#ccdea8",
+          "name": "Inbox Attack",
+          "url": "https://andreasbovens.github.io/inbox-attack"
+        },
+        {
+          "theme_color": "#89061c",
+          "name": "Pokedex",
+          "url": "https://www.pokedex.org"
+        },
+        {
+          "theme_color": "#719836",
+          "name": "WebFlap",
+          "url": "https://www.progressivewebflap.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Fun"
+      },
+      "apps": [
+        {
+          "theme_color": "#daeef2",
+          "name": "Air Horner",
+          "url": "https://airhorner.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Comics"
+      },
+      "apps": [
+        {
+          "theme_color": "#1f2900",
+          "name": "Lunar Baboon",
+          "url": "http://www.lunarbaboon.com"
+        },
+        {
+          "theme_color": "#526b90",
+          "name": "SMBC Comics",
+          "url": "https://www.smbc-comics.com"
+        },
+        {
+          "theme_color": "#95a7c9",
+          "name": "XKCD",
+          "url": "https://m.xkcd.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Social Content"
+      },
+      "apps": [
+        {
+          "theme_color": "#000000",
+          "name": "Bored Panda",
+          "url": "http://boredpanda.com/"
+        },
+        {
+          "theme_color": "#ee3322",
+          "name": "BuzzFeed",
+          "url": "https://www.buzzfeed.com"
+        },
+        {
+          "theme_color": "#fe6666",
+          "name": "Giphy",
+          "url": "https://giphy.com"
+        },
+        {
+          "theme_color": "#3bd443",
+          "name": "Imgur",
+          "url": "https://imgur.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Business"
+      },
+      "apps": [
+        {
+          "theme_color": "#5faa04",
+          "name": "GlassDoor",
+          "url": "https://www.glassdoor.com"
+        },
+        {
+          "theme_color": "#1f63f3",
+          "name": "Indeed",
+          "url": "https://www.indeed.com/m"
         }
       ]
     },
