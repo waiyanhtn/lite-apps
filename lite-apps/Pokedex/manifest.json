@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Pokedex",
+  "start_url": "https://www.pokedex.org",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Pokedex.hermit",
+  "theme_color": "#89061c",
+  "secondary_color": "#7b0519",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Games"
+  ]
+}

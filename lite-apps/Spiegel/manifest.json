@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Spiegel",
+  "start_url": "http://www.spiegel.de",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Spiegel.hermit",
+  "theme_color": "#98141b",
+  "secondary_color": "#881218",
+  "icon": "favicon.png",
+  "hermit_feeds": [
+    {
+      "url": "http://m.spiegel.de/schlagzeilen/index.rss",
+      "name": "Spiegel Schlagzeilen"
+    },
+    {
+      "url": "http://m.spiegel.de/index.rss",
+      "name": "Spiegel Nachrichten"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "News"
+  ]
+}

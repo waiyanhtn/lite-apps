@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Smaller Pictures",
+  "start_url": "https://smaller-pictures.appspot.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Smaller%20Pictures.hermit",
+  "theme_color": "#b1951b",
+  "secondary_color": "#9f8618",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity"
+  ]
+}

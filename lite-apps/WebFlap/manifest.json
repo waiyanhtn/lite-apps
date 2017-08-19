@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "WebFlap",
+  "start_url": "https://www.progressivewebflap.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/WebFlap.hermit",
+  "theme_color": "#719836",
+  "secondary_color": "#658830",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Games"
+  ]
+}

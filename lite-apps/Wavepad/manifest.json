@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Wavepad",
+  "start_url": "https://alexgibson.github.io/wavepad",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wavepad.hermit",
+  "theme_color": "#d81f38",
+  "secondary_color": "#c21b32",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Music"
+  ]
+}

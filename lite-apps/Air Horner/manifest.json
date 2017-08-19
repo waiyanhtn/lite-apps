@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Air Horner",
+  "start_url": "https://airhorner.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Air%20Horner.hermit",
+  "theme_color": "#daeef2",
+  "secondary_color": "#c4d6d9",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Fun"
+  ]
+}

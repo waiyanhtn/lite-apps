@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Notes",
+  "start_url": "https://sii.im/playground/notes",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Notes.hermit",
+  "theme_color": "#000000",
+  "secondary_color": "#000000",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity"
+  ]
+}

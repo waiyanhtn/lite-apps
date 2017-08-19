@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Toodledo",
+  "start_url": "https://www.toodledo.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Toodledo.hermit",
+  "theme_color": "#4d7eb4",
+  "secondary_color": "#4571a2",
+  "icon": "favicon.png",
+  "related_applications": [
+    {
+      "id": "com.kiwlm.mytoodle",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.kiwlm.mytoodle"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity"
+  ]
+}

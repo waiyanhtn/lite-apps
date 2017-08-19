@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Indeed",
+  "start_url": "https://www.indeed.com/m",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Indeed.hermit",
+  "theme_color": "#1f63f3",
+  "secondary_color": "#1b59da",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Business"
+  ]
+}

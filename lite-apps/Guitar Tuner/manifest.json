@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Guitar Tuner",
+  "start_url": "https://guitar-tuner.appspot.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Guitar%20Tuner.hermit",
+  "theme_color": "#e8debb",
+  "secondary_color": "#d0c7a8",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Music"
+  ]
+}

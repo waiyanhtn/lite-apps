@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "AlternativeTo",
+  "start_url": "https://alternativeto.net",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/AlternativeTo.hermit",
+  "theme_color": "#1073a8",
+  "secondary_color": "#0e6797",
+  "icon": "favicon.png",
+  "hermit_bookmarks": [
+    {
+      "url": "https://alternativeto.net/login/register/?redirectUrl=/",
+      "name": "Sign up"
+    },
+    {
+      "url": "https://alternativeto.net#loginDialog",
+      "name": "Login"
+    },
+    {
+      "url": "https://alternativeto.net/lists/",
+      "name": "Lists"
+    },
+    {
+      "url": "https://alternativeto.net/about/privacy/",
+      "name": "Privacy"
+    },
+    {
+      "url": "https://alternativeto.net/discussions/",
+      "name": "Forum"
+    },
+    {
+      "url": "https://alternativeto.net/faq/",
+      "name": "FAQ"
+    },
+    {
+      "url": "http://blog.alternativeto.net",
+      "name": "Blog"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "url": "https://alternativeto.net/news/feed/",
+      "name": "AlternativeTo - News"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Technology"
+  ]
+}

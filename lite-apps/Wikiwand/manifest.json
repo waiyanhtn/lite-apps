@@ -1,0 +1,80 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Wikiwand",
+  "start_url": "https://www.wikiwand.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wikiwand.hermit",
+  "theme_color": "#89bb5c",
+  "secondary_color": "#7ba852",
+  "icon": "favicon.png",
+  "hermit_bookmarks": [
+    {
+      "url": "https://www.wikiwand.com/press",
+      "name": "Press"
+    },
+    {
+      "url": "https://www.wikiwand.com/",
+      "name": "Home"
+    },
+    {
+      "url": "https://itunes.apple.com/app/wikiwand-faster-wikipedia-reader/id947444965",
+      "name": "iPhone"
+    },
+    {
+      "url": "http://wikiwand.uservoice.com/",
+      "name": "Support"
+    },
+    {
+      "url": "https://www.wikiwand.com/about",
+      "name": "About Us"
+    },
+    {
+      "url": "https://plus.google.com/+Wikiwand",
+      "name": "Follow us on Google+"
+    },
+    {
+      "url": "http://invites.wikiwand.com/",
+      "name": "Android (early invite)"
+    },
+    {
+      "url": "https://www.wikiwand.com/news",
+      "name": "Start Page"
+    },
+    {
+      "url": "https://twitter.com/wikiwand",
+      "name": "Follow us on Twitter"
+    },
+    {
+      "url": "http://www.linkedin.com/company/wikiwand",
+      "name": "Follow us on LinkedIn"
+    },
+    {
+      "url": "https://addons.mozilla.org/en-us/firefox/addon/wikiwand-wikipedia-modernized/",
+      "name": "Firefox"
+    },
+    {
+      "url": "https://extensions.apple.com/details/?id=com.wikiwand.safari-LT6875SP46",
+      "name": "Safari"
+    },
+    {
+      "url": "https://www.wikiwand.com#",
+      "name": "Follow Us"
+    },
+    {
+      "url": "https://www.wikiwand.com/random/en/",
+      "name": "Random Article"
+    },
+    {
+      "url": "https://chrome.google.com/webstore/detail/wikiwand-wikipedia-modern/emffkefkbkpkgpdeeooapgaicgmcbolj",
+      "name": "Chrome"
+    },
+    {
+      "url": "https://www.facebook.com/wikiwandapp",
+      "name": "Like us on Facebook"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Education"
+  ]
+}

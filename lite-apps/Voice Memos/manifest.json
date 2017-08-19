@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Voice Memos",
+  "start_url": "https://voice-memos.appspot.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Voice%20Memos.hermit",
+  "theme_color": "#673ab7",
+  "secondary_color": "#5c34a4",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity"
+  ]
+}

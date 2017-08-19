@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Telegram",
+  "start_url": "https://web.telegram.org",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Telegram.hermit",
+  "theme_color": "#1f95d4",
+  "secondary_color": "#1b86be",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Communication"
+  ]
+}

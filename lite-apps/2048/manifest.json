@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "2048",
+  "start_url": "https://2048-opera-pwa.surge.sh",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/2048.hermit",
+  "theme_color": "#ecc400",
+  "secondary_color": "#d4b000",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Games"
+  ]
+}

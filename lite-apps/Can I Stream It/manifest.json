@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Can I Stream It",
+  "start_url": "http://www.canistream.it/mobile/query",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Can%20I%20Stream%20It.hermit",
+  "theme_color": "#35a5a1",
+  "secondary_color": "#2f9490",
+  "icon": "favicon.png",
+  "hermit_bookmarks": [
+    {
+      "url": "http://itunes.apple.com/us/app/can-i-stream-it/id482625519?ls=1&mt=8",
+      "name": "App Store iPhone & iPad"
+    },
+    {
+      "url": "http://www.windowsphone.com/en-US/apps/355ab751-8a9f-4c83-a4a6-ec446478a56e",
+      "name": "WP Marketplace Windows Phone"
+    },
+    {
+      "url": "https://market.android.com/details?id=com.cisi.activities",
+      "name": "Google Play Android Phones"
+    },
+    {
+      "url": "http://www.canistream.it/mobile/query#how-it-works-movies",
+      "name": "for Movies"
+    },
+    {
+      "url": "http://www.canistream.it/mobile/query#how-it-works-tv",
+      "name": "for Television"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Movies and TV"
+  ]
+}

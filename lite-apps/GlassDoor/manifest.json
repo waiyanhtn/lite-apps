@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "GlassDoor",
+  "start_url": "https://www.glassdoor.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/GlassDoor.hermit",
+  "theme_color": "#5faa04",
+  "secondary_color": "#559903",
+  "icon": "favicon.png",
+  "related_applications": [
+    {
+      "id": "com.glassdoor.app",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.glassdoor.app"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Business"
+  ]
+}

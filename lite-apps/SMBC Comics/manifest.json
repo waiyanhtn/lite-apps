@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "SMBC Comics",
+  "start_url": "https://www.smbc-comics.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/SMBC%20Comics.hermit",
+  "theme_color": "#526b90",
+  "secondary_color": "#496081",
+  "icon": "favicon.png",
+  "hermit_feeds": [
+    {
+      "url": "https://www.smbc-comics.com/rss.php",
+      "name": "SMBC Comics"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Comics"
+  ]
+}
