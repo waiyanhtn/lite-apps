@@ -1,5 +1,7 @@
 package com.chimbori.liteapps;
 
+import com.chimbori.FilePaths;
+
 import org.junit.Test;
 
 import java.io.IOException;

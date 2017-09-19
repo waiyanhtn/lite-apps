@@ -1,6 +1,7 @@
 package com.chimbori.liteapps;
 
 
+import com.chimbori.FilePaths;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.manifest.Endpoint;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;

@@ -1,5 +1,6 @@
 package com.chimbori.liteapps;
 
+import com.chimbori.FilePaths;
 import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
 import com.chimbori.common.Log;
